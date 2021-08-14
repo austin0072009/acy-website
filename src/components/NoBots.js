@@ -40,7 +40,6 @@ const NoBots = () => {
         "/api/mev/api/public/dashboard/72e207c3-4d8e-450e-a820-fb02e29fec5a/card/32"
       )
       .then((data) => {
-        console.log(data);
         setLoadedTotalExtractedMEV(true);
         setTotalExtractedMEV(data.data.data.rows[0][0]);
       })

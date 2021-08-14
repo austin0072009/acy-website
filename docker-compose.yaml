@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  web:
+    container_name: acy_website
+    restart: always
+    build: .
+    ports:
+      - "5000:5000"
+
+    volumes:
+      - ./public:/code/public
+      - ./src:/code/src

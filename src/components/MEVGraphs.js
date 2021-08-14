@@ -57,7 +57,6 @@ function renderTooltip({ active, payload, label }) {
 function toLineItems(raw) {
   let cols = raw.cols;
   let rows = raw.rows;
-  console.log(rows);
   let processed = rows.map((item) => ({
     [cols[0].display_name]: moment(item[0]).format("MMM Do YY"),
     [cols[1].display_name]: item[1],
@@ -150,7 +149,6 @@ const renderActiveShape = (props) => {
 function toPieItems(raw) {
   let cols = raw.cols;
   let rows = raw.rows;
-  console.log(raw);
   let labelIndex = cols[0].display_name === "label" ? 0 : 1;
   let processed = rows.map((item, index) => {
     return {
