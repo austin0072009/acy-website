@@ -11,3 +11,4 @@ services:
     volumes:
       - ./public:/code/public
       - ./src:/code/src
+      - ./node_modules:/code/node_modules
