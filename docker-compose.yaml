@@ -9,6 +9,7 @@ services:
       - "5000:5000"
 
     volumes:
+      - ./build:/code/build
       - ./public:/code/public
       - ./src:/code/src
       - ./node_modules:/code/node_modules
