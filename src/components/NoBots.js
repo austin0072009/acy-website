@@ -2,6 +2,7 @@ import { NoBotItem } from "../subcomponents";
 import protest from "../assets/protest.png";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import CountUp from "react-countup";
 
 const NoBots = () => {
   let botInfoList = [
@@ -22,11 +23,16 @@ const NoBots = () => {
       "The robots executes the program the users configured on the exchange. Automated trading robot is an automated trading strategy scanning the market with technical analysis for buying opportunities and sells.",
     ],
   ];
-  let infos = botInfoList.map((item) => (
-    <NoBotItem title={item[0]} content={item[1]} />
+  let infos = botInfoList.map((item, index) => (
+    <NoBotItem
+      title={item[0]}
+      content={item[1]}
+      useGray={index % 2 === 0 ? true : false}
+    />
   ));
 
   let [totalExtractedMEV, setTotalExtractedMEV] = useState(0);
+  let [loadedTotalExtractedMEV, setLoadedTotalExtractedMEV] = useState(null);
 
   useEffect(() => {
     axios
@@ -35,6 +41,7 @@ const NoBots = () => {
       )
       .then((data) => {
         console.log(data);
+        setLoadedTotalExtractedMEV(true);
         setTotalExtractedMEV(data.data.data.rows[0][0]);
       })
       .catch((e) => {
@@ -69,7 +76,16 @@ const NoBots = () => {
           className="text-2xl lg:text-3xl xl:text-5xl align-middle"
           style={{ color: "#cf6335" }}
         >
-          $ {totalExtractedMEV && (totalExtractedMEV / 1000000).toFixed(1)} M
+          ${" "}
+          {(loadedTotalExtractedMEV && (
+            <CountUp
+              end={totalExtractedMEV && totalExtractedMEV / 1000000}
+              decimals={3}
+              duration={2.75}
+            />
+          )) ||
+            0}{" "}
+          M
         </span>
       </p>
     </div>

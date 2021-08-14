@@ -10,6 +10,8 @@ import {
   Legend,
   ResponsiveContainer,
   Sector,
+  AreaChart,
+  Area,
 } from "recharts";
 import axios from "axios";
 import moment from "moment";
@@ -18,10 +20,27 @@ import Gradient from "javascript-color-gradient";
 
 const colorGradient = new Gradient();
 
-const color1 = "#e95d1e";
-const color2 = "#ec1c24";
+const color1 = "#ffffff";
+const color2 = "#999999";
 
 colorGradient.setGradient(color1, color2);
+
+const colors = [
+  "#FFE46D",
+  "#FFBD17",
+  "#FF8A25",
+  "#FE5431",
+  "#E22246",
+  "#AF0429",
+  "#ad4134",
+  "#d3847d",
+  "#a0b864",
+  "#c4d49e",
+  "#3f7bb7",
+  "#7eb2e0",
+  "#4fa896",
+  "#81e6d6",
+];
 
 function renderTooltip({ active, payload, label }) {
   if (active && payload && payload.length) {
@@ -131,14 +150,13 @@ const renderActiveShape = (props) => {
 function toPieItems(raw) {
   let cols = raw.cols;
   let rows = raw.rows;
-  let colors = colorGradient.getArray();
   console.log(raw);
   let labelIndex = cols[0].display_name === "label" ? 0 : 1;
   let processed = rows.map((item, index) => {
     return {
       [cols[0].display_name]: item[0] || 0,
       [cols[1].display_name]: item[1],
-      fill: "#" + Math.random().toString(16).substr(-6),
+      fill: colors[index],
       name: item[labelIndex],
     };
   });
@@ -211,11 +229,29 @@ const MEVGraphs = () => {
   }, []);
 
   return (
-    <div className="px-5 flex w-full">
+    <div className="ox-0 md:px-5 flex flex-col md:flex-row w-full mb-20">
       <div className="flex flex-col w-full md:w-1/2">
-        <small className="text-white">Culmulative extracted MEV</small>
-        <ResponsiveContainer width="100%" height={400}>
-          <LineChart width="100%" height={400} data={cumulativeExtractedMEV}>
+        <small className="text-white">
+          <u>Culmulative extracted MEV</u>
+        </small>
+
+        <ResponsiveContainer
+          width="100%"
+          height={400}
+          className="mb-10 md:mb-0"
+        >
+          <AreaChart
+            width="100%"
+            height={400}
+            data={cumulativeExtractedMEV}
+            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          >
+            <defs>
+              <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#FFE46D" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="#FF8A25" stopOpacity={0} />
+              </linearGradient>
+            </defs>
             <XAxis dataKey={cumulativeExtractedMEVXAxisName} />
             <YAxis
               tickFormatter={(tick) => {
@@ -223,18 +259,37 @@ const MEVGraphs = () => {
               }}
             />
             <Tooltip content={renderTooltip} />
-            <Line
-              type="natural"
-              stroke="white"
-              dot={false}
+            <Area
+              type="monotone"
               dataKey={cumulativeExtractedMEVYAxisName}
+              stroke="white"
+              strokeWidth={0.2}
+              fillOpacity={1}
+              fill="url(#colorUv)"
             />
-          </LineChart>
+          </AreaChart>
         </ResponsiveContainer>
 
-        <small className="text-white">Daily extracted MEV</small>
-        <ResponsiveContainer width="100%" height={400}>
-          <LineChart width="100%" height={400} data={dailyExtractedMEV}>
+        <small className="text-white">
+          <u>Daily extracted MEV</u>
+        </small>
+        <ResponsiveContainer
+          width="100%"
+          height={400}
+          className="mb-10 md:mb-0"
+        >
+          <AreaChart
+            width="100%"
+            height={400}
+            data={dailyExtractedMEV}
+            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          >
+            <defs>
+              <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#FFE46D" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="#FF8A25" stopOpacity={0} />
+              </linearGradient>
+            </defs>
             <XAxis dataKey={dailyExtractedMEVXAxisName} />
             <YAxis
               tickFormatter={(tick) => {
@@ -242,19 +297,26 @@ const MEVGraphs = () => {
               }}
             />
             <Tooltip content={renderTooltip} />
-            <Legend />
-            <Line
-              type="natural"
-              stroke="white"
-              dot={false}
+            <Area
+              type="monotone"
               dataKey={dailyExtractedMEVYAxisName}
+              stroke="white"
+              strokeWidth={0.2}
+              fillOpacity={1}
+              fill="url(#colorUv)"
             />
-          </LineChart>
+          </AreaChart>
         </ResponsiveContainer>
       </div>
       <div className="flex flex-col w-full md:w-1/2">
-        <small className="text-white">Daily extracted MEV</small>
-        <ResponsiveContainer width="100%" height={400}>
+        <small className="text-white">
+          <u>MEV by types</u>
+        </small>
+        <ResponsiveContainer
+          width="100%"
+          height={400}
+          className="mb-10 md:mb-0"
+        >
           <PieChart width="100%" height={400}>
             <Legend />
             <Pie
@@ -272,6 +334,9 @@ const MEVGraphs = () => {
             />
           </PieChart>
         </ResponsiveContainer>
+        <small className="text-white">
+          <u>MEV by Protocol</u>
+        </small>
         <ResponsiveContainer width="100%" height={400}>
           <PieChart width="100%" height={400}>
             <Legend />
