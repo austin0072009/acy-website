@@ -1,8 +1,7 @@
 import "./App.css";
 import { Header, VideoPanel, NoBots, MEVGraphs, Footer } from "./components";
 import axios from "axios";
-axios.defaults.baseURL =
-  "http://ec2-3-143-250-42.us-east-2.compute.amazonaws.com:6001/";
+axios.defaults.baseURL = "https://api.acy.finance/";
 
 function App() {
   return (
