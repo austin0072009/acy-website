@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row mx-auto justify-between">
         <div className="flex">
           <div className="flex flex-col">
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-between">
               {list1.map((item) => (
                 <LogoText
                   key={item[0]}
