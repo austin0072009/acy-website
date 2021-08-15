@@ -10,11 +10,8 @@ export const VideoPanel = () => {
             height: "40vw",
           }}
           className="rounded-md"
-          src="https://www.youtube.com/embed/MhwrQpXQq4I"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          src="http://axure.vapp.cn/acy/app.html"
+          title="ACY"
         ></iframe>
         <div
           style={{
