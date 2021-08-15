@@ -6,16 +6,12 @@ const NoBotItem = ({ title, content }) => {
   let [activeBullet, setActiveBullet] = useState(ListItemGray);
 
   return (
-    <div
-      className="flex items-center mb-10"
-      onMouseEnter={() => {
-        setActiveBullet(ListItemOrange);
-      }}
-      onMouseLeave={() => {
-        setActiveBullet(ListItemGray);
-      }}
-    >
-      <img src={activeBullet} alt="bullet" className="w-1/3"></img>
+    <div className="flex items-center mb-10">
+      <img
+        src={ListItemOrange}
+        alt="bullet"
+        className="w-1/3 filter grayscale-100 brightness-125 hover:grayscale-0"
+      ></img>
       <div className="flex flex-col text-white">
         <h2 className="text-2xl mb-3">
           <b>{title}</b>

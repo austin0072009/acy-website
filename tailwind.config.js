@@ -13,10 +13,16 @@ module.exports = {
           800: "#100201",
         },
       },
+      grayscale: {
+        90: ".9",
+        100: "1",
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      grayscale: ["hover", "focus"],
+    },
   },
   plugins: [],
 };

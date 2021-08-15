@@ -1,19 +1,12 @@
-import { useState } from "react";
-
-const LogoText = ({ LogoUrl, hLogoUrl, text, url = null }) => {
-  let [activeImgUrl, setActiveImgUrl] = useState(LogoUrl);
+const LogoText = ({ LogoUrl, text, url = null }) => {
   return (
     <div
-      className="flex flex-col items-center text-brown-100 p-3 cursor-pointer"
-      onClick={() => url && window.location.replace(url)}
-      onMouseEnter={() => {
-        setActiveImgUrl(hLogoUrl);
-      }}
-      onMouseLeave={() => {
-        setActiveImgUrl(LogoUrl);
+      className="flex flex-col items-center text-brown-100 p-3 cursor-pointer filter brightness-125 grayscale-100  hover:grayscale-0"
+      onClick={() => {
+        if (url) window.location.href = url;
       }}
     >
-      <img src={activeImgUrl} alt={text} className="py-3 w-10" />
+      <img src={LogoUrl} alt={text} className="py-3 w-10" />
       <p>{text}</p>
     </div>
   );
