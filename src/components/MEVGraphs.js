@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import {
-  LineChart,
-  Line,
   PieChart,
   Pie,
   XAxis,
@@ -12,12 +10,10 @@ import {
   Sector,
   AreaChart,
   Area,
-  LabelList,
   Label,
 } from "recharts";
 import axios from "axios";
 import moment from "moment";
-import logomini from "../assets/logomini.png";
 import Gradient from "javascript-color-gradient";
 import { isMobile } from "react-device-detect";
 
