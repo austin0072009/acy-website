@@ -24,11 +24,7 @@ const NoBots = () => {
     ],
   ];
   let infos = botInfoList.map((item, index) => (
-    <NoBotItem
-      title={item[0]}
-      content={item[1]}
-      useGray={index % 2 === 0 ? true : false}
-    />
+    <NoBotItem title={item[0]} content={item[1]} />
   ));
 
   let [totalExtractedMEV, setTotalExtractedMEV] = useState(0);

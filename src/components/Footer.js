@@ -11,26 +11,44 @@ import gitbook from "../assets/gitbook.png";
 import { LogoText } from "../subcomponents";
 
 const Footer = () => {
-  let list = [
+  let list1 = [
     [twitter, "Twitter", "https://www.twitter.com/ACYFinance"],
     [telegram, "Telegram", "https://t.me/acyfinance"],
     [linkedin, "Linkedin", "https://www.linkedin.com/company/acy-finance"],
     [discord, "Discord", "https://www.discord.gg/qYQ5CJmH"],
     [medium, "Medium", "https://www.medium.com/acy-finance"],
-    [youtube, "Youtube"],
+  ];
+
+  let list2 = [
     [litepaper, "Litepaper"],
     [forum, "Forum"],
-    [github, "Github"],
+    [github, "Github", "https://github.com/ACY-Labs"],
     [gitbook, "Gitbook", "https://acy-finance.gitbook.io/acy-finance/"],
   ];
+
   return (
     <div className="bg-brown-800 p-5 ">
       <div className="flex flex-col lg:flex-row mx-auto justify-between">
         <div className="flex">
           <div className="flex flex-col">
             <div className="flex flex-wrap">
-              {list.map((item) => (
-                <LogoText LogoUrl={item[0]} text={item[1]} url={item[2]} />
+              {list1.map((item) => (
+                <LogoText
+                  key={item[0]}
+                  LogoUrl={item[0]}
+                  text={item[1]}
+                  url={item[2]}
+                />
+              ))}
+            </div>
+            <div className="flex flex-wrap">
+              {list2.map((item) => (
+                <LogoText
+                  key={item[0]}
+                  LogoUrl={item[0]}
+                  text={item[1]}
+                  url={item[2]}
+                />
               ))}
             </div>
           </div>
