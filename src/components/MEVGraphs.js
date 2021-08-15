@@ -12,11 +12,14 @@ import {
   Sector,
   AreaChart,
   Area,
+  LabelList,
+  Label,
 } from "recharts";
 import axios from "axios";
 import moment from "moment";
 import logomini from "../assets/logomini.png";
 import Gradient from "javascript-color-gradient";
+import { isMobile } from "react-device-detect";
 
 const colorGradient = new Gradient();
 
@@ -99,9 +102,9 @@ const renderActiveShape = (props) => {
   const cos = Math.cos(-RADIAN * midAngle);
   const sx = cx + (outerRadius + 10) * cos;
   const sy = cy + (outerRadius + 10) * sin;
-  const mx = cx + (outerRadius + 30) * cos;
-  const my = cy + (outerRadius + 30) * sin;
-  const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+  const mx = cx + (outerRadius + 10) * cos;
+  const my = cy + (outerRadius + 10) * sin;
+  const ex = mx + (cos >= 0 ? 1 : -1) * 12;
   const ey = my;
   const textAnchor = cos >= 0 ? "start" : "end";
 
@@ -128,16 +131,13 @@ const renderActiveShape = (props) => {
         outerRadius={outerRadius + 10}
         fill={fill}
       />
-      <path
-        d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
-        stroke={fill}
-        fill="none"
-      />
+      <path d={`M${sx},${sy}L${ex},${ey}`} stroke={fill} fill="none" />
       <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
-        dy={9}
+        dy={5}
+        fontSize="0.8em"
         textAnchor={textAnchor}
         fill="#fff"
       >
@@ -149,17 +149,63 @@ const renderActiveShape = (props) => {
 function toPieItems(raw) {
   let cols = raw.cols;
   let rows = raw.rows;
-  let labelIndex = cols[0].display_name === "label" ? 0 : 1;
   let processed = rows.map((item, index) => {
     return {
       [cols[0].display_name]: item[0] || 0,
       [cols[1].display_name]: item[1],
       fill: colors[index],
-      name: item[labelIndex],
     };
   });
 
   return processed;
+}
+
+function CustomLabel(props) {
+  const { cx, cy } = props.viewBox;
+  let percent = `${(props.Percentage * 100).toFixed(2)}%`;
+  let longLabel = props.label.indexOf("+") !== -1;
+  return (
+    <>
+      <text
+        x={cx}
+        y={cy - (longLabel ? 15 : 5)}
+        fill={props.color}
+        className="recharts-text recharts-label"
+        textAnchor="middle"
+        dominantBaseline="central"
+      >
+        <tspan alignmentBaseline="middle" fontFamily="Roboto">
+          {props.label.indexOf("+") !== -1
+            ? props.label.slice(0, props.label.indexOf("+"))
+            : props.label}
+        </tspan>
+      </text>
+      <text
+        x={cx}
+        y={cy + (longLabel ? 3 : 5)}
+        fill={props.color}
+        className="recharts-text recharts-label"
+        textAnchor="middle"
+        dominantBaseline="central"
+      >
+        <tspan alignmentBaseline="middle" fontFamily="Roboto">
+          {props.label.indexOf("+") !== -1
+            ? props.label.slice(props.label.indexOf("+"))
+            : ""}
+        </tspan>
+      </text>
+      <text
+        x={cx}
+        y={cy + (longLabel ? 25 : 20)}
+        fill={props.color}
+        className="recharts-text recharts-label"
+        textAnchor="middle"
+        dominantBaseline="central"
+      >
+        <tspan fontFamily="Roboto">{percent}</tspan>
+      </text>
+    </>
+  );
 }
 
 function setPieDataWithUrl(url, setData) {
@@ -324,14 +370,29 @@ const MEVGraphs = () => {
               data={extractedMEVByType}
               dataKey="Percentage"
               nameKey="label"
-              innerRadius={100}
-              outerRadius={120}
+              innerRadius={isMobile ? 70 : 100}
+              outerRadius={isMobile ? 90 : 120}
               cx="50%"
               cy="50%"
               fill="#fff"
-            />
+            >
+              <Label
+                content={
+                  extractedMEVByType && (
+                    <CustomLabel
+                      label={extractedMEVByType[extractedMEVByTypeIndex].label}
+                      Percentage={
+                        extractedMEVByType[extractedMEVByTypeIndex].Percentage
+                      }
+                      color={colors[extractedMEVByTypeIndex]}
+                    ></CustomLabel>
+                  )
+                }
+              ></Label>
+            </Pie>
           </PieChart>
         </ResponsiveContainer>
+
         <small className="text-white">
           <u>MEV by Protocol</u>
         </small>
@@ -345,10 +406,28 @@ const MEVGraphs = () => {
               data={extractedMEVByProtocol}
               dataKey="Percentage"
               nameKey="label"
-              innerRadius={100}
-              outerRadius={120}
+              innerRadius={isMobile ? 70 : 100}
+              outerRadius={isMobile ? 90 : 120}
               fill="#8884d8"
-            />
+            >
+              <Label
+                content={
+                  extractedMEVByProtocol && (
+                    <CustomLabel
+                      label={
+                        extractedMEVByProtocol[extractedMEVByProtocolIndex]
+                          .label
+                      }
+                      Percentage={
+                        extractedMEVByProtocol[extractedMEVByProtocolIndex]
+                          .Percentage
+                      }
+                      color={colors[extractedMEVByProtocolIndex]}
+                    ></CustomLabel>
+                  )
+                }
+              ></Label>
+            </Pie>
           </PieChart>
         </ResponsiveContainer>
       </div>

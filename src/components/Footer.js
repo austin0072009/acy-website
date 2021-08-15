@@ -37,16 +37,16 @@ const Footer = () => {
         </div>
         <div className="px-0 lg:px-10">
           <ul className="text-brown-100">
-            <li className="my-5 hover:underline">
+            <li className="my-5 mr-5 inline md:block hover:underline">
               <a href="/">Support</a>
             </li>
-            <li className="my-5 hover:underline">
+            <li className="my-5 mr-5 inline md:block hover:underline">
               <a href="/">Term of use</a>
             </li>
-            <li className="my-5 hover:underline">
+            <li className="my-5 mr-5 inline md:block hover:underline">
               <a href="/">Privacy policy</a>
             </li>
-            <li className="my-5 hover:underline">
+            <li className="my-5 mr-5 inline md:block hover:underline">
               <a href="/">Cookie policy</a>
             </li>
           </ul>
