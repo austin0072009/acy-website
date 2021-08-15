@@ -67,16 +67,16 @@ const Footer = () => {
         </div>
         <div className="px-0 lg:px-10">
           <div className="flex justify-between md:flex-col text-brown-100 p-3">
-            <span className="my-3 mr-5 hover:underline">
+            <span className="my-3 pr-3 md:pl-3 md:mr-5 hover:underline  text-justify">
               <a href="/">Support</a>
             </span>
-            <span className="my-3 mr-5 hover:underline">
+            <span className="my-3 px-3 md:mr-5 hover:underline  text-justify">
               <a href="/">Term of use</a>
             </span>
-            <span className="my-3 mr-5 hover:underline">
+            <span className="my-3 px-3 md:mr-5 hover:underline  text-justify">
               <a href="/">Privacy policy</a>
             </span>
-            <span className="my-3 mr-5 hover:underline">
+            <span className="my-3 pl-3 md:pr-3 md:mr-5 hover:underline text-justify">
               <a href="/">Cookie policy</a>
             </span>
           </div>
