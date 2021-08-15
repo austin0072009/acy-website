@@ -7,7 +7,7 @@ export const VideoPanel = () => {
         <iframe
           style={{
             width: "100%",
-            height: "40vw",
+            height: "40vh",
           }}
           className="rounded-md"
           src="http://axure.vapp.cn/acy/app.html"

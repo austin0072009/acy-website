@@ -18,6 +18,7 @@ import hforum from "../assets/forum_hover.png";
 import hgithub from "../assets/github_hover.png";
 import hgitbook from "../assets/gitbook_hover.png";
 import { LogoText } from "../subcomponents";
+import { isMobile } from "react-device-detect";
 
 const Footer = () => {
   let list1 = [
@@ -60,35 +61,47 @@ const Footer = () => {
                   url={item[3]}
                 />
               ))}
+              {isMobile &&
+                list2.map((item) => (
+                  <LogoText
+                    key={item[0]}
+                    LogoUrl={item[0]}
+                    hLogoUrl={item[1]}
+                    text={item[2]}
+                    url={item[3]}
+                  />
+                ))}
             </div>
-            <div className="flex flex-wrap">
-              {list2.map((item) => (
-                <LogoText
-                  key={item[0]}
-                  LogoUrl={item[0]}
-                  hLogoUrl={item[1]}
-                  text={item[2]}
-                  url={item[3]}
-                />
-              ))}
-            </div>
+            {!isMobile && (
+              <div className="flex flex-wrap">
+                {list2.map((item) => (
+                  <LogoText
+                    key={item[0]}
+                    LogoUrl={item[0]}
+                    hLogoUrl={item[1]}
+                    text={item[2]}
+                    url={item[3]}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <div className="px-0 lg:px-10">
-          <ul className="text-brown-100">
-            <li className="my-5 mr-5 inline md:block hover:underline">
+          <div className="flex justify-between md:flex-col text-brown-100 p-3">
+            <span className="my-3 mr-5 hover:underline">
               <a href="/">Support</a>
-            </li>
-            <li className="my-5 mr-5 inline md:block hover:underline">
+            </span>
+            <span className="my-3 mr-5 hover:underline">
               <a href="/">Term of use</a>
-            </li>
-            <li className="my-5 mr-5 inline md:block hover:underline">
+            </span>
+            <span className="my-3 mr-5 hover:underline">
               <a href="/">Privacy policy</a>
-            </li>
-            <li className="my-5 mr-5 inline md:block hover:underline">
+            </span>
+            <span className="my-3 mr-5 hover:underline">
               <a href="/">Cookie policy</a>
-            </li>
-          </ul>
+            </span>
+          </div>
         </div>
       </div>
     </div>
