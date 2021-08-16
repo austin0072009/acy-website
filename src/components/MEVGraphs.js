@@ -46,7 +46,7 @@ function renderTooltip({ active, payload, label }) {
     return (
       <div className="custom-tooltip bg-brown-400 text-brown-100 p-4 rounded-md">
         <p className="label">{label}</p>
-        <p>{`${(parseFloat(payload[0].value) / 1000000).toFixed(2)}M`}</p>
+        <p>{`$ ${(parseFloat(payload[0].value) / 1000000).toFixed(2)}M`}</p>
       </div>
     );
   }
@@ -272,7 +272,7 @@ const MEVGraphs = () => {
     <div className="ox-0 md:px-5 flex flex-col md:flex-row w-full mb-20">
       <div className="flex flex-col w-full md:w-1/2">
         <small className="text-white">
-          <u>Culmulative extracted MEV</u>
+          <u>Culmulative extracted MEV ($)</u>
         </small>
 
         <ResponsiveContainer
@@ -311,7 +311,7 @@ const MEVGraphs = () => {
         </ResponsiveContainer>
 
         <small className="text-white">
-          <u>Daily extracted MEV</u>
+          <u>Daily extracted MEV ($)</u>
         </small>
         <ResponsiveContainer
           width="100%"

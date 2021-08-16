@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
@@ -24,5 +26,16 @@ module.exports = {
       grayscale: ["hover", "focus"],
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const extendLineThrough = {
+        ".line-through": {
+          textDecoration: "line-through",
+          "text-decoration-color": "white",
+          "text-decoration-thickness": "2px",
+        },
+      };
+      addUtilities(extendLineThrough);
+    }),
+  ],
 };

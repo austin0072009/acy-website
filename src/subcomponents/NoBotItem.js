@@ -13,7 +13,7 @@ const NoBotItem = ({ title, content }) => {
         className="w-1/3 filter grayscale-100 brightness-125 hover:grayscale-0"
       ></img>
       <div className="flex flex-col text-white">
-        <h2 className="text-2xl mb-3">
+        <h2 className="text-2xl mb-3 line-through">
           <b>{title}</b>
         </h2>
         <p className="text-sm">{content}</p>

@@ -8,23 +8,25 @@ import litepaper from "../assets/litepaper_hover.png";
 import forum from "../assets/forum_hover.png";
 import github from "../assets/github_hover.png";
 import gitbook from "../assets/gitbook_hover.png";
+import support from "../assets/support.png";
 import { LogoText } from "../subcomponents";
 import { isMobile } from "react-device-detect";
 
 const Footer = () => {
   let list1 = [
+    [litepaper, "Litepaper"],
+    [forum, "Forum", "https://t.me/acyfinance"],
+    [github, "Github", "https://github.com/ACY-Labs"],
+    [gitbook, "Gitbook", "https://acy-finance.gitbook.io/acy-finance/"],
+    [support, "Support", "https://t.me/acyfinance"],
+  ];
+
+  let list2 = [
     [twitter, "Twitter", "https://www.twitter.com/ACYFinance"],
     [telegram, "Telegram", "https://t.me/acyfinance"],
     [linkedin, "Linkedin", "https://www.linkedin.com/company/acy-finance"],
     [discord, "Discord", "https://www.discord.gg/qYQ5CJmH"],
     [medium, "Medium", "https://www.medium.com/acy-finance"],
-  ];
-
-  let list2 = [
-    [litepaper, "Litepaper"],
-    [forum, "Forum"],
-    [github, "Github", "https://github.com/ACY-Labs"],
-    [gitbook, "Gitbook", "https://acy-finance.gitbook.io/acy-finance/"],
   ];
 
   return (
@@ -65,20 +67,20 @@ const Footer = () => {
             )}
           </div>
         </div>
-        <div className="px-0 lg:px-10">
-          <div className="flex justify-between md:flex-col text-brown-100 p-3">
-            <span className="my-3 pr-3 md:pl-3 md:mr-5 hover:underline  text-justify">
-              <a href="/">Support</a>
-            </span>
-            <span className="my-3 px-3 md:mr-5 hover:underline  text-justify">
-              <a href="/">Term of use</a>
-            </span>
-            <span className="my-3 px-3 md:mr-5 hover:underline  text-justify">
-              <a href="/">Privacy policy</a>
-            </span>
-            <span className="my-3 pl-3 md:pr-3 md:mr-5 hover:underline text-justify">
-              <a href="/">Cookie policy</a>
-            </span>
+        <div className="flex flex-col">
+          <div className="h-1/2"></div>
+          <div className="px-0 lg:pl-10 h-1/2">
+            <div className="flex justify-between items-end text-brown-100 p-3 h-full">
+              <span className="my-3 pr-3 md:pl-3 hover:underline">
+                <a href="/">Terms of use</a>
+              </span>
+              <span className="my-3 px-3 hover:underline">
+                <a href="/">Privacy policy</a>
+              </span>
+              <span className="my-3 pl-3 md:pr-3 hover:underline">
+                <a href="/">Cookie policy</a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
