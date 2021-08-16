@@ -57,7 +57,7 @@ const NoBots = () => {
           {infos[1]}
         </div>
         <div className="flex justify-center items-center order-3 md:order-2 md:w-1/3 p-10">
-          <img className="w-full" src={protest} alt="NoBot" />
+          <img className="w-3/4" src={protest} alt="NoBot" />
         </div>
         <div className="flex flex-col justify-around order-2 md:order-3 md:w-1/3">
           {infos[2]}
