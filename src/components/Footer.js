@@ -15,7 +15,7 @@ import { isMobile } from "react-device-detect";
 const Footer = () => {
   let list1 = [
     [litepaper, "Litepaper"],
-    [forum, "Forum", "https://t.me/acyfinance"],
+    [forum, "Forum", "https://discourse.acy.finance"],
     [github, "Github", "https://github.com/ACY-Labs"],
     [gitbook, "Gitbook", "https://acy-finance.gitbook.io/acy-finance/"],
     [support, "Support", "https://t.me/acyfinance"],
