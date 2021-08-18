@@ -307,55 +307,10 @@ const MEVGraphs = () => {
           </h1>
         </div>
         <div className="bg-brown-700 p-2 md:p-10 mb-5 md:mr-5 h-2/5">
-          <p className="text-3xl text-white my-0 p-3">MEV by types</p>
-          <ResponsiveContainer
-            width="100%"
-            height={400}
-            className="mb-10 md:mb-0"
-          >
-            <PieChart
-              width="100%"
-              height={400}
-              margin={{ top: 0, left: 20, right: 20, bottom: 40 }}
-            >
-              <Legend align={isMobile ? "center" : "left"} />
-              <Pie
-                activeIndex={extractedMEVByTypeIndex}
-                activeShape={renderActiveShape}
-                onMouseEnter={onMEVByTypePieEnter}
-                data={extractedMEVByType}
-                dataKey="Percentage"
-                nameKey="label"
-                innerRadius={isMobile ? "50%" : 100}
-                outerRadius={isMobile ? "60%" : 120}
-                cx="50%"
-                cy="50%"
-                fill="#fff"
-              >
-                <Label
-                  content={
-                    extractedMEVByType && (
-                      <CustomLabel
-                        label={
-                          extractedMEVByType[extractedMEVByTypeIndex].label
-                        }
-                        Percentage={
-                          extractedMEVByType[extractedMEVByTypeIndex].Percentage
-                        }
-                        color={colors[extractedMEVByTypeIndex]}
-                      ></CustomLabel>
-                    )
-                  }
-                ></Label>
-              </Pie>
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
-        <div className="bg-brown-700 p-2 md:p-10 mb-5 md:mr-5 mb-5 h-2/5">
           <p className="text-3xl text-white my-0 p-3">MEV by Protocol</p>
-          <ResponsiveContainer width="100%" height={400}>
-            <PieChart width="100%" height={400}>
-              <Legend align={isMobile ? "center" : "left"} />
+          <ResponsiveContainer width="100%" height={450}>
+            <PieChart width="100%" height="100%">
+              <Legend align={isMobile ? "left" : "center"} />
               <Pie
                 activeIndex={extractedMEVByProtocolIndex}
                 activeShape={renderActiveShape}
@@ -363,8 +318,8 @@ const MEVGraphs = () => {
                 data={extractedMEVByProtocol}
                 dataKey="Percentage"
                 nameKey="label"
-                innerRadius={isMobile ? "38%" : 100}
-                outerRadius={isMobile ? "48%" : 120}
+                innerRadius={isMobile ? "38%" : 130}
+                outerRadius={isMobile ? "48%" : 150}
                 fill="#8884d8"
               >
                 <Label
@@ -380,6 +335,52 @@ const MEVGraphs = () => {
                             .Percentage
                         }
                         color={colors[extractedMEVByProtocolIndex]}
+                      ></CustomLabel>
+                    )
+                  }
+                ></Label>
+              </Pie>
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div className="bg-brown-700 p-2 md:p-10 mb-5 md:mr-5 mb-5 h-2/5">
+          <p className="text-3xl text-white my-0 p-3">MEV by types</p>
+          <ResponsiveContainer
+            width="100%"
+            height={450}
+            className="mb-10 md:mb-0"
+          >
+            <PieChart
+              width="100%"
+              height="100%"
+              margin={{ top: 0, left: 20, right: 20, bottom: 40 }}
+            >
+              <Legend align={isMobile ? "left" : "center"} />
+              <Pie
+                activeIndex={extractedMEVByTypeIndex}
+                activeShape={renderActiveShape}
+                onMouseEnter={onMEVByTypePieEnter}
+                data={extractedMEVByType}
+                dataKey="Percentage"
+                nameKey="label"
+                innerRadius={isMobile ? "50%" : 130}
+                outerRadius={isMobile ? "60%" : 150}
+                cx="50%"
+                cy="50%"
+                fill="#fff"
+              >
+                <Label
+                  content={
+                    extractedMEVByType && (
+                      <CustomLabel
+                        label={
+                          extractedMEVByType[extractedMEVByTypeIndex].label
+                        }
+                        Percentage={
+                          extractedMEVByType[extractedMEVByTypeIndex].Percentage
+                        }
+                        color={colors[extractedMEVByTypeIndex]}
                       ></CustomLabel>
                     )
                   }

@@ -22,12 +22,10 @@ const Title = () => {
           <br />
           <span>to yield ALPHA</span>
         </p>
-        <p className="text-justify text-brown-100 my-10 leading-8">
-          <b>
-            ACY invents flash arbitrage, a program executed in each transaction
-            inside the protocol. In this new world created by ACY, investors
-            will always win the games.
-          </b>
+        <p className="text-justify text-xl w-100 xl:w-4/6 text-brown-100 my-10 leading-10">
+          ACY invents flash arbitrage, a program executed in each transaction
+          inside the protocol. In this new world created by ACY, investors will
+          always win the games.
         </p>
       </div>
     </div>
