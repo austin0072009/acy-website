@@ -308,7 +308,7 @@ const MEVGraphs = () => {
         </div>
         <div className="bg-brown-700 p-2 md:p-10 mb-5 md:mr-5 h-2/5">
           <p className="text-3xl text-white my-0 p-3">MEV by Protocol</p>
-          <ResponsiveContainer width="100%" height={450}>
+          <ResponsiveContainer width="100%" height={400}>
             <PieChart width="100%" height="100%">
               <Legend align={isMobile ? "left" : "center"} />
               <Pie
@@ -318,7 +318,7 @@ const MEVGraphs = () => {
                 data={extractedMEVByProtocol}
                 dataKey="Percentage"
                 nameKey="label"
-                innerRadius={isMobile ? "38%" : 130}
+                innerRadius={isMobile ? "33%" : 110}
                 outerRadius={isMobile ? "48%" : 150}
                 fill="#8884d8"
               >
@@ -348,7 +348,7 @@ const MEVGraphs = () => {
           <p className="text-3xl text-white my-0 p-3">MEV by types</p>
           <ResponsiveContainer
             width="100%"
-            height={450}
+            height={400}
             className="mb-10 md:mb-0"
           >
             <PieChart
@@ -364,8 +364,8 @@ const MEVGraphs = () => {
                 data={extractedMEVByType}
                 dataKey="Percentage"
                 nameKey="label"
-                innerRadius={isMobile ? "50%" : 130}
-                outerRadius={isMobile ? "60%" : 150}
+                innerRadius={isMobile ? "40%" : 110}
+                outerRadius={isMobile ? "53%" : 150}
                 cx="50%"
                 cy="50%"
                 fill="#fff"

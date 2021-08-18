@@ -7,6 +7,10 @@ const Header = () => {
         src={logo}
         style={{ width: "10%", minWidth: "80px", maxWidth: "100px" }}
         alt="logo"
+        className="cursor-pointer"
+        onClick={() => {
+          window.location.href = "/";
+        }}
       />
     </nav>
   );
