@@ -30,59 +30,21 @@ const NoBots = () => {
   let [totalExtractedMEV, setTotalExtractedMEV] = useState(0);
   let [loadedTotalExtractedMEV, setLoadedTotalExtractedMEV] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get(
-        "/api/mev/api/public/dashboard/72e207c3-4d8e-450e-a820-fb02e29fec5a/card/32"
-      )
-      .then((data) => {
-        setLoadedTotalExtractedMEV(true);
-        setTotalExtractedMEV(data.data.data.rows[0][0]);
-      })
-      .catch((e) => {
-        console.log(`An error occured: ${e}`);
-      });
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className="my-10">
-      <p className="text-white text-3xl">
-        ACY Finance protects the investors against the invading of kinds of
-        robots
-      </p>
       <br />
       <div className="flex flex-col md:flex-row justify-around">
-        <div className="flex flex-col justify-around order-1 md:w-1/3">
+        <div className="flex flex-col justify-around order-1 md:w-2/5">
           {infos[0]}
           {infos[1]}
         </div>
-        <div className="flex justify-center items-center order-3 md:order-2 md:w-1/3 p-10">
-          <img className="w-3/4" src={protest} alt="NoBot" />
-        </div>
-        <div className="flex flex-col justify-around order-2 md:order-3 md:w-1/3">
+        <div className="flex flex-col justify-around order-2 md:order-3 md:w-2/5">
           {infos[2]}
           {infos[3]}
         </div>
       </div>
-      <p className="text-white text-xl">
-        MEV Robots have been extracting profit from the traders and providers up
-        to &nbsp;&nbsp;
-        <span
-          className="text-2xl lg:text-3xl xl:text-5xl align-middle"
-          style={{ color: "#cf6335" }}
-        >
-          ${" "}
-          {(loadedTotalExtractedMEV && (
-            <CountUp
-              end={totalExtractedMEV && totalExtractedMEV / 1000000}
-              decimals={3}
-              duration={2.75}
-            />
-          )) ||
-            0}{" "}
-          M
-        </span>
-      </p>
     </div>
   );
 };

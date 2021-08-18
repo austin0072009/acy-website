@@ -5,6 +5,7 @@ import VideoPanel from "./VideoPanel";
 import NoBots from "./NoBots";
 import MEVGraphs from "./MEVGraphs";
 import Footer from "./Footer";
+import Title from "./Title";
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   NoBots,
   MEVGraphs,
   Footer,
+  Title,
 };
