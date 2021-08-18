@@ -3,6 +3,9 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
+  corePlugins: {
+    preflight: false,
+  },
   theme: {
     extend: {
       backgroundImage: (theme) => ({
@@ -16,7 +19,7 @@ module.exports = {
           400: "#373739",
           600: "#2a292e",
           700: "#212123",
-          800: "#100201",
+          800: "#211c1e",
         },
         orange: "#ea5c1f",
       },

@@ -1,8 +1,5 @@
-import { NoBotItem } from "../subcomponents";
-import protest from "../assets/protest.png";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import CountUp from "react-countup";
+import { NoBotItem } from "../atoms";
+import { useEffect } from "react";
 
 const NoBots = () => {
   let botInfoList = [
@@ -26,9 +23,6 @@ const NoBots = () => {
   let infos = botInfoList.map((item, index) => (
     <NoBotItem title={item[0]} content={item[1]} />
   ));
-
-  let [totalExtractedMEV, setTotalExtractedMEV] = useState(0);
-  let [loadedTotalExtractedMEV, setLoadedTotalExtractedMEV] = useState(null);
 
   useEffect(() => {}, []);
 

@@ -2,8 +2,8 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <nav className="flex justify-start max-h-12 px-4 sm:px-10 lg:px-20 xl:px-48">
-      <img className="object-left object-contain" src={logo} alt="logo" />
+    <nav className="max-h-12 mx-2 sm:mx-5 lg:mx-10 xl:mx-20 px-2 sm:px-5 xl:px-20 lg:px-10 overflow-hidden">
+      <img src={logo} style={{ maxWidth: "8%" }} alt="logo" />
     </nav>
   );
 };

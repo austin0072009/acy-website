@@ -290,8 +290,8 @@ const MEVGraphs = () => {
           <p className="text-3xl text-white mb-5">
             <b>Total extracted MEV</b>
           </p>
-          <p
-            className="text-2xl lg:text-3xl xl:text-5xl text-center font-semibold"
+          <h1
+            className="text-4xl lg:text-6xl xl:text-7xl text-center font-semibold"
             style={{ color: "#cf6335" }}
           >
             $
@@ -304,7 +304,7 @@ const MEVGraphs = () => {
             )) ||
               0}{" "}
             M
-          </p>
+          </h1>
         </div>
         <div className="bg-brown-700 p-2 md:p-10 mb-5 md:mr-5 h-2/5">
           <p className="text-3xl text-white mb-5 p-3">MEV by types</p>

@@ -1,5 +1,3 @@
-import { VideoDescription, Video } from ".";
-
 export const VideoPanel = () => {
   return (
     <div className="rounded-md my-4">
