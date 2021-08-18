@@ -27,7 +27,7 @@ const NoBots = () => {
   useEffect(() => {}, []);
 
   return (
-    <div className="my-10">
+    <div className="mt-5 mb-1">
       <br />
       <div className="flex flex-col md:flex-row justify-around">
         <div className="flex flex-col justify-around order-1 md:w-2/5">

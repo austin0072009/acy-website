@@ -32,6 +32,7 @@ module.exports = {
   variants: {
     extend: {
       grayscale: ["hover", "focus"],
+      brightness: ["hover"],
     },
   },
   plugins: [

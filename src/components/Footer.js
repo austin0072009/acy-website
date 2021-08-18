@@ -34,9 +34,9 @@ const Footer = () => {
   };
   return (
     <div className="bg-brown-800 p-5">
-      <div className="flex justify-center">
+      <div className="flex justify-start md:justify-center">
         <div className="px-0 lg:pl-10 h-1/2">
-          <div className="flex justify-between text-brown-100 p-3 h-full">
+          <div className="flex flex-col md:flex-row justify-between text-brown-100 p-3 h-full">
             <span className="my-3 mx-3 px-3 hover:underline">
               <Link
                 to="/"
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-start">
           {list.map((item) => (
             <LogoText
               key={item[0]}
