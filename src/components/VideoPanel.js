@@ -5,11 +5,12 @@ export const VideoPanel = () => {
         <iframe
           style={{
             width: "100%",
-            height: "70vh",
+            height: "80vh",
           }}
           className="rounded-md"
-          src="https://api.acy.finance/app.html"
+          src="http://localhost:3001/app.html"
           title="ACY"
+          frameBorder="0"
         ></iframe>
         <div
           style={{
