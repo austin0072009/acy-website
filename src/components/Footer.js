@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="flex justify-start md:justify-center">
         <div className="px-0 lg:pl-10 h-1/2">
           <div className="flex flex-col md:flex-row justify-between p-3 h-full">
-            <ACYLink url="/about-us">ABOUT US</ACYLink>
+            <ACYLink url="/about-us">ABOUT</ACYLink>
             <ACYLink url="/terms-of-use">TERMS</ACYLink>
             <ACYLink url="/privacy-policy">PRIVACY</ACYLink>
             <ACYLink url="/cookie-policy">COOKIE</ACYLink>
