@@ -23,8 +23,6 @@ Cookies can help us recognize your browser and link your account with it, should
 
 The length of time a cookie will stay on your browsing device depends on whether it is a “persistent” or “session” cookie. Session cookies will only stay on your device until you stop browsing. Persistent cookies stay on your browsing device after you have finished browsing until they expire or are deleted.
 
-注：我们的cookie有没有具体时限？如果有的话，需要改一下这段。有的网站是保留server log 最多90天。
-
  
 
 ## Third-party cookies

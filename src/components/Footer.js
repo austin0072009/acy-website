@@ -9,9 +9,7 @@ import forum from "../assets/forum_hover.png";
 import github from "../assets/github_hover.png";
 import gitbook from "../assets/gitbook_hover.png";
 import support from "../assets/support.png";
-import { LogoText } from "../atoms";
-import { Link } from "react-router-dom";
-import { animateScroll as scroll } from "react-scroll";
+import { LogoText, ACYLink } from "../atoms";
 
 const Footer = () => {
   let list = [
@@ -27,64 +25,15 @@ const Footer = () => {
     [medium, "Medium", "https://www.medium.com/acy-finance"],
   ];
 
-  let anchorStyle = {
-    textDecoration: "none",
-    color: "#fbfbfc",
-    fontWeight: 500,
-  };
   return (
     <div className="bg-brown-800 p-5">
       <div className="flex justify-start md:justify-center">
         <div className="px-0 lg:pl-10 h-1/2">
-          <div className="flex flex-col md:flex-row justify-between text-brown-100 p-3 h-full">
-            <span className="my-3 mx-3 px-3 hover:underline">
-              <Link
-                to="/"
-                onClick={() => {
-                  scroll.scrollToTop();
-                }}
-                style={anchorStyle}
-                className="text-brown-250"
-              >
-                ABOUT US
-              </Link>
-            </span>
-            <span className="my-3 mx-3 px-3 hover:underline">
-              <Link
-                to="/terms-of-use"
-                onClick={() => {
-                  scroll.scrollToTop();
-                }}
-                className="text-brown-250"
-                style={anchorStyle}
-              >
-                TERMS
-              </Link>
-            </span>
-            <span className="my-3 mx-3 px-3 hover:underline">
-              <Link
-                to="/privacy-policy"
-                onClick={() => {
-                  scroll.scrollToTop();
-                }}
-                className="text-brown-250"
-                style={anchorStyle}
-              >
-                PRIVACY
-              </Link>
-            </span>
-            <span className="my-3 mx-3 px-3 hover:underline">
-              <Link
-                to="/cookie-policy"
-                onClick={() => {
-                  scroll.scrollToTop();
-                }}
-                className="text-brown-250"
-                style={anchorStyle}
-              >
-                COOKIE
-              </Link>
-            </span>
+          <div className="flex flex-col md:flex-row justify-between p-3 h-full">
+            <ACYLink url="/about-us">ABOUT US</ACYLink>
+            <ACYLink url="/terms-of-use">TERMS</ACYLink>
+            <ACYLink url="/privacy-policy">PRIVACY</ACYLink>
+            <ACYLink url="/cookie-policy">COOKIE</ACYLink>
           </div>
         </div>
       </div>

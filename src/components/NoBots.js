@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const NoBots = () => {
   let botInfoList = [
     [
-      "Market making robots",
+      "Market-making robots",
       "The robots places limit orders just outside the current buy and sell prices attempting to profit the spread of the two orders. They place buy & sell orders at the same time in a neutral market and place buy first & sell later orders for an uptrending market.",
     ],
     [

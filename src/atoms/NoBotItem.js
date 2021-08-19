@@ -11,16 +11,16 @@ const NoBotItem = ({ title, content }) => {
         setActive(false);
       }}
     >
-      <div className="flex flex-col text-white">
-        <h2
-          className={`text-3xl mb-3 pl-3 ${
+      <div className="flex flex-col text-white ">
+        <p
+          className={`text-4xl mb-3 font-semibold pl-3 ${
             active ? "line-through text-orange" : ""
           }`}
         >
-          <b>{title}</b>
-        </h2>
+          {title}
+        </p>
         <p
-          className={`text-sm p-3 ${
+          className={`text-sm p-3 leading-6 rounded-md ${
             active ? "text-white bg-orange" : "text-white"
           } `}
         >

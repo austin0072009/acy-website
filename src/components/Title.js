@@ -16,16 +16,18 @@ const Title = () => {
       style={style}
     >
       <div className="w-full md:w-1/2">
-        <p className="text-3xl md:text-4xl lg:text-5xl lg:leading-normal text-white my-10 ">
+        <p className="text-3xl md:text-4xl lg:text-6xl lg:leading-normal text-white my-10 ">
           <span>ACY Finance is</span> <br />
           <span>a deep integrated DEX</span>
           <br />
           <span>to yield ALPHA</span>
         </p>
-        <p className="text-justify text-xl w-100 xl:w-4/6 text-brown-100 my-10 leading-10">
-          ACY invents flash arbitrage, a program executed in each transaction
-          inside the protocol. In this new world created by ACY, investors will
-          always win the games.
+        <p className="text-justify text-xl w-100 xl:w-5/6 text-brown-100 my-10 leading-10">
+          ACY invents flash arbitrage which is a multi-route arbitrage program
+          executed within each transaction inside the protocol. The smart
+          contracts of ACY Finance solve the robot-exploiting problems to a
+          great extent so that all the users can automatically profit from the
+          arbitage and reduce the slippage.
         </p>
       </div>
     </div>

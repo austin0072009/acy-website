@@ -13,6 +13,7 @@ module.exports = {
       }),
       colors: {
         brown: {
+          50: "#de5b24",
           100: "#b3b3b3",
           200: "#bea48b",
           300: "#504f54",
@@ -41,7 +42,7 @@ module.exports = {
         ".line-through": {
           textDecoration: "line-through",
           "text-decoration-color": "#ea5c1f",
-          "text-decoration-thickness": "2px",
+          "text-decoration-thickness": "3px",
         },
       };
       addUtilities(extendLineThrough);
