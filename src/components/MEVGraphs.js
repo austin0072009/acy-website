@@ -285,13 +285,13 @@ const MEVGraphs = () => {
 
   return (
     <div className="ox-0 flex flex-col md:flex-row w-full mb-20">
-      <div className="flex flex-col w-full md:w-1/2 justify-between">
-        <div className="bg-brown-700 p-5 md:p-10 mb-5 md:mr-5 ">
-          <p className="text-3xl text-white mb-5">
+      <div className="flex flex-col w-full md:w-2/5 justify-between">
+        <div className="bg-brown-700 p-2 sm:p-5 md:p-8 mb-5 md:mr-5 ">
+          <p className="text-xl md:text-2xl lg:text-3xl text-white my-0">
             <b>Total extracted MEV</b>
           </p>
           <h1
-            className="text-4xl lg:text-6xl xl:text-7xl text-center font-semibold"
+            className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-semibold"
             style={{ color: "#cf6335" }}
           >
             $
@@ -306,20 +306,18 @@ const MEVGraphs = () => {
             M
           </h1>
         </div>
-        <div className="bg-brown-700 p-2 md:p-10 mb-5 md:mr-5 h-2/5">
+        <div className="bg-brown-700 p-2 sm:p-3 md:p-8 mb-5 md:mr-5 h-2/5">
           <p className="text-3xl text-white my-0 p-3">MEV by Protocol</p>
-          <ResponsiveContainer width="100%" height={400}>
+          <ResponsiveContainer width="100%" height={300}>
             <PieChart width="100%" height="100%">
               <Legend align={isMobile ? "left" : "center"} />
               <Pie
-                activeIndex={extractedMEVByProtocolIndex}
-                activeShape={renderActiveShape}
                 onMouseEnter={onMEVByProtocolPieEnter}
                 data={extractedMEVByProtocol}
                 dataKey="Percentage"
                 nameKey="label"
-                innerRadius={isMobile ? "33%" : 110}
-                outerRadius={isMobile ? "48%" : 150}
+                innerRadius={isMobile ? "60%" : 90}
+                outerRadius={isMobile ? "75%" : 120}
                 fill="#8884d8"
               >
                 <Label
@@ -344,28 +342,22 @@ const MEVGraphs = () => {
           </ResponsiveContainer>
         </div>
 
-        <div className="bg-brown-700 p-2 md:p-10 mb-5 md:mr-5 mb-5 h-2/5">
+        <div className="bg-brown-700 p-2 sm:p-3 md:p-8 mb-5 md:mr-5 mb-5 h-2/5">
           <p className="text-3xl text-white my-0 p-3">MEV by types</p>
           <ResponsiveContainer
             width="100%"
-            height={400}
+            height={300}
             className="mb-10 md:mb-0"
           >
-            <PieChart
-              width="100%"
-              height="100%"
-              margin={{ top: 0, left: 20, right: 20, bottom: 40 }}
-            >
+            <PieChart width="100%" height="100%">
               <Legend align={isMobile ? "left" : "center"} />
               <Pie
-                activeIndex={extractedMEVByTypeIndex}
-                activeShape={renderActiveShape}
                 onMouseEnter={onMEVByTypePieEnter}
                 data={extractedMEVByType}
                 dataKey="Percentage"
                 nameKey="label"
-                innerRadius={isMobile ? "40%" : 110}
-                outerRadius={isMobile ? "53%" : 150}
+                innerRadius={isMobile ? "60%" : 90}
+                outerRadius={isMobile ? "75%" : 120}
                 cx="50%"
                 cy="50%"
                 fill="#fff"
@@ -392,7 +384,7 @@ const MEVGraphs = () => {
       </div>
 
       <div
-        className="flex flex-col w-full md:w-1/2 justify-between"
+        className="flex flex-col w-full md:w-3/5 justify-between"
         style={{ minHeight: "400px" }}
       >
         <div className="bg-brown-700 p-5 mb-5 h-1/2">
