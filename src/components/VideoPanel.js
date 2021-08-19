@@ -1,3 +1,4 @@
+import { isMobile } from "react-device-detect";
 export const VideoPanel = () => {
   return (
     <div className="rounded-xl my-4">
@@ -6,6 +7,7 @@ export const VideoPanel = () => {
           style={{
             width: "100%",
             height: "100vh",
+            maxHeight: isMobile ? "700px" : "1000px",
           }}
           className="rounded-xl"
           src="https://api.acy.finance/app.html"
