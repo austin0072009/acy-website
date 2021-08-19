@@ -10,7 +10,7 @@ export const VideoPanel = () => {
             maxHeight: isMobile ? "700px" : "1000px",
           }}
           className="rounded-xl"
-          src="http://localhost:3001/app.html"
+          src="https://api.acy.finance/app.html"
           title="ACY"
           frameBorder="0"
         ></iframe>
