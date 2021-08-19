@@ -8,7 +8,7 @@ export const VideoPanel = () => {
             height: "80vh",
           }}
           className="rounded-md"
-          src="http://localhost:3001/app.html"
+          src="https://api.acy.finance/app.html"
           title="ACY"
           frameBorder="0"
         ></iframe>
