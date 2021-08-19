@@ -4,7 +4,7 @@ const Title = () => {
   let style = {
     backgroundImage: `url(${main_panel_bg})`,
     backgroundSize: "contain",
-    backgroundPosition: isMobile ? "5vw 0" : "15vw 2vw",
+    backgroundPosition: isMobile ? "top right" : "bottom right",
     backgroundRepeat: "no-repeat",
     minHeight: "40vw",
   };
@@ -12,11 +12,11 @@ const Title = () => {
   console.log(style);
   return (
     <div
-      className="mx-2 sm:mx-5 lg:mx-10 xl:mx-20 px-2 sm:px-5 xl:px-20 lg:px-10 pt-20"
+      className="mx-2 sm:mx-5 lg:mx-10 xl:mx-12 px-2 sm:px-5 xl:px-12 lg:px-8 pt-20"
       style={style}
     >
-      <div className="w-full md:w-1/2">
-        <p className="text-3xl md:text-4xl lg:text-6xl lg:leading-normal text-white my-10 ">
+      <div className="w-full md:w-3/5">
+        <p className="text-3xl md:text-4xl lg:text-5xl lg:leading-normal text-white my-10 ">
           <span>ACY Finance is</span> <br />
           <span>a deep integrated DEX</span>
           <br />

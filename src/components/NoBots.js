@@ -29,15 +29,11 @@ const NoBots = () => {
   return (
     <div className="mt-5 mb-1">
       <br />
-      <div className="flex flex-col md:flex-row justify-around">
-        <div className="flex flex-col justify-around order-1 md:w-2/5">
-          {infos[0]}
-          {infos[1]}
-        </div>
-        <div className="flex flex-col justify-around order-2 md:order-3 md:w-2/5">
-          {infos[2]}
-          {infos[3]}
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        {infos[0]}
+        {infos[1]}
+        {infos[2]}
+        {infos[3]}
       </div>
     </div>
   );

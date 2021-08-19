@@ -14,7 +14,7 @@ const Main = () => {
     <div style={{ backgroundColor: "#2a292e" }}>
       <Header></Header>
       <Title></Title>
-      <div className="mx-2 sm:mx-5 lg:mx-10 xl:mx-20 px-2 sm:px-5 xl:px-20 lg:px-10">
+      <div className="mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8">
         <VideoPanel></VideoPanel>
         <NoBots></NoBots>
         <MEVGraphs></MEVGraphs>
