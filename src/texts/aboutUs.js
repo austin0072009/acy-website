@@ -1,8 +1,6 @@
 const aboutUs = `
 # ACY Finance 
 
-## ABOUT US
-
 
 ACY invents **flash arbitrage** which is a **multi-route arbitrage program** executed within each transaction inside the protocol. The smart contracts of ACY Finance solve the robot-exploiting problems to a great extent so that all the users can automatically profit from the arbitrage and reduce the slippage.
 

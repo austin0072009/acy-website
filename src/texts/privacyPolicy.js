@@ -9,8 +9,6 @@ ACY and its affiliates (hereinafter, “**ACY**”, "**the Company**", "**we**",
 
  
 
-注：以下这段内容需要等我们的具体政策出来了再补上
-
 If you reside within the European Union (EU), European Economic Area (EEA), or Switzerland, ACY will be the data controller responsible for processing Your Information. See the Contact section of this Privacy Policy for details.
 
 This Privacy Policy applies to the operations of ACY in the European Economic Area (EEA). It gives you rights by operation of the EU GDPR. If you live outside the EEA, ACY will undertake best efforts to give you a similar degree of control over your privacy.
@@ -104,8 +102,6 @@ We take reasonable steps to protect your Personal Information from misuse, loss,
 ## Retention of Personal Information
 
 We will hold your Personal Information only for as long as it is necessary for us to do so, having regard to the purposes described in this Privacy Policy and our own legal and regulatory requirements. In general, Personal Information relating to your Account for at least a period of 5 years after your Account is closed. Similarly, we usually retain information about Transactions on your Account for a period of 5 years from the date of the Transaction. Personal Information which is collected for other purposes will be discarded inn accordance with our policies in place from time to time.
-
-注：时长可参考他们定为5年，需要敲定
 
  
 
