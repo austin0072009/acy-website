@@ -29,7 +29,7 @@ const NoBots = () => {
   return (
     <div className="mt-5 mb-1">
       <br />
-      <div class="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {infos[0]}
         {infos[1]}
         {infos[2]}

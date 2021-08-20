@@ -4,7 +4,7 @@ import { MdTextField } from "../components";
 
 const Cookie = () => {
   return (
-    <div style={{ backgroundColor: "#2a292e" }}>
+    <div className="relative" style={{ backgroundColor: "#2a292e" }}>
       <Header></Header>
       <MdTextField text={cookiePolicy}></MdTextField>
       <Footer></Footer>

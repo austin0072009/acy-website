@@ -284,193 +284,204 @@ const MEVGraphs = () => {
   }, []);
 
   return (
-    <div className="ox-0 flex flex-col md:flex-row w-full mb-20">
-      <div className="flex flex-col w-full md:w-2/5 justify-between">
-        <div className="bg-brown-700 p-2 sm:p-5 md:p-8 mb-5 md:mr-5 rounded-md">
-          <p className="text-xl lg:text-2xl text-white my-0">
-            Total extracted MEV
-          </p>
-          <h1
-            className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center font-semibold"
-            style={{ color: "#cf6335" }}
-          >
-            $
-            {(loadedTotalExtractedMEV && (
-              <CountUp
-                end={totalExtractedMEV && totalExtractedMEV / 1000000}
-                decimals={3}
-                duration={2.75}
-              />
-            )) ||
-              0}{" "}
-            M
-          </h1>
-        </div>
-        <div className="bg-brown-700 p-2 sm:p-3 md:p-8 mb-5 md:mr-5 h-2/5 rounded-md">
-          <p className="text-xl lg:text-2xl text-white my-0 p-3">
-            MEV by Protocol
-          </p>
-          <ResponsiveContainer width="100%" height={350}>
-            <PieChart width="100%" height="100%">
-              <Legend align="left" wrapperStyle={{ bottom: "0vw" }} />
+    <div className=" mb-20">
+      <div className="px-0 flex flex-col md:flex-row w-full">
+        <div className="flex flex-col w-full md:w-2/5 justify-between">
+          <div className="bg-brown-700 p-2 sm:p-5 md:p-8 mb-5 md:mr-5 rounded-md">
+            <p className="text-xl lg:text-2xl text-white my-0">
+              Total extracted MEV
+            </p>
+            <h1
+              className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center font-semibold"
+              style={{ color: "#cf6335" }}
+            >
+              $
+              {(loadedTotalExtractedMEV && (
+                <CountUp
+                  end={totalExtractedMEV && totalExtractedMEV / 1000000}
+                  decimals={3}
+                  duration={2.75}
+                />
+              )) ||
+                0}{" "}
+              M
+            </h1>
+          </div>
+          <div className="bg-brown-700 p-2 sm:p-3 md:p-8 mb-5 md:mr-5 h-2/5 rounded-md">
+            <p className="text-xl lg:text-2xl text-white my-0 p-3">
+              MEV by Protocol
+            </p>
+            <ResponsiveContainer width="100%" height={350}>
+              <PieChart width="100%" height="100%">
+                <Legend align="left" wrapperStyle={{ bottom: "0vw" }} />
 
-              <Pie
-                onMouseEnter={onMEVByProtocolPieEnter}
-                data={extractedMEVByProtocol}
-                dataKey="Percentage"
-                nameKey="label"
-                innerRadius={isMobile ? "60%" : 90}
-                outerRadius={isMobile ? "75%" : 120}
-                fill="#8884d8"
-              >
-                <Label
-                  content={
-                    extractedMEVByProtocol && (
-                      <CustomLabel
-                        label={
-                          extractedMEVByProtocol[extractedMEVByProtocolIndex]
-                            .label
-                        }
-                        Percentage={
-                          extractedMEVByProtocol[extractedMEVByProtocolIndex]
-                            .Percentage
-                        }
-                        color={colors[extractedMEVByProtocolIndex]}
-                      ></CustomLabel>
-                    )
-                  }
-                ></Label>
-              </Pie>
-            </PieChart>
-          </ResponsiveContainer>
+                <Pie
+                  onMouseEnter={onMEVByProtocolPieEnter}
+                  data={extractedMEVByProtocol}
+                  dataKey="Percentage"
+                  nameKey="label"
+                  innerRadius={isMobile ? "60%" : 90}
+                  outerRadius={isMobile ? "75%" : 120}
+                  fill="#8884d8"
+                >
+                  <Label
+                    content={
+                      extractedMEVByProtocol && (
+                        <CustomLabel
+                          label={
+                            extractedMEVByProtocol[extractedMEVByProtocolIndex]
+                              .label
+                          }
+                          Percentage={
+                            extractedMEVByProtocol[extractedMEVByProtocolIndex]
+                              .Percentage
+                          }
+                          color={colors[extractedMEVByProtocolIndex]}
+                        ></CustomLabel>
+                      )
+                    }
+                  ></Label>
+                </Pie>
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="bg-brown-700 p-2 sm:p-3 md:p-8 mb-5 md:mr-5 mb-5 h-2/5  rounded-md">
+            <p className="text-xl lg:text-2xl text-white my-0 p-3">
+              MEV by types
+            </p>
+            <ResponsiveContainer
+              width="100%"
+              height={350}
+              className="mb-10 md:mb-0"
+            >
+              <PieChart width="100%" height="100%">
+                <Legend align="left" wrapperStyle={{ bottom: "0vw" }} />
+                <Pie
+                  onMouseEnter={onMEVByTypePieEnter}
+                  data={extractedMEVByType}
+                  dataKey="Percentage"
+                  nameKey="label"
+                  innerRadius={isMobile ? "60%" : 90}
+                  outerRadius={isMobile ? "75%" : 120}
+                  cx="50%"
+                  cy="50%"
+                  fill="#fff"
+                >
+                  <Label
+                    content={
+                      extractedMEVByType && (
+                        <CustomLabel
+                          label={
+                            extractedMEVByType[extractedMEVByTypeIndex].label
+                          }
+                          Percentage={
+                            extractedMEVByType[extractedMEVByTypeIndex]
+                              .Percentage
+                          }
+                          color={colors[extractedMEVByTypeIndex]}
+                        ></CustomLabel>
+                      )
+                    }
+                  ></Label>
+                </Pie>
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
         </div>
-        <div className="bg-brown-700 p-2 sm:p-3 md:p-8 mb-5 md:mr-5 mb-5 h-2/5  rounded-md">
-          <p className="text-xl lg:text-2xl text-white my-0 p-3">
-            MEV by types
-          </p>
-          <ResponsiveContainer
-            width="100%"
-            height={350}
-            className="mb-10 md:mb-0"
-          >
-            <PieChart width="100%" height="100%">
-              <Legend align="left" wrapperStyle={{ bottom: "0vw" }} />
-              <Pie
-                onMouseEnter={onMEVByTypePieEnter}
-                data={extractedMEVByType}
-                dataKey="Percentage"
-                nameKey="label"
-                innerRadius={isMobile ? "60%" : 90}
-                outerRadius={isMobile ? "75%" : 120}
-                cx="50%"
-                cy="50%"
-                fill="#fff"
-              >
-                <Label
-                  content={
-                    extractedMEVByType && (
-                      <CustomLabel
-                        label={
-                          extractedMEVByType[extractedMEVByTypeIndex].label
-                        }
-                        Percentage={
-                          extractedMEVByType[extractedMEVByTypeIndex].Percentage
-                        }
-                        color={colors[extractedMEVByTypeIndex]}
-                      ></CustomLabel>
-                    )
-                  }
-                ></Label>
-              </Pie>
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
 
-      <div
-        className="flex flex-col w-full md:w-3/5 justify-between"
-        style={{ minHeight: "400px" }}
-      >
-        <div className="bg-brown-700 p-5 mb-5 h-1/2 rounded-md">
-          <p className="text-2xl text-white my-1">
-            Culmulative extracted MEV ($)
-          </p>
+        <div
+          className="flex flex-col w-full md:w-3/5 justify-between"
+          style={{ minHeight: "400px" }}
+        >
+          <div className="bg-brown-700 p-5 mb-5 h-1/2 rounded-md">
+            <p className="text-2xl text-white my-1">
+              Culmulative extracted MEV ($)
+            </p>
 
-          <ResponsiveContainer
-            width="100%"
-            height="100%"
-            minHeight="500px"
-            className="mb-10 md:mb-0"
-          >
-            <AreaChart
+            <ResponsiveContainer
               width="100%"
               height="100%"
-              data={cumulativeExtractedMEV}
-              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+              minHeight="500px"
+              className="mb-10 md:mb-0"
             >
-              <defs>
-                <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#FFE46D" stopOpacity={0.8} />
-                  <stop offset="95%" stopColor="#FF8A25" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-              <XAxis dataKey={cumulativeExtractedMEVXAxisName} />
-              <YAxis
-                tickFormatter={(tick) => {
-                  return `${parseInt(tick / 1000000)} M`;
-                }}
-              />
-              <Tooltip content={renderTooltip} />
-              <Area
-                type="monotone"
-                dataKey={cumulativeExtractedMEVYAxisName}
-                stroke="white"
-                strokeWidth={0.2}
-                fillOpacity={1}
-                fill="url(#colorUv)"
-              />
-            </AreaChart>
-          </ResponsiveContainer>
-        </div>
-        <div className="bg-brown-700 p-5 mb-5 h-1/2 rounded-md">
-          <p className="text-2xl text-white my-1">Daily extracted MEV ($)</p>
-          <ResponsiveContainer
-            width="100%"
-            height="100%"
-            minHeight="500px"
-            className="mb-10 md:mb-0"
-          >
-            <AreaChart
+              <AreaChart
+                width="100%"
+                height="100%"
+                data={cumulativeExtractedMEV}
+                margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+              >
+                <defs>
+                  <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#FFE46D" stopOpacity={0.8} />
+                    <stop offset="95%" stopColor="#FF8A25" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <XAxis dataKey={cumulativeExtractedMEVXAxisName} />
+                <YAxis
+                  tickFormatter={(tick) => {
+                    return `${parseInt(tick / 1000000)} M`;
+                  }}
+                />
+                <Tooltip content={renderTooltip} />
+                <Area
+                  type="monotone"
+                  dataKey={cumulativeExtractedMEVYAxisName}
+                  stroke="white"
+                  strokeWidth={0.2}
+                  fillOpacity={1}
+                  fill="url(#colorUv)"
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="bg-brown-700 p-5 mb-5 h-1/2 rounded-md">
+            <p className="text-2xl text-white my-1">Daily extracted MEV ($)</p>
+            <ResponsiveContainer
               width="100%"
               height="100%"
-              data={dailyExtractedMEV}
-              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+              minHeight="500px"
+              className="mb-10 md:mb-0"
             >
-              <defs>
-                <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#FFE46D" stopOpacity={0.8} />
-                  <stop offset="95%" stopColor="#FF8A25" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-              <XAxis dataKey={dailyExtractedMEVXAxisName} />
-              <YAxis
-                tickFormatter={(tick) => {
-                  return `${parseInt(tick / 1000000)} M`;
-                }}
-              />
-              <Tooltip content={renderTooltip} />
-              <Area
-                type="monotone"
-                dataKey={dailyExtractedMEVYAxisName}
-                stroke="white"
-                strokeWidth={0.2}
-                fillOpacity={1}
-                fill="url(#colorUv)"
-              />
-            </AreaChart>
-          </ResponsiveContainer>
+              <AreaChart
+                width="100%"
+                height="100%"
+                data={dailyExtractedMEV}
+                margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+              >
+                <defs>
+                  <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#FFE46D" stopOpacity={0.8} />
+                    <stop offset="95%" stopColor="#FF8A25" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <XAxis dataKey={dailyExtractedMEVXAxisName} />
+                <YAxis
+                  tickFormatter={(tick) => {
+                    return `${parseInt(tick / 1000000)} M`;
+                  }}
+                />
+                <Tooltip content={renderTooltip} />
+                <Area
+                  type="monotone"
+                  dataKey={dailyExtractedMEVYAxisName}
+                  stroke="white"
+                  strokeWidth={0.2}
+                  fillOpacity={1}
+                  fill="url(#colorUv)"
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       </div>
+      <small className="text-white">
+        <i>
+          Source: &nbsp;
+          <a className="text-white" href="https://explore.flashbots.net/">
+            explore.flashbots.net/
+          </a>
+        </i>
+      </small>
     </div>
   );
 };

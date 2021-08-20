@@ -17,7 +17,7 @@ const ACYLink = ({ url, children }) => {
     <span className="my-3 mx-3 px-3">
       <Link
         to={url}
-        tabindex="1"
+        tabIndex="1"
         onClick={() => {
           scroll.scrollToTop();
         }}
