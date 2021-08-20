@@ -1,4 +1,5 @@
 import LogoText from "./LogoText";
 import NoBotItem from "./NoBotItem";
 import ACYLink from "./ACYLink";
-export { LogoText, NoBotItem, ACYLink };
+import FloatingReturnButton from "./FloatingReturnButton";
+export { LogoText, NoBotItem, ACYLink, FloatingReturnButton };
