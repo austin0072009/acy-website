@@ -6,6 +6,9 @@ import MEVGraphs from "./MEVGraphs";
 import Footer from "./Footer";
 import Title from "./Title";
 import MdTextField from "./MdTextField";
+import Documentation from "./Documentation";
+import Governance from "./Governance";
+import TabLink from "./TabLink";
 
 export {
   Header,
@@ -16,4 +19,7 @@ export {
   Footer,
   Title,
   MdTextField,
+  Documentation,
+  TabLink,
+  Governance,
 };
