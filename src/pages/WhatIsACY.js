@@ -73,7 +73,7 @@ const WhatIsACY = () => {
     },
   ]);
   return (
-    <div className="pl-5">
+    <div className="pl-0 md:pl-5">
       {data.map((item) => (
         <TopicText
           title={item.title}

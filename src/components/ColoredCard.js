@@ -5,7 +5,7 @@ let shadow = {
 const ColoredCard = ({ title, content }) => {
   return (
     <div className="bg-advantage-bg bg-cover text-white flex justify-center rounded-lg my-10 py-5 shadow-md">
-      <div className="w-2/3 text-center">
+      <div className="w-full md:w-2/3 text-center">
         <h2 style={shadow}>{title}</h2>
         <p className="px-10 text-xl" style={shadow}>
           {content}

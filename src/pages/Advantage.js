@@ -45,8 +45,8 @@ const Advantage = () => {
     },
   ]);
   return (
-    <div className="pl-5">
-      <p className="text-gray-100 text-xl">
+    <div className="pl-0 md:pl-5">
+      <p className="text-gray-100 text-sm md:text-xl">
         The smart contracts of ACY Finance are able to solve the slippage
         problems caused by robots to a great extent. If multi-route arbitrage
         transaction is placed inside the swap, all the users can automatically
@@ -79,7 +79,7 @@ const Advantage = () => {
         />
         Arbitrage supremacy
       </div>
-      <div className="px-20">
+      <div className="px-1 md:px-10 lg:px-20">
         <div className="grid grid-cols-2 gap-x-5 gap-y-5">
           {advantages.map((item) => (
             <TopicTextBordered

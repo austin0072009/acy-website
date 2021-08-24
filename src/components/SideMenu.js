@@ -9,17 +9,13 @@ const SideMenu = ({ title, entries, default_path }) => {
   let location = useLocation();
 
   return (
-    <div
-      className="flex md:flex-col flex-row text-gray-100 px-5"
-      style={{ borderRight: "1px solid #615e63" }}
-    >
+    <div className="flex flex-col text-gray-100 sticky top-0 pr-5">
       <p className="text-4xl">{title}</p>
       {entries.map((item, index) => (
         <Link key={item.link} style={anchorStyle} to={item.link}>
           <div
-            className="pl-8 text-gray-100 my-5 text-2xl hover:text-orange"
+            className="pl-8 text-gray-100 my-5 text-lg md:text-xl lg:text-2xl hover:text-orange"
             style={{
-              minWidth: "200px",
               color:
                 location.pathname === item.link ||
                 (index === 0 && location.pathname === default_path)

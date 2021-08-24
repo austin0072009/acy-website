@@ -1,8 +1,8 @@
 import { MEVGraphs, NoBots } from "../components";
 const MEVRobots = () => {
   return (
-    <div className="pl-5">
-      <p className="text-xl text-gray-100">
+    <div className="pl-0 md:pl-5">
+      <p className="text-sm md:text-xl text-gray-100">
         The problem about AMM are trading slippage and impermanent loss, which
         is embodied in the close relationship between the price fluctuation of
         trading pairs and the volume of liquidity funds. Once liquidity is
@@ -26,7 +26,7 @@ const MEVRobots = () => {
         powerful.
       </p>
       <NoBots></NoBots>
-      <p className="text-xl text-gray-100 mb-10">
+      <p className="text-sm md:text-xl text-gray-100 mb-10">
         In the past, MEV robots were invincible and the interests of users and
         liquidity providers are damaged. Why the MEV robots can exploit the
         value? The essential reason for the on-chain attack lies in the design

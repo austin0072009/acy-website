@@ -1,6 +1,7 @@
 import bullet0 from "../assets/arrow_bullet_orange.png";
 import bullet1 from "../assets/cylinder_bullet.png";
 import planet from "../assets/planet.png";
+import { isMobile } from "react-device-detect";
 
 const TopicText = ({ title, paragraphs, bulletType = 0, useBg = false }) => {
   return (
@@ -21,15 +22,18 @@ const TopicText = ({ title, paragraphs, bulletType = 0, useBg = false }) => {
           className={`${bulletType ? "ml-2" : ""} mr-3`}
         />
         <h2
-          className={bulletType ? "text-xl" : "text-3xl"}
+          className={`text-lg md:${bulletType ? "text-xl" : "text-3xl"}`}
           style={{ color: "#de5b24" }}
         >
           {title}
         </h2>
       </div>
-      <div class="relative ml-3" style={{ zIndex: 1, paddingLeft: 30 }}>
+      <div
+        class="relative ml-0 md:ml-3"
+        style={{ zIndex: 1, paddingLeft: isMobile ? 0 : 30 }}
+      >
         {paragraphs.map((paragraph) => (
-          <p style={{ color: "#B5B6B6" }} className="text-xl">
+          <p style={{ color: "#B5B6B6" }} className="text-sm md:text-xl">
             {paragraph}
           </p>
         ))}

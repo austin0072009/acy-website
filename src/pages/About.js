@@ -21,12 +21,17 @@ const About = () => {
     <div style={{ backgroundColor: "#1B1B1C" }}>
       <Header></Header>
       <div className="mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8">
-        <div className="flex flex-row">
-          <SideMenu
-            title="ABOUT"
-            entries={entries}
-            default_path="/about-us"
-          ></SideMenu>
+        <div className="flex flex-col md:flex-row">
+          <div
+            className="relative flex-none w-1/4"
+            style={{ borderRight: "1px solid #615e63" }}
+          >
+            <SideMenu
+              title="ABOUT"
+              entries={entries}
+              default_path="/about-us"
+            ></SideMenu>
+          </div>
           <Switch>
             <Route exact path={`${match.path}/`}>
               <WhatIsACY />
