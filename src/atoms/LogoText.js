@@ -1,5 +1,5 @@
 import { useState } from "react";
-const LogoText = ({ LogoUrl, text, url = null }) => {
+const LogoText = ({ LogoUrl, text, url = null, children }) => {
   let [active, setActive] = useState(false);
   return (
     <div
@@ -13,12 +13,17 @@ const LogoText = ({ LogoUrl, text, url = null }) => {
       onClick={() => {
         if (url) window.location.href = url;
       }}
-      style={{ maxWidth: "40px" }}
     >
-      <img src={LogoUrl} alt={text} className="py-3 w-10" />
-      <p className={` my-0 ${active ? "text-brown-50" : "text-transparent"}`}>
-        {text}
-      </p>
+      <p className={` my-0 text-brown-50 font-medium text-lg`}>{text}</p>
+      <img
+        src={LogoUrl}
+        alt={text}
+        className="py-3 w-10"
+        style={{ maxWidth: "40px" }}
+      />
+      <span className="brightness-100 text-gray-200 text-xs text-center">
+        {children}
+      </span>
     </div>
   );
 };

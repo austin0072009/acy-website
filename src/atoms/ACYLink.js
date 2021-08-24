@@ -10,11 +10,11 @@ const ACYLink = ({ url, children }) => {
   let anchorStyle = {
     textDecoration: "none",
     fontWeight: 500,
-    color: active || location.pathname === url ? "#de5b24" : "white",
+    color: active || location.pathname === url ? "#de5b24" : "#B5B6B6",
   };
 
   return (
-    <span className="my-3 mx-3 px-3">
+    <span className="text-right sm:ml-10 md:ml-5  ml-2 my-3">
       <Link
         to={url}
         tabIndex="1"

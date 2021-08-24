@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "title-bg": "url('/src/assets/main_panel_bg.png')",
+        "gov-bg": "url('/src/assets/stars.png')",
       }),
       colors: {
         brown: {
@@ -24,6 +25,7 @@ module.exports = {
         },
         gray: {
           100: "#b0adb0",
+          200: "#707070",
         },
         orange: "#ea5c1f",
       },

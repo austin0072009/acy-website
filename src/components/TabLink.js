@@ -1,7 +1,12 @@
 import arrow from "../assets/arrow.png";
-const TabLink = ({ title, content, children }) => {
+const TabLink = ({ title, content, link = "/", children }) => {
   return (
-    <div className="p-5 text-gray-100 rounded-md border-solid border-1 border border-gray-100 rounded-lg relative">
+    <div
+      onClick={() => {
+        window.location.href = link;
+      }}
+      className="p-5 text-gray-100 rounded-md border-solid border-1 border border-gray-100 rounded-lg relative cursor-pointer filter hover:brightness-200"
+    >
       <img
         alt="goto"
         src={arrow}
@@ -10,8 +15,8 @@ const TabLink = ({ title, content, children }) => {
       />
       <div className="flex flex-col items-center">
         <h2>{title}</h2>
-        {children}
-        <div className="px-10">
+        <div className="hover:brightness-50">{children}</div>
+        <div className="px-5 lg:px-10">
           <p>{content}</p>
         </div>
       </div>

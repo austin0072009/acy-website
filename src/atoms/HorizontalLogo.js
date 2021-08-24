@@ -6,7 +6,7 @@ const HorizontalLogo = ({ src, src_hover, logoText }) => {
       <div className="flex items-center justify-center">
         <img
           className="mr-2"
-          src={active ? src_hover : src}
+          src={src}
           style={{ maxWidth: "40px", height: 40 }}
           onMouseEnter={() => {
             setActive(true);

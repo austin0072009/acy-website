@@ -8,8 +8,11 @@ import hgitbook from "../assets/gitbook_hover.png";
 import github from "../assets/github.png";
 import hgithub from "../assets/github_hover.png";
 import arrowBullet from "../assets/arrow_bullet.png";
+import { useMediaPredicate } from "react-media-hook";
 
 const Documentation = () => {
+  let smallerThan568 = useMediaPredicate("(max-width: 567px)");
+
   let data = useMemo(() => [
     {
       title: "What is ACY Finance",
@@ -20,6 +23,7 @@ const Documentation = () => {
       logoText: "Litepaper",
       src: litepaper,
       src_hover: hlitepaper,
+      link: "/",
     },
     {
       title: "Guides, Rules and FAQs",
@@ -30,6 +34,7 @@ const Documentation = () => {
       logoText: "GitBook",
       src: gitbook,
       src_hover: hgitbook,
+      link: "https://acy-finance.gitbook.io/acy-finance/",
     },
     {
       title: "Smart contract overview",
@@ -40,22 +45,28 @@ const Documentation = () => {
       logoText: "GitHub",
       src: github,
       src_hover: hgithub,
+      link: "https://github.com/ACY-Labs",
     },
   ]);
   return (
-    <div>
-      <div className="flex items-center text-gray-100 mb-3">
+    <div className="my-20">
+      <div className="flex items-center text-gray-100 mb-5">
         <img
           src={arrowBullet}
           style={{ maxWidth: 40 }}
           alt="arrow"
           className="mr-3"
         />
-        <span className="text-2xl font-medium">DOCUMENTATION</span>
+        <span
+          className="font-medium"
+          style={{ fontSize: smallerThan568 ? 20 : 32 }}
+        >
+          DOCUMENTATION
+        </span>
       </div>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-x-5">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0">
         {data.map((item) => (
-          <TabLink title={item.title} content={item.content}>
+          <TabLink title={item.title} content={item.content} link={item.link}>
             <HorizontalLogo
               src={item.src}
               src_hover={item.src_hover}

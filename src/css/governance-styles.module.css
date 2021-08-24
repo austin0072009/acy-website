@@ -1,0 +1,17 @@
+.gov .ColoredTabTitle {
+  font-size: 32px;
+}
+
+.gov .ColoredTabContent {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .gov .ColoredTabTitle {
+    font-size: 20px;
+  }
+
+  .gov .ColoredTabContent {
+    font-size: 16px;
+  }
+}
