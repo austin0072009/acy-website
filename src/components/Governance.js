@@ -7,7 +7,7 @@ const Governance = () => {
   let smallerThan568 = useMediaPredicate("(max-width: 567px)");
 
   return (
-    <div>
+    <div className="mb-10">
       <div className="flex items-center text-gray-100 mb-5">
         <img
           src={arrowBullet}

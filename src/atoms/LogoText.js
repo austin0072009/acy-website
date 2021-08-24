@@ -14,16 +14,14 @@ const LogoText = ({ LogoUrl, text, url = null, children }) => {
         if (url) window.location.href = url;
       }}
     >
-      <p className={` my-0 text-brown-50 font-medium text-lg`}>{text}</p>
+      <p className={`my-0 text-brown-50 font-medium text-lg`}>{text}</p>
       <img
         src={LogoUrl}
         alt={text}
         className="py-3 w-10"
         style={{ maxWidth: "40px" }}
       />
-      <span className="brightness-100 text-gray-200 text-xs text-center">
-        {children}
-      </span>
+      <span className="text-orange text-xs text-center">{children}</span>
     </div>
   );
 };

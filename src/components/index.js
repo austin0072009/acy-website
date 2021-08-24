@@ -14,6 +14,10 @@ import TabLink from "./TabLink";
 import ColoredTab from "./ColoredTab";
 import TextTabLink from "../atoms/TextTabLink";
 import SocialMedias from "./SocialMedias";
+import SideMenu from "./SideMenu";
+import TopicText from "./TopicText";
+import ColoredCard from "./ColoredCard";
+import TopicTextBordered from "./TopicTextBordered";
 
 export {
   Header,
@@ -32,4 +36,8 @@ export {
   ColoredTab,
   TextTabLink,
   SocialMedias,
+  SideMenu,
+  TopicText,
+  ColoredCard,
+  TopicTextBordered,
 };

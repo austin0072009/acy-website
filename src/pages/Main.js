@@ -18,8 +18,8 @@ const Main = () => {
         <VideoPanel></VideoPanel>
         <Documentation></Documentation>
         <Governance></Governance>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

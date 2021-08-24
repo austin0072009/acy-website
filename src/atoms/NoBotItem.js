@@ -3,7 +3,7 @@ const NoBotItem = ({ title, content }) => {
   let [active, setActive] = useState(false);
   return (
     <div
-      className="flex mb-10 border-solid border-1 border border-gray-100 rounded-lg p-4"
+      className="flex mb-10 border-solid border-1 border border-orange grayscale filter hover:grayscale-0 rounded-lg p-4"
       onMouseEnter={() => {
         setActive(true);
       }}

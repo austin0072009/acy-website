@@ -6,7 +6,7 @@ const TextTabLink = ({ title, link = "/", children }) => {
       onClick={() => {
         window.location.href = link;
       }}
-      className="p-5 mb-3 text-gray-100 border-solid border-1 border border-gray-200 rounded-3xl relative filter hover:brightness-200 cursor-pointer"
+      className="p-5 mb-3 text-gray-100 border-solid border-1 rounded-xl relative border border-orange grayscale filter hover:grayscale-0 cursor-pointer"
     >
       <img
         alt="goto"

@@ -1,25 +1,46 @@
-import { Header, Footer, MEVGraphs, NoBots } from "../components";
-import aboutUs from "../texts/aboutUs";
-import { MdTextField } from "../components";
+import { Header, Footer, SideMenu } from "../components";
+import { MEVRobots, WhatIsACY, Advantage } from ".";
+import { useMemo } from "react";
+import {
+  Switch,
+  BrowserRouter as Router,
+  Route,
+  useRouteMatch,
+} from "react-router-dom";
 
 const About = () => {
+  let entries = useMemo(() => [
+    { text: "What is ACY", link: "/about-us/" },
+    { text: "MEV Robots", link: "/about-us/mev-robots" },
+    { text: "Advantage", link: "/about-us/advantage" },
+  ]);
+
+  let match = useRouteMatch();
+
   return (
-    <div style={{ backgroundColor: "#2a292e" }}>
+    <div style={{ backgroundColor: "#1B1B1C" }}>
       <Header></Header>
       <div className="mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8">
-        <div class="flex flex-row">
-          <div className="p-4">
-            <h1 className="text-gray-100">ABOUT</h1>
-            <div className="pl-5 text-gray-100">What is ACY</div>
-            <div className="pl-5 text-gray-100">MEV Robots</div>
-            <div className="pl-5 text-gray-100">Advantage</div>
-          </div>
-          <div>
-            <NoBots></NoBots>
-            <MEVGraphs></MEVGraphs>
-          </div>
+        <div className="flex flex-row">
+          <SideMenu
+            title="ABOUT"
+            entries={entries}
+            default_path="/about-us"
+          ></SideMenu>
+          <Switch>
+            <Route exact path={`${match.path}/`}>
+              <WhatIsACY />
+            </Route>
+            <Route path={`${match.path}/mev-robots`}>
+              <MEVRobots />
+            </Route>
+            <Route path={`${match.path}/advantage`}>
+              <Advantage />
+            </Route>
+          </Switch>
         </div>
       </div>
+
       <Footer></Footer>
     </div>
   );

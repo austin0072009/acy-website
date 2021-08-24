@@ -5,7 +5,7 @@ const TabLink = ({ title, content, link = "/", children }) => {
       onClick={() => {
         window.location.href = link;
       }}
-      className="p-5 text-gray-100 rounded-md border-solid border-1 border border-gray-100 rounded-lg relative cursor-pointer filter hover:brightness-200"
+      className="p-5 text-gray-100 rounded-md border-solid border-1 border border-orange grayscale filter hover:grayscale-0 cursor-pointer rounded-lg relative cursor-pointer"
     >
       <img
         alt="goto"

@@ -11,6 +11,8 @@ module.exports = {
       backgroundImage: (theme) => ({
         "title-bg": "url('/src/assets/main_panel_bg.png')",
         "gov-bg": "url('/src/assets/stars.png')",
+        "advantage-bg": "url('/src/assets/stars2.png')",
+        "whatisacy-bg": "url('/src/assets/planet.png')",
       }),
       colors: {
         brown: {
