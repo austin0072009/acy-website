@@ -1,6 +1,5 @@
-import arrowBullet from "../assets/arrow_bullet.png";
+import arrowBullet from "../assets/arrow_bullet_orange.png";
 import { ColoredTab, TextTabLink, SocialMedias } from ".";
-
 import { useMediaPredicate } from "react-media-hook";
 
 const Governance = () => {
@@ -13,7 +12,7 @@ const Governance = () => {
           src={arrowBullet}
           style={{ maxWidth: 40 }}
           alt="arrow"
-          className="mr-3"
+          className="mr-3 moveOnHover filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100"
         />
         <span
           className="font-medium"

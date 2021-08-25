@@ -10,12 +10,15 @@ module.exports = {
     extend: {
       transitionProperty: {
         height: "height",
+        padding: "padding",
       },
       backgroundImage: (theme) => ({
         "title-bg": "url('/src/assets/main_panel_bg.png')",
         "gov-bg": "url('/src/assets/stars.png')",
         "advantage-bg": "url('/src/assets/stars2.png')",
         "whatisacy-bg": "url('/src/assets/planet.png')",
+        "footer-1": "url('/src/assets/footer1.png')",
+        "footer-2": "url('/src/assets/footer2.png')",
       }),
 
       colors: {
@@ -30,6 +33,7 @@ module.exports = {
           800: "#211c1e",
         },
         gray: {
+          50: "#B5B6B6",
           100: "#b0adb0",
           200: "#707070",
         },
@@ -44,6 +48,7 @@ module.exports = {
   },
   variants: {
     extend: {
+      padding: ["hover", "focus"],
       grayscale: ["hover", "focus"],
       brightness: ["hover"],
     },

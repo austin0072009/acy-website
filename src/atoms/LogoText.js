@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Typist from "react-typist";
+
 const LogoText = ({ LogoUrl, text, url = null, children }) => {
   let [active, setActive] = useState(false);
   return (
@@ -21,7 +23,16 @@ const LogoText = ({ LogoUrl, text, url = null, children }) => {
         className="py-3 w-10"
         style={{ maxWidth: "40px" }}
       />
-      <span className="text-orange text-xs text-center">{children}</span>
+      {active ? (
+        <Typist
+          cursor={{ show: false }}
+          className="text-orange text-xs text-center"
+        >
+          {children}
+        </Typist>
+      ) : (
+        <span className="text-orange text-xs text-center">{children}</span>
+      )}
     </div>
   );
 };

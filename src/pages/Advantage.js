@@ -82,7 +82,7 @@ const Advantage = () => {
         Arbitrage supremacy
       </div>
       <div className="px-1 md:px-10 lg:px-20">
-        <div className="grid grid-cols-2 gap-x-5 gap-y-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
           {advantages.map((item) => (
             <BorderedTopicText title={item.title} content={item.content} />
           ))}

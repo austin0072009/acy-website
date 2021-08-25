@@ -2,6 +2,7 @@ import { useMediaPredicate } from "react-media-hook";
 
 const ColoredTab = () => {
   let smallerThan568 = useMediaPredicate("(max-width: 568px)");
+  let smallerThan1280 = useMediaPredicate("(max-width: 1280px)");
 
   return (
     <div className="flex flex-col bg-gov-bg bg-cover text-gray-100 rounded-3xl py-4 md:py-10 px-4 md:px-12 justify-between mb-3">
@@ -12,7 +13,10 @@ const ColoredTab = () => {
         Governed by the community
       </div>
 
-      <div className="mb-5" style={{ fontSize: smallerThan568 ? 16 : 24 }}>
+      <div
+        className="mb-5"
+        style={{ fontSize: smallerThan568 ? 16 : smallerThan1280 ? 20 : 24 }}
+      >
         The ACY Protocol is governed by a decentralized community of ACY token
         holders and their delegates who propose and vote on upgrades to the
         protocol.

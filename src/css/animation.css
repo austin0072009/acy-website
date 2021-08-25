@@ -1,0 +1,42 @@
+@keyframes shake {
+  0% {
+    padding-left: 0;
+  }
+  50% {
+    padding-left: 10px;
+  }
+  100% {
+    padding-left: 0px;
+  }
+}
+
+@keyframes shakeTR {
+  0% {
+    top: 10px;
+    right: 10px;
+  }
+  50% {
+    top: 5px;
+    right: 5px;
+  }
+  100% {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.moveOnHover {
+  padding-left: 0;
+}
+.moveOnHover:hover {
+  animation: shake 0.5s;
+}
+
+.moveTopRightOnHover img {
+  top: 10px;
+  right: 10px;
+}
+
+.moveTopRightOnHover:hover img {
+  animation: shakeTR 0.5s;
+}

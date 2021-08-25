@@ -1,5 +1,7 @@
 import main_panel_bg from "../assets/main_panel_bg.png";
 import { isMobile } from "react-device-detect";
+import Typist from "react-typist";
+
 const Title = () => {
   let style = {
     backgroundImage: `url(${main_panel_bg})`,
@@ -17,10 +19,12 @@ const Title = () => {
     >
       <div className="w-full md:w-3/5">
         <p className="text-3xl md:text-4xl lg:text-5xl lg:leading-normal text-white my-10 ">
-          <span>ACY Finance is</span> <br />
-          <span>a deep integrated DEX</span>
-          <br />
-          <span>to yield ALPHA</span>
+          <Typist>
+            <span>ACY Finance is</span> <br />
+            <span>a deep integrated DEX</span>
+            <br />
+            <span>to yield ALPHA</span>
+          </Typist>
         </p>
         <p className="text-justify text-xl w-100 xl:w-5/6 text-brown-100 my-10 leading-10">
           ACY invents flash arbitrage which is a multi-route arbitrage program

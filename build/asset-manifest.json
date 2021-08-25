@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ea905c4.chunk.css",
-    "main.js": "/static/js/main.c15b977e.chunk.js",
-    "main.js.map": "/static/js/main.c15b977e.chunk.js.map",
+    "main.css": "/static/css/main.7b7bdb5d.chunk.css",
+    "main.js": "/static/js/main.dedec3d4.chunk.js",
+    "main.js.map": "/static/js/main.dedec3d4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0aa6cbb1.js",
     "runtime-main.js.map": "/static/js/runtime-main.0aa6cbb1.js.map",
-    "static/js/2.1d9c08a2.chunk.js": "/static/js/2.1d9c08a2.chunk.js",
-    "static/js/2.1d9c08a2.chunk.js.map": "/static/js/2.1d9c08a2.chunk.js.map",
+    "static/js/2.4f047434.chunk.js": "/static/js/2.4f047434.chunk.js",
+    "static/js/2.4f047434.chunk.js.map": "/static/js/2.4f047434.chunk.js.map",
     "static/js/3.a540fe62.chunk.js": "/static/js/3.a540fe62.chunk.js",
     "static/js/3.a540fe62.chunk.js.map": "/static/js/3.a540fe62.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.0ea905c4.chunk.css.map": "/static/css/main.0ea905c4.chunk.css.map",
-    "static/js/2.1d9c08a2.chunk.js.LICENSE.txt": "/static/js/2.1d9c08a2.chunk.js.LICENSE.txt",
-    "static/media/arrow.7612d2c8.png": "/static/media/arrow.7612d2c8.png",
-    "static/media/arrow_bullet.25c7728b.png": "/static/media/arrow_bullet.25c7728b.png",
+    "static/css/main.7b7bdb5d.chunk.css.map": "/static/css/main.7b7bdb5d.chunk.css.map",
+    "static/js/2.4f047434.chunk.js.LICENSE.txt": "/static/js/2.4f047434.chunk.js.LICENSE.txt",
     "static/media/arrow_bullet_orange.afe9896f.png": "/static/media/arrow_bullet_orange.afe9896f.png",
+    "static/media/arrow_orange.acb7f8d5.png": "/static/media/arrow_orange.acb7f8d5.png",
     "static/media/arrow_submit.7a3cc186.png": "/static/media/arrow_submit.7a3cc186.png",
     "static/media/cylinder_bullet.026b112a.png": "/static/media/cylinder_bullet.026b112a.png",
     "static/media/default.38fea865.png": "/static/media/default.38fea865.png",
     "static/media/discord_hover.0afbc2a1.png": "/static/media/discord_hover.0afbc2a1.png",
+    "static/media/footer2.f0c67ee2.png": "/static/media/footer2.f0c67ee2.png",
     "static/media/gitbook.4182f6f7.png": "/static/media/gitbook.4182f6f7.png",
     "static/media/gitbook_hover.c3cc9b0f.png": "/static/media/gitbook_hover.c3cc9b0f.png",
     "static/media/github.a723b407.png": "/static/media/github.a723b407.png",
@@ -37,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0aa6cbb1.js",
-    "static/js/2.1d9c08a2.chunk.js",
-    "static/css/main.0ea905c4.chunk.css",
-    "static/js/main.c15b977e.chunk.js"
+    "static/js/2.4f047434.chunk.js",
+    "static/css/main.7b7bdb5d.chunk.css",
+    "static/js/main.dedec3d4.chunk.js"
   ]
 }

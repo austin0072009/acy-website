@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div className="bg-base">
       <Header></Header>
-      <div className="my-10 mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8">
+      <div className="mt-12 mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8">
         <div className="flex flex-col md:flex-row">
           <div
             className="relative flex-none w-full md:w-1/4"
