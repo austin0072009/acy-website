@@ -42,7 +42,7 @@ const SocialMedias = () => {
     ],
   ]);
   return (
-    <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 mb-3 border-solid border-1 border border-gray-200 rounded-xl p-2">
+    <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 mb-3 border-solid border-1 border border-gray-200 rounded-xl p-2">
       {logos.map((item) => (
         <LogoText LogoUrl={item[0]} text={item[1]} url={item[2]}>
           {item[3]}

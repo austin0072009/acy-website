@@ -1,6 +1,8 @@
 import { useMemo } from "react";
 import { TopicText } from "../components";
+import { isMobile } from "react-device-detect";
 const WhatIsACY = () => {
+  console.log(isMobile);
   let data = useMemo(() => [
     {
       title: "Protocol, Interface, Labs",
@@ -83,7 +85,7 @@ const WhatIsACY = () => {
         />
       ))}
 
-      <div style={{ height: 500 }}></div>
+      {!isMobile && <div style={{ height: 500 }}></div>}
     </div>
   );
 };

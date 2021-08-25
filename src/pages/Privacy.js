@@ -4,7 +4,7 @@ import { MdTextField } from "../components";
 
 const Privacy = () => {
   return (
-    <div style={{ backgroundColor: "#2a292e" }}>
+    <div style={{ backgroundColor: "#1B1B1C" }}>
       <Header></Header>
       <MdTextField text={privacyPolicy}></MdTextField>
       <Footer></Footer>

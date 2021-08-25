@@ -1,5 +1,7 @@
 import { useMemo } from "react";
-import { ColoredCard, TopicTextBordered } from "../components";
+import { ColoredCard } from "../components";
+import { BorderedTopicText } from "../atoms";
+import { isMobile } from "react-device-detect";
 import bullet from "../assets/arrow_bullet_orange.png";
 const Advantage = () => {
   let advantages = useMemo(() => [
@@ -82,10 +84,7 @@ const Advantage = () => {
       <div className="px-1 md:px-10 lg:px-20">
         <div className="grid grid-cols-2 gap-x-5 gap-y-5">
           {advantages.map((item) => (
-            <TopicTextBordered
-              title={item.title}
-              content={item.content}
-            ></TopicTextBordered>
+            <BorderedTopicText title={item.title} content={item.content} />
           ))}
         </div>
         <ColoredCard
@@ -94,7 +93,7 @@ const Advantage = () => {
         ></ColoredCard>
       </div>
 
-      <div style={{ height: 500 }}></div>
+      {!isMobile && <div style={{ height: 500 }}></div>}
     </div>
   );
 };

@@ -14,7 +14,7 @@ const TopicText = ({ title, paragraphs, bulletType = 0, useBg = false }) => {
           alt="bg"
         />
       )}
-      <div class="flex items-center relative" style={{ zIndex: 1 }}>
+      <div className="flex items-center relative" style={{ zIndex: 1 }}>
         <img
           src={bulletType === 0 ? bullet0 : bullet1}
           alt="bullet"
@@ -22,7 +22,7 @@ const TopicText = ({ title, paragraphs, bulletType = 0, useBg = false }) => {
           className={`${bulletType ? "ml-2" : ""} mr-3`}
         />
         <h2
-          className={`text-lg md:${bulletType ? "text-xl" : "text-3xl"}`}
+          className={`text-lg md:${bulletType ? "text-xl" : "text-2xl"}`}
           style={{ color: "#de5b24" }}
         >
           {title}

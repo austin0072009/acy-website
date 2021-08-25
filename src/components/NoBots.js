@@ -1,4 +1,4 @@
-import { NoBotItem } from "../atoms";
+import { BorderedTopicText } from "../atoms";
 import { useEffect } from "react";
 
 const NoBots = () => {
@@ -21,7 +21,7 @@ const NoBots = () => {
     ],
   ];
   let infos = botInfoList.map((item, index) => (
-    <NoBotItem title={item[0]} content={item[1]} />
+    <BorderedTopicText title={item[0]} content={item[1]} />
   ));
 
   useEffect(() => {}, []);

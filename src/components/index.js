@@ -17,7 +17,6 @@ import SocialMedias from "./SocialMedias";
 import SideMenu from "./SideMenu";
 import TopicText from "./TopicText";
 import ColoredCard from "./ColoredCard";
-import TopicTextBordered from "./TopicTextBordered";
 
 export {
   Header,
@@ -39,5 +38,4 @@ export {
   SideMenu,
   TopicText,
   ColoredCard,
-  TopicTextBordered,
 };

@@ -8,12 +8,16 @@ module.exports = {
   },
   theme: {
     extend: {
+      transitionProperty: {
+        height: "height",
+      },
       backgroundImage: (theme) => ({
         "title-bg": "url('/src/assets/main_panel_bg.png')",
         "gov-bg": "url('/src/assets/stars.png')",
         "advantage-bg": "url('/src/assets/stars2.png')",
         "whatisacy-bg": "url('/src/assets/planet.png')",
       }),
+
       colors: {
         brown: {
           50: "#de5b24",
@@ -30,6 +34,7 @@ module.exports = {
           200: "#707070",
         },
         orange: "#ea5c1f",
+        base: "#1B1B1C",
       },
       grayscale: {
         90: ".9",

@@ -5,7 +5,11 @@ const StyledInput = styled.input`
   font-size: 24px;
   background-color: inherit;
   width: 90%;
+  border-width: 1px;
+  line-height: 50px;
   border-right: 0px solid transparent;
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
   &:focus {
     outline-width: 0;
     filter: brightness(2);

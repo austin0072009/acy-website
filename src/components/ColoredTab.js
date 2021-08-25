@@ -1,7 +1,7 @@
 import { useMediaPredicate } from "react-media-hook";
 
 const ColoredTab = () => {
-  let smallerThan568 = useMediaPredicate("(max-width: 567px)");
+  let smallerThan568 = useMediaPredicate("(max-width: 568px)");
 
   return (
     <div className="flex flex-col bg-gov-bg bg-cover text-gray-100 rounded-3xl py-4 md:py-10 px-4 md:px-12 justify-between mb-3">

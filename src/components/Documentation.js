@@ -59,7 +59,7 @@ const Documentation = () => {
         />
         <span
           className="font-medium"
-          style={{ fontSize: smallerThan568 ? 20 : 32 }}
+          style={{ fontSize: smallerThan568 ? 20 : 26 }}
         >
           DOCUMENTATION
         </span>
