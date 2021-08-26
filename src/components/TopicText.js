@@ -4,17 +4,9 @@ import planet from "../assets/planet.png";
 import style from "../css/animation.css";
 import { isMobile } from "react-device-detect";
 
-const TopicText = ({ title, paragraphs, bulletType = 0, useBg = false }) => {
+const TopicText = ({ title, paragraphs, bulletType = 0 }) => {
   return (
     <div className="relative">
-      {useBg && (
-        <img
-          src={planet}
-          className="absolute top-0 right-0 w-full h-full filter blur-md"
-          style={{ zIndex: 0, opacity: 0.2, width: "99%" }}
-          alt="bg"
-        />
-      )}
       <div className="flex items-center relative" style={{ zIndex: 1 }}>
         <img
           src={bulletType === 0 ? bullet0 : bullet1}

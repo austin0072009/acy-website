@@ -66,14 +66,19 @@
 }
 
 .rotateOnHover {
-  transition: transform 1s;
-  transform: rotateZ(0deg);
+  transition: transform 0.2s;
+  transform: rotateY(0deg);
 }
 
 .rotateOnHover:hover {
-  transform: rotateZ(30deg);
+  transform: rotateY(30deg);
 }
 
 .rotateOnHover:active {
-  transform: rotateZ(360deg);
+  transform: rotateY(180deg);
+}
+
+.heightTransition {
+  max-height: 0px;
+  transition: max-height 1s;
 }

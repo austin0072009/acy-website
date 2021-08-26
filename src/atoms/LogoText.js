@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Typist from "react-typist";
+import style from "../css/animation.css";
 
 const LogoText = ({ LogoUrl, text, url = null, children }) => {
   let [active, setActive] = useState(false);
@@ -16,6 +17,7 @@ const LogoText = ({ LogoUrl, text, url = null, children }) => {
         if (url) window.location.href = url;
       }}
     >
+      {active ? null : <span style={{ height: "0.5rem" }}></span>}
       <p className={`my-0 text-brown-50 font-medium text-lg`}>{text}</p>
       <img
         src={LogoUrl}
@@ -30,7 +32,9 @@ const LogoText = ({ LogoUrl, text, url = null, children }) => {
         >
           {children}
         </Typist>
-      ) : null}
+      ) : (
+        <span style={{ height: "0.5rem" }}></span>
+      )}
     </div>
   );
 };

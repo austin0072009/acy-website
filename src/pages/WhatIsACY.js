@@ -16,7 +16,6 @@ const WhatIsACY = () => {
         "The following is a brief overview of the ACY protocol",
       ],
       bulletType: 0,
-      useBg: false,
     },
     {
       title: "Introduction",
@@ -25,7 +24,6 @@ const WhatIsACY = () => {
         "There are currently two grades of the ACY protocol. The basic grade are open source and licensed under GPL. The advanced grade is not open source, which are usable only for the users who own 200,000 ACY tokens. The version of ACY, once deployed, will function with in perpetuity, with 100% uptime, providing the continued existence of the blockchain.",
       ],
       bulletType: 0,
-      useBg: false,
     },
     {
       title: "How does the ACY protocol compare to a typical market?",
@@ -33,7 +31,6 @@ const WhatIsACY = () => {
         "To understand how the ACY protocol differs from traditional exchange, it is helpful to first look at two subjects: how Automated Market Maker design deviates from traditional central limit order book-based exchanges, and how permissionless systems depart from conventional permissioned systems.",
       ],
       bulletType: 0,
-      useBg: false,
     },
     {
       title: "Flash Arbitrage VS Arbitrage Robot",
@@ -43,7 +40,6 @@ const WhatIsACY = () => {
         "However, it may be difficult for users to seize the opportunity before professional arbitrageurs. The swapping of ACY Finance is added arbitrage function within normal swap contracts, meaning that users can automatically carry out arbitrage operations and obtain profits brought by arbitrage. What is more, most of the users can not complete the arbitrage transaction by themselves. The atomicity of ACY smart contracts will help every user to win the game of arbitrage. If the normal transactions and arbitrage transactions are placed in one transaction to call a contract, no other arbitrage robots can insert the transactions into them.",
       ],
       bulletType: 1,
-      useBg: true,
     },
     {
       title: "AMM VS Order Book",
@@ -53,7 +49,6 @@ const WhatIsACY = () => {
         "At a very high level, an AMM replaces the buy and sell orders in an order book market with a liquidity pool of two assets, both valued relative to each other. As one asset is traded for the other, the relative price of the two assets shift, and a new market rate for both is determined. In this dynamic, a buyer or seller trades directly with the pool, rather than with specific orders left by other parties. The advantages and disadvantages of automated market makers versus their traditional order book counterparts are under active research by a growing number of parties. We have collected some notable examples on our research page.",
       ],
       bulletType: 1,
-      useBg: false,
     },
     {
       title: "Permissionless Systems",
@@ -61,7 +56,6 @@ const WhatIsACY = () => {
         "The second departure from traditional markets is the permissionless design of the ACY protocol. Permissionless design means that the protocol’s services are entirely open for public use, with no ability to selectively restrict who can or cannot use them: anyone can swap, provide liquidity, or create new markets at will. This is a departure from traditional financial services, which typically restrict access based on geography, wealth status, and age.",
       ],
       bulletType: 1,
-      useBg: false,
     },
     {
       title: "Where can I find more information",
@@ -71,7 +65,6 @@ const WhatIsACY = () => {
         "The protocols are sometimes referred to as peer-to-contract systems as well. These are similar to a peer-to-peer systems, but with immutable, persistent programs known as smart contracts taking the place of a peer. A peer-to-contract system facilitates peer-to-peer functionality, but uses immutable, persistent programs known as smart contracts to automate some processes.",
       ],
       bulletType: 1,
-      useBg: false,
     },
   ]);
   return (
@@ -81,7 +74,6 @@ const WhatIsACY = () => {
           title={item.title}
           paragraphs={item.paragraphs}
           bulletType={item.bulletType}
-          useBg={item.useBg}
         />
       ))}
 
