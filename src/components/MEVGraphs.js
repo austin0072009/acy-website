@@ -45,7 +45,7 @@ const colors = [
 function renderTooltip({ active, payload, label }) {
   if (active && payload && payload.length) {
     return (
-      <div className="custom-tooltip bg-brown-400 text-brown-100 p-4 rounded-md">
+      <div className="custom-tooltip text-brown-100 p-4 rounded-md">
         <p className="label">{label}</p>
         <p>{`$ ${(parseFloat(payload[0].value) / 1000000).toFixed(2)}M`}</p>
       </div>
@@ -287,7 +287,7 @@ const MEVGraphs = () => {
     <div className=" mb-20">
       <div className="px-0 flex flex-col md:flex-row w-full">
         <div className="flex flex-col w-full md:w-2/5 justify-between">
-          <div className="bg-brown-700 p-2 sm:p-5 md:p-8 mb-5 md:mr-5 rounded-md">
+          <div className=" p-2 sm:p-5 md:p-8 mb-5 md:mr-5 rounded-md">
             <p className="text-xl lg:text-2xl text-white my-0">
               Total extracted MEV
             </p>
@@ -307,7 +307,7 @@ const MEVGraphs = () => {
               M
             </h1>
           </div>
-          <div className="bg-brown-700 p-2 sm:p-3 md:p-8 mb-5 md:mr-5 h-2/5 rounded-md">
+          <div className=" p-2 sm:p-3 md:p-8 mb-5 md:mr-5 h-2/5 rounded-md">
             <p className="text-xl lg:text-2xl text-white my-0 p-3">
               MEV by Protocol
             </p>
@@ -345,7 +345,7 @@ const MEVGraphs = () => {
               </PieChart>
             </ResponsiveContainer>
           </div>
-          <div className="bg-brown-700 p-2 sm:p-3 md:p-8 mb-5 md:mr-5 mb-5 h-2/5  rounded-md">
+          <div className=" p-2 sm:p-3 md:p-8 mb-5 md:mr-5 mb-5 h-2/5  rounded-md">
             <p className="text-xl lg:text-2xl text-white my-0 p-3">
               MEV by types
             </p>
@@ -393,7 +393,7 @@ const MEVGraphs = () => {
           className="flex flex-col w-full md:w-3/5 justify-between"
           style={{ minHeight: "400px" }}
         >
-          <div className="bg-brown-700 p-5 mb-5 h-1/2 rounded-md">
+          <div className=" p-5 mb-5 h-1/2 rounded-md">
             <p className="text-2xl text-white my-1">
               Culmulative extracted MEV ($)
             </p>
@@ -434,7 +434,7 @@ const MEVGraphs = () => {
               </AreaChart>
             </ResponsiveContainer>
           </div>
-          <div className="bg-brown-700 p-5 mb-5 h-1/2 rounded-md">
+          <div className=" p-5 mb-5 h-1/2 rounded-md">
             <p className="text-2xl text-white my-1">Daily extracted MEV ($)</p>
             <ResponsiveContainer
               width="100%"
