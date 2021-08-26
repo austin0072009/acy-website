@@ -62,3 +62,16 @@
 .moveTopRightOnHover:hover img {
   animation: shakeTR 0.5s;
 }
+
+.rotateOnHover {
+  transition: transform 1s;
+  transform: rotateZ(0deg);
+}
+
+.rotateOnHover:hover {
+  transform: rotateZ(30deg);
+}
+
+.rotateOnHover:active {
+  transform: rotateZ(360deg);
+}

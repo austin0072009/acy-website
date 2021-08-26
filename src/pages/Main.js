@@ -12,7 +12,9 @@ axios.defaults.baseURL = "https://api.acy.finance/";
 const Main = () => {
   return (
     <div style={{ backgroundColor: "#1B1B1C", zIndex: 0 }} className="relative">
-      <Header></Header>
+      <div className="relative" style={{ zIndex: 2 }}>
+        <Header></Header>
+      </div>
 
       <div className="relative" style={{ zIndex: 1 }}>
         <div
