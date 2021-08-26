@@ -47,10 +47,12 @@
   animation: shakeTD 0.5s;
 }
 
-.moveLROnHover {
+.moveLROnHover,
+.moveLROnClick {
   padding-left: 0;
 }
-.moveLROnHover:hover {
+.moveLROnHover:hover,
+.moveLROnClick:active {
   animation: shake 0.5s;
 }
 

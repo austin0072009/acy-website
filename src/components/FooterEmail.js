@@ -44,7 +44,7 @@ const FooterEmail = () => {
           <img
             src={active ? hsubmit : submit}
             alt="submit"
-            className="moveLROnHover cursor-pointer"
+            className="moveLROnClick cursor-pointer"
             style={{ maxWidth: 40 }}
           />
         </div>

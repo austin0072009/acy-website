@@ -33,9 +33,7 @@ export const VideoPanel = () => {
             title="ACY"
             frameBorder="0"
           ></iframe>
-        ) : (
-          <img alt="default" src={placeholder} className="w-full" />
-        )}
+        ) : null}
 
         <div
           style={{

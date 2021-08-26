@@ -3,6 +3,8 @@ import { ColoredCard } from "../components";
 import { BorderedTopicText } from "../atoms";
 import { isMobile } from "react-device-detect";
 import bullet from "../assets/arrow_bullet_orange.png";
+import style from "../css/animation.css";
+
 const Advantage = () => {
   let advantages = useMemo(() => [
     {
@@ -76,7 +78,7 @@ const Advantage = () => {
         <img
           src={bullet}
           alt="bullet"
-          className="mr-3"
+          className="mr-3 moveLROnHover"
           style={{ maxWidth: 30 }}
         />
         Arbitrage supremacy
