@@ -1,5 +1,6 @@
 import { Header, Footer, SideMenu } from "../components";
 import { MEVRobots, WhatIsACY, Advantage } from ".";
+import { Gradient } from "../atoms";
 import { useMemo } from "react";
 import {
   Switch,
@@ -22,15 +23,7 @@ const About = () => {
   return (
     <div className="bg-base relative" style={{ zIndex: 0 }}>
       <Header></Header>
-      <div
-        className="fixed w-full h-full top-0 left-0"
-        style={{
-          background:
-            "radial-gradient(50% 50% at 50% 50%, rgb(47, 128, 237) 0%, rgb(15, 16, 19) 100%)",
-          zIndex: -1,
-          opacity: 0.12,
-        }}
-      ></div>
+      <Gradient></Gradient>
       <div
         className="mt-12 mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8 relative"
         style={{ zIndex: 2 }}
