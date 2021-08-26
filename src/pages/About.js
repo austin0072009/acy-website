@@ -20,9 +20,21 @@ const About = () => {
   let smallerThan568 = useMediaPredicate("(max-width: 768px)");
   let match = useRouteMatch();
   return (
-    <div className="bg-base">
+    <div className="bg-base relative" style={{ zIndex: 0 }}>
       <Header></Header>
-      <div className="mt-12 mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8">
+      <div
+        className="fixed w-full h-full top-0 left-0"
+        style={{
+          background:
+            "radial-gradient(50% 50% at 50% 50%, rgb(47, 128, 237) 0%, rgb(15, 16, 19) 100%)",
+          zIndex: -1,
+          opacity: 0.12,
+        }}
+      ></div>
+      <div
+        className="mt-12 mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8 relative"
+        style={{ zIndex: 2 }}
+      >
         <div className="flex flex-col md:flex-row">
           <div
             className="relative flex-none w-full md:w-1/4"

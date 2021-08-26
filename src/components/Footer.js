@@ -10,7 +10,7 @@ const Footer = () => {
       <img
         src={footer}
         className="absolute top-0 right-0 w-full h-full"
-        style={{ zIndex: 0, opacity: 0.5 }}
+        style={{ zIndex: 0, opacity: 0.2 }}
         alt="bg"
       />
       <div

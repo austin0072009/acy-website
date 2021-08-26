@@ -25,10 +25,32 @@
   }
 }
 
-.moveOnHover {
+@keyframes shakeTD {
+  0% {
+    margin-top: 0px;
+  }
+  33% {
+    margin-top: -10px;
+  }
+  66% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.moveTDOnHover {
+  margin-top: 0;
+}
+.moveTDOnHover:hover {
+  animation: shakeTD 0.5s;
+}
+
+.moveLROnHover {
   padding-left: 0;
 }
-.moveOnHover:hover {
+.moveLROnHover:hover {
   animation: shake 0.5s;
 }
 

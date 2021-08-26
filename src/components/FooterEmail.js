@@ -1,5 +1,8 @@
 import submit from "../assets/arrow_submit.png";
+import hsubmit from "../assets/arrow_submit_hover.png";
 import styled from "styled-components";
+import style from "../css/animation.css";
+import { useState } from "react";
 
 const StyledInput = styled.input`
   font-size: 24px;
@@ -18,6 +21,7 @@ const StyledInput = styled.input`
 `;
 
 const FooterEmail = () => {
+  let [active, setActive] = useState(false);
   return (
     <div className="flex-col w-full">
       <div className="flex flex-row gap-x-3 items-center justify-start">
@@ -29,8 +33,20 @@ const FooterEmail = () => {
             <StyledInput placeholder="Email Address"></StyledInput>
           </div>
         </div>
-        <div>
-          <img src={submit} alt="submit" style={{ maxWidth: 40 }} />
+        <div
+          onMouseEnter={() => {
+            setActive(true);
+          }}
+          onMouseLeave={() => {
+            setActive(false);
+          }}
+        >
+          <img
+            src={active ? hsubmit : submit}
+            alt="submit"
+            className="moveLROnHover cursor-pointer"
+            style={{ maxWidth: 40 }}
+          />
         </div>
       </div>
       <div className="my-4" style={{ color: "#757579" }}>

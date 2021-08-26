@@ -10,11 +10,7 @@ const HorizontalLogo = ({ src, src_hover, logoText, active }) => {
           style={{ maxWidth: "40px", height: 40 }}
           alt="logo"
         ></img>
-        {active ? (
-          <Typist cursor={{ show: false }}>{logoText}</Typist>
-        ) : (
-          <span>{logoText}</span>
-        )}
+        {active ? <Typist cursor={{ show: false }}>{logoText}</Typist> : null}
       </div>
     </div>
   );

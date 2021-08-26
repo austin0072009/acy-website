@@ -55,7 +55,7 @@ const Documentation = () => {
           src={arrowBullet}
           style={{ maxWidth: 40 }}
           alt="arrow"
-          className="mr-3 moveOnHover filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100"
+          className="mr-3 moveLROnHover filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100"
         />
         <span
           className="font-medium"

@@ -29,7 +29,10 @@ const SideMenu = ({ title, entries, default_path }) => {
                   <div className="pl-10 text-gray-50 my-3  md:text-lg lg:text-xl hover:text-orange">
                     {location.pathname === item.link ||
                     (index === 0 && location.pathname === default_path) ? (
-                      <div className="transition-padding pb-0 hover:pb-4 inline-block border-solid border-t-0 border-l-0 border-r-0 border-b border-gray-50 hover:border-orange">
+                      <div
+                        style={{ color: "#ea5c1f" }}
+                        className="transition-padding pb-0 hover:pb-4 inline-block border-solid border-t-0 border-l-0 border-r-0 border-b border-orange hover:border-orange"
+                      >
                         {item.text}
                       </div>
                     ) : (

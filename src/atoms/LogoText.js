@@ -30,9 +30,7 @@ const LogoText = ({ LogoUrl, text, url = null, children }) => {
         >
           {children}
         </Typist>
-      ) : (
-        <span className="text-orange text-xs text-center">{children}</span>
-      )}
+      ) : null}
     </div>
   );
 };

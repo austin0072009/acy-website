@@ -1,6 +1,7 @@
 import bullet0 from "../assets/arrow_bullet_orange.png";
 import bullet1 from "../assets/cylinder_bullet.png";
 import planet from "../assets/planet.png";
+import style from "../css/animation.css";
 import { isMobile } from "react-device-detect";
 
 const TopicText = ({ title, paragraphs, bulletType = 0, useBg = false }) => {
@@ -19,7 +20,9 @@ const TopicText = ({ title, paragraphs, bulletType = 0, useBg = false }) => {
           src={bulletType === 0 ? bullet0 : bullet1}
           alt="bullet"
           style={{ maxWidth: bulletType ? 20 : 30 }}
-          className={`${bulletType ? "ml-2" : ""} mr-3`}
+          className={`${
+            bulletType ? "ml-2 moveTDOnHover" : "moveLROnHover"
+          } mr-3 `}
         />
         <h2
           className={`text-lg md:${bulletType ? "text-xl" : "text-2xl"}`}
