@@ -11,7 +11,7 @@ const SideMenu = ({ title, entries, default_path }) => {
   let location = useLocation();
 
   return (
-    <div className="flex flex-col text-gray-100 sticky top-0 pr-5">
+    <div className="flex flex-col text-gray-100 sticky top-20 pr-5">
       <Disclosure defaultOpen={true}>
         {({ open }) => (
           <>

@@ -7,15 +7,15 @@ const Governance = () => {
 
   return (
     <div className="mb-10">
-      <div className="flex items-center text-gray-100 mb-5">
+      <div className="flex items-center text-gray-100 mb-5 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100">
         <img
           src={arrowBullet}
           style={{ maxWidth: 40 }}
           alt="arrow"
-          className="mr-3 moveLROnHover filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100"
+          className="mr-3 moveLROnHover"
         />
         <span
-          className="font-medium"
+          className="font-medium text-orange"
           style={{ fontSize: smallerThan568 ? 20 : 26 }}
         >
           GOVERNANCE

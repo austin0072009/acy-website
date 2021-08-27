@@ -8,16 +8,23 @@ import {
 } from "../components";
 import { Gradient } from "../atoms";
 import axios from "axios";
+import { useState } from "react";
+
 axios.defaults.baseURL = "https://api.acy.finance/";
 
 const Main = () => {
+  let [menuActive, setMenuActive] = useState(false);
   return (
     <div style={{ backgroundColor: "#1B1B1C", zIndex: 0 }} className="relative">
-      <div className="relative" style={{ zIndex: 2 }}>
-        <Header></Header>
-      </div>
+      <Header active={menuActive} setActive={setMenuActive}></Header>
 
-      <div className="relative" style={{ zIndex: 1 }}>
+      <div
+        className="relative"
+        style={{ zIndex: 1 }}
+        onClick={() => {
+          setMenuActive(false);
+        }}
+      >
         <Gradient></Gradient>
         <div className="relative" style={{ zIndex: 1 }}>
           <Title></Title>
