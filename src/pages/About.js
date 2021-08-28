@@ -4,7 +4,7 @@ import { Gradient } from "../atoms";
 import { useMemo, useState } from "react";
 import {
   Switch,
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   useRouteMatch,
 } from "react-router-dom";

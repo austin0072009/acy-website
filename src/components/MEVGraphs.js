@@ -476,8 +476,7 @@ const MEVGraphs = () => {
       </div>
       <small className="text-white">
         <i>
-          Source: &nbsp;
-          <a className="text-white" href="https://explore.flashbots.net/">
+          <a className="text-gray" href="https://explore.flashbots.net/">
             explore.flashbots.net/
           </a>
         </i>

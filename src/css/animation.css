@@ -40,6 +40,34 @@
   }
 }
 
+@keyframes light {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ea5c1f;
+  }
+  100% {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+@keyframes upDown {
+  0% {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  50% {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
 .moveTDOnHover {
   margin-top: 0;
 }
@@ -76,6 +104,25 @@
 
 .rotateOnHover:active {
   transform: rotateY(180deg);
+}
+
+.blink1 div {
+  animation: light 3s infinite;
+  animation-delay: 3s;
+}
+
+.blink2 div {
+  animation: light 3s infinite;
+  animation-delay: 4s;
+}
+
+.blink3 div {
+  animation: light 3s infinite;
+  animation-delay: 5s;
+}
+
+.moveUpDownInfinite {
+  animation: upDown 3s infinite;
 }
 
 @media (max-width: 768px) {

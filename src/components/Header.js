@@ -26,6 +26,8 @@ const Header = ({ active, setActive }) => {
   ]);
 
   let [atTop, setAtTop] = useState(true);
+  let [hover, setHover] = useState(true);
+
   useEffect(() => {
     window.onscroll = () =>
       window.pageYOffset === 0 ? setAtTop(true) : setAtTop(false);
@@ -61,7 +63,7 @@ const Header = ({ active, setActive }) => {
           }`}
           style={menuStyles}
         >
-          <div className="grid grid-cols-2 gap-x-2 gap-y-3">
+          <div className="grid grid-cols-2 gap-x-2 gap-y-5">
             {menu.map((item) => (
               <span className="text-orange filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 mr-3 cursor-pointer">
                 {item}
@@ -80,8 +82,16 @@ const Header = ({ active, setActive }) => {
             setActive(!active);
           }}
         />
-        <div className="py-1 px-5 border-3 border-solid border-orange rounded-2xl text-white">
-          Launch APP
+        <div
+          className="py-1 px-5 border-2 border-solid border-orange rounded-2xl text-white cursor-pointer"
+          onMouseEnter={() => {
+            setHover(true);
+          }}
+          onMouseLeave={() => {
+            setHover(false);
+          }}
+        >
+          <span>{hover ? "Coming soon" : "Launch APP"}</span>
         </div>
       </div>
     </nav>
