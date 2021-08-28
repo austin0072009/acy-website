@@ -78,6 +78,12 @@
   transform: rotateY(180deg);
 }
 
+@media (max-width: 768px) {
+  .rotateOnHover:hover {
+    transform: rotateY(180deg);
+  }
+}
+
 .heightTransition {
   max-height: 0px;
   transition: max-height 1s;
