@@ -16,26 +16,33 @@ const TabLink = ({ title, content, link = "/", src, src_hover, logoText }) => {
       onMouseLeave={() => {
         setActive(false);
       }}
-      className="p-5 moveTopRightOnHover text-gray-100 rounded-md border-solid border-1 border border-orange grayscale filter hover:grayscale-0 cursor-pointer rounded-lg relative cursor-pointer"
+      style={{ zIndex: 0 }}
+      className="moveTopRightOnHover text-gray-100 rounded-md cursor-pointer relative grayscale filter hover:grayscale-0"
     >
-      <img
-        alt="goto"
-        src={arrow}
-        style={{ width: 30, height: 30 }}
-        className="absolute filter hover:grayscale-0"
-      />
-      <div className="flex flex-col items-center">
-        <h2>{title}</h2>
-        <div className="hover:brightness-50">
-          <HorizontalLogo
-            src={src}
-            src_hover={src_hover}
-            logoText={logoText}
-            active={active}
-          ></HorizontalLogo>
-        </div>
-        <div className="px-5 lg:px-10">
-          <p>{content}</p>
+      <div
+        className="bg-orange opacity-10 absolute w-full h-full rounded-md"
+        style={{ zIndex: -1 }}
+      ></div>
+      <div className="relative p-3" style={{ zIndex: 1 }}>
+        <img
+          alt="goto"
+          src={arrow}
+          style={{ width: 30, height: 30 }}
+          className="absolute filter hover:grayscale-0"
+        />
+        <div className="flex flex-col items-center relative">
+          <h2>{title}</h2>
+          <div className="hover:brightness-50">
+            <HorizontalLogo
+              src={src}
+              src_hover={src_hover}
+              logoText={logoText}
+              active={active}
+            ></HorizontalLogo>
+          </div>
+          <div className="px-5 lg:px-10">
+            <p>{content}</p>
+          </div>
         </div>
       </div>
     </div>

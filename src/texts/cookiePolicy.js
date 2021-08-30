@@ -1,8 +1,4 @@
 const cookiePolicy = `
-# Cookie Policy
-
- 
-
 ## General Introduction
 
 This cookie policy explains what cookies are and how ACY and its affiliates (hereinafter, “**ACY**”, "**the Company**", "**we**", "**us**" or "**our**") uses them. We encourage you to read the policy in full so that you understand what information we collect using cookies and how that information is used. By using our sites, you are agreeing that we can use cookies in accordance with this policy.

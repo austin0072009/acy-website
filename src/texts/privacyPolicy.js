@@ -1,7 +1,4 @@
-const privacyPolicy = `
-# Privacy Policy
-
- 
+const privacyPolicy = ` 
 
 ## General Introduction
 

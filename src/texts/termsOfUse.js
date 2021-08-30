@@ -1,6 +1,4 @@
 const tou = `
-# Terms of Use
-
 ## 1. General Introduction
 
 In the General Terms of Use **(“Terms”) of ACY**, “ACY”, "we", and "us" all refer to **Acy Finance.** 

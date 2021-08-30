@@ -7,23 +7,30 @@ const TextTabLink = ({ title, link = "/", children }) => {
       onClick={() => {
         window.location.href = link;
       }}
-      className="p-5 mb-3 moveTopRightOnHover text-gray-100 border-solid border-1 rounded-xl relative border border-orange grayscale filter hover:grayscale-0 cursor-pointer"
+      style={{ zIndex: 0 }}
+      className="mb-3 moveTopRightOnHover text-gray-100 rounded-xl relative grayscale filter hover:grayscale-0 cursor-pointer"
     >
-      <img
-        alt="goto"
-        src={arrow}
-        style={{ width: 30, height: 30, right: 10, top: 10 }}
-        className="absolute filter hover:grayscale-0 "
-      />
+      <div
+        className="absolute rounded-xl bg-orange w-full h-full opacity-10"
+        style={{ zIndex: -1 }}
+      ></div>
+      <div className="relative" style={{ zIndex: 1 }}>
+        <img
+          alt="goto"
+          src={arrow}
+          style={{ width: 30, height: 30, right: 10, top: 10 }}
+          className="absolute filter hover:grayscale-0 "
+        />
 
-      <div className="flex flex-col">
-        <span
-          style={{ fontSize: 28, marginBottom: 18 }}
-          className="font-medium"
-        >
-          {title}
-        </span>
-        <span style={{ fontSize: 20 }}>{children}</span>
+        <div className="p-5 flex flex-col">
+          <span
+            style={{ fontSize: 28, marginBottom: 18 }}
+            className="font-medium"
+          >
+            {title}
+          </span>
+          <span style={{ fontSize: 20 }}>{children}</span>
+        </div>
       </div>
     </div>
   );

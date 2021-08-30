@@ -37,7 +37,10 @@ module.exports = {
           100: "#b0adb0",
           200: "#707070",
         },
-        orange: "#ea5c1f",
+        orange: {
+          100: "#fcede6",
+          DEFAULT: "#ea5c1f",
+        },
         base: "#1B1B1C",
       },
       grayscale: {
