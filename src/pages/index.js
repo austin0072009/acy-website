@@ -8,6 +8,7 @@ import WhatIsACY from "./WhatIsACY";
 import Advantage from "./Advantage";
 import Ecosystem from "./Ecosystem";
 import Governance from "./Governance";
+import AcyToken from "./AcyToken";
 export {
   Main,
   Privacy,
@@ -19,4 +20,5 @@ export {
   Advantage,
   Ecosystem,
   Governance,
+  AcyToken,
 };

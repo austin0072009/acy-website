@@ -7,6 +7,7 @@ import {
   About,
   Ecosystem,
   Governance,
+  AcyToken,
 } from "./pages";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Header, Footer } from "./components";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/cookie-policy" component={Cookie} />
           <Route path="/ecosystem" component={Ecosystem} />
           <Route path="/governance" component={Governance} />
+          <Route path="/acy-token" component={AcyToken} />
           {/* <Route path="/acy-token" component={AcyToken} /> */}
         </Switch>
         <Footer></Footer>

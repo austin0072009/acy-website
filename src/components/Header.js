@@ -22,7 +22,7 @@ const Header = ({ active, setActive }) => {
   let menu = useMemo(() => [
     { title: "Ecosystem", link: "/ecosystem" },
     { title: "Governance", link: "/governance" },
-    { title: "ACY Token", link: "/" },
+    { title: "ACY Token", link: "/acy-token" },
     { title: "About", link: "/about-us" },
   ]);
 
