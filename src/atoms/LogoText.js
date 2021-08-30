@@ -17,26 +17,25 @@ const LogoText = ({ LogoUrl, text, url = null, children }) => {
         if (url) window.location.href = url;
       }}
     >
-      {active ? (
-        <Typist
-          cursor={{ show: false }}
-          className="text-orange text-xs text-center"
-        >
-          {children}
-        </Typist>
-      ) : (
-        <span style={{ height: "0.5rem" }}></span>
-      )}
+      {active ? null : <span style={{ height: "0.5rem" }}></span>}
+      <span className="text-orange text-xs text-center">{children}</span>
+      {active ? null : <span style={{ height: "0.5rem" }}></span>}
       <img
         src={LogoUrl}
         alt={text}
         className="py-3 w-10"
         style={{ maxWidth: "40px" }}
       />
-
-      <p className={`my-0 text-brown-50 font-medium text-lg`}>{text}</p>
-
-      {active ? null : <span style={{ height: "0.5rem" }}></span>}
+      {active ? (
+        <Typist
+          cursor={{ show: false }}
+          className="text-orange text-xs text-center"
+        >
+          <p className={`my-0 text-brown-50 font-medium text-lg`}>{text}</p>
+        </Typist>
+      ) : (
+        <span style={{ height: "0.75rem" }}></span>
+      )}
     </div>
   );
 };

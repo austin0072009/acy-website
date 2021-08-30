@@ -9,10 +9,15 @@ const StyledDiv = styled.div`
 
 const MdTextField = ({ text, title }) => {
   return (
-    <div className="mx-2 py-12 sm:mx-5 lg:mx-10 xl:mx-20 px-2 sm:px-5 xl:px-20 lg:px-10 relative">
-      <FloatingReturnButton />
-      <div className="px-8 pb-10 pt-3 rounded">
-        <div className="text-orange text-5xl mb-10">{title}</div>
+    <div className="relative px-4 sm:px-10 xl:px-24 lg:px-20">
+      <div className="p-2 md:p-10 lg:p-20 rounded">
+        <div className="flex justify-between items-center">
+          <div className="text-orange text-4xl md:text-5xl my-1 md:my-10">
+            {title}
+          </div>
+
+          <FloatingReturnButton />
+        </div>
         <StyledDiv className={style.reactMarkDown}>
           <ReactMarkdown>{text}</ReactMarkdown>
         </StyledDiv>

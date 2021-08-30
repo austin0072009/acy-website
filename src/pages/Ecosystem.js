@@ -43,8 +43,10 @@ const Ecosystem = () => {
         className="relative px-4 sm:px-10 xl:px-24 lg:px-20"
         style={{ zIndex: 1 }}
       >
-        <div className="p-2 md:p-20">
-          <div className="text-orange text-5xl mb-10">Ecosystem</div>
+        <div className="p-2 md:p-10 lg:p-20">
+          <div className="text-orange text-4xl md:text-5xl my-1 md:my-10">
+            Ecosystem
+          </div>
           {data.map((item) => (
             <TopicText
               title={item.title}

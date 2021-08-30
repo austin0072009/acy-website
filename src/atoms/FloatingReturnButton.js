@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const FloatingReturnButton = () => {
   let [active, setActive] = useState(false);
   return (
-    <div className="p-2 sticky top-3 float-right cursor-pointer">
+    <div className="p-2 sticky top-3 flex justify-end cursor-pointer">
       <Link to="/">
         <img
           src={active ? hclose : close}

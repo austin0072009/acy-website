@@ -28,7 +28,10 @@ const TopicText = ({ title, paragraphs, bulletType = 0 }) => {
         style={{ zIndex: 1, paddingLeft: isMobile ? 0 : 30 }}
       >
         {paragraphs.map((paragraph) => (
-          <p style={{ color: "#B5B6B6" }} className="text-sm md:text-xl">
+          <p
+            style={{ color: "#B5B6B6", lineHeight: "30px" }}
+            className="text-sm md:text-xl"
+          >
             {paragraph}
           </p>
         ))}
