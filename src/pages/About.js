@@ -40,17 +40,6 @@ const About = () => {
               default_path="/about-us"
             ></SideMenu>
           </div>
-          <Switch>
-            <Route exact path={`${match.path}/`}>
-              <WhatIsACY />
-            </Route>
-            <Route path={`${match.path}/mev-robots`}>
-              <MEVRobots />
-            </Route>
-            <Route path={`${match.path}/arbitrage-supremacy`}>
-              <Advantage />
-            </Route>
-          </Switch>
         </div>
       </div>
     </div>

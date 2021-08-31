@@ -8,6 +8,9 @@ import {
   Ecosystem,
   Governance,
   AcyToken,
+  MEVRobots,
+  WhatIsACY,
+  Advantage,
 } from "./pages";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Header, Footer } from "./components";
@@ -35,6 +38,16 @@ function App() {
           <Route path="/ecosystem" component={Ecosystem} />
           <Route path="/governance" component={Governance} />
           <Route path="/acy-token" component={AcyToken} />
+
+          <Route path={`/about-us/`}>
+            <WhatIsACY />
+          </Route>
+          <Route path={`/about-us/mev-robots`}>
+            <MEVRobots />
+          </Route>
+          <Route path={`/about-us/arbitrage-supremacy`}>
+            <Advantage />
+          </Route>
           {/* <Route path="/acy-token" component={AcyToken} /> */}
         </Switch>
         <Footer></Footer>
