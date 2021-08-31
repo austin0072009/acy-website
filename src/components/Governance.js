@@ -25,18 +25,23 @@ const Governance = () => {
         <div className="w-auto md:w-5/12 flex items-stretch">
           <ColoredTab></ColoredTab>
         </div>
-        <div className="flex flex-col flex-grow">
-          <TextTabLink title="Governance Forum" link="https://gov.acy.finance">
-            Participate by proposing upgrades and discussing the future of the
-            protocol with the ACY community.
-          </TextTabLink>
+        <div className="flex flex-col flex-grow justify-between  gap-y-5">
+          <div className="flex flex-col md:flex-row gap-x-5">
+            <TextTabLink
+              title="Governance Forum"
+              link="https://gov.acy.finance"
+            >
+              Participate by proposing upgrades and discussing the future of the
+              protocol with the ACY community.
+            </TextTabLink>
+            <TextTabLink title="Governance Proposal">
+              Vote on ACY governance proposals in Snapshot and view past
+              proposals.
+              <br />
+              Votes are weighted by the number of ACY delegates.
+            </TextTabLink>
+          </div>
           <SocialMedias></SocialMedias>
-          <TextTabLink title="Governance Proposal">
-            Vote on ACY governance proposals in Snapshot and view past
-            proposals.
-            <br />
-            Votes are weighted by the number of ACY delegates.
-          </TextTabLink>
         </div>
       </div>
     </div>

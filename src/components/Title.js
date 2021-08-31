@@ -4,7 +4,7 @@ import Typist from "react-typist";
 const Title = () => {
   return (
     <div
-      className="mx-2 sm:mx-5 lg:mx-10 xl:mx-12 px-2 sm:px-5 xl:px-12 lg:px-8 pt-5 md:pt-20 relative mb-20 flex flex-col md:flex-row"
+      className="pt-5 md:pt-20 relative mb-20 flex flex-col md:flex-row"
       style={{ zIndex: 0 }}
     >
       <div

@@ -5,17 +5,17 @@ const ColoredTab = () => {
   let smallerThan1280 = useMediaPredicate("(max-width: 1280px)");
 
   return (
-    <div className="flex flex-col bg-gov-bg bg-cover text-gray-100 rounded-3xl py-4 md:py-10 px-4 md:px-12 justify-between mb-3">
+    <div className="flex flex-col bg-gov-bg bg-cover text-gray-100 rounded-2xl py-4 md:py-6 px-4 md:px-12 justify-between mb-3">
       <div
         className="font-medium"
-        style={{ fontSize: smallerThan568 ? 24 : 32 }}
+        style={{ fontSize: smallerThan568 ? 16 : 28 }}
       >
         Governed by the community
       </div>
 
       <div
         className="mb-5"
-        style={{ fontSize: smallerThan568 ? 16 : smallerThan1280 ? 20 : 24 }}
+        style={{ fontSize: smallerThan568 ? 16 : smallerThan1280 ? 14 : 16 }}
       >
         The ACY Protocol is governed by a decentralized community of ACY token
         holders and their delegates who propose and vote on upgrades to the

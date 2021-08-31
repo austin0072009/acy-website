@@ -8,7 +8,7 @@ const TextTabLink = ({ title, link = "/", children }) => {
         window.location.href = link;
       }}
       style={{ zIndex: 0 }}
-      className="mb-3 moveTopRightOnHover text-gray-100 rounded-xl relative grayscale filter hover:grayscale-0 cursor-pointer"
+      className="w-auto md:w-1/2 moveTopRightOnHover text-gray-100 rounded-xl relative grayscale filter hover:grayscale-0 cursor-pointer"
     >
       <div
         className="absolute rounded-xl bg-orange w-full h-full opacity-10"
