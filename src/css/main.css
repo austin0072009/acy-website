@@ -1,0 +1,47 @@
+@keyframes expand {
+  10% {
+    r: 0;
+  }
+  20% {
+    r: 40;
+  }
+  100% {
+    r: 40;
+  }
+}
+
+.myCircle {
+  animation: expand 6s ease infinite;
+  animation-fill-mode: forwards;
+}
+
+.coin circle {
+  fill: #ea5c1f;
+  stroke-width: 0px;
+}
+
+.coin text {
+  stroke: white;
+  stroke-width: 1px;
+  fill: white;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.players text {
+  stroke: white;
+  stroke-width: 1px;
+  fill: #eb5c20;
+  animation: show 1s;
+  animation-fill-mode: forwards;
+}
+
+.ratios text {
+  fill: white;
+}
