@@ -25,16 +25,15 @@ const Title = () => {
   let [ratio3, setRatio3] = useState(0);
 
   useEffect(() => {
-    setRatio2(Math.random() * 0.1 + 0.4);
-    setRatio3(1 - ratio1 - ratio2);
+    setRatio2((Math.random() * 0.1 + 0.4).toFixed(2));
+    setRatio3((1 - ratio1 - ratio2).toFixed(2));
     console.log(ratio1, ratio2, ratio3);
   }, [ratio1]);
 
   useEffect(() => {
     setRatio1(Math.random());
     setInterval(() => {
-      console.log("RANDOM");
-      setRatio1(Math.random() * 0.1 + 0.3);
+      setRatio1((Math.random() * 0.1 + 0.3).toFixed(2));
     }, 8000);
   }, []);
 
@@ -67,7 +66,7 @@ const Title = () => {
           by robot invasion and enables the users make profit automatically.
         </p>
       </div>
-      <div className="w-2/5 flex justify-center item-center">
+      <div className="w-auto lg:w-2/5 flex justify-center item-center">
         <svg style={{ width: "100%", height: "100%" }} viewBox="0 0 600 600">
           <g transform="translate(50,300)">
             <g>
