@@ -29,16 +29,14 @@ const Governance = () => {
           <div className="flex flex-col md:flex-row gap-x-5 gap-y-5">
             <TextTabLink
               title="Governance Forum"
-              link="https://gov.acy.finance"
+              link="https://forum.acy.finance"
             >
               Participate by proposing upgrades and discussing the future of the
               protocol with the ACY community.
             </TextTabLink>
             <TextTabLink title="Governance Proposal">
-              Vote on ACY governance proposals in Snapshot and view past
-              proposals.
-              <br />
-              Votes are weighted by the number of ACY delegates.
+              Participate by Voting on governance proposals in ACY DAO and view
+              past proposals.
             </TextTabLink>
           </div>
           <SocialMedias></SocialMedias>

@@ -94,7 +94,7 @@
 }
 
 .rotateOnHover {
-  transition: transform 0.2s;
+  transition: transform 0.5s;
   transform: rotateY(0deg);
 }
 
@@ -103,7 +103,7 @@
 }
 
 .rotateOnHover:active {
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
 }
 
 .blink1 div {

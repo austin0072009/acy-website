@@ -1,5 +1,5 @@
-import submit from "../assets/arrow_submit.png";
-import hsubmit from "../assets/arrow_submit_hover.png";
+import submit from "../assets/svgs/footer/arrow_submit.svg";
+import hsubmit from "../assets/svgs/footer/arrow_submit_hover.svg";
 import styled from "styled-components";
 import style from "../css/animation.css";
 import { useState, useCallback } from "react";
@@ -95,7 +95,7 @@ const FooterEmail = () => {
               src={active ? hsubmit : submit}
               alt="submit"
               className="moveLROnClick cursor-pointer"
-              style={{ maxWidth: 40 }}
+              style={{ minWidth: 40, maxWidth: 40 }}
               onClick={subscribe}
             />
           </div>

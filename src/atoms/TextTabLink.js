@@ -1,11 +1,16 @@
-import arrow from "../assets/arrow_orange.png";
+import arrow from "../assets/svgs/main/arrow.svg";
 import style from "../css/animation.css";
+
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
 
 const TextTabLink = ({ title, link = "/", children }) => {
   return (
     <div
       onClick={() => {
-        window.location.href = link;
+        openInNewTab(link);
       }}
       style={{ zIndex: 0 }}
       className="w-auto md:w-1/2 moveTopRightOnHover text-gray-100 rounded-xl relative grayscale filter hover:grayscale-0 cursor-pointer"

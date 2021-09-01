@@ -2,6 +2,11 @@ import { useState } from "react";
 import Typist from "react-typist";
 import style from "../css/animation.css";
 
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
 const LogoText = ({ LogoUrl, text, url = null, children }) => {
   let [active, setActive] = useState(false);
   return (
@@ -14,7 +19,7 @@ const LogoText = ({ LogoUrl, text, url = null, children }) => {
         setActive(false);
       }}
       onClick={() => {
-        if (url) window.location.href = url;
+        if (url) openInNewTab(url);
       }}
       style={{ zIndex: 0 }}
     >

@@ -1,5 +1,5 @@
 import logo from "../assets/logo.svg";
-import menuImg from "../assets/menu_orange.png";
+import menuImg from "../assets/svgs/header/menu_orange.svg";
 import { Link } from "react-router-dom";
 import style from "../css/animation.css";
 import { useState, useMemo, useEffect } from "react";

@@ -1,6 +1,5 @@
 import bullet0 from "../assets/arrow_bullet_orange.png";
-import bullet1 from "../assets/cylinder_bullet.png";
-import planet from "../assets/planet.png";
+import bullet1 from "../assets/svgs/bullets/cylinder_bullet.svg";
 import style from "../css/animation.css";
 import { isMobile } from "react-device-detect";
 

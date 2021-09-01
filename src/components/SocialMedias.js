@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 import { LogoText } from "../atoms";
-import twitter from "../assets/twitter_hover.png";
-import telegram from "../assets/telegram_hover.png";
-import linkedin from "../assets/linkedin_hover.png";
-import discord from "../assets/discord_hover.png";
-import medium from "../assets/medium_hover.png";
+import twitter from "../assets/svgs/main/social_media/twitter_hover.svg";
+import telegram from "../assets/svgs/main/social_media/telegram_hover.svg";
+import linkedin from "../assets/svgs/main/social_media/linkedin_hover.svg";
+import discord from "../assets/svgs/main/social_media/discord_hover.svg";
+import medium from "../assets/svgs/main/social_media/medium_hover.svg";
 import youtube from "../assets/youtube_hover.png";
 
 const SocialMedias = () => {

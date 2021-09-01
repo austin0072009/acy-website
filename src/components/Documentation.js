@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { TabLink } from ".";
-import litepaper from "../assets/litepaper.png";
+import litepaper from "../assets/svgs/main/documentation/litepaper.svg";
 import hlitepaper from "../assets/litepaper_hover.png";
-import gitbook from "../assets/gitbook.png";
+import gitbook from "../assets/svgs/main/documentation/gitbook.svg";
 import hgitbook from "../assets/gitbook_hover.png";
 import github from "../assets/github.png";
 import hgithub from "../assets/github_hover.png";

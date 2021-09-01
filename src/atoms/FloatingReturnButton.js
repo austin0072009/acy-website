@@ -1,5 +1,5 @@
-import close from "../assets/close.png";
-import hclose from "../assets/close_hover.png";
+import close from "../assets/svgs/close/close.svg";
+import hclose from "../assets/svgs/close/close_hover.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 

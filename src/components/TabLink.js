@@ -1,4 +1,4 @@
-import arrow from "../assets/arrow_orange.png";
+import arrow from "../assets/svgs/main/arrow.svg";
 import style from "../css/animation.css";
 import { HorizontalLogo } from "../atoms";
 import { useState } from "react";
