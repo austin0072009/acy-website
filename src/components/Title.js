@@ -20,14 +20,18 @@ const PercentHook = ({ value, id }) => {
 };
 
 const Title = () => {
-  let [ratio1, setRatio1] = useState(0);
-  let [ratio2, setRatio2] = useState(0);
-  let [ratio3, setRatio3] = useState(0);
+  let [ratio1, setRatio1] = useState("");
+  let [ratio2, setRatio2] = useState("");
+  let [ratio3, setRatio3] = useState("");
 
   useEffect(() => {
-    setRatio2((Math.random() * 0.1 + 0.4).toFixed(2));
-    setRatio3((1 - ratio1 - ratio2).toFixed(2));
+    setRatio3((1 - parseFloat(ratio1) - parseFloat(ratio2)).toFixed(2));
     console.log(ratio1, ratio2, ratio3);
+  }, [ratio2]);
+
+  useEffect(() => {
+    let ratio2random = (Math.random() * 0.1 + 0.4).toFixed(2);
+    setRatio2(ratio2random);
   }, [ratio1]);
 
   useEffect(() => {
