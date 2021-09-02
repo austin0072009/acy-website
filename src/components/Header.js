@@ -53,7 +53,7 @@ const Header = ({ active, setActive }) => {
       <Link to="/">
         <img
           src={logo}
-          style={{ width: "3%", minWidth: "40px", maxWidth: "100px" }}
+          style={{ width: 30, height: 30 }}
           alt="logo"
           className="cursor-pointer rotateOnHover"
         />
@@ -96,7 +96,7 @@ const Header = ({ active, setActive }) => {
           id="menu"
           alt="menu"
           src={menuImg}
-          style={{ width: "3%", minWidth: "40px", maxWidth: "100px" }}
+          style={{ width: "3%", minWidth: "40px", maxWidth: "30px" }}
           onClick={() => {
             setActive(!active);
           }}

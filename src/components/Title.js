@@ -28,9 +28,9 @@ const PercentHook = ({ value, id, filter }) => {
 };
 
 const Title = ({ iframeLoaded }) => {
-  let [ratio1, setRatio1] = useState("");
-  let [ratio2, setRatio2] = useState("");
-  let [ratio3, setRatio3] = useState("");
+  let [ratio1, setRatio1] = useState("30");
+  let [ratio2, setRatio2] = useState("40");
+  let [ratio3, setRatio3] = useState("20");
 
   useEffect(() => {
     setRatio3(parseInt(100 - ratio1 - ratio2));

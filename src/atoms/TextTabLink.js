@@ -27,14 +27,14 @@ const TextTabLink = ({ title, link = "/", children }) => {
           className="absolute filter hover:grayscale-0 "
         />
 
-        <div className="p-5 flex flex-col">
+        <div className="p-5 flex flex-col justify-center h-1/2">
           <span
             style={{ fontSize: 28, marginBottom: 18 }}
             className="font-medium"
           >
             {title}
           </span>
-          <span style={{ fontSize: 20 }}>{children}</span>
+          <p className="my-0">{children}</p>
         </div>
       </div>
     </div>

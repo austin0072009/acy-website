@@ -102,7 +102,7 @@ const FooterEmail = () => {
         </div>
       )}
       <div className="my-4" style={{ color: "#757579" }}>
-        Subscribe to our blog for project and ecosystem updates
+        Subscribe for project and ecosystem updates
       </div>
     </div>
   );

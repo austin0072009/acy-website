@@ -1,5 +1,4 @@
 import { FooterNavigation, FooterEmail } from ".";
-import footer from "../assets/footer2.png";
 
 const Footer = () => {
   return (
