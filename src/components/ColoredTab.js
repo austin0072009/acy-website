@@ -1,4 +1,5 @@
 import { useMediaPredicate } from "react-media-hook";
+import { Link } from "react-router-dom";
 
 const ColoredTab = () => {
   let smallerThan568 = useMediaPredicate("(max-width: 568px)");
@@ -22,9 +23,14 @@ const ColoredTab = () => {
         protocol.
       </div>
       <div className="filter hover:brightness-200 cursor-pointer">
-        <span className="px-5 py-1 text-xl border-solid border-1 border border-gray-100 rounded-3xl font-medium">
-          Read More
-        </span>
+        <Link to="/governance">
+          <span
+            className="px-5 py-1 text-xl border-solid border-1 border border-gray-100 rounded-3xl font-medium text-white"
+            style={{ textDecoration: "none" }}
+          >
+            Read More
+          </span>
+        </Link>
       </div>
     </div>
   );

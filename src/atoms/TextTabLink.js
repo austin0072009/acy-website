@@ -1,20 +1,27 @@
 import arrow from "../assets/svgs/main/arrow.svg";
 import style from "../css/animation.css";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
   if (newWindow) newWindow.opener = null;
 };
 
-const TextTabLink = ({ title, link = "/", children }) => {
+const TextTabLink = ({ title, link = "/", type = "external", children }) => {
+  let navigateButton = useRef(null);
   return (
     <div
       onClick={() => {
-        openInNewTab(link);
+        console.log(navigateButton.current);
+        type === "external"
+          ? openInNewTab(link)
+          : navigateButton.current.click();
       }}
       style={{ zIndex: 0 }}
       className="w-auto md:w-1/2 moveTopRightOnHover text-gray-100 rounded-xl relative grayscale filter hover:grayscale-0 cursor-pointer"
     >
+      <Link to={link} ref={navigateButton} />
       <div
         className="absolute rounded-xl bg-orange w-full h-full opacity-10"
         style={{ zIndex: -1 }}

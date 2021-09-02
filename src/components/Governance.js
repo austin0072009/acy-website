@@ -34,7 +34,11 @@ const Governance = () => {
               Participate by proposing upgrades and discussing the future of the
               protocol with the ACY community.
             </TextTabLink>
-            <TextTabLink title="Governance Proposal">
+            <TextTabLink
+              title="Governance Proposal"
+              link="/governance"
+              type="local"
+            >
               Participate by Voting on governance proposals in ACY DAO and view
               past proposals.
             </TextTabLink>
