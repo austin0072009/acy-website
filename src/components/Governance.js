@@ -25,7 +25,7 @@ const Governance = () => {
         <div className="w-auto md:w-5/12 flex items-stretch">
           <ColoredTab></ColoredTab>
         </div>
-        <div className="flex flex-col flex-grow justify-between  gap-y-5">
+        <div className="flex flex-col flex-grow justify-between gap-y-5">
           <div className="flex flex-col h-full md:flex-row gap-x-5 gap-y-5">
             <TextTabLink
               title="Governance Forum"

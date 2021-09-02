@@ -67,6 +67,7 @@ const Documentation = () => {
       <div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0">
         {data.map((item) => (
           <TabLink
+            key={item.title}
             title={item.title}
             content={item.content}
             link={item.link}

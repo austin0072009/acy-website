@@ -19,7 +19,10 @@ const TextTabLink = ({ title, link = "/", children }) => {
         className="absolute rounded-xl bg-orange w-full h-full opacity-10"
         style={{ zIndex: -1 }}
       ></div>
-      <div className="relative" style={{ zIndex: 1 }}>
+      <div
+        className="relative h-full flex "
+        style={{ zIndex: 1, alignItems: "stretch" }}
+      >
         <img
           alt="goto"
           src={arrow}
@@ -27,7 +30,7 @@ const TextTabLink = ({ title, link = "/", children }) => {
           className="absolute filter hover:grayscale-0 "
         />
 
-        <div className="p-5 flex flex-col justify-center h-1/2">
+        <div className="p-5 flex flex-col justify-center ">
           <span
             style={{ fontSize: 28, marginBottom: 18 }}
             className="font-medium"

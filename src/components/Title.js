@@ -34,7 +34,6 @@ const Title = ({ iframeLoaded }) => {
 
   useEffect(() => {
     setRatio3(parseInt(100 - ratio1 - ratio2));
-    console.log(ratio1, ratio2, ratio3);
   }, [ratio2]);
 
   useEffect(() => {
@@ -81,11 +80,7 @@ const Title = ({ iframeLoaded }) => {
         </p>
       </div>
       <div className="w-auto lg:w-2/5 flex justify-center item-center">
-        <svg
-          style={{ width: "100%", height: "100%" }}
-          viewBox="0 0 600 600"
-          timelineBegin="onStart"
-        >
+        <svg style={{ width: "100%", height: "100%" }} viewBox="0 0 600 600">
           <g transform="translate(50,300)">
             <g transform="translate(30,-160)">
               <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0">
@@ -104,7 +99,7 @@ const Title = ({ iframeLoaded }) => {
                 style={{ fill: "none", stroke: "gray", strokeWidth: 3 }}
               />
 
-              <circle id="sETH" r="20" fill="#70ba33" stroke-width="0">
+              <circle id="sETH" r="20" fill="#70ba33" strokeWidth="0">
                 <animate
                   id="expandsETH"
                   attributeName="r"
@@ -227,10 +222,10 @@ const Title = ({ iframeLoaded }) => {
                 <text
                   x="0"
                   y="0"
-                  text-anchor="middle"
+                  textAnchor="middle"
                   stroke="white"
-                  stroke-width="1px"
-                  alignment-baseline="middle"
+                  strokeWidth="1px"
+                  alignmentBaseline="middle"
                 >
                   {" "}
                   USDC
@@ -244,7 +239,7 @@ const Title = ({ iframeLoaded }) => {
                   cy="-125"
                   fill="none"
                   stroke="white"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <animate
                     id="ETHexpand"
@@ -278,10 +273,10 @@ const Title = ({ iframeLoaded }) => {
                 <text
                   x="250"
                   y="-125"
-                  text-anchor="middle"
+                  textAnchor="middle"
                   stroke="red"
-                  stroke-width="1px"
-                  alignment-baseline="middle"
+                  strokeWidth="1px"
+                  alignmentBaseline="middle"
                 >
                   {" "}
                   ETH
@@ -331,10 +326,10 @@ const Title = ({ iframeLoaded }) => {
                 <text
                   x="250"
                   y="130"
-                  text-anchor="middle"
+                  textAnchor="middle"
                   stroke="red"
-                  stroke-width="1px"
-                  alignment-baseline="middle"
+                  strokeWidth="1px"
+                  alignmentBaseline="middle"
                 >
                   {" "}
                   DOT
@@ -370,7 +365,7 @@ const Title = ({ iframeLoaded }) => {
                   y="0"
                   text-anchor="middle"
                   stroke-width="1px"
-                  alignment-baseline="middle"
+                  alignmentBaseline="middle"
                 >
                   {" "}
                   BTC

@@ -68,7 +68,7 @@ const Header = ({ active, setActive }) => {
           <div className="grid grid-cols-1 gap-x-2 gap-y-5">
             {menu.map((item) =>
               location.pathname === item.link ? (
-                <div>
+                <div key={item.link}>
                   <div className="mr-3 inline-block transition-padding pb-1 hover:pb-4 border-solid border-t-0 border-l-0 border-r-0 border-b border-orange hover:border-orange">
                     <Link to={item.link} style={anchorStyles}>
                       <span
@@ -81,7 +81,7 @@ const Header = ({ active, setActive }) => {
                   </div>
                 </div>
               ) : (
-                <Link to={item.link} style={anchorStyles}>
+                <Link key={item.link} to={item.link} style={anchorStyles}>
                   <span className="text-orange filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 mr-3 cursor-pointer">
                     {item.title}
                   </span>
