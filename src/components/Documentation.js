@@ -23,7 +23,7 @@ const Documentation = () => {
       logoText: "Litepaper",
       src: litepaper,
       src_hover: hlitepaper,
-      link: "/",
+      link: "https://api.acy.finance/ACY%20Finance%20Whitepaper.pdf",
     },
     {
       title: "Guides, Rules and FAQs",
