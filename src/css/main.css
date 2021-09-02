@@ -47,6 +47,10 @@
     font-size: 14px;
   }
   20% {
+    font-weight: auto;
+    font-size: 14px;
+  }
+  25% {
     font-weight: bold;
     font-size: 20px;
   }

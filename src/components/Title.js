@@ -27,7 +27,7 @@ const PercentHook = ({ value, id, filter }) => {
   );
 };
 
-const Title = () => {
+const Title = ({ iframeLoaded }) => {
   let [ratio1, setRatio1] = useState("");
   let [ratio2, setRatio2] = useState("");
   let [ratio3, setRatio3] = useState("");
@@ -43,12 +43,13 @@ const Title = () => {
   }, [ratio1]);
 
   useEffect(() => {
+    if (!iframeLoaded) return;
     console.log("start");
     setRatio1(parseInt((Math.random() * 0.1 + 0.3) * 100));
     setInterval(() => {
       setRatio1(parseInt((Math.random() * 0.1 + 0.3) * 100));
     }, 8500);
-  }, []);
+  }, [iframeLoaded]);
 
   return (
     <div
