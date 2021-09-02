@@ -1,4 +1,4 @@
-import arrowBullet from "../assets/arrow_bullet_orange.png";
+import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { ColoredTab, TextTabLink, SocialMedias } from ".";
 import { useMediaPredicate } from "react-media-hook";
 

@@ -3,12 +3,17 @@ import style from "../css/animation.css";
 import { HorizontalLogo } from "../atoms";
 import { useState } from "react";
 
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
 const TabLink = ({ title, content, link = "/", src, src_hover, logoText }) => {
   let [active, setActive] = useState(false);
   return (
     <div
       onClick={() => {
-        window.location.href = link;
+        openInNewTab(link);
       }}
       onMouseEnter={() => {
         setActive(true);

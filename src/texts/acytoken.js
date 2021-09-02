@@ -36,7 +36,7 @@ ACY Foundation is a non-profit organization to facilitate decentralized decision
 3) 20% for Institutional Investors - 40,000,000 (40 million)
 Institutional investors are companies or organisations, such as Venture Capitals, who hold our tokens through private sales.
 
-4) 15% for Marketing and Community - 30,000,000 (30 million)
+4) 15% for Marketing - 30,000,000 (30 million)
 These include IDOs and airdrops. We are currently holding our first IDO with Hippo Finance, with several others in the pipeline. Airdrops will be streamed until all allocated funds are exhausted.
 
 5) 20% for Providers and Users - 40,000,000 (40 million)

@@ -2,7 +2,7 @@ import { isMobile } from "react-device-detect";
 import { useEffect, useState } from "react";
 import placeholder from "../assets/default.png";
 
-export const VideoPanel = () => {
+export const VideoPanel = ({ setIframeLoaded }) => {
   let [webGLStatus, setWebGLStatus] = useState(true);
   useEffect(() => {
     let supportedXtensionList = document
@@ -23,9 +23,12 @@ export const VideoPanel = () => {
       <div className="flex flex-col items-center">
         {webGLStatus ? (
           <iframe
+            onLoad={() => {
+              setIframeLoaded(true);
+            }}
             style={{
               width: "100%",
-              height: "100vh",
+              height: "90vh",
               maxHeight: isMobile ? "700px" : "1000px",
             }}
             className="rounded-xl"

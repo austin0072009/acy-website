@@ -16,7 +16,7 @@
 }
 
 .coin circle {
-  fill: #ea5c1f;
+  fill: #757579;
   stroke-width: 0px;
 }
 
@@ -26,22 +26,62 @@
   fill: white;
 }
 
-@keyframes show {
-  from {
+@keyframes showAndHide {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
     opacity: 1;
   }
-}
-.players text {
-  stroke: white;
-  stroke-width: 1px;
-  fill: #eb5c20;
-  animation: show 1s;
-  animation-fill-mode: forwards;
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.ratios text {
-  fill: white;
+@keyframes highlightOnEnd {
+  0% {
+    font-weight: auto;
+    font-size: 14px;
+  }
+  20% {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  30% {
+    font-weight: auto;
+    font-size: 14px;
+  }
+  100% {
+    font-weight: auto;
+    font-size: 14px;
+  }
+}
+
+.ratios {
+  color: #ea5c1f;
+  border-radius: 3px;
+  padding: 2px;
+  min-width: 30px;
+  text-align: center;
+  animation: highlightOnEnd 8.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.ratios.id-1 {
+  color: #70ba33;
+}
+
+.ratios.id-3 {
+  color: #e29227 !important;
+}
+
+#algo_title {
+  color: white;
+  animation: showAndHide 8.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }

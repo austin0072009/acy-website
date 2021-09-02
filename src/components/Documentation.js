@@ -4,9 +4,9 @@ import litepaper from "../assets/svgs/main/documentation/litepaper.svg";
 import hlitepaper from "../assets/litepaper_hover.png";
 import gitbook from "../assets/svgs/main/documentation/gitbook.svg";
 import hgitbook from "../assets/gitbook_hover.png";
-import github from "../assets/github.png";
+import github from "../assets/svgs/main/documentation/github.svg";
 import hgithub from "../assets/github_hover.png";
-import arrowBullet from "../assets/arrow_bullet_orange.png";
+import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { useMediaPredicate } from "react-media-hook";
 import style from "../css/animation.css";
 

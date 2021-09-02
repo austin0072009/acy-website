@@ -2,20 +2,28 @@ import { isMobile } from "react-device-detect";
 import Typist from "react-typist";
 import style from "../css/main.css";
 import { useCountUp } from "react-countup";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
-const PercentHook = ({ value, id }) => {
+const PercentHook = ({ value, id, filter }) => {
   useCountUp({
     ref: `counter${id}`,
-    duration: 1,
-    decimals: 2,
+    duration: 2,
     start: 0,
     end: value,
   });
   return (
-    <tspan>
-      <tspan id={`counter${id}`} />%
-    </tspan>
+    <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0">
+      <foreignObject x="0" y="0" width="160" height="160">
+        <div className={`ratios inline-block id-${id}`}>
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            className="inline-block"
+            id={`counter${id}`}
+          ></div>
+          %
+        </div>
+      </foreignObject>
+    </svg>
   );
 };
 
@@ -25,20 +33,21 @@ const Title = () => {
   let [ratio3, setRatio3] = useState("");
 
   useEffect(() => {
-    setRatio3((1 - parseFloat(ratio1) - parseFloat(ratio2)).toFixed(2));
+    setRatio3(parseInt(100 - ratio1 - ratio2));
     console.log(ratio1, ratio2, ratio3);
   }, [ratio2]);
 
   useEffect(() => {
-    let ratio2random = (Math.random() * 0.1 + 0.4).toFixed(2);
+    let ratio2random = parseInt((Math.random() * 0.1 + 0.4) * 100);
     setRatio2(ratio2random);
   }, [ratio1]);
 
   useEffect(() => {
-    setRatio1(Math.random());
+    console.log("start");
+    setRatio1(parseInt((Math.random() * 0.1 + 0.3) * 100));
     setInterval(() => {
-      setRatio1((Math.random() * 0.1 + 0.3).toFixed(2));
-    }, 8000);
+      setRatio1(parseInt((Math.random() * 0.1 + 0.3) * 100));
+    }, 8500);
   }, []);
 
   return (
@@ -71,8 +80,21 @@ const Title = () => {
         </p>
       </div>
       <div className="w-auto lg:w-2/5 flex justify-center item-center">
-        <svg style={{ width: "100%", height: "100%" }} viewBox="0 0 600 600">
+        <svg
+          style={{ width: "100%", height: "100%" }}
+          viewBox="0 0 600 600"
+          timelineBegin="onStart"
+        >
           <g transform="translate(50,300)">
+            <g transform="translate(30,-160)">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0">
+                <foreignObject x="0" y="0" width="160" height="160">
+                  <Typist cursor={{ show: false }}>
+                    <span id="algo_title">ACY Algorithm</span>
+                  </Typist>
+                </foreignObject>
+              </svg>
+            </g>
             <g>
               <path
                 id="upcurve"
@@ -81,20 +103,20 @@ const Title = () => {
                 style={{ fill: "none", stroke: "gray", strokeWidth: 3 }}
               />
 
-              <circle id="sETH" r="20" fill="#C6224E" stroke-width="0">
+              <circle id="sETH" r="20" fill="#70ba33" stroke-width="0">
                 <animate
-                  id="expand"
+                  id="expandsETH"
                   attributeName="r"
                   values="0;40"
-                  dur="2s"
-                  begin="0s;move.end"
+                  dur="2.5s"
+                  begin="0s;movesETH.end"
                 />
                 <animateMotion
                   additive="sum"
-                  id="move"
+                  id="movesETH"
                   attributeName="motion"
                   attributeType="XML"
-                  begin="expand.end"
+                  begin="expandsETH.end"
                   dur="6s"
                 >
                   <mpath xlinkHref="#upcurve" />
@@ -110,18 +132,18 @@ const Title = () => {
 
               <circle id="sBTC" r="25" fill="#EB5C20">
                 <animate
-                  id="expand"
+                  id="expandsBTC"
                   attributeName="r"
                   values="0;40"
-                  dur="2s"
-                  begin="0s;move.end"
+                  dur="2.5s"
+                  begin="0s;movesBTC.end"
                 />
                 <animateMotion
                   additive="sum"
-                  id="move"
+                  id="movesBTC"
                   attributeName="motion"
                   attributeType="XML"
-                  begin="expand.end"
+                  begin="expandsBTC.end"
                   dur="6s"
                 >
                   <mpath xlinkHref="#line" />
@@ -136,75 +158,53 @@ const Title = () => {
                 style={{ fill: "none", stroke: "gray", strokeWidth: 3 }}
               />
 
-              <circle id="sDOT" r="10" fill="#E29227">
+              <circle id="sDOT" r="15" fill="#e29227">
                 <animate
-                  id="expand"
+                  id="expandsDOT"
                   attributeName="r"
                   values="0;40"
-                  dur="2s"
-                  begin="0s;move.end"
+                  dur="2.5s"
+                  begin="0s;movesDOT.end"
                 />
                 <animateMotion
                   additive="sum"
-                  id="move"
+                  id="movesDOT"
                   attributeName="motion"
                   attributeType="XML"
-                  begin="expand.end"
+                  begin="expandsDOT.end"
                   dur="6s"
                 >
                   <mpath xlinkHref="#downcurve" />
                 </animateMotion>
               </circle>
             </g>
-            <g className="ratios">
-              <text
-                x="20"
-                y="-100"
-                text-anchor="middle"
-                alignment-baseline="middle"
+            <g>
+              <g
+                transform="translate(60,-120)"
+                textAnchor="middle"
+                alignmentBaseline="middle"
               >
                 {" "}
                 <PercentHook id="1" value={ratio1} />
-              </text>
-              <text
-                x="80"
-                y="-20"
-                text-anchor="middle"
-                alignment-baseline="middle"
+              </g>
+              <g
+                transform="translate(60,-40)"
+                textAnchor="middle"
+                alignmentBaseline="middle"
               >
                 {" "}
                 <PercentHook id="2" value={ratio2} />
-              </text>
-              <text
-                x="20"
-                y="100"
-                text-anchor="middle"
-                alignment-baseline="middle"
+              </g>
+              <g
+                transform="translate(60,40)"
+                textAnchor="middle"
+                alignmentBaseline="middle"
               >
                 {" "}
                 <PercentHook id="3" value={ratio3} />
-              </text>
+              </g>
             </g>
-            <g className="players">
-              <text
-                x="0"
-                y="200"
-                text-anchor="middle"
-                alignment-baseline="middle"
-              >
-                {" "}
-                Swap
-              </text>
-              <text
-                x="500"
-                y="200"
-                text-anchor="middle"
-                alignment-baseline="middle"
-              >
-                {" "}
-                ACY Pool
-              </text>
-            </g>
+
             <g className="coin">
               <g>
                 <circle id="USDC" r="40" cx="0" cy="0">
@@ -213,7 +213,7 @@ const Title = () => {
                     attributeName="r"
                     values="40;30"
                     dur="0.5s"
-                    begin="move.begin"
+                    begin="movesDOT.begin"
                   />
                   <animate
                     id="contract_pause"
@@ -244,7 +244,36 @@ const Title = () => {
                   fill="none"
                   stroke="white"
                   stroke-width="2"
-                />
+                >
+                  <animate
+                    id="ETHexpand"
+                    attributeName="r"
+                    values="40;50"
+                    dur="0.25s"
+                    begin="movesDOT.begin+2.5s"
+                  />
+                  <animate
+                    id="ETHchangeColor"
+                    attributeName="fill"
+                    values="#757579;#70ba33"
+                    dur="0.25s"
+                    begin="movesDOT.begin+2.5s"
+                  />
+                  <animate
+                    id="ETHcontract"
+                    attributeName="r"
+                    values="50;40"
+                    dur="0.25s"
+                    begin="ETHexpand.end"
+                  />
+                  <animate
+                    id="ETHchangeColorBack"
+                    attributeName="fill"
+                    values="#70ba33;#757579"
+                    dur="0.25s"
+                    begin="ETHexpand.end"
+                  />
+                </circle>
                 <text
                   x="250"
                   y="-125"
@@ -266,7 +295,38 @@ const Title = () => {
                   fill="none"
                   stroke="white"
                   stroke-width="2"
-                />
+                >
+                  <animate
+                    id="DOTexpand"
+                    attributeName="r"
+                    values="40;50"
+                    dur="0.25s"
+                    begin="movesDOT.begin+2.5s"
+                  />
+
+                  <animate
+                    id="DOTchangeColor"
+                    attributeName="fill"
+                    values="#757579;#e29227"
+                    dur="0.25s"
+                    begin="movesDOT.begin+2.5s"
+                  />
+                  <animate
+                    id="DOTcontract"
+                    attributeName="r"
+                    values="50;40"
+                    dur="0.25s"
+                    begin="DOTexpand.end"
+                  />
+
+                  <animate
+                    id="DOTchangeColorBack"
+                    attributeName="fill"
+                    values="#e29227;#757579"
+                    dur="0.25s"
+                    begin="DOTexpand.end"
+                  />
+                </circle>
                 <text
                   x="250"
                   y="130"
@@ -292,14 +352,14 @@ const Title = () => {
                   <animate
                     id="bloat_up"
                     attributeName="r"
-                    values="40;50"
+                    values="40;55"
                     dur="0.25s"
-                    begin="move.end-0.5s"
+                    begin="movesDOT.end-0.5s"
                   />
                   <animate
                     id="bloat_down"
                     attributeName="r"
-                    values="50;40"
+                    values="55;40"
                     dur="0.25s"
                     begin="bloat_up.end"
                   />
