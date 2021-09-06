@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import style from "../css/animation.css";
 import { useState, useMemo, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import * as Scroll from "react-scroll";
 
 const menuStyles = {
   position: "fixed",
@@ -17,6 +18,13 @@ const menuStyles = {
 const anchorStyles = {
   textDecoration: "none",
 };
+
+function scrollToTop() {
+  Scroll.scroller.scrollTo("topOfContainer", {
+    containerId: "containerElement",
+    smooth: true,
+  });
+}
 
 const Header = ({ active, setActive }) => {
   let menu = useMemo(() => [
@@ -69,7 +77,11 @@ const Header = ({ active, setActive }) => {
               location.pathname === item.link ? (
                 <div key={item.link}>
                   <div className="mr-3 inline-block transition-padding pb-1 hover:pb-4 border-solid border-t-0 border-l-0 border-r-0 border-b border-orange hover:border-orange">
-                    <Link to={item.link} style={anchorStyles}>
+                    <Link
+                      to={item.link}
+                      style={anchorStyles}
+                      onClick={scrollToTop}
+                    >
                       <span
                         style={{ color: "#ea5c1f" }}
                         className="text-orange filter grayscale-0 cursor-pointer"
@@ -80,7 +92,12 @@ const Header = ({ active, setActive }) => {
                   </div>
                 </div>
               ) : (
-                <Link key={item.link} to={item.link} style={anchorStyles}>
+                <Link
+                  key={item.link}
+                  to={item.link}
+                  style={anchorStyles}
+                  onClick={scrollToTop}
+                >
                   <span className="text-orange filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 mr-3 cursor-pointer">
                     {item.title}
                   </span>

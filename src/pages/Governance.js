@@ -27,7 +27,7 @@ const Governance = () => {
   let smallerThan568 = useMediaPredicate("(max-width: 768px)");
   let match = useRouteMatch();
   return (
-    <div className="bg-base relative" style={{ zIndex: 0 }}>
+    <div className="relative">
       <Gradient></Gradient>
       <div
         className="pt-12 mx-2 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-10 lg:px-8 relative"

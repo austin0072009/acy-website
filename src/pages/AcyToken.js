@@ -4,7 +4,7 @@ import { Gradient } from "../atoms";
 
 const AcyToken = () => {
   return (
-    <div style={{ backgroundColor: "#1B1B1C", zIndex: 1 }} className="relative">
+    <div className="relative">
       <Gradient></Gradient>
       <div className="relative" style={{ zIndex: 1 }}>
         <MdTextField

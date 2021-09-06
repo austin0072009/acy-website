@@ -37,7 +37,7 @@ const Ecosystem = () => {
     },
   ]);
   return (
-    <div style={{ backgroundColor: "#1B1B1C", zIndex: 1 }} className="relative">
+    <div className="relative">
       <Gradient></Gradient>
       <div
         className="relative px-4 sm:px-10 xl:px-24 lg:px-20"

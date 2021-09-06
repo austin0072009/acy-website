@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
-import { animateScroll as scroll } from "react-scroll";
+import * as Scroll from "react-scroll";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+
+function scrollToTop() {
+  Scroll.scroller.scrollTo("topOfContainer", {
+    containerId: "containerElement",
+    smooth: true,
+  });
+}
 
 const ACYLink = ({ url, children }) => {
   let [active, setActive] = useState(false);
@@ -13,13 +20,15 @@ const ACYLink = ({ url, children }) => {
     color: active || location.pathname === url ? "#de5b24" : "#B5B6B6",
   };
 
+  // Somewhere else, even another file
+
   return (
     <span className="text-right sm:ml-10 md:ml-5  ml-2 my-3">
       <Link
         to={url}
         tabIndex="1"
         onClick={() => {
-          scroll.scrollToTop();
+          scrollToTop();
         }}
         onMouseEnter={() => {
           setActive(true);

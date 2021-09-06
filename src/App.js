@@ -16,6 +16,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Header, Footer } from "./components";
 import { useState } from "react";
 
+import * as Scroll from "react-scroll";
+
+var Element = Scroll.Element;
+
 function App() {
   let [menuActive, setMenuActive] = useState(false);
 
@@ -27,11 +31,13 @@ function App() {
       >
         <Header active={menuActive} setActive={setMenuActive}></Header>
         <div
+          id="containerElement"
           style={{ marginTop: "0.5rem", overflowY: "auto", height: "92.6vh" }}
           onClick={() => {
             setMenuActive(false);
           }}
         >
+          <Element name="topOfContainer"></Element>
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/about-us" component={About} />
