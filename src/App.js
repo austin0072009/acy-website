@@ -21,36 +21,40 @@ function App() {
 
   return (
     <Router>
-      <Header active={menuActive} setActive={setMenuActive}></Header>
       <div
         className="relative"
-        style={{ backgroundColor: "#1B1B1C", zIndex: 1 }}
-        onClick={() => {
-          setMenuActive(false);
-        }}
+        style={{ backgroundColor: "#1B1B1C", zIndex: 100 }}
       >
-        <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path="/about-us" component={About} />
-          <Route path="/privacy-policy" component={Privacy} />
-          <Route path="/terms-of-use" component={Terms} />
-          <Route path="/cookie-policy" component={Cookie} />
-          <Route path="/ecosystem" component={Ecosystem} />
-          <Route path="/governance" component={Governance} />
-          <Route path="/acy-token" component={AcyToken} />
+        <Header active={menuActive} setActive={setMenuActive}></Header>
+        <div
+          style={{ marginTop: "0.5rem", overflowY: "auto", height: "92.6vh" }}
+          onClick={() => {
+            setMenuActive(false);
+          }}
+        >
+          <Switch>
+            <Route path="/" exact component={Main} />
+            <Route path="/about-us" component={About} />
+            <Route path="/privacy-policy" component={Privacy} />
+            <Route path="/terms-of-use" component={Terms} />
+            <Route path="/cookie-policy" component={Cookie} />
+            <Route path="/ecosystem" component={Ecosystem} />
+            <Route path="/governance" component={Governance} />
+            <Route path="/acy-token" component={AcyToken} />
 
-          <Route path={`/about-us/`}>
-            <WhatIsACY />
-          </Route>
-          <Route path={`/about-us/mev-robots`}>
-            <MEVRobots />
-          </Route>
-          <Route path={`/about-us/arbitrage-supremacy`}>
-            <Advantage />
-          </Route>
-          {/* <Route path="/acy-token" component={AcyToken} /> */}
-        </Switch>
-        <Footer></Footer>
+            <Route path={`/about-us/`}>
+              <WhatIsACY />
+            </Route>
+            <Route path={`/about-us/mev-robots`}>
+              <MEVRobots />
+            </Route>
+            <Route path={`/about-us/arbitrage-supremacy`}>
+              <Advantage />
+            </Route>
+            {/* <Route path="/acy-token" component={AcyToken} /> */}
+          </Switch>
+          <Footer></Footer>
+        </div>
       </div>
     </Router>
   );

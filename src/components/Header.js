@@ -41,7 +41,6 @@ const Header = ({ active, setActive }) => {
   return (
     <nav
       style={{
-        backgroundColor: "#1B1B1C",
         zIndex: 99,
       }}
       onClick={(e) => {
