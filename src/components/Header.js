@@ -26,6 +26,11 @@ function scrollToTop() {
   });
 }
 
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
 const Header = ({ active, setActive }) => {
   let menu = useMemo(() => [
     { title: "Ecosystem", link: "/ecosystem" },
@@ -127,7 +132,13 @@ const Header = ({ active, setActive }) => {
             setHover(false);
           }}
         >
-          <span>{hover ? "Coming soon" : "Launch APP"}</span>
+          <span
+            onClick={() => {
+              openInNewTab("https://test.acy.finance");
+            }}
+          >
+            {hover ? "Coming soon" : "Launch APP"}
+          </span>
         </div>
       </div>
     </nav>
