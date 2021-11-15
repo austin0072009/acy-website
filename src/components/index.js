@@ -17,6 +17,10 @@ import SocialMedias from "./SocialMedias";
 import SideMenu from "./SideMenu";
 import TopicText from "./TopicText";
 import ColoredCard from "./ColoredCard";
+import Exchange from "./Exchange";
+import Liquidity from "./Liquidity";
+import Farm from "./Farm";
+import Launch from "./Launch";
 
 export {
   Header,
@@ -38,4 +42,8 @@ export {
   SideMenu,
   TopicText,
   ColoredCard,
+  Exchange,
+  Liquidity,
+  Farm,
+  Launch,
 };
