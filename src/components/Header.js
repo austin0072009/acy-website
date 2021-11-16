@@ -72,9 +72,8 @@ const Header = ({ active, setActive }) => {
       </Link>
       <div className="flex items-center justify-end relative">
         <div
-          className={`rounded-xl bg-brown-500 p-5 transition-opacity ${
-            active ? "opacity-100" : "hidden opacity-0"
-          }`}
+          className={`rounded-xl bg-brown-500 p-5 transition-opacity ${active ? "opacity-100" : "hidden opacity-0"
+            }`}
           style={menuStyles}
         >
           <div className="grid grid-cols-1 gap-x-2 gap-y-5">
