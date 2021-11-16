@@ -20,12 +20,13 @@ import ReactGA from 'react-ga';
 
 var Element = Scroll.Element;
 
-ReactGA.initialize('G-QBSD4GZJ1N');
 
 function App() {
   let [menuActive, setMenuActive] = useState(false);
-  console.log("TRACK");
+
+  console.log(`TRACK ${window.location.pathname + window.location.search}`);
   ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <Router>
       <div
