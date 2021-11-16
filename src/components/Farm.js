@@ -21,6 +21,7 @@ const Farm = () => {
 					FARM
 				</span>
 			</div>
+			<div></div>
 		</div>
 	);
 };
