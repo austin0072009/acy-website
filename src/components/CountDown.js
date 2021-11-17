@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Card, Icon, Input, Row, Col, Steps, Divider, Statistic } from "antd";
-import styles from "./styles.less";
+import "./styles.css";
 
-console.log(styles);
+// console.log(styles.number);
 const { Countdown } = Statistic;
 
 function getRemainTime(now) {
@@ -53,30 +53,25 @@ const CountDown = props => {
 	}, []);
 
 	return (
-		<div
-			style={{
-				position: "relative",
-				color: "#b5b5b6",
-			}}
-		>
-			<div className={styles.cntdwn}>
-				<div className={styles.number} id="b">
-					<div className={styles.countnumber}>{countTime.days}</div>
+		<div className="countDown">
+			<div className="cntdwn">
+				<div className="number" id="b">
+					<div className="number">{countTime.days}</div>
 					<div>DAYS</div>
 				</div>
-				<div className={styles.seperator}>:</div>
-				<div className={styles.number} id="b">
-					<div className={styles.countnumber}>{countTime.hours}</div>
+				<div className="seperator">:</div>
+				<div className="number" id="b">
+					<div className="number">{countTime.hours}</div>
 					<div>HOURS</div>
 				</div>
-				<div className={styles.seperator}>:</div>
-				<div className={styles.number} id="b">
-					<div className={styles.countnumber}>{countTime.min}</div>
+				<div className="seperator">:</div>
+				<div className="number" id="b">
+					<div className="number">{countTime.min}</div>
 					<div>MIN</div>
 				</div>
-				<div className={styles.seperator}>:</div>
-				<div className={styles.number} id="b">
-					<div className={styles.countnumber}>{countTime.sec}</div>
+				<div className="seperator">:</div>
+				<div className="number" id="b">
+					<div className="number">{countTime.sec}</div>
 					<div>SEC</div>
 				</div>
 			</div>
