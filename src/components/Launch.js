@@ -1,6 +1,9 @@
 import React from "react";
 import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { useMediaPredicate } from "react-media-hook";
+import { Link } from "react-router-dom";
+import Countdown from "./CountDown";
+import logo from "../assets/logo.svg";
 
 const Launch = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
@@ -20,6 +23,30 @@ const Launch = () => {
 				>
 					LAUNCH
 				</span>
+			</div>
+			<div container>
+				<div className="flex flex-row justify-between items-center">
+					<div className="flex flex-row items-center">
+						<img src={logo} className="px-5" style={{ width: "70px" }}></img>
+						<p>ACY Finance</p>
+					</div>
+					<div>
+						<Countdown></Countdown>
+					</div>
+					<div style={{ color: "rgb(198, 34, 78)" }}>
+						<p>Latest solid IDO for your profit</p>
+						<div className="filter hover:brightness-200 cursor-pointer mb-5">
+							<Link to="/governance">
+								<span
+									className="px-5 py-1 text-xl border-solid border-1 border border-blue-900 rounded-3xl font-medium text-white"
+									style={{ textDecoration: "none" }}
+								>
+									Read More
+								</span>
+							</Link>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
