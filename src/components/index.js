@@ -23,6 +23,7 @@ import Farm from "./Farm";
 import Launch from "./Launch";
 import TextTab from "./TextTab";
 import FarmTab from "./FarmTab";
+import CountDown from "./CountDown";
 
 export {
 	Header,
@@ -50,4 +51,5 @@ export {
 	Launch,
 	TextTab,
 	FarmTab,
+	CountDown,
 };
