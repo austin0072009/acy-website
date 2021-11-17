@@ -29,7 +29,7 @@ const Farm = () => {
 				</span>
 			</div>
 			<div className="container mb-5 px-2">
-				<div className="flex flex-row  justify-between px-10 text-white mb-5">
+				<div className="flex flex-row  justify-between px-10 text-white mb-5 ">
 					<FarmTab
 						title="ACYDAO"
 						content="Stake your ACY tokens and earn ACY rewards"
