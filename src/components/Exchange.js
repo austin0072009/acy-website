@@ -7,6 +7,7 @@ import Typist from "react-typist";
 import style from "../css/main.css";
 import { useCountUp } from "react-countup";
 import { useState, useEffect, useRef } from "react";
+import "./styles.css";
 
 const PercentHook = ({ value, id, filter }) => {
 	useCountUp({
@@ -65,7 +66,7 @@ const Exchange = ({ iframeLoaded }) => {
 
 	return (
 		<div>
-			<div className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100">
+			<div className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 mb-5">
 				<img
 					src={arrowBullet}
 					style={{ maxWidth: 40 }}
@@ -80,16 +81,18 @@ const Exchange = ({ iframeLoaded }) => {
 				</span>
 			</div>
 
-			<div className="flex flex-col items-center h-4/5 md:flex-row gap-x-0 gap-y-0">
+			<div className="flex flex-col items-start h-3/5 md:flex-row gap-x-5 gap-y-0">
 				<div className="">
 					<TextTab
 						title="ACY FLASH ARBITRAGE"
 						content="A multi-route arbitrage program built in ACY protocol and executed within each transaction, which solves the problem of slippage caused by robot invasion and enables the users make profit automatically."
 						color="rgba(235,92,32,0.6)"
 						subtitle="Protocol Level Arbitrage"
+						link="https://test.acy.finance/#/exchange"
+						linkName="Trade Now"
 					></TextTab>
 				</div>
-				<div className="h-3/5 md:w-screen relative">
+				<div className="md:w-full">
 					<svg
 						style={{
 							width: "100%",

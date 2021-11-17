@@ -22,17 +22,21 @@ const Liquidity = ({ setIframeLoaded }) => {
 					LIQUIDITY
 				</span>
 			</div>
-			<div className="flex flex-col items-center h-4/5 md:flex-row gap-x-5 gap-y-0">
+			<div className="flex flex-col items-center h-3/5 md:flex-row gap-x-5 gap-y-0 mb-10">
 				<div className="">
 					<TextTab
 						title="LIQUIDITY AS A SERVICE"
 						content="In DeFi 2.0, ACY Finance is trying to build long-term pools of ‘Protocol Owned Liquidity’. The key of this solution is the Flash Arbitrage Revenue. 20% of this revenue will turn into POL for long."
 						color="rgba(28,153,101,0.6)"
 						subtitle="Protocol Owned Liquidity"
+						link="https://test.acy.finance/#/liquidity"
+						linkName="Add Now"
 					></TextTab>
 				</div>
-				<div className="h-3/5 md:w-screen relative">
-					<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
+				<div className="md:w-full">
+					<div>
+						<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -3,25 +3,30 @@ import { withTheme } from "styled-components";
 import style from "../css/animation.css";
 import { Link } from "react-router-dom";
 
-const TextTab = ({ color, title, content, subtitle }) => {
+const TextTab = ({ color, title, content, subtitle, link, linkName }) => {
 	return (
 		<div>
 			<div
-				className="relative text-white rounded-2xl py-2 md:py-4 px-4 md:px-8 justify-between mb-3"
+				className="flex flex-col text-white rounded-2xl py-4 px-8 mb-3"
 				style={{ backgroundColor: color }}
 			>
 				<p className="text-right">{subtitle}</p>
-				<h2 className="text-5xl text-center">{title}</h2>
-				<div className="text-left">
+				<p className="text-5xl text-center flex-grow">{title}</p>
+				<div className="text-justify mb-5">
 					<p>{content}</p>
 				</div>
-				<div className="filter hover:brightness-200 cursor-pointer">
-					<Link to="/governance">
+				<div
+					className="filter hover:brightness-200 cursor-pointer mb-2"
+					style={{ marginLeft: "auto", marginRight: 0 }}
+				>
+					<Link to={link}>
 						<span
 							className="px-5 py-1 text-xl border-solid border-1 border border-gray-100 rounded-3xl font-medium text-white"
-							style={{ textDecoration: "none" }}
+							style={{
+								textDecoration: "none",
+							}}
 						>
-							Read More
+							{linkName}
 						</span>
 					</Link>
 				</div>
