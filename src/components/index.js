@@ -22,6 +22,7 @@ import Liquidity from "./Liquidity";
 import Farm from "./Farm";
 import Launch from "./Launch";
 import TextTab from "./TextTab";
+import FarmTab from "./FarmTab";
 
 export {
 	Header,
@@ -48,4 +49,5 @@ export {
 	Farm,
 	Launch,
 	TextTab,
+	FarmTab,
 };
