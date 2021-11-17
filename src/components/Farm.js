@@ -23,14 +23,8 @@ const Farm = () => {
 					FARM
 				</span>
 			</div>
-			<div className="container border-solid border-blue-900 border-2 mb-5 px-2">
-				<p
-					className="mb-0 text-right px-5"
-					style={{ color: "rgb(30, 93, 145)" }}
-				>
-					Reward the BTC,ETH,USDX
-				</p>
-				<div className="flex flex-row  justify-between px-10 text-white">
+			<div className="container mb-5 px-2">
+				<div className="flex flex-row  justify-between px-10 text-white mb-5">
 					<FarmTab
 						title="ACYDAO"
 						content="Stake your ACY tokens and earn ACY rewards"
@@ -44,7 +38,7 @@ const Farm = () => {
 
 					<FarmTab
 						title="PREMIER"
-						content="Stake your LP tokens and earn project/other token rewards"
+						content="Stake your LP tokens and earn project/solid token rewards"
 					></FarmTab>
 				</div>
 				<div className="grid place-items-center">
@@ -54,7 +48,7 @@ const Farm = () => {
 								className="px-5 py-1 text-xl border-solid border-1 border border-blue-900 rounded-3xl font-medium text-white"
 								style={{ textDecoration: "none" }}
 							>
-								Read More
+								Farm now
 							</span>
 						</Link>
 					</div>
