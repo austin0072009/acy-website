@@ -4,12 +4,17 @@ import { useMediaPredicate } from "react-media-hook";
 import { FarmTab } from ".";
 import { Link } from "react-router-dom";
 
+const openInNewTab = url => {
+	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+	if (newWindow) newWindow.opener = null;
+};
+
 const Farm = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
 
 	return (
 		<div>
-			<div className="flex items-center text-gray-100 mb-5 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100">
+			<div className="flex items-center text-gray-100 mb-10 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100">
 				<img
 					src={arrowBullet}
 					style={{ maxWidth: 40 }}
@@ -43,14 +48,15 @@ const Farm = () => {
 				</div>
 				<div className="grid place-items-center">
 					<div className="filter hover:brightness-200 cursor-pointer mb-5">
-						<Link to="/governance">
-							<span
-								className="px-5 py-1 text-xl border-solid border-1 border border-blue-900 rounded-3xl font-medium text-white"
-								style={{ textDecoration: "none" }}
-							>
-								Farm now
-							</span>
-						</Link>
+						<span
+							className="px-5 py-1 text-xl border-solid border-1 border border-blue-900 rounded-3xl font-medium text-white"
+							style={{ textDecoration: "none" }}
+							onClick={() => {
+								openInNewTab("https://test.acy.finance/#/farms");
+							}}
+						>
+							Farm now
+						</span>
 					</div>
 				</div>
 			</div>

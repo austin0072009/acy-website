@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 import Countdown from "./CountDown";
 import logo from "../assets/logo.svg";
 
+const openInNewTab = url => {
+	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+	if (newWindow) newWindow.opener = null;
+};
+
 const Launch = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
 
@@ -27,23 +32,27 @@ const Launch = () => {
 			<div container>
 				<div className="flex flex-row justify-between items-center">
 					<div className="flex flex-row items-center">
-						<img src={logo} className="px-5" style={{ width: "70px" }}></img>
-						<p>ACY Finance</p>
+						<img src={logo} className="px-5" style={{ width: "60px" }}></img>
+						<p className="text-white font-bold text-3xl">ACY Finance</p>
 					</div>
 					<div>
 						<Countdown></Countdown>
 					</div>
-					<div style={{ color: "rgb(198, 34, 78)" }}>
+					<div
+						className="flex flex-col items-center"
+						style={{ color: "rgb(198, 34, 78)" }}
+					>
 						<p>Latest solid IDO for your profit</p>
 						<div className="filter hover:brightness-200 cursor-pointer mb-5">
-							<Link to="/governance">
-								<span
-									className="px-5 py-1 text-xl border-solid border-1 border border-blue-900 rounded-3xl font-medium text-white"
-									style={{ textDecoration: "none" }}
-								>
-									Read More
-								</span>
-							</Link>
+							<span
+								className="px-5 py-1 text-sm border-solid border-1 border border-red-900 rounded-3xl text-white"
+								style={{ textDecoration: "none" }}
+								onClick={() => {
+									openInNewTab("https://test.acy.finance/#/launchpad");
+								}}
+							>
+								Participate Now
+							</span>
 						</div>
 					</div>
 				</div>
