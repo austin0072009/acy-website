@@ -3,6 +3,9 @@ import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { useMediaPredicate } from "react-media-hook";
 import { FarmTab } from ".";
 import { Link } from "react-router-dom";
+import { AnimatedIcons } from ".";
+import { useState } from "react";
+import farm from "../assets/svgs/animatedIcons/farm.json";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -11,6 +14,8 @@ const openInNewTab = url => {
 
 const Farm = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
+
+	const [isHoverFarm, setIsHoverFarm] = useState(false);
 
 	return (
 		<div>
@@ -47,7 +52,18 @@ const Farm = () => {
 					></FarmTab>
 				</div>
 				<div className="grid place-items-center">
-					<div className="filter hover:brightness-200 cursor-pointer mb-5">
+					<div
+						className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
+						onMouseEnter={() => setIsHoverFarm(true)}
+						onMouseLeave={() => setIsHoverFarm(false)}
+					>
+						<div className="grid place-items-center">
+							<AnimatedIcons
+								play={isHoverFarm}
+								url={farm}
+								id="farm"
+							></AnimatedIcons>
+						</div>
 						<span
 							className="px-5 py-1 text-xl border-solid border-1 border border-blue-900 rounded-3xl font-medium text-white"
 							style={{ textDecoration: "none" }}

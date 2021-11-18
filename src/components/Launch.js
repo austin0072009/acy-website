@@ -6,6 +6,7 @@ import Countdown from "./CountDown";
 import logo from "../assets/logo.svg";
 import { AnimatedIcons } from ".";
 import { useState } from "react";
+import rocket from "../assets/svgs/animatedIcons/launch.json";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -15,7 +16,7 @@ const openInNewTab = url => {
 const Launch = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
 
-	const [isHover, setIsHover] = useState(false);
+	const [isHoverLaunch, setIsHoverLaunch] = useState(false);
 
 	return (
 		<div>
@@ -49,11 +50,15 @@ const Launch = () => {
 						<p>Latest solid IDO for your profit</p>
 						<div
 							className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
-							onMouseEnter={() => setIsHover(true)}
-							onMouseLeave={() => setIsHover(false)}
+							onMouseEnter={() => setIsHoverLaunch(true)}
+							onMouseLeave={() => setIsHoverLaunch(false)}
 						>
 							<div className="grid place-items-center">
-								<AnimatedIcons play={isHover}></AnimatedIcons>
+								<AnimatedIcons
+									play={isHoverLaunch}
+									url={rocket}
+									id="rocket"
+								></AnimatedIcons>
 							</div>
 							<p
 								className="px-5 py-1 text-lg border-solid border-1 border border-red-900 rounded-3xl text-white"
