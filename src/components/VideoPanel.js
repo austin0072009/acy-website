@@ -1,6 +1,7 @@
 import { isMobile } from "react-device-detect";
 import { useEffect, useState } from "react";
 import placeholder from "../assets/default.png";
+import "./styles.css";
 
 export const VideoPanel = ({ setIframeLoaded }) => {
 	let [webGLStatus, setWebGLStatus] = useState(true);
@@ -20,15 +21,15 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 	}, []);
 	return (
 		<div className="rounded-xl my-4">
-			<div className="flex flex-col items-center">
-				{webGLStatus ? (
+			{webGLStatus ? (
+				<div className="container">
 					<iframe
 						onLoad={() => {
 							setIframeLoaded(true);
 						}}
 						style={{
 							width: "100%",
-							height: "45vh",
+							height: "38vh",
 							maxHeight: isMobile ? "700px" : "1000px",
 						}}
 						className="rounded-xl"
@@ -36,14 +37,9 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 						title="ACY"
 						frameBorder="0"
 					></iframe>
-				) : null}
-
-				<div
-					style={{
-						width: "100%",
-					}}
-				></div>
-			</div>
+					<div className="playButton">hello</div>
+				</div>
+			) : null}
 		</div>
 	);
 };

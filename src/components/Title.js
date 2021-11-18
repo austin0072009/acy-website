@@ -4,55 +4,55 @@ import style from "../css/main.css";
 import { useCountUp } from "react-countup";
 import { useState, useEffect, useRef } from "react";
 
-const PercentHook = ({ value, id, filter }) => {
-	useCountUp({
-		ref: `counter${id}`,
-		duration: 2,
-		start: 0,
-		end: value,
-	});
-	return (
-		<svg xmlns="http://www.w3.org/2000/svg" x="0" y="0">
-			<foreignObject x="0" y="0" width="160" height="160">
-				<div className={`ratios inline-block id-${id}`}>
-					<div
-						xmlns="http://www.w3.org/1999/xhtml"
-						className="inline-block"
-						id={`counter${id}`}
-					></div>
-					%
-				</div>
-			</foreignObject>
-		</svg>
-	);
-};
+// const PercentHook = ({ value, id, filter }) => {
+// 	useCountUp({
+// 		ref: `counter${id}`,
+// 		duration: 2,
+// 		start: 0,
+// 		end: value,
+// 	});
+// 	return (
+// 		<svg xmlns="http://www.w3.org/2000/svg" x="0" y="0">
+// 			<foreignObject x="0" y="0" width="160" height="160">
+// 				<div className={`ratios inline-block id-${id}`}>
+// 					<div
+// 						xmlns="http://www.w3.org/1999/xhtml"
+// 						className="inline-block"
+// 						id={`counter${id}`}
+// 					></div>
+// 					%
+// 				</div>
+// 			</foreignObject>
+// 		</svg>
+// 	);
+// };
 
-const Title = ({ iframeLoaded }) => {
-	let [ratio1, setRatio1] = useState("30");
-	let [ratio2, setRatio2] = useState("40");
-	let [ratio3, setRatio3] = useState("20");
+const Title = () => {
+	// let [ratio1, setRatio1] = useState("30");
+	// let [ratio2, setRatio2] = useState("40");
+	// let [ratio3, setRatio3] = useState("20");
 
-	useEffect(() => {
-		setRatio3(parseInt(100 - ratio1 - ratio2));
-	}, [ratio2]);
+	// useEffect(() => {
+	// 	setRatio3(parseInt(100 - ratio1 - ratio2));
+	// }, [ratio2]);
 
-	useEffect(() => {
-		let ratio2random = parseInt((Math.random() * 0.1 + 0.4) * 100);
-		setRatio2(ratio2random);
-	}, [ratio1]);
+	// useEffect(() => {
+	// 	let ratio2random = parseInt((Math.random() * 0.1 + 0.4) * 100);
+	// 	setRatio2(ratio2random);
+	// }, [ratio1]);
 
-	useEffect(() => {
-		if (!iframeLoaded) return;
-		console.log("start");
-		setRatio1(parseInt((Math.random() * 0.1 + 0.3) * 100));
-		setInterval(() => {
-			setRatio1(parseInt((Math.random() * 0.1 + 0.3) * 100));
-		}, 8500);
-	}, [iframeLoaded]);
+	// useEffect(() => {
+	// 	if (!iframeLoaded) return;
+	// 	console.log("start");
+	// 	setRatio1(parseInt((Math.random() * 0.1 + 0.3) * 100));
+	// 	setInterval(() => {
+	// 		setRatio1(parseInt((Math.random() * 0.1 + 0.3) * 100));
+	// 	}, 8500);
+	// }, [iframeLoaded]);
 
 	return (
 		<div
-			className="pt-5 md:pt-20 relative mb-20 flex flex-col md:flex-row"
+			className="pt-5 md:pt-20 relative mb-5 flex flex-col md:flex-row"
 			style={{ zIndex: 0 }}
 		>
 			<div
@@ -68,7 +68,7 @@ const Title = ({ iframeLoaded }) => {
 					A decentralized crypto trading protocol enables the most profitable,
 					fastest and protected operation.
 				</p>
-				<div className="flex items-center mb-5">
+				{/* <div className="flex items-center mb-5">
 					<span className="font-medium text-orange text-2xl">
 						ACY FLASH ARBITRAGE
 					</span>
@@ -77,9 +77,10 @@ const Title = ({ iframeLoaded }) => {
 					A multi-route arbitrage program built in ACY protocol and executed
 					within each transaction, which solves the problem of slippage caused
 					by robot invasion and enables the users make profit automatically.
-				</p>
+				</p> */}
 			</div>
-			<div className="w-auto lg:w-2/5 flex justify-center item-center">
+
+			{/* <div className="w-auto lg:w-2/5 flex justify-center item-center">
 				<svg style={{ width: "100%", height: "100%" }} viewBox="0 0 600 600">
 					<g transform="translate(50,300)">
 						<g transform="translate(30,-160)">
@@ -374,7 +375,7 @@ const Title = ({ iframeLoaded }) => {
 						</g>
 					</g>
 				</svg>
-			</div>
+			</div> */}
 		</div>
 	);
 };

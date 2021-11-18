@@ -42,3 +42,13 @@
 	justify-content: center;
 	font-size: 11px;
 }
+
+.playButton {
+	position: absolute;
+}
+
+.cropper {
+	width: 450px;
+	height: 600px;
+	overflow: hidden;
+}

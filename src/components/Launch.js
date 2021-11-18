@@ -4,6 +4,8 @@ import { useMediaPredicate } from "react-media-hook";
 import { Link } from "react-router-dom";
 import Countdown from "./CountDown";
 import logo from "../assets/logo.svg";
+import { AnimatedIcons } from ".";
+import { useState } from "react";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -12,6 +14,8 @@ const openInNewTab = url => {
 
 const Launch = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
+
+	const [isHover, setIsHover] = useState(false);
 
 	return (
 		<div>
@@ -43,16 +47,23 @@ const Launch = () => {
 						style={{ color: "rgb(198, 34, 78)" }}
 					>
 						<p>Latest solid IDO for your profit</p>
-						<div className="filter hover:brightness-200 cursor-pointer mb-5">
-							<span
-								className="px-5 py-1 text-sm border-solid border-1 border border-red-900 rounded-3xl text-white"
+						<div
+							className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
+							onMouseEnter={() => setIsHover(true)}
+							onMouseLeave={() => setIsHover(false)}
+						>
+							<div className="grid place-items-center">
+								<AnimatedIcons play={isHover}></AnimatedIcons>
+							</div>
+							<p
+								className="px-5 py-1 text-lg border-solid border-1 border border-red-900 rounded-3xl text-white"
 								style={{ textDecoration: "none" }}
 								onClick={() => {
 									openInNewTab("https://test.acy.finance/#/launchpad");
 								}}
 							>
 								Participate Now
-							</span>
+							</p>
 						</div>
 					</div>
 				</div>
