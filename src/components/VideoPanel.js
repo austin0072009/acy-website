@@ -37,7 +37,6 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 						title="ACY"
 						frameBorder="0"
 					></iframe>
-					<div className="playButton">hello</div>
 				</div>
 			) : null}
 		</div>

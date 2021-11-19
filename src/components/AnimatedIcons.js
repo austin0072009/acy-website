@@ -15,7 +15,7 @@ const AnimatedIcons = ({ play, url, id }) => {
 	}, [play]);
 
 	return (
-		<div className="w-3/12">
+		<div className="">
 			<div id={id} />
 		</div>
 	);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, Icon, Input, Row, Col, Steps, Divider, Statistic } from "antd";
-import "./styles.css";
+import "./newstyles.css";
 
 // console.log(styles.number);
 const { Countdown } = Statistic;
@@ -53,26 +53,26 @@ const CountDown = props => {
 	}, []);
 
 	return (
-		<div className="countDown">
-			<div className="cntdwn">
-				<div className="number" id="b">
-					<div className="number">{countTime.days}</div>
-					<div>DAYS</div>
+		<div className="countDown-container">
+			<div className="countDown-box">
+				<div className="countDown-number" id="b">
+					<div className="countDown-number-1">{countTime.days}</div>
+					<div className="countDown-number-2">DAYS</div>
 				</div>
 				<div className="seperator">:</div>
-				<div className="number" id="b">
-					<div className="number">{countTime.hours}</div>
-					<div>HOURS</div>
+				<div className="countDown-number" id="b">
+					<div className="countDown-number-1">{countTime.hours}</div>
+					<div className="countDown-number-2">HOURS</div>
 				</div>
 				<div className="seperator">:</div>
-				<div className="number" id="b">
-					<div className="number">{countTime.min}</div>
-					<div>MIN</div>
+				<div className="countDown-number" id="b">
+					<div className="countDown-number-1">{countTime.min}</div>
+					<div className="countDown-number-2">MIN</div>
 				</div>
 				<div className="seperator">:</div>
-				<div className="number" id="b">
-					<div className="number">{countTime.sec}</div>
-					<div>SEC</div>
+				<div className="countDown-number" id="b">
+					<div className="countDown-number-1">{countTime.sec}</div>
+					<div className="countDown-number-2">SEC</div>
 				</div>
 			</div>
 		</div>

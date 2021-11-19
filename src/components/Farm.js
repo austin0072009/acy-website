@@ -33,46 +33,51 @@ const Farm = () => {
 					FARM
 				</span>
 			</div>
-			<div className="container mb-5 px-2">
-				<div className="flex flex-row  justify-between px-10 text-white mb-5 ">
+			<div className="mb-5">
+				<div className="flex flex-row justify-between text-white items-center">
 					<FarmTab
 						title="ACYDAO"
 						content="Stake your ACY tokens and earn ACY rewards"
+						id="acydao"
 					></FarmTab>
 
 					<FarmTab
 						title="STANDARD"
-						content="Stake your LP tokens and earn ACY token rewards
-						"
+						content="Stake your LP tokens and earn ACY token rewards"
+						id="standard"
 					></FarmTab>
 
 					<FarmTab
 						title="PREMIER"
 						content="Stake your LP tokens and earn project/solid token rewards"
+						id="premier"
 					></FarmTab>
-				</div>
-				<div className="grid place-items-center">
-					<div
-						className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
-						onMouseEnter={() => setIsHoverFarm(true)}
-						onMouseLeave={() => setIsHoverFarm(false)}
-					>
-						<div className="grid place-items-center">
-							<AnimatedIcons
-								play={isHoverFarm}
-								url={farm}
-								id="farm"
-							></AnimatedIcons>
-						</div>
-						<span
-							className="px-5 py-1 text-xl border-solid border-1 border border-blue-900 rounded-3xl font-medium text-white"
-							style={{ textDecoration: "none" }}
-							onClick={() => {
-								openInNewTab("https://test.acy.finance/#/farms");
-							}}
+					<div className="flex flex-col items-center">
+						<div
+							className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
+							onMouseEnter={() => setIsHoverFarm(true)}
+							onMouseLeave={() => setIsHoverFarm(false)}
 						>
-							Farm now
-						</span>
+							<div
+								className="grid place-items-center"
+								style={{ width: "100px", height: "100px" }}
+							>
+								<AnimatedIcons
+									play={isHoverFarm}
+									url={farm}
+									id="farm"
+								></AnimatedIcons>
+							</div>
+							<span
+								className="px-5 py-1 text-xl border-solid border-1 border border-gray-500 rounded-3xl font-medium text-white"
+								style={{ textDecoration: "none" }}
+								onClick={() => {
+									openInNewTab("https://test.acy.finance/#/farms");
+								}}
+							>
+								Farm now
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
