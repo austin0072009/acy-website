@@ -25,6 +25,7 @@ import TextTab from "./TextTab";
 import FarmTab from "./FarmTab";
 import CountDown from "./CountDown";
 import AnimatedIcons from "./AnimatedIcons";
+import AnimatedButtons from "./AnimatedButtons";
 
 export {
 	Header,
@@ -54,4 +55,5 @@ export {
 	FarmTab,
 	CountDown,
 	AnimatedIcons,
+	AnimatedButtons,
 };

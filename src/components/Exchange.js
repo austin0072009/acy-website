@@ -8,6 +8,9 @@ import style from "../css/main.css";
 import { useCountUp } from "react-countup";
 import { useState, useEffect, useRef } from "react";
 import "./styles.css";
+import { AnimatedButtons } from ".";
+import button1 from "../assets/svgs/animatedIcons/one-key.json";
+import button1hover from "../assets/svgs/animatedIcons/one-key-hover.json";
 
 const PercentHook = ({ value, id, filter }) => {
 	useCountUp({
@@ -64,15 +67,33 @@ const Exchange = ({ iframeLoaded }) => {
 		}, 8500);
 	}, [iframeLoaded]);
 
+	const [isHoverButtonOne, setIsHoverButtonOne] = useState(false);
+	const [isClikedButtonOne, setIsClickedButtonOne] = useState(false);
+
 	return (
 		<div>
-			<div className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 mb-5">
-				<img
-					src={arrowBullet}
-					style={{ maxWidth: 40 }}
-					alt="arrow"
-					className="mr-3 moveLROnHover "
-				/>
+			<div
+				className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 mb-5"
+				onMouseEnter={() => {
+					setIsHoverButtonOne(true);
+					setIsClickedButtonOne(false);
+				}}
+				onMouseLeave={() => {
+					setIsHoverButtonOne(false);
+					setIsClickedButtonOne(false);
+				}}
+				onClick={() => {
+					setIsHoverButtonOne(!isHoverButtonOne);
+					setIsClickedButtonOne(!isClikedButtonOne);
+				}}
+			>
+				<AnimatedButtons
+					url={button1}
+					urlhover={button1hover}
+					id="button1"
+					hover={isHoverButtonOne}
+					click={isClikedButtonOne}
+				></AnimatedButtons>
 				<span
 					className="font-medium text-orange"
 					style={{ fontSize: smallerThan568 ? 20 : 26 }}
