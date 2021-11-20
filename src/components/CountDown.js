@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, Icon, Input, Row, Col, Steps, Divider, Statistic } from "antd";
-import "./newstyles.css";
+import "./styles.css";
 
 // console.log(styles.number);
 const { Countdown } = Statistic;

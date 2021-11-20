@@ -2,9 +2,19 @@ import React from "react";
 import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { useMediaPredicate } from "react-media-hook";
 import { TextTab, VideoPanel } from ".";
+import liquidity from "../assets/svgs/animatedIcons/liquidity.json";
+import { useState } from "react";
+import { AnimatedButtons, AnimatedIcons } from ".";
+
+const openInNewTab = url => {
+	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+	if (newWindow) newWindow.opener = null;
+};
 
 const Liquidity = ({ setIframeLoaded }) => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
+
+	const [isHoverLiquidity, setIsHoverLiquidity] = useState(false);
 
 	return (
 		<div>
@@ -22,20 +32,52 @@ const Liquidity = ({ setIframeLoaded }) => {
 					LIQUIDITY
 				</span>
 			</div>
-			<div className="flex flex-col items-center h-3/5 md:flex-row gap-x-5 gap-y-0 mb-10">
-				<div className="">
-					<TextTab
-						title="LIQUIDITY AS A SERVICE"
-						content="In DeFi 2.0, ACY Finance is trying to build long-term pools of ‘Protocol Owned Liquidity’. The key of this solution is the Flash Arbitrage Revenue. 20% of this revenue will turn into POL for long."
-						color="rgba(28,153,101,0.6)"
-						subtitle="Protocol Owned Liquidity"
-						link="https://test.acy.finance/#/liquidity"
-						linkName="Add Now"
-					></TextTab>
+			<div className="flex flex-row items-center justify-between mb-10">
+				<div className="flex flex-row items-center justify-between mr-5 border-solid border-green-900">
+					<div style={{ width: "100%" }}>
+						<div>
+							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
+						</div>
+					</div>
+					<div className="flex flex-col items-center h-3/5 md:flex-row gap-x-5 gap-y-0 mb-10">
+						<div className="">
+							<TextTab
+								title="LIQUIDITY AS A SERVICE"
+								content="In DeFi 2.0, ACY Finance is trying to build long-term pools of ‘Protocol Owned Liquidity’. The key of this solution is the Flash Arbitrage Revenue. 20% of this revenue will turn into POL for long."
+								color="rgba(28,153,101,0.6)"
+								subtitle="Protocol Owned Liquidity"
+								link="https://test.acy.finance/#/liquidity"
+								linkName="Add Now"
+							></TextTab>
+						</div>
+					</div>
 				</div>
-				<div className="md:w-full">
-					<div>
-						<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
+				<div className="flex flex-col items-center">
+					<div
+						className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
+						style={{ width: "150px" }}
+						onMouseEnter={() => setIsHoverLiquidity(true)}
+						onMouseLeave={() => setIsHoverLiquidity(false)}
+					>
+						<div
+							className="grid place-items-center"
+							style={{ width: "100px", height: "100px" }}
+						>
+							<AnimatedIcons
+								play={isHoverLiquidity}
+								url={liquidity}
+								id="liquidity"
+							></AnimatedIcons>
+						</div>
+						<span
+							className="px-5 py-1 text-lg border-solid border-1 border border-gray-500 rounded-3xl text-white"
+							style={{ textDecoration: "none" }}
+							onClick={() => {
+								openInNewTab("https://test.acy.finance/#/launchpad");
+							}}
+						>
+							Launch Now
+						</span>
 					</div>
 				</div>
 			</div>

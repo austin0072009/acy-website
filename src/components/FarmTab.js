@@ -2,10 +2,9 @@ import React from "react";
 import { useState } from "react";
 import lottie from "lottie-web";
 import farmBorder from "../assets/svgs/animatedIcons/farmBorder.json";
-import { ZAxis } from "recharts";
 
 const FarmTab = ({ title, content, id }) => {
-	const [isHover, setIsHover] = useState(false);
+	const [isHoverFarmBorder, setIsHoverFarmBorder] = useState(false);
 
 	React.useEffect(() => {
 		lottie.destroy(`farm-border${id}`);
@@ -13,20 +12,20 @@ const FarmTab = ({ title, content, id }) => {
 		lottie.loadAnimation({
 			container: document.querySelector(`#farm-border${id}`),
 			animationData: farmBorder,
-			autoplay: isHover,
+			autoplay: isHoverFarmBorder,
 			loop: true,
 			name: `farm-border${id}`,
 		});
-		lottie.setSpeed(2);
-	}, [isHover]);
+		lottie.setSpeed(1, `farm-border${id}`);
+	}, [isHoverFarmBorder]);
 	// border-solid border-blue-900 border-2
 	return (
 		<>
 			<div
 				className="container mb-5 px-5 py-5 relative"
 				style={{ height: "200px", width: "200px", position: "relative" }}
-				onMouseEnter={() => setIsHover(true)}
-				onMouseLeave={() => setIsHover(false)}
+				onMouseEnter={() => setIsHoverFarmBorder(true)}
+				onMouseLeave={() => setIsHoverFarmBorder(false)}
 			>
 				<div
 					style={{
