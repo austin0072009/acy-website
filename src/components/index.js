@@ -17,25 +17,43 @@ import SocialMedias from "./SocialMedias";
 import SideMenu from "./SideMenu";
 import TopicText from "./TopicText";
 import ColoredCard from "./ColoredCard";
+import Exchange from "./Exchange";
+import Liquidity from "./Liquidity";
+import Farm from "./Farm";
+import Launch from "./Launch";
+import TextTab from "./TextTab";
+import FarmTab from "./FarmTab";
+import CountDown from "./CountDown";
+import AnimatedIcons from "./AnimatedIcons";
+import AnimatedButtons from "./AnimatedButtons";
 
 export {
-  Header,
-  Video,
-  VideoPanel,
-  NoBots,
-  MEVGraphs,
-  Footer,
-  FooterNavigation,
-  FooterEmail,
-  Title,
-  MdTextField,
-  Documentation,
-  TabLink,
-  Governance,
-  ColoredTab,
-  TextTabLink,
-  SocialMedias,
-  SideMenu,
-  TopicText,
-  ColoredCard,
+	Header,
+	Video,
+	VideoPanel,
+	NoBots,
+	MEVGraphs,
+	Footer,
+	FooterNavigation,
+	FooterEmail,
+	Title,
+	MdTextField,
+	Documentation,
+	TabLink,
+	Governance,
+	ColoredTab,
+	TextTabLink,
+	SocialMedias,
+	SideMenu,
+	TopicText,
+	ColoredCard,
+	Exchange,
+	Liquidity,
+	Farm,
+	Launch,
+	TextTab,
+	FarmTab,
+	CountDown,
+	AnimatedIcons,
+	AnimatedButtons,
 };
