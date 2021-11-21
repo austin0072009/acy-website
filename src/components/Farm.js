@@ -56,27 +56,31 @@ const Farm = () => {
 				</div>
 			</div>
 			<div className="mb-5">
-				<div className="flex flex-row justify-between text-white items-center">
-					<FarmTab
-						title="ACYDAO"
-						content="Stake your ACY tokens and earn ACY rewards"
-						id="acydao"
-					></FarmTab>
+				<div className="flex flex-row text-white items-center">
+					<div className="flex flex-row flex-auto justify-between mr-5">
+						<FarmTab
+							title="ACYDAO"
+							content="Stake your ACY tokens and earn ACY rewards"
+							id="acydao"
+						></FarmTab>
 
-					<FarmTab
-						title="STANDARD"
-						content="Stake your LP tokens and earn ACY token rewards"
-						id="standard"
-					></FarmTab>
+						<FarmTab
+							title="STANDARD"
+							content="Stake your LP tokens and earn ACY token rewards"
+							id="standard"
+						></FarmTab>
 
-					<FarmTab
-						title="PREMIER"
-						content="Stake your LP tokens and earn project/solid token rewards"
-						id="premier"
-					></FarmTab>
-					<div className="flex flex-col items-center">
+						<FarmTab
+							title="PREMIER"
+							content="Stake your LP tokens and earn project/solid token rewards"
+							id="premier"
+						></FarmTab>
+					</div>
+
+					<div className="flex flex-col items-center flex-none">
 						<div
 							className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
+							style={{ width: "150px" }}
 							onMouseEnter={() => setIsHoverFarm(true)}
 							onMouseLeave={() => setIsHoverFarm(false)}
 						>

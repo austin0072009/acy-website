@@ -75,13 +75,13 @@ const Liquidity = ({ setIframeLoaded }) => {
 				</div>
 				<div className="flex flex-col items-center">
 					<div
-						className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
+						className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center"
 						style={{ width: "150px" }}
 						onMouseEnter={() => setIsHoverLiquidity(true)}
 						onMouseLeave={() => setIsHoverLiquidity(false)}
 					>
 						<div
-							className="grid place-items-center"
+							className="grid place-items-center mb-2"
 							style={{ width: "100px", height: "100px" }}
 						>
 							<AnimatedIcons
@@ -91,13 +91,13 @@ const Liquidity = ({ setIframeLoaded }) => {
 							></AnimatedIcons>
 						</div>
 						<span
-							className="px-5 py-1 text-lg border-solid border-1 border border-gray-500 rounded-3xl text-white"
+							className="px-5 py-1 text-lg border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
 							style={{ textDecoration: "none" }}
 							onClick={() => {
-								openInNewTab("https://test.acy.finance/#/launchpad");
+								openInNewTab("https://test.acy.finance/#/liquidity");
 							}}
 						>
-							Launch Now
+							Add Now
 						</span>
 					</div>
 				</div>

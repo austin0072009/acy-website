@@ -431,7 +431,7 @@ const Exchange = ({ iframeLoaded }) => {
 
 				<div className="flex flex-col items-center">
 					<div
-						className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
+						className="filter hover:brightness-200  mb-5 flex flex-col items-center justify-center"
 						style={{ width: "150px" }}
 						onMouseEnter={() => setIsHoverExchange(true)}
 						onMouseLeave={() => setIsHoverExchange(false)}
@@ -447,13 +447,13 @@ const Exchange = ({ iframeLoaded }) => {
 							></AnimatedIcons>
 						</div>
 						<span
-							className="px-5 py-1 text-lg border-solid border-1 border border-gray-500 rounded-3xl text-white"
+							className="px-5 py-1 text-lg border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
 							style={{ textDecoration: "none" }}
 							onClick={() => {
-								openInNewTab("https://test.acy.finance/#/launchpad");
+								openInNewTab("https://test.acy.finance/#/exchange");
 							}}
 						>
-							Launch Now
+							Trade Now
 						</span>
 					</div>
 				</div>
