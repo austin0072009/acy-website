@@ -15,13 +15,17 @@ import {
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Header, Footer } from "./components";
 import { useState } from "react";
-
 import * as Scroll from "react-scroll";
+import ReactGA from 'react-ga';
 
 var Element = Scroll.Element;
 
+
 function App() {
   let [menuActive, setMenuActive] = useState(false);
+
+  console.log(`TRACK ${window.location.pathname + window.location.search}`);
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
     <Router>
@@ -29,6 +33,7 @@ function App() {
         className="relative"
         style={{ backgroundColor: "#1B1B1C", zIndex: 100 }}
       >
+
         <Header active={menuActive} setActive={setMenuActive}></Header>
         <div
           id="containerElement"
