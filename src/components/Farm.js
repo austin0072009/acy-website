@@ -3,9 +3,11 @@ import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { useMediaPredicate } from "react-media-hook";
 import { FarmTab } from ".";
 import { Link } from "react-router-dom";
-import { AnimatedIcons } from ".";
+import { AnimatedButtons, AnimatedIcons } from ".";
 import { useState } from "react";
 import farm from "../assets/svgs/animatedIcons/farm.json";
+import button3 from "../assets/svgs/animatedIcons/three-key.json";
+import button3hover from "../assets/svgs/animatedIcons/three-key-hover.json";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -17,21 +19,41 @@ const Farm = () => {
 
 	const [isHoverFarm, setIsHoverFarm] = useState(false);
 
+	const [isHoverButtonThree, setIsHoverButtonThree] = useState(false);
+	const [isClickedButtonThree, setIsClickedButtonThree] = useState(false);
+
 	return (
 		<div>
-			<div className="flex items-center text-gray-100 mb-10 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100">
-				<img
-					src={arrowBullet}
-					style={{ maxWidth: 40 }}
-					alt="arrow"
-					className="mr-3 moveLROnHover "
-				/>
-				<span
-					className="font-medium text-orange"
-					style={{ fontSize: smallerThan568 ? 20 : 26 }}
+			<div className="flex">
+				<div
+					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
+					onMouseEnter={() => {
+						setIsHoverButtonThree(true);
+						setIsClickedButtonThree(false);
+					}}
+					onMouseLeave={() => {
+						setIsHoverButtonThree(false);
+						setIsClickedButtonThree(false);
+					}}
+					onClick={() => {
+						setIsHoverButtonThree(!isHoverButtonThree);
+						setIsClickedButtonThree(!isClickedButtonThree);
+					}}
 				>
-					FARM
-				</span>
+					<AnimatedButtons
+						url={button3}
+						urlhover={button3hover}
+						id="button3"
+						hover={isHoverButtonThree}
+						click={isClickedButtonThree}
+					></AnimatedButtons>
+					<span
+						className="font-medium text-orange moveLROnHover"
+						style={{ fontSize: smallerThan568 ? 20 : 26 }}
+					>
+						<span>FARM</span>
+					</span>
+				</div>
 			</div>
 			<div className="mb-5">
 				<div className="flex flex-row justify-between text-white items-center">

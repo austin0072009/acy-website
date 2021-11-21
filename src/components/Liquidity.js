@@ -2,9 +2,11 @@ import React from "react";
 import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { useMediaPredicate } from "react-media-hook";
 import { TextTab, VideoPanel } from ".";
-import liquidity from "../assets/svgs/animatedIcons/liquidity.json";
 import { useState } from "react";
 import { AnimatedButtons, AnimatedIcons } from ".";
+import button2 from "../assets/svgs/animatedIcons/two-key.json";
+import button2hover from "../assets/svgs/animatedIcons/two-key-hover.json";
+import liquidity from "../assets/svgs/animatedIcons/liquidity.json";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -15,22 +17,41 @@ const Liquidity = ({ setIframeLoaded }) => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
 
 	const [isHoverLiquidity, setIsHoverLiquidity] = useState(false);
+	const [isHoverButtonTwo, setIsHoverButtonTwo] = useState(false);
+	const [isClickedButtonTwo, setIsClickedButtonTwo] = useState(false);
 
 	return (
 		<div>
-			<div className="flex items-center text-gray-100 mb-5 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100">
-				<img
-					src={arrowBullet}
-					style={{ maxWidth: 40 }}
-					alt="arrow"
-					className="mr-3 moveLROnHover "
-				/>
-				<span
-					className="font-medium text-orange"
-					style={{ fontSize: smallerThan568 ? 20 : 26 }}
+			<div className="flex">
+				<div
+					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
+					onMouseEnter={() => {
+						setIsHoverButtonTwo(true);
+						setIsClickedButtonTwo(false);
+					}}
+					onMouseLeave={() => {
+						setIsHoverButtonTwo(false);
+						setIsClickedButtonTwo(false);
+					}}
+					onClick={() => {
+						setIsHoverButtonTwo(!isHoverButtonTwo);
+						setIsClickedButtonTwo(!isClickedButtonTwo);
+					}}
 				>
-					LIQUIDITY
-				</span>
+					<AnimatedButtons
+						url={button2}
+						urlhover={button2hover}
+						id="button2"
+						hover={isHoverButtonTwo}
+						click={isClickedButtonTwo}
+					></AnimatedButtons>
+					<span
+						className="font-medium text-orange moveLROnHover"
+						style={{ fontSize: smallerThan568 ? 20 : 26 }}
+					>
+						<span>LIQUIDITY</span>
+					</span>
+				</div>
 			</div>
 			<div className="flex flex-row items-center justify-between mb-10">
 				<div className="flex flex-row items-center justify-between mr-5 border-solid border-green-900">

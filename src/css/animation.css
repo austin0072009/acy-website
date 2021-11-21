@@ -90,7 +90,7 @@
 .moveDTOnHover {
 	margin-top: 0;
 }
-.moveDTOnHover:hover {
+.span .moveDTOnHover:hover {
 	animation: shakeDT 1s;
 }
 

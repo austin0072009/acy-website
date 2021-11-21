@@ -79,13 +79,11 @@ const Exchange = ({ iframeLoaded }) => {
 
 	const [isHoverExchange, setIsHoverExchange] = useState(false);
 
-	setTimeout(() => setIsHoverExchange(false), 2000);
-
 	return (
 		<div>
 			<div className="flex">
 				<div
-					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100"
+					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
 					onMouseEnter={() => {
 						setIsHoverButtonOne(true);
 						setIsClickedButtonOne(false);
@@ -107,7 +105,7 @@ const Exchange = ({ iframeLoaded }) => {
 						click={isClickedButtonOne}
 					></AnimatedButtons>
 					<span
-						className={"font-medium text-orange moveLROnHover"}
+						className="font-medium text-orange moveLROnHover"
 						style={{ fontSize: smallerThan568 ? 20 : 26 }}
 					>
 						<span>EXCHANGE</span>

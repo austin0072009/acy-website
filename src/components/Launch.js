@@ -4,10 +4,11 @@ import { useMediaPredicate } from "react-media-hook";
 import { Link } from "react-router-dom";
 import Countdown from "./CountDown";
 import logo from "../assets/logo.svg";
-import { AnimatedIcons } from ".";
+import { AnimatedButtons, AnimatedIcons } from ".";
 import { useState } from "react";
 import rocket from "../assets/svgs/animatedIcons/launch.json";
-// import app from "../assets/svgs/animatedIcons/appLogo.json";
+import button4 from "../assets/svgs/animatedIcons/four-key.json";
+import button4hover from "../assets/svgs/animatedIcons/four-key-hover.json";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -19,21 +20,41 @@ const Launch = () => {
 
 	const [isHoverLaunch, setIsHoverLaunch] = useState(false);
 
+	const [isHoverButtonFour, setIsHoverButtonFour] = useState(false);
+	const [isClickedButtonFour, setIsClickedButtonFour] = useState(false);
+
 	return (
 		<div>
-			<div className="flex items-center text-gray-100 mb-5 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100">
-				<img
-					src={arrowBullet}
-					style={{ maxWidth: 40 }}
-					alt="arrow"
-					className="mr-3 moveLROnHover "
-				/>
-				<span
-					className="font-medium text-orange"
-					style={{ fontSize: smallerThan568 ? 20 : 26 }}
+			<div className="flex">
+				<div
+					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
+					onMouseEnter={() => {
+						setIsHoverButtonFour(true);
+						setIsClickedButtonFour(false);
+					}}
+					onMouseLeave={() => {
+						setIsHoverButtonFour(false);
+						setIsClickedButtonFour(false);
+					}}
+					onClick={() => {
+						setIsHoverButtonFour(!isHoverButtonFour);
+						setIsClickedButtonFour(!isClickedButtonFour);
+					}}
 				>
-					LAUNCH
-				</span>
+					<AnimatedButtons
+						url={button4}
+						urlhover={button4hover}
+						id="button4"
+						hover={isHoverButtonFour}
+						click={isClickedButtonFour}
+					></AnimatedButtons>
+					<span
+						className="font-medium text-orange moveLROnHover"
+						style={{ fontSize: smallerThan568 ? 20 : 26 }}
+					>
+						<span>LAUNCH</span>
+					</span>
+				</div>
 			</div>
 			<div className="">
 				<div className="flex flex-row justify-between items-center">
