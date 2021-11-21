@@ -113,9 +113,9 @@ const Exchange = ({ iframeLoaded }) => {
 				</div>
 			</div>
 
-			<div className="flex flex-col md:flex-row items-center justify-between mb-10">
-				<div className="flex flex-col md:flex-row mb-5 md:mb-0 items-center justify-between mr-5 border-solid border-orange px-10 py-10">
-					<div style={{ width: "100%" }}>
+			<div className="flex border-container items-center justify-between mb-10">
+				<div className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 border-solid border-orange px-10 py-10">
+					<div style={{ width: "40%" }}>
 						<svg
 							style={{
 								width: "100%",
@@ -418,7 +418,7 @@ const Exchange = ({ iframeLoaded }) => {
 							</g>
 						</svg>
 					</div>
-					<div className="">
+					<div className="flex flex-grow text-tab">
 						<TextTab
 							title="ACY FLASH ARBITRAGE"
 							content="A multi-route arbitrage program built in ACY protocol and executed within each transaction, which solves the problem of slippage caused by robot invasion and enables the users make profit automatically."

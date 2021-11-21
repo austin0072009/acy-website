@@ -22,7 +22,7 @@
 	height: 100px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 	.animated-button {
 		width: 150px;
 		margin-bottom: 50px;
@@ -40,6 +40,26 @@
 @media screen and (max-width: 1050px) {
 	.farm-container {
 		flex-direction: column;
+	}
+}
+
+.border-container {
+	flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+	.border-container {
+		flex-direction: column;
+	}
+}
+
+.text-tab {
+	width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+	.text-tab {
+		width: 100%;
 	}
 }
 
