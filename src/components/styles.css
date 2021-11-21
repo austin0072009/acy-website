@@ -43,12 +43,33 @@
 	}
 }
 
+.farm-container-sm {
+	flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+	.farm-container-sm {
+		flex-direction: column;
+		column-gap: 0.5rem;
+	}
+}
+
 .border-container {
 	flex-direction: row;
 }
 
 @media screen and (max-width: 900px) {
 	.border-container {
+		flex-direction: column;
+	}
+}
+
+.launchpad-container {
+	flex-direction: row;
+}
+
+@media screen and (max-width: 680px) {
+	.launchpad-container {
 		flex-direction: column;
 	}
 }

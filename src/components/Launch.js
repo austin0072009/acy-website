@@ -57,30 +57,36 @@ const Launch = () => {
 				</div>
 			</div>
 			<div className="">
-				<div className="flex flex-row justify-between items-center">
-					<div className="flex flex-col items-center">
-						<div className="flex flex-row items-center">
-							<img src={logo} className="px-2" style={{ width: "50px" }}></img>
-							<p className="text-white font-bold text-2xl px-2">ACY Finance</p>
+				<div className="flex farm-container-sm justify-between items-center">
+					<div className="flex launchpad-container flex-row justify-between flex-grow gap-x-10 mb-5">
+						<div className="flex flex-col items-center">
+							<div className="flex flex-row items-center">
+								<img
+									src={logo}
+									className="px-2"
+									style={{ width: "50px" }}
+								></img>
+								<p className="text-white font-bold text-2xl px-2">
+									ACY Finance
+								</p>
+							</div>
+							<p className="text-gray-500 font-bold">
+								Latest solid IDO for your profit
+							</p>
 						</div>
-						<p className="text-gray-500 font-bold">
-							Latest solid IDO for your profit
-						</p>
+
+						<div className="flex-grow">
+							<Countdown></Countdown>
+						</div>
 					</div>
 
-					<div className="flex-grow">
-						<Countdown></Countdown>
-					</div>
 					<div className="flex flex-col items-center">
 						<div
-							className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
+							className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center animated-button-container"
 							onMouseEnter={() => setIsHoverLaunch(true)}
 							onMouseLeave={() => setIsHoverLaunch(false)}
 						>
-							<div
-								className="grid place-items-center"
-								style={{ width: "100px", height: "100px" }}
-							>
+							<div className="grid place-items-center animated-button">
 								<AnimatedIcons
 									play={isHoverLaunch}
 									url={rocket}

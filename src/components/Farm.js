@@ -57,7 +57,7 @@ const Farm = () => {
 			</div>
 			<div className="mb-5">
 				<div className="flex farm-container text-white items-center">
-					<div className="flex farm-container flex-auto justify-between mr-5">
+					<div className="flex farm-container-sm flex-row flex-auto justify-between mr-5">
 						<FarmTab
 							title="ACYDAO"
 							content="Stake your ACY tokens and earn ACY rewards"
