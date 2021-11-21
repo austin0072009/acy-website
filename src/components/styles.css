@@ -53,14 +53,25 @@
 		column-gap: 0.5rem;
 	}
 }
+.flowchart-container {
+	width: 40%;
+}
+@media screen and (max-width: 900px) {
+	.flowchart-container {
+		width: 80%;
+	}
+}
 
 .border-container {
 	flex-direction: row;
+	height: 300px;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 900px) {
 	.border-container {
 		flex-direction: column;
+		height: auto;
 	}
 }
 

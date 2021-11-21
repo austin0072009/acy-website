@@ -113,20 +113,13 @@ const Exchange = ({ iframeLoaded }) => {
 				</div>
 			</div>
 
-			<div className="flex border-container items-center justify-between mb-10">
+			<div className="flex border-container items-center justify-between mb-20">
 				<div
-					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5  rounded-3xl px-5 py-5"
+					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5  rounded-3xl px-5 py-5 h-auto"
 					style={{ backgroundColor: "rgba(235, 92, 32, 0.2)" }}
 				>
-					<div style={{ width: "40%" }}>
-						<svg
-							style={{
-								width: "100%",
-								height: "100%",
-							}}
-							viewBox="0 0 600 600"
-							className="px-2"
-						>
+					<div className="flowchart-container">
+						<svg viewBox="0 100 600 400" className="px-2">
 							<g transform="translate(50,300)">
 								<g transform="translate(30,-160)">
 									<svg xmlns="http://www.w3.org/2000/svg" x="0" y="0">

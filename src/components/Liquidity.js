@@ -53,7 +53,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 					</span>
 				</div>
 			</div>
-			<div className="flex border-container items-center justify-between mb-10">
+			<div className="flex border-container items-center justify-between mb-20">
 				<div
 					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-3xl px-5 py-5 "
 					style={{ backgroundColor: "rgba(28, 153, 101, 0.2)" }}

@@ -5,72 +5,102 @@ import style from "../css/animation.css";
 import { useState, useMemo, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import * as Scroll from "react-scroll";
+import appIcon from "../assets/svgs/animatedIcons/appIcon.json";
+import { AnimatedIcons } from ".";
 
 const menuStyles = {
-  position: "fixed",
-  top: "3.5rem",
-  right: "10%",
-  backgroundColor: "#2A282E",
-  color: "#D5D5D5",
-  zIndex: 100,
+	position: "fixed",
+	top: "3.5rem",
+	right: "10%",
+	backgroundColor: "#2A282E",
+	color: "#D5D5D5",
+	zIndex: 100,
 };
 
 const anchorStyles = {
-  textDecoration: "none",
+	textDecoration: "none",
 };
 
 function scrollToTop() {
-  Scroll.scroller.scrollTo("topOfContainer", {
-    containerId: "containerElement",
-    smooth: true,
-  });
+	Scroll.scroller.scrollTo("topOfContainer", {
+		containerId: "containerElement",
+		smooth: true,
+	});
 }
 
-const openInNewTab = (url) => {
-  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-  if (newWindow) newWindow.opener = null;
+const openInNewTab = url => {
+	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+	if (newWindow) newWindow.opener = null;
 };
 
 const Header = ({ active, setActive }) => {
-  let menu = useMemo(() => [
-    { title: "Ecosystem", link: "/ecosystem" },
-    { title: "Governance", link: "/governance" },
-    { title: "ACY Token", link: "/acy-token" },
-    { title: "About", link: "/about-us" },
-  ]);
+	let menu = useMemo(() => [
+		{ title: "Ecosystem", link: "/ecosystem" },
+		{ title: "Governance", link: "/governance" },
+		{ title: "ACY Token", link: "/acy-token" },
+		{ title: "About", link: "/about-us" },
+	]);
 
-  let [atTop, setAtTop] = useState(true);
-  let [hover, setHover] = useState(true);
+	let [atTop, setAtTop] = useState(true);
+	let [hover, setHover] = useState(true);
 
-  let location = useLocation();
+	let location = useLocation();
 
-  useEffect(() => {
-    window.onscroll = () =>
-      window.pageYOffset === 0 ? setAtTop(true) : setAtTop(false);
+	const [isHoverAppIcon, setIsHoverAppIcon] = useState(false);
 
-    return () => (window.onscroll = null);
-  }, []);
+	const openInNewTab = url => {
+		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+		if (newWindow) newWindow.opener = null;
+	};
 
-  return (
-    <nav
-      style={{
-        zIndex: 99,
-      }}
-      onClick={(e) => {
-        if (e.target.id === "menu") return;
-        setActive(false);
-      }}
-      className="sticky top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-3 flex justify-between relative"
-    >
-      <Link to="/">
-        <img
-          src={logo}
-          style={{ width: 30, height: 30 }}
-          alt="logo"
-          className="cursor-pointer rotateOnHover"
-        />
-      </Link>
-      <div className="flex items-center justify-end relative">
+	useEffect(() => {
+		window.onscroll = () =>
+			window.pageYOffset === 0 ? setAtTop(true) : setAtTop(false);
+
+		return () => (window.onscroll = null);
+	}, []);
+
+	return (
+		<nav
+			style={{
+				zIndex: 99,
+			}}
+			onClick={e => {
+				if (e.target.id === "menu") return;
+				setActive(false);
+			}}
+			className="sticky top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-3 flex justify-between relative items-center"
+		>
+			<div className="flex ">
+				<Link to="/">
+					<img
+						src={logo}
+						style={{ width: 30, height: 30 }}
+						alt="logo"
+						className="cursor-pointer rotateOnHover"
+					/>
+				</Link>
+			</div>
+
+			<div className="flex flex-row items-center">
+				<div
+					className="flex cursor-pointer"
+					style={{ width: "60px" }}
+					onMouseEnter={() => setIsHoverAppIcon(true)}
+					onMouseLeave={() => setIsHoverAppIcon(false)}
+					onClick={() => {
+						openInNewTab("https://test.acy.finance/");
+					}}
+				>
+					<AnimatedIcons
+						play={isHoverAppIcon}
+						url={appIcon}
+						id={"appIcon"}
+					></AnimatedIcons>
+				</div>
+			</div>
+
+			{/* <div className="flex items-center justify-end relative">
         <div
           className={`rounded-xl bg-brown-500 p-5 transition-opacity ${active ? "opacity-100" : "hidden opacity-0"
             }`}
@@ -139,9 +169,9 @@ const Header = ({ active, setActive }) => {
             {hover ? "Coming soon" : "Launch APP"}
           </span>
         </div>
-      </div>
-    </nav>
-  );
+      </div> */}
+		</nav>
+	);
 };
 
 export default Header;
