@@ -94,7 +94,7 @@ const Launch = () => {
 								></AnimatedIcons>
 							</div>
 							<span
-								className="px-5 py-1 text-lg border-solid border-1 border border-gray-500 rounded-3xl text-white"
+								className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white"
 								style={{ textDecoration: "none" }}
 								onClick={() => {
 									openInNewTab("https://test.acy.finance/#/launchpad");

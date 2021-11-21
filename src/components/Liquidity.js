@@ -55,7 +55,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 			</div>
 			<div className="flex border-container items-center justify-between mb-20">
 				<div
-					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-3xl px-5 py-5 "
+					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 "
 					style={{ backgroundColor: "rgba(28, 153, 101, 0.2)" }}
 				>
 					<div className="" style={{ width: "100%" }}>
@@ -90,13 +90,13 @@ const Liquidity = ({ setIframeLoaded }) => {
 							></AnimatedIcons>
 						</div>
 						<span
-							className="px-5 py-1 text-lg border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
+							className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
 							style={{ textDecoration: "none" }}
 							onClick={() => {
 								openInNewTab("https://test.acy.finance/#/liquidity");
 							}}
 						>
-							Add Now
+							Liquidity Now
 						</span>
 					</div>
 				</div>

@@ -27,6 +27,7 @@ import CountDown from "./CountDown";
 import AnimatedIcons from "./AnimatedIcons";
 import AnimatedButtons from "./AnimatedButtons";
 import Market from "./Market";
+import AnimatedBorders from "./AnimatedBorders";
 
 export {
 	Header,
@@ -58,4 +59,5 @@ export {
 	AnimatedIcons,
 	AnimatedButtons,
 	Market,
+	AnimatedBorders,
 };

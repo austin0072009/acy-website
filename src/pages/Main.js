@@ -7,6 +7,7 @@ import {
 	Liquidity,
 	Farm,
 	Launch,
+	Market,
 } from "../components";
 import { Gradient } from "../atoms";
 import axios from "axios";
@@ -27,6 +28,7 @@ const Main = () => {
 					<Liquidity setIframeLoaded={setIframeLoaded}></Liquidity>
 					<Farm></Farm>
 					<Launch></Launch>
+					<Market></Market>
 					<Documentation></Documentation>
 					<Governance></Governance>
 				</div>

@@ -115,7 +115,7 @@ const Exchange = ({ iframeLoaded }) => {
 
 			<div className="flex border-container items-center justify-between mb-20">
 				<div
-					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5  rounded-3xl px-5 py-5 h-auto"
+					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 h-auto"
 					style={{ backgroundColor: "rgba(235, 92, 32, 0.2)" }}
 				>
 					<div className="flowchart-container">
@@ -439,13 +439,13 @@ const Exchange = ({ iframeLoaded }) => {
 							></AnimatedIcons>
 						</div>
 						<span
-							className="px-5 py-1 text-lg border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
+							className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
 							style={{ textDecoration: "none" }}
 							onClick={() => {
 								openInNewTab("https://test.acy.finance/#/exchange");
 							}}
 						>
-							Trade Now
+							Exchange Now
 						</span>
 					</div>
 				</div>

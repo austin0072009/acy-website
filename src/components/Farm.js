@@ -92,13 +92,13 @@ const Farm = () => {
 								></AnimatedIcons>
 							</div>
 							<span
-								className="px-5 py-1 text-xl border-solid border-1 border border-gray-500 rounded-3xl font-medium text-white"
+								className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl font-medium text-white"
 								style={{ textDecoration: "none" }}
 								onClick={() => {
 									openInNewTab("https://test.acy.finance/#/farms");
 								}}
 							>
-								Farm now
+								Farm Now
 							</span>
 						</div>
 					</div>
