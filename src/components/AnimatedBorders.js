@@ -22,7 +22,12 @@ const AnimatedBorders = ({ title, content, id, url }) => {
 		<>
 			<div
 				className="container mb-5 px-5 py-5 relative"
-				style={{ height: "200px", width: "200px", position: "relative" }}
+				style={{
+					height: "200px",
+					width: "200px",
+					left: "-20px",
+					position: "relative",
+				}}
 				onMouseEnter={() => setIsHoverMarketBorder(true)}
 				onMouseLeave={() => setIsHoverMarketBorder(false)}
 			>
@@ -51,7 +56,7 @@ const AnimatedBorders = ({ title, content, id, url }) => {
 					}}
 				></div>
 				<div
-					className="flex flex-col items-center text-center text-white"
+					className="flex flex-col items-center text-center text-white justify-center"
 					style={{
 						zIndex: 4,
 						position: "absolute",
@@ -62,7 +67,7 @@ const AnimatedBorders = ({ title, content, id, url }) => {
 					}}
 				>
 					<p className="text-4xl font-bold">{title}</p>
-					<p>{content}</p>
+					<p className="px-5">{content}</p>
 				</div>
 			</div>
 		</>

@@ -11,14 +11,14 @@ import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { useMediaPredicate } from "react-media-hook";
 import style from "../css/animation.css";
 import { useState } from "react";
-import button5 from "../assets/svgs/animatedIcons/five-key.json";
-import button5hover from "../assets/svgs/animatedIcons/five-key-hover.json";
+import button6 from "../assets/svgs/animatedIcons/six-key.json";
+import button6hover from "../assets/svgs/animatedIcons/six-key-hover.json";
 
 const Documentation = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
 
-	const [isHoverButtonFive, setIsHoverButtonFive] = useState(false);
-	const [isClickedButtonFive, setIsClickedButtonFive] = useState(false);
+	const [isHoverButtonSix, setIsHoverButtonSix] = useState(false);
+	const [isClickedButtonSix, setIsClickedButtonSix] = useState(false);
 
 	let data = useMemo(() => [
 		{
@@ -56,29 +56,29 @@ const Documentation = () => {
 		},
 	]);
 	return (
-		<div className="my-20 ">
+		<div className="mb-20">
 			<div className="flex">
 				<div
 					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
 					onMouseEnter={() => {
-						setIsHoverButtonFive(true);
-						setIsClickedButtonFive(false);
+						setIsHoverButtonSix(true);
+						setIsClickedButtonSix(false);
 					}}
 					onMouseLeave={() => {
-						setIsHoverButtonFive(false);
-						setIsClickedButtonFive(false);
+						setIsHoverButtonSix(false);
+						setIsClickedButtonSix(false);
 					}}
 					onClick={() => {
-						setIsHoverButtonFive(!isHoverButtonFive);
-						setIsClickedButtonFive(!isClickedButtonFive);
+						setIsHoverButtonSix(!isHoverButtonSix);
+						setIsClickedButtonSix(!isClickedButtonSix);
 					}}
 				>
 					<AnimatedButtons
-						url={button5}
-						urlhover={button5hover}
-						id="button5"
-						hover={isHoverButtonFive}
-						click={isClickedButtonFive}
+						url={button6}
+						urlhover={button6hover}
+						id="button6"
+						hover={isHoverButtonSix}
+						click={isClickedButtonSix}
 					></AnimatedButtons>
 					<span
 						className="font-medium text-orange moveLROnHover"

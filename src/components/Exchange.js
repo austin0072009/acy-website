@@ -115,7 +115,7 @@ const Exchange = ({ iframeLoaded }) => {
 
 			<div className="flex border-container items-center justify-between mb-20">
 				<div
-					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 h-auto"
+					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 h-auto flex-grow mr-20"
 					style={{ backgroundColor: "rgba(235, 92, 32, 0.2)" }}
 				>
 					<div className="flowchart-container">

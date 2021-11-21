@@ -26,7 +26,7 @@ const Market = () => {
 		<div>
 			<div className="flex">
 				<div
-					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
+					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 "
 					onMouseEnter={() => {
 						setIsHoverButtonFive(true);
 						setIsClickedButtonFive(false);
@@ -55,29 +55,23 @@ const Market = () => {
 					</span>
 				</div>
 			</div>
-			<div className="flex items-center">
-				<div className="flex farm-container-sm flex-row flex-auto justify-between mr-20">
+			<div className="flex farm-container items-center justify-between mb-20">
+				<div className="flex farm-container-sm flex-row flex-grow justify-between mr-10">
 					<AnimatedBorders
 						title={"TOKENS"}
-						content={
-							"Tokens' price, price  change, volume, and TVL in the market."
-						}
+						content={"Tokens' price, volume, and TVL in the market."}
 						url={borderRight}
 						id={"right"}
 					></AnimatedBorders>
 					<AnimatedBorders
 						title={"POOLS"}
-						content={
-							"Tokens' price, price  change, volume, and TVL in the market."
-						}
+						content={"Pools' volume 24H, volume 7D, and TVL in the market."}
 						url={borderHorizontal}
 						id={"top"}
 					></AnimatedBorders>
 					<AnimatedBorders
 						title={"ACCOUNTS"}
-						content={
-							"Tokens' price, price  change, volume, and TVL in the market."
-						}
+						content={"Accounts' positions, volume and value in the market."}
 						url={borderLeft}
 						id={"horizontal"}
 					></AnimatedBorders>
@@ -88,7 +82,7 @@ const Market = () => {
 						onMouseEnter={() => setIsHoverMarket(true)}
 						onMouseLeave={() => setIsHoverMarket(false)}
 					>
-						<div className="grid place-items-center animated-button mb-5">
+						<div className="grid place-items-center animated-button mb-2">
 							<AnimatedIcons
 								play={isHoverMarket}
 								url={market}
@@ -99,7 +93,7 @@ const Market = () => {
 							className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
 							style={{ textDecoration: "none" }}
 							onClick={() => {
-								openInNewTab("https://test.acy.finance/#/exchange");
+								openInNewTab("https://test.acy.finance/#/market");
 							}}
 						>
 							Market Now

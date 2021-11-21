@@ -75,7 +75,7 @@ const Header = ({ active, setActive }) => {
 				<Link to="/">
 					<img
 						src={logo}
-						style={{ width: 30, height: 30 }}
+						style={{ width: "45px" }}
 						alt="logo"
 						className="cursor-pointer rotateOnHover"
 					/>
@@ -85,7 +85,7 @@ const Header = ({ active, setActive }) => {
 			<div className="flex flex-row items-center">
 				<div
 					className="flex cursor-pointer"
-					style={{ width: "60px" }}
+					style={{ width: "80px" }}
 					onMouseEnter={() => setIsHoverAppIcon(true)}
 					onMouseLeave={() => setIsHoverAppIcon(false)}
 					onClick={() => {

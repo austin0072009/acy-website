@@ -24,9 +24,9 @@ const Farm = () => {
 
 	return (
 		<div>
-			<div className="flex">
+			<div className="flex ">
 				<div
-					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
+					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200  hover:brightness-100 "
 					onMouseEnter={() => {
 						setIsHoverButtonThree(true);
 						setIsClickedButtonThree(false);
@@ -57,7 +57,7 @@ const Farm = () => {
 			</div>
 			<div className="mb-5">
 				<div className="flex farm-container text-white items-center">
-					<div className="flex farm-container-sm flex-row flex-auto justify-between mr-5">
+					<div className="flex farm-container-sm flex-row flex-auto justify-between flex-grow mr-20">
 						<FarmTab
 							title="ACYDAO"
 							content="Stake your ACY tokens and earn ACY rewards"
@@ -79,12 +79,12 @@ const Farm = () => {
 
 					<div className="flex flex-col items-center flex-none">
 						<div
-							className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center"
-							style={{ width: "150px" }}
+							className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center ml-5"
+							style={{ width: "120px" }}
 							onMouseEnter={() => setIsHoverFarm(true)}
 							onMouseLeave={() => setIsHoverFarm(false)}
 						>
-							<div className="grid place-items-center animated-button mb-3">
+							<div className="grid place-items-center animated-button mb-3 ">
 								<AnimatedIcons
 									play={isHoverFarm}
 									url={farm}
@@ -92,7 +92,7 @@ const Farm = () => {
 								></AnimatedIcons>
 							</div>
 							<span
-								className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl font-medium text-white"
+								className="px-5 py-1 text-ms border-solid border-1 border cursor-pointer border-gray-500 rounded-3xl font-medium text-white"
 								style={{ textDecoration: "none" }}
 								onClick={() => {
 									openInNewTab("https://test.acy.finance/#/farms");

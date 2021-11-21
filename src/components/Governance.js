@@ -2,15 +2,15 @@ import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
 import { ColoredTab, TextTabLink, SocialMedias } from ".";
 import { AnimatedButtons, AnimatedIcons } from ".";
 import { useMediaPredicate } from "react-media-hook";
-import button6 from "../assets/svgs/animatedIcons/six-key.json";
-import button6hover from "../assets/svgs/animatedIcons/six-key-hover.json";
+import button7 from "../assets/svgs/animatedIcons/seven-key.json";
+import button7hover from "../assets/svgs/animatedIcons/seven-key-hover.json";
 import { useState } from "react";
 
 const Governance = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
 
-	const [isHoverButtonSix, setIsHoverButtonSix] = useState(false);
-	const [isClickedButtonSix, setIsClickedButtonSix] = useState(false);
+	const [isHoverButtonSeven, setIsHoverButtonSeven] = useState(false);
+	const [isClickedButtonSeven, setIsClickedButtonSeven] = useState(false);
 
 	return (
 		<div>
@@ -18,24 +18,24 @@ const Governance = () => {
 				<div
 					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
 					onMouseEnter={() => {
-						setIsHoverButtonSix(true);
-						setIsClickedButtonSix(false);
+						setIsHoverButtonSeven(true);
+						setIsClickedButtonSeven(false);
 					}}
 					onMouseLeave={() => {
-						setIsHoverButtonSix(false);
-						setIsClickedButtonSix(false);
+						setIsHoverButtonSeven(false);
+						setIsClickedButtonSeven(false);
 					}}
 					onClick={() => {
-						setIsHoverButtonSix(!isHoverButtonSix);
-						setIsClickedButtonSix(!isClickedButtonSix);
+						setIsHoverButtonSeven(!isHoverButtonSeven);
+						setIsClickedButtonSeven(!isClickedButtonSeven);
 					}}
 				>
 					<AnimatedButtons
-						url={button6}
-						urlhover={button6hover}
-						id="button6"
-						hover={isHoverButtonSix}
-						click={isClickedButtonSix}
+						url={button7}
+						urlhover={button7hover}
+						id="button7"
+						hover={isHoverButtonSeven}
+						click={isClickedButtonSeven}
 					></AnimatedButtons>
 					<span
 						className="font-medium text-orange moveLROnHover"

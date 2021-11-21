@@ -9,6 +9,9 @@ import { useState } from "react";
 import rocket from "../assets/svgs/animatedIcons/launch.json";
 import button4 from "../assets/svgs/animatedIcons/four-key.json";
 import button4hover from "../assets/svgs/animatedIcons/four-key-hover.json";
+import launchBorder from "../assets/svgs/animatedIcons/launchBorder.json";
+import lottie from "lottie-web";
+import clock from "../assets/svgs/animatedIcons/clock.json";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -23,9 +26,38 @@ const Launch = () => {
 	const [isHoverButtonFour, setIsHoverButtonFour] = useState(false);
 	const [isClickedButtonFour, setIsClickedButtonFour] = useState(false);
 
+	const [isHoverLaunchBorder, setIsHoverLaunchBorder] = useState(false);
+
+	React.useEffect(() => {
+		lottie.destroy("launch-border");
+
+		lottie.loadAnimation({
+			container: document.querySelector("#launch-border"),
+			animationData: launchBorder,
+			autoplay: isHoverLaunchBorder,
+			loop: true,
+			name: "launch-border",
+		});
+		lottie.setSpeed(1, "launch-border");
+	}, [isHoverLaunchBorder]);
+
+	const [isHoverClock, setIsHoverClock] = useState(false);
+
+	React.useEffect(() => {
+		lottie.destroy("clock");
+
+		lottie.loadAnimation({
+			container: document.querySelector("#clock"),
+			animationData: clock,
+			autoplay: isHoverClock,
+			loop: true,
+			name: "clock",
+		});
+		lottie.setSpeed(1, "clock");
+	}, [isHoverClock]);
 	return (
 		<div>
-			<div className="flex">
+			<div className="flex ">
 				<div
 					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
 					onMouseEnter={() => {
@@ -56,33 +88,91 @@ const Launch = () => {
 					</span>
 				</div>
 			</div>
-			<div className="">
-				<div className="flex farm-container-sm justify-between items-center">
-					<div className="flex launchpad-container flex-row justify-between flex-grow gap-x-10 mb-5">
-						<div className="flex flex-col items-center">
-							<div className="flex flex-row items-center">
-								<img
-									src={logo}
-									className="px-2"
-									style={{ width: "50px" }}
-								></img>
-								<p className="text-white font-bold text-2xl px-2">
-									ACY Finance
+			<div className="mb-10">
+				<div className="flex farm-container-sm justify-between items-center content-center">
+					<div className="flex launchpad-container justify-between flex-grow gap-x-10 mb-5 items-center">
+						<div
+							className="flex items-center relative"
+							style={{
+								height: "250px",
+								width: "250px",
+								left: "-10px",
+								position: "relative",
+								zIndex: 0,
+							}}
+							onMouseEnter={() => setIsHoverLaunchBorder(true)}
+							onMouseLeave={() => setIsHoverLaunchBorder(false)}
+						>
+							<div
+								style={{
+									position: "absolute",
+									width: "250px",
+									left: 0,
+									bottom: "",
+								}}
+								id="launch-border"
+							></div>
+							<div
+								className="flex flex-col items-center"
+								style={{
+									width: "250px",
+									height: "auto",
+									top: "",
+									position: "relative",
+								}}
+							>
+								<div className="flex flex-row">
+									<img
+										src={logo}
+										className="mr-3"
+										style={{ width: "35px" }}
+									></img>
+									<p
+										className="text-white font-bold"
+										style={{ fontSize: "24px" }}
+									>
+										ACY Finance
+									</p>
+								</div>
+
+								<p
+									className="text-gray-500 font-bold"
+									style={{ width: "150px" }}
+								>
+									Latest solid IDO for your profit
 								</p>
 							</div>
-							<p className="text-gray-500 font-bold">
-								Latest solid IDO for your profit
-							</p>
 						</div>
 
-						<div className="flex-grow">
-							<Countdown></Countdown>
+						<div
+							className="flex items-center mr-20 "
+							style={{
+								height: "220px",
+								borderRadius: "7px",
+								maxWidth: "700px",
+								backgroundColor: "#252525",
+							}}
+						>
+							<div
+								className="flex flex-row px-10 justify-center filter hover:brightness-200"
+								onMouseEnter={() => setIsHoverClock(true)}
+								onMouseLeave={() => setIsHoverClock(false)}
+							>
+								<div
+									className="mx-5"
+									style={{ width: "80px" }}
+									id="clock"
+								></div>
+								<div className="" style={{ margin: "auto", width: "50%" }}>
+									<Countdown></Countdown>
+								</div>
+							</div>
 						</div>
 					</div>
 
 					<div className="flex flex-col items-center">
 						<div
-							className="filter hover:brightness-200 cursor-pointer mb-5 flex flex-col items-center justify-center animated-button-container"
+							className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center animated-button-container"
 							onMouseEnter={() => setIsHoverLaunch(true)}
 							onMouseLeave={() => setIsHoverLaunch(false)}
 						>
@@ -94,7 +184,7 @@ const Launch = () => {
 								></AnimatedIcons>
 							</div>
 							<span
-								className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white"
+								className="px-5 py-1 text-ms border-solid border-1 cursor-pointer border border-gray-500 rounded-3xl text-white"
 								style={{ textDecoration: "none" }}
 								onClick={() => {
 									openInNewTab("https://test.acy.finance/#/launchpad");
