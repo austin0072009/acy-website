@@ -84,7 +84,7 @@ const Farm = () => {
 							onMouseEnter={() => setIsHoverFarm(true)}
 							onMouseLeave={() => setIsHoverFarm(false)}
 						>
-							<div className="grid place-items-center animated-button">
+							<div className="grid place-items-center animated-button mb-3">
 								<AnimatedIcons
 									play={isHoverFarm}
 									url={farm}

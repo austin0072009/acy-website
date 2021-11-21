@@ -8,7 +8,6 @@ const TextTab = ({ title, content, subtitle }) => {
 					className="flex flex-col text-white rounded-2xl py-5 gap-y-5 flex-grow"
 					style={{ width: "80%" }}
 				>
-					<div className="text-right px-5">{subtitle}</div>
 					<div className="items-center px-5">
 						<div className="">
 							<div

@@ -54,7 +54,10 @@ const Liquidity = ({ setIframeLoaded }) => {
 				</div>
 			</div>
 			<div className="flex border-container items-center justify-between mb-10">
-				<div className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 border-solid border-green-900 px-10 py-10">
+				<div
+					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-3xl px-5 py-5 "
+					style={{ backgroundColor: "rgba(28, 153, 101, 0.2)" }}
+				>
 					<div className="" style={{ width: "100%" }}>
 						<div>
 							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
@@ -79,7 +82,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 						onMouseEnter={() => setIsHoverLiquidity(true)}
 						onMouseLeave={() => setIsHoverLiquidity(false)}
 					>
-						<div className="grid place-items-center mb-2 animated-button">
+						<div className="grid place-items-center mb-2 animated-button mb-5">
 							<AnimatedIcons
 								play={isHoverLiquidity}
 								url={liquidity}
