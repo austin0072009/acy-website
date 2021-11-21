@@ -84,6 +84,15 @@
 		flex-direction: column;
 	}
 }
+.launchpad-container-sm {
+	flex-direction: row;
+}
+
+@media screen and (max-width: 1430px) {
+	.launchpad-container-sm {
+		flex-direction: column;
+	}
+}
 
 .text-tab {
 	width: 50%;

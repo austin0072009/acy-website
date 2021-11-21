@@ -77,9 +77,9 @@ const Farm = () => {
 						></FarmTab>
 					</div>
 
-					<div className="flex flex-col items-center flex-none">
+					<div className="flex flex-col items-center flex-none mb-5">
 						<div
-							className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center ml-5"
+							className="filter hover:brightness-200 flex flex-col items-center justify-center mr-5"
 							style={{ width: "120px" }}
 							onMouseEnter={() => setIsHoverFarm(true)}
 							onMouseLeave={() => setIsHoverFarm(false)}
@@ -92,8 +92,11 @@ const Farm = () => {
 								></AnimatedIcons>
 							</div>
 							<span
-								className="px-5 py-1 text-ms border-solid border-1 border cursor-pointer border-gray-500 rounded-3xl font-medium text-white"
-								style={{ textDecoration: "none" }}
+								className="px-5 py-2 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
+								style={{
+									width: "105px",
+									textAlign: "center",
+								}}
 								onClick={() => {
 									openInNewTab("https://test.acy.finance/#/farms");
 								}}

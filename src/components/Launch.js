@@ -89,7 +89,7 @@ const Launch = () => {
 				</div>
 			</div>
 			<div className="mb-10">
-				<div className="flex farm-container-sm justify-between items-center content-center">
+				<div className="flex launchpad-container-sm justify-between items-center content-center">
 					<div className="flex launchpad-container justify-between flex-grow gap-x-10 mb-5 items-center">
 						<div
 							className="flex items-center relative"
@@ -145,7 +145,7 @@ const Launch = () => {
 						</div>
 
 						<div
-							className="flex items-center mr-20 "
+							className="flex items-center mr-20"
 							style={{
 								height: "220px",
 								borderRadius: "7px",
@@ -154,7 +154,7 @@ const Launch = () => {
 							}}
 						>
 							<div
-								className="flex flex-row px-10 justify-center filter hover:brightness-200"
+								className="flex flex-row px-5 justify-center filter hover:brightness-200"
 								onMouseEnter={() => setIsHoverClock(true)}
 								onMouseLeave={() => setIsHoverClock(false)}
 							>
@@ -184,8 +184,11 @@ const Launch = () => {
 								></AnimatedIcons>
 							</div>
 							<span
-								className="px-5 py-1 text-ms border-solid border-1 cursor-pointer border border-gray-500 rounded-3xl text-white"
-								style={{ textDecoration: "none" }}
+								className="px-5 py-2 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
+								style={{
+									width: "105px",
+									textAlign: "center",
+								}}
 								onClick={() => {
 									openInNewTab("https://test.acy.finance/#/launchpad");
 								}}

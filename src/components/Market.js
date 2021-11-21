@@ -90,8 +90,11 @@ const Market = () => {
 							></AnimatedIcons>
 						</div>
 						<span
-							className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
-							style={{ textDecoration: "none" }}
+							className="px-5 py-2 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
+							style={{
+								width: "105px",
+								textAlign: "center",
+							}}
 							onClick={() => {
 								openInNewTab("https://test.acy.finance/#/market");
 							}}

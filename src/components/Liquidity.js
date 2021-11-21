@@ -82,7 +82,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 						onMouseEnter={() => setIsHoverLiquidity(true)}
 						onMouseLeave={() => setIsHoverLiquidity(false)}
 					>
-						<div className="grid place-items-center mb-2 animated-button mb-5">
+						<div className="grid place-items-center animated-button">
 							<AnimatedIcons
 								play={isHoverLiquidity}
 								url={liquidity}
@@ -90,8 +90,11 @@ const Liquidity = ({ setIframeLoaded }) => {
 							></AnimatedIcons>
 						</div>
 						<span
-							className="px-5 py-1 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
-							style={{ textDecoration: "none" }}
+							className="px-5 py-2 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
+							style={{
+								width: "105px",
+								textAlign: "center",
+							}}
 							onClick={() => {
 								openInNewTab("https://test.acy.finance/#/liquidity");
 							}}
