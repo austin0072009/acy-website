@@ -113,8 +113,8 @@ const Exchange = ({ iframeLoaded }) => {
 				</div>
 			</div>
 
-			<div className="flex flex-row items-center justify-between mb-10">
-				<div className="flex flex-row items-center justify-between mr-5 border-solid border-orange">
+			<div className="flex flex-col md:flex-row items-center justify-between mb-10">
+				<div className="flex flex-col md:flex-row mb-5 md:mb-0 items-center justify-between mr-5 border-solid border-orange px-10 py-10">
 					<div style={{ width: "100%" }}>
 						<svg
 							style={{
@@ -431,15 +431,11 @@ const Exchange = ({ iframeLoaded }) => {
 
 				<div className="flex flex-col items-center">
 					<div
-						className="filter hover:brightness-200  mb-5 flex flex-col items-center justify-center"
-						style={{ width: "150px" }}
+						className="filter hover:brightness-200  mb-5 flex flex-col items-center justify-center animated-button-container"
 						onMouseEnter={() => setIsHoverExchange(true)}
 						onMouseLeave={() => setIsHoverExchange(false)}
 					>
-						<div
-							className="grid place-items-center"
-							style={{ width: "100px", height: "100px" }}
-						>
+						<div className="grid place-items-center animated-button">
 							<AnimatedIcons
 								play={isHoverExchange}
 								url={exchange}

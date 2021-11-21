@@ -56,8 +56,8 @@ const Farm = () => {
 				</div>
 			</div>
 			<div className="mb-5">
-				<div className="flex flex-row text-white items-center">
-					<div className="flex flex-row flex-auto justify-between mr-5">
+				<div className="flex farm-container text-white items-center">
+					<div className="flex farm-container flex-auto justify-between mr-5">
 						<FarmTab
 							title="ACYDAO"
 							content="Stake your ACY tokens and earn ACY rewards"
@@ -84,10 +84,7 @@ const Farm = () => {
 							onMouseEnter={() => setIsHoverFarm(true)}
 							onMouseLeave={() => setIsHoverFarm(false)}
 						>
-							<div
-								className="grid place-items-center"
-								style={{ width: "100px", height: "100px" }}
-							>
+							<div className="grid place-items-center animated-button">
 								<AnimatedIcons
 									play={isHoverFarm}
 									url={farm}

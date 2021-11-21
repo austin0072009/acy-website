@@ -5,7 +5,7 @@ const TextTab = ({ title, content, subtitle }) => {
 		<div className="">
 			<div className="flex justify-center">
 				<div
-					className="flex flex-col text-white rounded-2xl py-5 px-8 gap-y-5"
+					className="flex flex-col text-white rounded-2xl py-5 gap-y-5 flex-grow"
 					style={{ width: "80%" }}
 				>
 					<div className="text-right px-5">{subtitle}</div>

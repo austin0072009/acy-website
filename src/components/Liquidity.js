@@ -53,14 +53,14 @@ const Liquidity = ({ setIframeLoaded }) => {
 					</span>
 				</div>
 			</div>
-			<div className="flex flex-row items-center justify-between mb-10">
-				<div className="flex flex-row items-center justify-between mr-5 border-solid border-green-900">
-					<div style={{ width: "100%" }}>
+			<div className="flex flex-col md:flex-row items-center justify-between mb-10">
+				<div className="flex flex-col md:flex-row mb-5 md:mb-0 items-center justify-between mr-5 border-solid border-green-900 px-10 py-10">
+					<div className="" style={{ width: "100%" }}>
 						<div>
 							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
 						</div>
 					</div>
-					<div className="flex flex-col items-center h-3/5 md:flex-row gap-x-5 gap-y-0 mb-10">
+					<div className="flex flex-col items-center h-3/5 md:flex-row gap-x-5 gap-y-0">
 						<div className="">
 							<TextTab
 								title="LIQUIDITY AS A SERVICE"
@@ -75,15 +75,11 @@ const Liquidity = ({ setIframeLoaded }) => {
 				</div>
 				<div className="flex flex-col items-center">
 					<div
-						className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center"
-						style={{ width: "150px" }}
+						className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center animated-button-container"
 						onMouseEnter={() => setIsHoverLiquidity(true)}
 						onMouseLeave={() => setIsHoverLiquidity(false)}
 					>
-						<div
-							className="grid place-items-center mb-2"
-							style={{ width: "100px", height: "100px" }}
-						>
+						<div className="grid place-items-center mb-2 animated-button">
 							<AnimatedIcons
 								play={isHoverLiquidity}
 								url={liquidity}

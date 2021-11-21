@@ -13,6 +13,36 @@
 	}
 }
 
+.animated-button-container {
+	width: 150px;
+}
+
+.animated-button {
+	width: 100px;
+	height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+	.animated-button {
+		width: 150px;
+		margin-bottom: 50px;
+	}
+	.animated-link {
+		font-size: x-large;
+		text-align: center;
+	}
+}
+
+.farm-container {
+	flex-direction: row;
+}
+
+@media screen and (max-width: 1050px) {
+	.farm-container {
+		flex-direction: column;
+	}
+}
+
 .countDown-box {
 	justify-content: center;
 	display: flex;
