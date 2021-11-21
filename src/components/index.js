@@ -26,6 +26,7 @@ import FarmTab from "./FarmTab";
 import CountDown from "./CountDown";
 import AnimatedIcons from "./AnimatedIcons";
 import AnimatedButtons from "./AnimatedButtons";
+import Market from "./Market";
 
 export {
 	Header,
@@ -56,4 +57,5 @@ export {
 	CountDown,
 	AnimatedIcons,
 	AnimatedButtons,
+	Market,
 };
