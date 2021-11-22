@@ -85,7 +85,7 @@ const Header = ({ active, setActive }) => {
 			<div className="flex flex-row items-center">
 				<div
 					className="flex cursor-pointer mt-2"
-					style={{ width: "70px" }}
+					style={{ width: "90px" }}
 					onMouseEnter={() => setIsHoverAppIcon(true)}
 					onMouseLeave={() => setIsHoverAppIcon(false)}
 					onClick={() => {

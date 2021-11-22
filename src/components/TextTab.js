@@ -1,3 +1,12 @@
+/*
+ * @Author: Doctor
+ * @Date: 2021-11-22 22:28:44
+ * @LastEditTime: 2021-11-22 23:25:18
+ * @LastEditors: Doctor
+ * @Description: 
+ * @FilePath: \acy-website\src\components\TextTab.js
+ * jianqiang
+ */
 import React from "react";
 import { useMediaPredicate } from "react-media-hook";
 
@@ -28,20 +37,23 @@ const TextTab = ({ title, content, subtitle }) => {
 											: smallerThan1280
 											? "2.5rem"
 											: "2.75rem",
-										letterSpacing: "5px",
+											fontWeight:'bold',
+											paddingLeft:'2.5rem',
+											textAlign:'left'
 									}}
 								>
-									{title}
+								{title}
 								</div>
 								<div
 									className="text-justify mb-5 px-10"
 									style={{
 										fontSize: smallerThan900
-											? "0.75rem"
+											? "1.25rem"
 											: smallerThan1280
-											? "0.75rem"
-											: "0.75rem",
+											? "1.25rem"
+											: "1.25rem",
 										lineHeight: 1.8,
+										textAlign:'left'
 									}}
 								>
 									{content}

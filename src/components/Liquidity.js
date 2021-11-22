@@ -58,12 +58,11 @@ const Liquidity = ({ setIframeLoaded }) => {
 					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 flex-grow mr-20"
 					style={{ backgroundColor: "rgba(28, 153, 101, 0.2)" }}
 				>
-					<div className="mb-8" style={{ width: "70%" }}>
+					<div className="flowchart-container">
 						<div>
 							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
 						</div>
 					</div>
-					<div className="flex flex-col items-center h-3/5 md:flex-row gap-x-5 gap-y-0">
 						<div className="flex flex-grow text-tab">
 							<TextTab
 								title="LIQUIDITY AS A SERVICE"
@@ -73,7 +72,6 @@ const Liquidity = ({ setIframeLoaded }) => {
 								link="https://test.acy.finance/#/liquidity"
 								linkName="Add Now"
 							></TextTab>
-						</div>
 					</div>
 				</div>
 				<div className="flex flex-col items-center">

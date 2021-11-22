@@ -64,7 +64,7 @@
 
 .border-container {
 	flex-direction: row;
-	height: 300px;
+	min-height: 300px;
 	margin-top: 10px;
 }
 

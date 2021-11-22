@@ -58,7 +58,7 @@ const Title = () => {
 			>
 				<p className="text-3xl md:text-4xl lg:text-5xl lg:leading-normal text-orange my-10 ">
 					<Typist cursor={{ hideWhenDone: true }}>
-						<span>ACY PROTOCOL</span>
+						<strong>ACY PROTOCOL</strong>
 					</Typist>
 				</p>
 				<p className="text-justify text-xl w-100 xl:w-5/6 text-brown-100 my-10 leading-10">
