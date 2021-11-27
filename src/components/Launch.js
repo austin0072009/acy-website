@@ -6,7 +6,6 @@ import Countdown from "./CountDown";
 import logo from "../assets/logo.svg";
 import { AnimatedButtons, AnimatedIcons } from ".";
 import { useState } from "react";
-import rocket from "../assets/svgs/animatedIcons/launch.json";
 import button4 from "../assets/svgs/animatedIcons/four-key.json";
 import button4hover from "../assets/svgs/animatedIcons/four-key-hover.json";
 import launchBorder from "../assets/svgs/animatedIcons/launchBorder.json";
@@ -21,7 +20,6 @@ const openInNewTab = url => {
 const Launch = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
 
-	const [isHoverLaunch, setIsHoverLaunch] = useState(false);
 
 	const [isHoverButtonFour, setIsHoverButtonFour] = useState(false);
 	const [isClickedButtonFour, setIsClickedButtonFour] = useState(false);
@@ -170,33 +168,7 @@ const Launch = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col items-center">
-						<div
-							className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center animated-button-container"
-							onMouseEnter={() => setIsHoverLaunch(true)}
-							onMouseLeave={() => setIsHoverLaunch(false)}
-						>
-							<div className="grid place-items-center animated-button mb-3">
-								<AnimatedIcons
-									play={isHoverLaunch}
-									url={rocket}
-									id="rocket"
-								></AnimatedIcons>
-							</div>
-							<span
-								className="px-5 py-2 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
-								style={{
-									width: "105px",
-									textAlign: "center",
-								}}
-								onClick={() => {
-									openInNewTab("https://test.acy.finance/#/launchpad");
-								}}
-							>
-								Launch Now
-							</span>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>

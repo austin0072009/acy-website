@@ -4,7 +4,6 @@ import button5hover from "../assets/svgs/animatedIcons/five-key-hover.json";
 import { useMediaPredicate } from "react-media-hook";
 import { useState } from "react";
 import { AnimatedButtons, AnimatedIcons } from ".";
-import market from "../assets/svgs/animatedIcons/market.json";
 import borderRight from "../assets/svgs/animatedIcons/borderRight.json";
 import borderLeft from "../assets/svgs/animatedIcons/borderLeft.json";
 import borderHorizontal from "../assets/svgs/animatedIcons/borderHorizontal.json";
@@ -20,7 +19,6 @@ const Market = () => {
 	const [isHoverButtonFive, setIsHoverButtonFive] = useState(false);
 	const [isClickedButtonFive, setIsClickedButtonFive] = useState(false);
 
-	const [isHoverMarket, setIsHoverMarket] = useState(false);
 
 	return (
 		<div>
@@ -76,33 +74,7 @@ const Market = () => {
 						id={"horizontal"}
 					></AnimatedBorders>
 				</div>
-				<div className="flex flex-col items-center">
-					<div
-						className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center animated-button-container"
-						onMouseEnter={() => setIsHoverMarket(true)}
-						onMouseLeave={() => setIsHoverMarket(false)}
-					>
-						<div className="grid place-items-center animated-button mb-2">
-							<AnimatedIcons
-								play={isHoverMarket}
-								url={market}
-								id="market"
-							></AnimatedIcons>
-						</div>
-						<span
-							className="px-5 py-2 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
-							style={{
-								width: "105px",
-								textAlign: "center",
-							}}
-							onClick={() => {
-								openInNewTab("https://test.acy.finance/#/market");
-							}}
-						>
-							Market Now
-						</span>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	);
