@@ -5,7 +5,6 @@ import { FarmTab } from ".";
 import { Link } from "react-router-dom";
 import { AnimatedButtons, AnimatedIcons } from ".";
 import { useState } from "react";
-import farm from "../assets/svgs/animatedIcons/farm.json";
 import button3 from "../assets/svgs/animatedIcons/three-key.json";
 import button3hover from "../assets/svgs/animatedIcons/three-key-hover.json";
 
@@ -77,34 +76,7 @@ const Farm = () => {
 						></FarmTab>
 					</div>
 
-					<div className="flex flex-col items-center flex-none mb-5">
-						<div
-							className="filter hover:brightness-200 flex flex-col items-center justify-center mr-5"
-							style={{ width: "120px" }}
-							onMouseEnter={() => setIsHoverFarm(true)}
-							onMouseLeave={() => setIsHoverFarm(false)}
-						>
-							<div className="grid place-items-center animated-button mb-3 ">
-								<AnimatedIcons
-									play={isHoverFarm}
-									url={farm}
-									id="farm"
-								></AnimatedIcons>
-							</div>
-							<span
-								className="px-5 py-2 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
-								style={{
-									width: "105px",
-									textAlign: "center",
-								}}
-								onClick={() => {
-									openInNewTab("https://test.acy.finance/#/farms");
-								}}
-							>
-								Farm Now
-							</span>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>

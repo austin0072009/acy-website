@@ -74,33 +74,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 							></TextTab>
 					</div>
 				</div>
-				<div className="flex flex-col items-center">
-					<div
-						className="filter hover:brightness-200 mb-5 flex flex-col items-center justify-center animated-button-container"
-						onMouseEnter={() => setIsHoverLiquidity(true)}
-						onMouseLeave={() => setIsHoverLiquidity(false)}
-					>
-						<div className="grid place-items-center animated-button">
-							<AnimatedIcons
-								play={isHoverLiquidity}
-								url={liquidity}
-								id="liquidity"
-							></AnimatedIcons>
-						</div>
-						<span
-							className="px-5 py-2 text-ms border-solid border-1 border border-gray-500 rounded-3xl text-white cursor-pointer"
-							style={{
-								width: "105px",
-								textAlign: "center",
-							}}
-							onClick={() => {
-								openInNewTab("https://test.acy.finance/#/liquidity");
-							}}
-						>
-							Liquidity Now
-						</span>
-					</div>
-				</div>
+			
 			</div>
 		</div>
 	);
