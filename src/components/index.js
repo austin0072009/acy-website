@@ -1,4 +1,6 @@
+
 import Header from "./Header";
+import HeaderNoBar from "./HeaderNoBar";
 import Video from "./Video";
 import VideoPanel from "./VideoPanel";
 import NoBots from "./NoBots";
@@ -31,6 +33,7 @@ import AnimatedBorders from "./AnimatedBorders";
 
 export {
 	Header,
+	HeaderNoBar,
 	Video,
 	VideoPanel,
 	NoBots,

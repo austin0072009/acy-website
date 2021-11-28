@@ -14,6 +14,9 @@ import farm from "../assets/svgs/animatedIcons/farm.json";
 import rocket from "../assets/svgs/animatedIcons/launch.json";
 import market from "../assets/svgs/animatedIcons/market.json";
 import bannerBorder from "../assets/svgs/animatedIcons/bannerBorder.json";
+import logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
+import appIcon from "../assets/svgs/animatedIcons/appIcon.json";
 
 
 
@@ -30,6 +33,7 @@ const Title = () => {
 	const [isHoverLaunch, setIsHoverLaunch] = useState(false);
 	const [isHoverMarket, setIsHoverMarket] = useState(false);
 	const [isHoverFire1, setIsFire1] = useState(false);
+	const [isHoverAppIcon, setIsHoverAppIcon] = useState(false);
 
 
 
@@ -120,6 +124,7 @@ const Title = () => {
 				className="w-full md:w-3/5 relative h-96"
 				// style={{ minHeight: isMobile ? "auto" : "20vw", zIndex: 1 }}
 			>
+				
 				<p className="text-5xl md:text-4xl lg:text-5xl lg:leading-normal text-white my-10 ">
 					<Typist cursor={{ hideWhenDone: true }}>
 						<strong className = 'bannerTitle' >ACY PROTOCOL</strong>
@@ -193,7 +198,10 @@ const Title = () => {
 			</div>
 
 			<div className = "animatebar ">
-				<div className="animatebutton">
+				<div className="animatebutton"
+												onClick={() => {
+													openInNewTab("https://test.acy.finance/#/exchange");
+												}}>
 						<div
 							// className="filter hover:brightness-200  mb-5 animatebutton justify-center animated-button-container"
 							onMouseEnter={() => setIsHoverExchange(true)}
@@ -208,15 +216,15 @@ const Title = () => {
 							</div>
 							<div
 								className="animatelabel"
-								onClick={() => {
-									openInNewTab("https://test.acy.finance/#/exchange");
-								}}
 							>
 								Exchange 
 							</div>
 						</div>
 					</div>
-				<div className="animatebutton">
+				<div className="animatebutton"
+				onClick={() => {
+									openInNewTab("https://test.acy.finance/#/liquidity");
+								}}>
 						<div
 							// className="filter hover:brightness-200 mb-5 animatebutton justify-center animated-button-container"
 							onMouseEnter={() => setIsHoverLiquidity(true)}
@@ -232,15 +240,16 @@ const Title = () => {
 							<div
 								className="animatelabel"
 					
-								onClick={() => {
-									openInNewTab("https://test.acy.finance/#/liquidity");
-								}}
+								
 							>
 								Liquidity 
 							</div>
 						</div>
 					</div>
-				<div className="animatebutton">
+				<div className="animatebutton"
+				onClick={() => {
+										openInNewTab("https://test.acy.finance/#/farms");
+									}}>
 							<div
 								// className="filter hover:brightness-200 animatebutton justify-center mr-5"
 								onMouseEnter={() => setIsHoverFarm(true)}
@@ -256,15 +265,16 @@ const Title = () => {
 								<div
 									className="animatelabel"
 							
-									onClick={() => {
-										openInNewTab("https://test.acy.finance/#/farms");
-									}}
+									
 								>
 									Farm 
 								</div>
 							</div>
 						</div>
-				<div className="animatebutton">
+				<div className="animatebutton"	
+				onClick={() => {
+										openInNewTab("https://test.acy.finance/#/launchpad");
+									}}>
 							<div
 								// className="filter hover:brightness-200 mb-5 animatebutton justify-center animated-button-container"
 								onMouseEnter={() => setIsHoverLaunch(true)}
@@ -280,15 +290,15 @@ const Title = () => {
 								<div
 									className="animatelabel"
 								
-									onClick={() => {
-										openInNewTab("https://test.acy.finance/#/launchpad");
-									}}
+								
 								>
 									Launch 
 								</div>
 							</div>
 						</div>
-				<div className="animatebutton">
+				<div className="animatebutton"	onClick={() => {
+									openInNewTab("https://test.acy.finance/#/market");
+								}}>
 						<div
 							// className="filter hover:brightness-200 mb-5 animatebutton justify-center animated-button-container"
 							onMouseEnter={() => setIsHoverMarket(true)}
@@ -304,9 +314,7 @@ const Title = () => {
 							<div
 								className="animatelabel"
 						
-								onClick={() => {
-									openInNewTab("https://test.acy.finance/#/market");
-								}}
+							
 							>
 								Market 
 							</div>

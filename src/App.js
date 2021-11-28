@@ -13,18 +13,28 @@ import {
 	Advantage,
 } from "./pages";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Header, Footer } from "./components";
-import { useState } from "react";
+import { Header, Footer, HeaderNoBar } from "./components";
+import { useState,createRef, useRef } from "react";
 import * as Scroll from "react-scroll";
 import ReactGA from "react-ga";
 
 var Element = Scroll.Element;
 
 function App() {
+
+	const ScrollEvent = (event ) =>{
+		console.log(event.nativeEvent.srcElement.scrollTop);
+		
+		if(event.nativeEvent.srcElement.scrollTop >= 572) setVisible(true);
+		else setVisible(false);
+	}
 	let [menuActive, setMenuActive] = useState(false);
+	let [visible,setVisible] = useState(false);
+
 
 	console.log(`TRACK ${window.location.pathname + window.location.search}`);
 	ReactGA.pageview(window.location.pathname + window.location.search);
+	
 
 	return (
 		<Router>
@@ -32,13 +42,16 @@ function App() {
 				className="relative"
 				style={{ backgroundColor: "#1B1B1C", zIndex: 100 }}
 			>
-				<Header active={menuActive} setActive={setMenuActive}></Header>
+				<HeaderNoBar active={menuActive} setActive={setMenuActive}  getvisible = {!visible}></HeaderNoBar>
+				<Header active={menuActive} setActive={setMenuActive}  getvisible = {visible}></Header>
+
 				<div
 					id="containerElement"
-					style={{ marginTop: "0.5rem", overflowY: "auto", height: "92.6vh" }}
+					style={{  overflowY: "auto", height: "100vh" }}
 					onClick={() => {
 						setMenuActive(false);
 					}}
+					onScroll = {ScrollEvent}
 				>
 					<Element name="topOfContainer"></Element>
 					<Switch>

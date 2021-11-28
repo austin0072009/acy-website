@@ -137,3 +137,16 @@
 .bannerTitle{
   font-size: 2em;
 }
+
+.HeadNoBar {
+  position: absolute;
+  width: 90%;
+  /* z-index: 30; */
+  /* position: relative; */
+  background-size: cover;
+  background-position: 50% 0;
+  transition: background-color .3s,opacity .3s;
+  display: flex;
+  justify-content: space-between;
+
+}
