@@ -1,6 +1,6 @@
 import logo from "../assets/logo.svg";
-import menuImg from "../assets/svgs/header/menu_orange.svg";
 import { Link } from "react-router-dom";
+import menuImg from "../assets/svgs/header/menu_orange.svg";
 import style from "../css/animation.css";
 import { useState, useMemo, useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -33,7 +33,7 @@ const openInNewTab = url => {
 	if (newWindow) newWindow.opener = null;
 };
 
-const Header = ({ active, setActive }) => {
+const Header = ({ active, setActive, getvisible }) => {
 	let menu = useMemo(() => [
 		{ title: "Ecosystem", link: "/ecosystem" },
 		{ title: "Governance", link: "/governance" },
@@ -43,6 +43,7 @@ const Header = ({ active, setActive }) => {
 
 	let [atTop, setAtTop] = useState(true);
 	let [hover, setHover] = useState(true);
+	let [visible,setVisible] = useState(getvisible);
 
 	let location = useLocation();
 
@@ -53,15 +54,22 @@ const Header = ({ active, setActive }) => {
 		if (newWindow) newWindow.opener = null;
 	};
 
-	useEffect(() => {
-		window.onscroll = () =>
-			window.pageYOffset === 0 ? setAtTop(true) : setAtTop(false);
+	
+	// useEffect(() => {
+	// 	console.log("window.scrollTop")
 
-		return () => (window.onscroll = null);
-	}, []);
+	// 	// window.onscroll = () =>{
+	// 	// 	window.pageYOffset === 0 ? setAtTop(true) : setAtTop(false);
+	// 	// 	console.log(window.scrollTop)
+	// 	// }
+
+	// 	// return () => (window.onscroll = null);
+	// }, []);
+
 
 	return (
-		<nav
+		getvisible &&
+		<nav 
 			style={{
 				zIndex: 99,
 			}}
@@ -69,7 +77,7 @@ const Header = ({ active, setActive }) => {
 				if (e.target.id === "menu") return;
 				setActive(false);
 			}}
-			className="sticky top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-3 flex justify-between relative items-center"
+			className="top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-3 flex justify-between relative items-center"
 		>
 			<div className="flex ">
 				<Link to="/">
