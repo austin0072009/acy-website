@@ -30,6 +30,8 @@ import AnimatedIcons from "./AnimatedIcons";
 import AnimatedButtons from "./AnimatedButtons";
 import Market from "./Market";
 import AnimatedBorders from "./AnimatedBorders";
+import NeuroSynth from "./NeuroSynth/index"
+
 
 export {
 	Header,
@@ -63,4 +65,5 @@ export {
 	AnimatedButtons,
 	Market,
 	AnimatedBorders,
+	NeuroSynth,
 };
