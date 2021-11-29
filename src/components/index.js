@@ -31,6 +31,7 @@ import AnimatedButtons from "./AnimatedButtons";
 import Market from "./Market";
 import AnimatedBorders from "./AnimatedBorders";
 import NeuroSynth from "./NeuroSynth/index"
+import RollingText from "./RollingText";
 
 
 export {
@@ -66,4 +67,5 @@ export {
 	Market,
 	AnimatedBorders,
 	NeuroSynth,
+	RollingText,
 };
