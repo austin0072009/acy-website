@@ -125,7 +125,7 @@ const Exchange = ({ iframeLoaded }) => {
 						>
 
 							<div style={{
-								background: '-webkit-radial-gradient( rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 1%, rgba(0, 0, 0, 0.7) )'
+								// background: '-webkit-radial-gradient( rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 1%, rgba(0, 0, 0, 0.7) )'
 							}}>
 								<svg viewBox="0 100 600 400" className="px-2">
 									<g transform="translate(50,300)">

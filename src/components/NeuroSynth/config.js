@@ -13,7 +13,7 @@ const Config = {
   notes: ['C', 'D', 'E', 'G', 'A'],
   octaves: [2, 3, 4, 5, 6],
   colors: {
-    background: 0x151518,
+    background: 0x1B1B1C,
     synapse: 0xB8C5D6,
     neuron: [
       0x6EB4D1,
@@ -29,7 +29,7 @@ const Config = {
     ]
   },
   neuronCount: {
-    value: 5
+    value: 3
   },
   receptorCount: {
     value: SMALL ? 10 : 15
@@ -37,29 +37,29 @@ const Config = {
   transmissionRange: {
     min: 0,
     max: 400,
-    value: SMALL ? 120 : 200,
+    value: 120,
     step: 1
   },
   transmissionSpeed: { // pixels per millisecond
     min: 0.05,
     max: 0.125,
-    value: 0.085,
+    value: 0.120,
     step: 0.001
   },
   pulseInterval: {
-    min: 600,
-    max: 1200
+    min: 300,
+    max: 500
   },
   wander: {
     min: 0,
     max: 1,
-    value: 0.8,
+    value: 0.4,
     step: 0.01
   },
   tempo: {
     min: 60,
     max: 160,
-    value: 80,
+    value: 70,
     step: 1
   }
 };

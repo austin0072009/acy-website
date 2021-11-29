@@ -108,7 +108,7 @@ const Title = () => {
 	return (
 		
 		<div
-			className=" banner align-middle"
+			className=" banner "
 			style={{ zIndex: 0 }}
 		>
 
@@ -130,7 +130,7 @@ const Title = () => {
 				// style={{ minHeight: isMobile ? "auto" : "20vw", zIndex: 1 }}
 			>
 				
-				<p className="text-5xl md:text-4xl lg:text-5xl lg:leading-normal text-white my-10 ">
+				{/* <p className="text-5xl md:text-4xl lg:text-5xl lg:leading-normal text-white my-10 ">
 					<Typist cursor={{ hideWhenDone: true }}>
 						<strong className = 'bannerTitle' >ACY PROTOCOL</strong>
 					</Typist>
@@ -138,7 +138,7 @@ const Title = () => {
 				<strong className="text-justify  w-100 xl:w-5/6 text-red my-10 leading-10 text-4xl">
 					A decentralized crypto trading protocol enables the most profitable 
 					and protected operation.
-				</strong>
+				</strong> */}
 				{/* <button className = 'dotbutton'>
 
 				</button>
