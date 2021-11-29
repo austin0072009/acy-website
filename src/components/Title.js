@@ -108,7 +108,7 @@ const Title = () => {
 	return (
 		
 		<div
-			className=" banner min-w-full"
+			className=" banner align-middle"
 			style={{ zIndex: 0 }}
 		>
 
@@ -126,7 +126,7 @@ const Title = () => {
 				></div> */}
 
 			<div
-				className="w-full md:w-3/5 relative h-96 positionadjust"
+				className="w-full md:w-3/5 relative h-96 "
 				// style={{ minHeight: isMobile ? "auto" : "20vw", zIndex: 1 }}
 			>
 				

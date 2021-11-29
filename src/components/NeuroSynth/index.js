@@ -15,8 +15,8 @@ const NeuroSynth = () => {
   
   let clock, dt;
   //  const gui = new GUI();
-  const width = window.innerWidth;
-  const height = window.innerHeight;
+  const width = window.innerWidth/2;
+  const height = window.innerHeight/2;
   // const width = 887;
   // const height = 1920;
   const brain = new Brain(width, height);
@@ -33,8 +33,8 @@ const NeuroSynth = () => {
     renderer.render(brain);
   };
   const resize = () => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+    const width = window.innerWidth/2;
+    const height = window.innerHeight/2;
     // const width = 887;
     // const height = 1920;
     renderer.view.style.height = height + 'px';
