@@ -35,7 +35,7 @@ const Title = () => {
 	const [isHoverFire1, setIsFire1] = useState(false);
 	const [isHoverAppIcon, setIsHoverAppIcon] = useState(false);
 
-
+	const [btnColor1,setColor1] = useState(false)
 
 
 
@@ -89,9 +89,14 @@ const Title = () => {
 	// 	setTimeout(() => explode3(), 3000);
 	// }, []);
 
-	// useEffect(() => {
-	// 	gridFollow();
-	// },[])
+	useEffect(() => {
+		gridFollow();
+	},[])
+
+	useEffect(() => {
+		if(isHoverExchange)setColor1(true)
+
+	},[isHoverExchange,isHoverLiquidity,isHoverFarm,isHoverMarket,isHoverLaunch])
 
 	const openInNewTab = url => {
 		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -121,7 +126,7 @@ const Title = () => {
 				></div> */}
 
 			<div
-				className="w-full md:w-3/5 relative h-96"
+				className="w-full md:w-3/5 relative h-96 positionadjust"
 				// style={{ minHeight: isMobile ? "auto" : "20vw", zIndex: 1 }}
 			>
 				
@@ -197,7 +202,7 @@ const Title = () => {
 				></div> */}
 			</div>
 
-			<div className = "animatebar ">
+			{/* <div className = "animatebar ">
 				<div className="animatebutton"
 												onClick={() => {
 													openInNewTab("https://test.acy.finance/#/exchange");
@@ -320,7 +325,7 @@ const Title = () => {
 							</div>
 						</div>
 					</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

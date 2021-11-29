@@ -102,10 +102,10 @@
   align-items: center;
   font-size: 30px;
   /* margin: 20px 10px 0px 10px; */
-
- 
   background-image: linear-gradient(#2e3032 0.0009999999999994458em, transparent 0.05em), linear-gradient(90deg, #2e3032 0.0009999999999994458em, transparent 0.05em);
-  background-size: 3em 1.14em;
+  background-size: 100px 42px;
+  background-position-y: 7px;
+  background-position-x: 1px;
 
 }
 
@@ -136,6 +136,8 @@
 
 .bannerTitle{
   font-size: 2em;
+  z-index: 100;
+  position: sticky;
 }
 
 .HeadNoBar {
@@ -149,4 +151,17 @@
   display: flex;
   justify-content: space-between;
 
+}
+.NeuroBar{
+    /* display: flow-root; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 380px;
+}
+.positionadjust {
+  position: relative;
+  top: -230px;
+  left: -212px;
 }
