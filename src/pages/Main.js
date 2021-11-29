@@ -33,8 +33,11 @@ const Main = () => {
 		
 		<div className="relative pb-10">
 			<Gradient></Gradient>
-			<div id ="Neuro" className = "NeuroBar" />
-			<Title></Title>
+			<div className = "flex min-w-full">
+				<Title></Title>
+				<div id ="Neuro" className = "NeuroBar" />
+				
+			</div>
 			{/* <NeuroSynth></NeuroSynth> */}
 		
 			<div className="relative" style={{ zIndex: 1 }}>
