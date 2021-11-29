@@ -37,7 +37,7 @@ const Config = {
   transmissionRange: {
     min: 0,
     max: 400,
-    value: 120,
+    value: 100,
     step: 1
   },
   transmissionSpeed: { // pixels per millisecond

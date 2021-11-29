@@ -9,6 +9,7 @@ import {
 	Launch,
 	Market,
 	NeuroSynth,
+	RollingText,
 } from "../components";
 import { Gradient } from "../atoms";
 import axios from "axios";
@@ -33,11 +34,15 @@ const Main = () => {
 		
 		<div className="relative pb-10">
 			{/* <Gradient></Gradient> */}
-			<div className = "flex min-w-full">
-				<Title></Title>
+			<div className = "flex flex-col min-w-full">
+				{/* <Title></Title> */}
+				
 				<div id ="Neuro" className = "NeuroBar" />
+				<RollingText></RollingText>
+
 				
 			</div>
+
 			{/* <NeuroSynth></NeuroSynth> */}
 		
 			<div className="relative" style={{ zIndex: 1 }}>
