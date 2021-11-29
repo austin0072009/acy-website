@@ -32,7 +32,7 @@ const Main = () => {
 	return (
 		
 		<div className="relative pb-10">
-			<Gradient></Gradient>
+			{/* <Gradient></Gradient> */}
 			<div className = "flex min-w-full">
 				<Title></Title>
 				<div id ="Neuro" className = "NeuroBar" />

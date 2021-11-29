@@ -96,7 +96,7 @@
   width: 50%;
   height: 467px;
   border-radius: 5px;
-  background-color: #151518;
+  background-color: #1B1B1C;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +117,7 @@
 .animatebutton {
   display: flex;
   flex-direction: column;
-  background-color: #29292C;
+  background-color: #1B1B1C;
   border-radius: 5px;
   align-items: center;
 
