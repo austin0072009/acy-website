@@ -10,6 +10,8 @@ import {
 	Market,
 	NeuroSynth,
 	RollingText,
+	StartedButton,
+	
 } from "../components";
 import { Gradient } from "../atoms";
 import axios from "axios";
@@ -31,11 +33,11 @@ else window.addEventListener('load', NeuroSynth());
 const Main = () => {
 	let [iframeLoaded, setIframeLoaded] = useState(false);
 	return (
-		
 		<div className="relative pb-10">
 			{/* <Gradient></Gradient> */}
 			<div className = "flex flex-col min-w-full">
 				{/* <Title></Title> */}
+
 				
 				<div id ="Neuro" className = "NeuroBar" />
 				<RollingText></RollingText>
