@@ -5,15 +5,15 @@ import "./RollingText.css"
 
 const RollingText = () => {
   return(
+    
   <div class="main">
-  <h1>ACY PROTOCOL: 
+  <h1 className = 'font-bold'>ACY PROTOCOL
+  <h2>The Most Profitable Decentralized Crypto Trading Protocol</h2> 
     <div className="roller">
       <span className = "rolltext">
-      EXCHANGE<br/>
-      LIQUIDIY<br/>
-      FARM<br/>
-      LAUCHN<br/>
-      MARKET<br/>
+      <div className = "orange text-white">Low SlippageE </div> 
+      <div className = "green text-white" >Extra Income  </div>
+      <div className = "blue text-white">Mutual Benefit </div>
       
       <span id="spare-time">too much spare time?</span><br/>
       </span>
