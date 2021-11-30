@@ -45,7 +45,7 @@ const Main = () => {
 
 			{/* <NeuroSynth></NeuroSynth> */}
 		
-			<div className="relative" style={{ zIndex: 1 }}>
+			<div className="relative" style={{ zIndex: 30 }}>
 				<div className="mt-20 mx-2 mb-20 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-32 lg:px-8">
 					{/* <VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel> */}
 					<Exchange iframeLoaded={iframeLoaded}></Exchange>

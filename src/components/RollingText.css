@@ -1,8 +1,10 @@
-* {
+/* * {
   margin:0;
   padding:0;
   font-family: 'Arvo';
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 body{
   background-color: #E63946;
@@ -16,12 +18,24 @@ body{
   justify-content: center;
   text-align: center;
   z-index: 22;
+
 }
 h1{
   text-align:center;
   text-transform: uppercase;
   color: #F1FAEE; 
   font-size: 4rem;
+  font-family: 'Arvo';
+
+}
+
+h2{
+  text-align:center;
+  text-transform: uppercase;
+  color: #F1FAEE; 
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
 }
 
 .roller{
@@ -33,7 +47,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   color: #1D3557;
 }
 
@@ -63,12 +77,12 @@ h1{
   50%{
     top: -8rem;
   }
-  72.5%{
+  /* 72.5%{
     top: -12.25rem;
   }
   100%{
     top:-16.25rem
-  }
+  } */
 }
 
 @media screen and (max-width: 600px){
@@ -95,16 +109,37 @@ h1{
   
   @keyframes slide-mob {
   0%{
-    top:0;
+    top:  2rem;
   }
   25%{
-    top: -2.125rem;    
+    top: -2rem;    
   }
   50%{
-    top: -4.25rem;
+    top: -4rem;
   }
-  72.5%{
+  /* 72.5%{
     top: -6.375rem;
-  }
+  } */
 }
+}
+
+.orange {
+  background-color: #EB5C20;
+  font-size: 3rem;
+  background-size: 450px 60px;
+  position: relative;
+
+}
+
+.blue {
+  background-color:#1E5D91;
+  font-size:3rem;
+  background-size: 450px 60px;
+}
+
+.green{
+  background-color:#70BA33;
+  font-size: 3rem;
+  background-size: 450px 60px;
+
 }
