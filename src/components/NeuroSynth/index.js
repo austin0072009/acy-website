@@ -43,11 +43,11 @@ const NeuroSynth = () => {
     brain.resize(width, height);
   };
 
-  window.onload = () => {
+  // window.onload = () => {
   const element = document.getElementById("Neuro");
   element.appendChild(renderer.view);
   // document.body.appendChild(renderer.view);
-  }
+  // }
 
 
   window.addEventListener('resize', resize);

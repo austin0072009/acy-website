@@ -11,7 +11,7 @@ const RollingText = () => {
   <h2>The Most Profitable Decentralized Crypto Trading Protocol</h2> 
     <div className="roller">
       <span className = "rolltext">
-      <div className = "orange text-white">Low SlippageE </div> 
+      <div className = "orange text-white">Low Slippage </div> 
       <div className = "green text-white" >Extra Income  </div>
       <div className = "blue text-white">Mutual Benefit </div>
       
