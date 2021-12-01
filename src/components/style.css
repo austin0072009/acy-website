@@ -15,13 +15,14 @@ body {
 }
 
 .overflow {
-    height: 100vh;
+    height: auto;
     overflow: hidden
 }
 
 .panels {
     width: 200%;
     font-family: 'Rubik', sans-serif !important;
+    height: 100%;
 }
 
 .panels__side {
@@ -99,7 +100,7 @@ body {
 .panels__side--inner {
     will-change: transform;
     padding: 0 5vw;
-    height: 100vh
+    height: 80vh;
 }
 
 .panels__side--inner-left {

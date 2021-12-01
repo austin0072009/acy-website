@@ -26,17 +26,18 @@ const TextTab = ({ title, content, subtitle }) => {
 							<div
 								style={{
 									position: "relative",
-									width: "100%",
+									width: "500px",
 								}}
 							>
 								<div
 									className="text-center py-5 mb-5"
 									style={{
-										fontSize: smallerThan900
-											? "2rem"
-											: smallerThan1280
-											? "2.5rem"
-											: "2.75rem",
+										// fontSize:" smallerThan900
+										// 	? "2rem"
+										// 	: smallerThan1280
+										// 	? "2.5rem"
+										// 	: "2.75rem"",
+											fontSize:"1.75rem",
 											fontWeight:'bold',
 											paddingLeft:'2.5rem',
 											textAlign:'left'

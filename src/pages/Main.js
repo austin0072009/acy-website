@@ -92,11 +92,11 @@ const Main = () => {
 					{/* <Exchange iframeLoaded={iframeLoaded}></Exchange>
 					<Liquidity setIframeLoaded={setIframeLoaded}></Liquidity> */}
 					<DualSlidingPanel/>
-					<Farm></Farm>
+					{/* <Farm></Farm>
 					<Launch></Launch>
 					<Market></Market>
 					<Documentation></Documentation>
-					<Governance></Governance>
+					<Governance></Governance> */}
 				</div>
 			</div>
 		</div>

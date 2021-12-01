@@ -66,7 +66,7 @@
 .border-container {
 	flex-direction: row;
 	min-height: 300px;
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 .border-container2{
@@ -183,7 +183,7 @@ a.animated-button.thar-three {
     cursor: pointer;
     display: flex;
     position: relative;
-    border: 3px solid #F7CA18;
+    border: 3px solid #EB5C20;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
     justify-content: center;
     align-items: center;
@@ -208,7 +208,7 @@ a.animated-button.thar-three:before {
 	z-index: -1;
 	content: '';
 	color: #000 !important;
-	background: #F7CA18;
+	background: #EB5C20;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
