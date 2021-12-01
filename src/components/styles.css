@@ -69,6 +69,14 @@
 	margin-top: 10px;
 }
 
+.border-container2{
+    flex-direction: row;
+    min-height: 300px;
+    margin-top: 10px;
+    top: 10px;
+    position: relative;
+}
+
 @media screen and (max-width: 900px) {
 	.border-container {
 		flex-direction: column;

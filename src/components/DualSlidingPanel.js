@@ -5,6 +5,7 @@ import { useState } from "react";
 
 
 const DualSlidingPanel = () => {
+  let [iframeLoaded, setIframeLoaded] = useState(false);
 
 
 
@@ -29,8 +30,7 @@ const DualSlidingPanel = () => {
         </div>
         <div class="panels__side panels__side--inner-right">
           {/* <p>"The biggest benefit of Apollo was the inspiration it gave to a growing generation to get into science and aerospace."</p> */}
-          {/* <Liquidity></Liquidity> */}
-        </div>
+          <Liquidity setIframeLoaded={setIframeLoaded}></Liquidity>         </div>
       </article>
     </section>
   </div>
