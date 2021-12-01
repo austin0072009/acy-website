@@ -139,7 +139,7 @@
 
 .HeadNoBar {
   position: absolute;
-  width: 90%;
+  width: 100%;
   /* z-index: 30; */
   /* position: relative; */
   background-size: cover;
@@ -164,4 +164,9 @@
   position: relative;
   top: -230px;
   left: -212px;
+}
+
+.ExchangeBar{
+  width: 100%;
+  height: auto;
 }

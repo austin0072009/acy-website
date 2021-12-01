@@ -33,6 +33,7 @@ import AnimatedBorders from "./AnimatedBorders";
 import NeuroSynth from "./NeuroSynth/index"
 import RollingText from "./RollingText";
 import StartedButton from "./StartedButton";
+import DualSlidingPanel from "./DualSlidingPanel";
 
 export {
 	Header,
@@ -69,4 +70,5 @@ export {
 	NeuroSynth,
 	RollingText,
 	StartedButton,
+	DualSlidingPanel,
 };

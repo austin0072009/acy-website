@@ -5,6 +5,7 @@ import "./styles.css";
 
 export const VideoPanel = ({ setIframeLoaded }) => {
 	let [webGLStatus, setWebGLStatus] = useState(true);
+	
 	useEffect(() => {
 		let supportedXtensionList = document
 			.createElement("canvas")

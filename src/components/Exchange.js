@@ -81,7 +81,7 @@ const Exchange = ({ iframeLoaded }) => {
 	const [isHoverExchange, setIsHoverExchange] = useState(false);
 
 	return (
-		<div>
+		<div className = "ExchangeBar">
 			<div className="flex">
 				<div
 					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
@@ -98,7 +98,7 @@ const Exchange = ({ iframeLoaded }) => {
 						setIsClickedButtonOne(!isClickedButtonOne);
 					}}
 				>
-					<AnimatedButtons
+					{/* <AnimatedButtons
 						url={button1}
 						urlhover={button1hover}
 						id="button1"
@@ -110,7 +110,7 @@ const Exchange = ({ iframeLoaded }) => {
 						style={{ fontSize: smallerThan568 ? 20 : 26 }}
 					>
 						<span>EXCHANGE</span>
-					</span>
+					</span> */}
 				</div>
 			</div>
 
@@ -425,15 +425,15 @@ const Exchange = ({ iframeLoaded }) => {
 						</div>
 
 					</div>
-					<div className="flex flex-grow text-tab">
+					{/* <div className="flex flex-grow text-tab">
 						<TextTab
-							title="ACY FLASH ARBITRAGE"
-							content="A multi-route arbitrage program built in ACY protocol and executed within each transaction, which solves the problem of slippage caused by robot invasion and enables the users make profit automatically."
-							color="rgba(235,92,32,0.6)"
-							subtitle="Protocol Level Arbitrage"
-							iframeLoaded={iframeLoaded}
+							// title="ACY FLASH ARBITRAGE"
+							// content="A multi-route arbitrage program built in ACY protocol and executed within each transaction, which solves the problem of slippage caused by robot invasion and enables the users make profit automatically."
+							// color="rgba(235,92,32,0.6)"
+							// subtitle="Protocol Level Arbitrage"
+							// iframeLoaded={iframeLoaded}
 						></TextTab>
-					</div>
+					</div> */}
 				</div>
 
 
