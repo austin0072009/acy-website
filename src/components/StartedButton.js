@@ -9,7 +9,7 @@ const StartedButton = () => {
 
 	return (
 		<div
-			className="flex flex-row"
+			className="flex flex-row items-center"
 			onClick={() => {
 				openInNewTab("https://test.acy.finance/");
 			}}

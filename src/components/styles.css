@@ -25,7 +25,6 @@
 @media screen and (max-width: 900px) {
 	.animated-button {
 		width: 150px;
-		margin-bottom: 50px;
 	}
 	.animated-link {
 		font-size: x-large;
@@ -69,12 +68,12 @@
 	margin-top: 10px;
 }
 
-.border-container2{
-    flex-direction: row;
-    min-height: 300px;
-    margin-top: 10px;
-    top: 10px;
-    position: relative;
+.border-container2 {
+	flex-direction: row;
+	min-height: 300px;
+	margin-top: 10px;
+	top: 10px;
+	position: relative;
 }
 
 @media screen and (max-width: 900px) {
@@ -155,38 +154,36 @@
 	color: #eb5c20;
 }
 
-
 .button {
 	padding: 17px 0 17px 0;
-    height: 50px;
-    background: #e91e63;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    border: 0;
-    margin: 13px auto 12px auto;
-    display: block;
-    width: 100%;
-    max-width: 240px;
+	height: 50px;
+	background: #e91e63;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	margin: 13px auto 12px auto;
+	display: block;
+	width: 100%;
+	max-width: 240px;
 }
 
-.outline{
+.outline {
 	background: 0 0;
-    border: 2px solid #bf8686;
-    padding: 15px 0 15px 0;
+	border: 2px solid #bf8686;
+	padding: 15px 0 15px 0;
 }
-
 
 a.animated-button.thar-three {
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    position: relative;
-    border: 3px solid #F7CA18;
-    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-    justify-content: center;
-    align-items: center;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	position: relative;
+	border: 3px solid #f7ca18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+	justify-content: center;
+	align-items: center;
 }
 a.animated-button.thar-three:hover {
 	color: #000 !important;
@@ -206,27 +203,24 @@ a.animated-button.thar-three:before {
 	height: 100%;
 	width: 0px;
 	z-index: -1;
-	content: '';
+	content: "";
 	color: #000 !important;
-	background: #F7CA18;
+	background: #f7ca18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.animated-button{
-    width: 167px;
-    height: 43px;
-    text-align: start;
+.animated-button {
+	width: 167px;
+	height: 43px;
+	text-align: start;
 }
 
-
-.arrow{
-    position: relative;
-    /* top: 75%; */
-    /* left: 50%; */
-    /* transform: translate(-50%,-50%); */
-    fill: lighten(black, 10);
-    border: 3px solid lighten(black, 10);
-    /* border-radius: 50%; */
-  
-    
+.arrow {
+	position: relative;
+	/* top: 75%; */
+	/* left: 50%; */
+	/* transform: translate(-50%,-50%); */
+	fill: lighten(black, 10);
+	border: 3px solid lighten(black, 10);
+	/* border-radius: 50%; */
 }

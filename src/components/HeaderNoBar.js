@@ -44,7 +44,7 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 
 	let [atTop, setAtTop] = useState(true);
 	let [hover, setHover] = useState(true);
-	let [visible,setVisible] = useState(getvisible);
+	let [visible, setVisible] = useState(getvisible);
 
 	let location = useLocation();
 
@@ -55,7 +55,6 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 		if (newWindow) newWindow.opener = null;
 	};
 
-	
 	// useEffect(() => {
 	// 	console.log("window.scrollTop")
 
@@ -67,31 +66,30 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 	// 	// return () => (window.onscroll = null);
 	// }, []);
 
-
 	return (
-		getvisible &&
-		(<div 
-			style={{
-				zIndex: 99,
-			}}
-			onClick={e => {
-				if (e.target.id === "menu") return;
-				setActive(false);
-			}}
-			className="HeadNoBar top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-3 flex justify-between relative items-center"
-		>
-			<div className="flex ">
-				<Link to="/">
-					<img
-						src={logo}
-						style={{ width: "45px" }}
-						alt="logo"
-						className="cursor-pointer rotateOnHover"
-					/>
-				</Link>
-			</div>
+		getvisible && (
+			<div
+				style={{
+					zIndex: 99,
+				}}
+				onClick={e => {
+					if (e.target.id === "menu") return;
+					setActive(false);
+				}}
+				className="HeadNoBar top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-10 flex justify-between relative items-center"
+			>
+				<div className="flex ">
+					<Link to="/">
+						<img
+							src={logo}
+							style={{ width: "45px" }}
+							alt="logo"
+							className="cursor-pointer rotateOnHover"
+						/>
+					</Link>
+				</div>
 
-			{/* <div className="flex flex-row items-center">
+				{/* <div className="flex flex-row items-center">
 				<div
 					className="flex cursor-pointer mt-2"
 					style={{ width: "90px" }}
@@ -108,9 +106,9 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 					></AnimatedIcons>
 				</div>
 			</div> */}
-			<StartedButton/>
-
-		</div>)
+				<StartedButton />
+			</div>
+		)
 	);
 };
 
