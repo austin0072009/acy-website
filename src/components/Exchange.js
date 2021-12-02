@@ -116,7 +116,7 @@ const Exchange = ({ iframeLoaded }) => {
 
 			<div className="flex border-container items-center justify-between mb-20">
 				<div
-					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 h-auto flex-grow mr-20"
+					className="flex-col border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 h-auto flex-grow mr-20"
 					style={{ backgroundColor: "rgba(235, 92, 32, 0.7)" }}
 				>
 					<div className="flowchart-container">
@@ -425,15 +425,15 @@ const Exchange = ({ iframeLoaded }) => {
 						</div>
 
 					</div>
-					{/* <div className="flex flex-grow text-tab">
+					<div className="flex flex-grow text-tab">
 						<TextTab
-							// title="ACY FLASH ARBITRAGE"
-							// content="A multi-route arbitrage program built in ACY protocol and executed within each transaction, which solves the problem of slippage caused by robot invasion and enables the users make profit automatically."
-							// color="rgba(235,92,32,0.6)"
-							// subtitle="Protocol Level Arbitrage"
-							// iframeLoaded={iframeLoaded}
+							title="ACY FLASH ARBITRAGE"
+							content="A multi-route arbitrage program built in ACY protocol and executed within each transaction, which solves the problem of slippage caused by robot invasion and enables the users make profit automatically."
+							color="rgba(235,92,32,0.6)"
+							subtitle="Protocol Level Arbitrage"
+							iframeLoaded={iframeLoaded}
 						></TextTab>
-					</div> */}
+					</div>
 				</div>
 
 

@@ -34,6 +34,7 @@ import NeuroSynth from "./NeuroSynth/index"
 import RollingText from "./RollingText";
 import StartedButton from "./StartedButton";
 import DualSlidingPanel from "./DualSlidingPanel";
+import RoadMap from "./RoadMap";
 
 export {
 	Header,
@@ -71,4 +72,5 @@ export {
 	RollingText,
 	StartedButton,
 	DualSlidingPanel,
+	RoadMap,
 };
