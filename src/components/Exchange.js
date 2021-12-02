@@ -29,7 +29,7 @@ const PercentHook = ({ value, id, filter }) => {
 						xmlns="http://www.w3.org/1999/xhtml"
 						className="inline-block"
 						id={`counter${id}`}
-						style={{fontSize:'26px'}}
+						style={{ fontSize: "26px" }}
 					></div>
 					%
 				</div>
@@ -81,7 +81,7 @@ const Exchange = ({ iframeLoaded }) => {
 	const [isHoverExchange, setIsHoverExchange] = useState(false);
 
 	return (
-		<div className = "ExchangeBar">
+		<div className="ExchangeBar">
 			<div className="flex">
 				<div
 					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
@@ -114,26 +114,35 @@ const Exchange = ({ iframeLoaded }) => {
 				</div>
 			</div>
 
-			<div className="flex border-container items-center justify-between mb-20">
+			<div className="flex  items-center justify-between">
 				<div
-					className="flex border-container mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 h-auto flex-grow mr-20"
+					className="flex  mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow"
 					style={{ backgroundColor: "rgba(235, 92, 32, 0.7)" }}
 				>
-					<div className="flowchart-container">
+					<div className="" style={{ width: "100%", height: "100%" }}>
 						<div
-							style={{ background: '#000000', borderRadius: '10px', overflow: 'hidden' }}
+							style={{
+								background: "#000000",
+								borderRadius: "10px",
+								overflow: "hidden",
+							}}
 						>
-
-							<div style={{
-								// background: '-webkit-radial-gradient( rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 1%, rgba(0, 0, 0, 0.7) )'
-							}}>
+							<div
+								style={
+									{
+										// background: '-webkit-radial-gradient( rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 1%, rgba(0, 0, 0, 0.7) )'
+									}
+								}
+							>
 								<svg viewBox="0 100 600 400" className="px-2">
 									<g transform="translate(50,300)">
 										<g transform="translate(0,-160)">
 											<svg xmlns="http://www.w3.org/2000/svg" x="0" y="0">
 												<foreignObject x="0" y="0" width="260" height="160">
 													<Typist cursor={{ show: false }}>
-														<span style={{color:'#eb5c20'}} id="algo_title">Global Optimal Algorithm</span>
+														<span style={{ color: "#eb5c20" }} id="algo_title">
+															Global Optimal Algorithm
+														</span>
 													</Typist>
 												</foreignObject>
 											</svg>
@@ -423,7 +432,6 @@ const Exchange = ({ iframeLoaded }) => {
 								</svg>
 							</div>
 						</div>
-
 					</div>
 					{/* <div className="flex flex-grow text-tab">
 						<TextTab
@@ -435,8 +443,6 @@ const Exchange = ({ iframeLoaded }) => {
 						></TextTab>
 					</div> */}
 				</div>
-
-
 			</div>
 		</div>
 	);

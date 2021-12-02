@@ -224,3 +224,18 @@ a.animated-button.thar-three:before {
 	border: 3px solid lighten(black, 10);
 	/* border-radius: 50%; */
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+	/* Styles */
+	.video-container {
+		height: 30vw !important;
+	}
+}
+/* Above than that */
+@media only screen and (min-device-width: 641px) {
+	/* Styles */
+	.video-container {
+		height: 20vw;
+	}
+}
