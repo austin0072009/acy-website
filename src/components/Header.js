@@ -78,11 +78,11 @@ const Header = ({ active, setActive, getvisible }) => {
 				}}
 				className="top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-10 flex justify-between relative items-center"
 			>
-				<div className="flex mt-5">
+				<div className="flex">
 					<Link to="/">
 						<img
 							src={logo}
-							style={{ width: "40px" }}
+							style={{ width: "45px" }}
 							alt="logo"
 							className="cursor-pointer rotateOnHover"
 						/>
