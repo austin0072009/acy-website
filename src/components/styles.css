@@ -25,7 +25,6 @@
 @media screen and (max-width: 900px) {
 	.animated-button {
 		width: 150px;
-		margin-bottom: 50px;
 	}
 	.animated-link {
 		font-size: x-large;
@@ -69,12 +68,12 @@
 	margin-top: 25px;
 }
 
-.border-container2{
-    flex-direction: row;
-    min-height: 300px;
-    margin-top: 10px;
-    top: 10px;
-    position: relative;
+.border-container2 {
+	flex-direction: row;
+	min-height: 300px;
+	margin-top: 10px;
+	top: 10px;
+	position: relative;
 }
 
 @media screen and (max-width: 900px) {
@@ -155,38 +154,36 @@
 	color: #eb5c20;
 }
 
-
 .button {
 	padding: 17px 0 17px 0;
-    height: 50px;
-    background: #e91e63;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    border: 0;
-    margin: 13px auto 12px auto;
-    display: block;
-    width: 100%;
-    max-width: 240px;
+	height: 50px;
+	background: #e91e63;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	margin: 13px auto 12px auto;
+	display: block;
+	width: 100%;
+	max-width: 240px;
 }
 
-.outline{
+.outline {
 	background: 0 0;
-    border: 2px solid #bf8686;
-    padding: 15px 0 15px 0;
+	border: 2px solid #e91e63;
+	padding: 15px 0 15px 0;
 }
-
 
 a.animated-button.thar-three {
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    position: relative;
-    border: 3px solid #EB5C20;
-    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-    justify-content: center;
-    align-items: center;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	position: relative;
+	border: 3px solid #eb5c20;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+	justify-content: center;
+	align-items: center;
 }
 a.animated-button.thar-three:hover {
 	color: #000 !important;
@@ -206,27 +203,113 @@ a.animated-button.thar-three:before {
 	height: 100%;
 	width: 0px;
 	z-index: -1;
-	content: '';
+	content: "";
 	color: #000 !important;
-	background: #EB5C20;
+	background: #eb5c20;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.animated-button{
-    width: 167px;
-    height: 43px;
-    text-align: start;
+.animated-button {
+	width: 167px;
+	height: 43px;
+	text-align: start;
 }
 
+.arrow {
+	position: relative;
+	/* top: 75%; */
+	/* left: 50%; */
+	/* transform: translate(-50%,-50%); */
+	fill: lighten(black, 10);
+	border: 3px solid lighten(black, 10);
+	/* border-radius: 50%; */
+}
 
-.arrow{
-    position: relative;
-    /* top: 75%; */
-    /* left: 50%; */
-    /* transform: translate(-50%,-50%); */
-    fill: lighten(black, 10);
-    border: 3px solid lighten(black, 10);
-    /* border-radius: 50%; */
-  
-    
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 640px) {
+	/* Styles */
+	.video-container {
+		height: 30vw !important;
+	}
+}
+/* Above than that */
+@media only screen and (min-device-width: 641px) {
+	/* Styles */
+	.video-container {
+		height: 20vw;
+	}
+}
+
+/* Exchange text */
+.exchange-title {
+	font-weight: bold;
+	text-align: center;
+}
+.exchange-content {
+	text-align: left;
+	line-height: 1.8;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 640px) {
+	/* Styles */
+	.exchange-title {
+		font-size: 1.75rem;
+	}
+	.exchange-content {
+		font-size: 0.625rem;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+	/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+	/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 640px) and (max-device-width: 1224px) {
+	/* Styles */
+	.exchange-title {
+		font-size: 1.25rem;
+	}
+	.exchange-content {
+		font-size: 0.625rem;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+	/* Styles */
+	.exchange-title {
+		font-size: 1.75rem;
+	}
+	.exchange-content {
+		font-size: 0.75rem;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+	/* Styles */
+	.exchange-title {
+		font-size: 2.5rem;
+	}
+	.exchange-content {
+		font-size: 1.25rem;
+	}
 }

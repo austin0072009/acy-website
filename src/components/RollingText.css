@@ -4,80 +4,77 @@
   font-family: 'Arvo';
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
-body{
-  background-color: #E63946;
+body {
+	background-color: #e63946;
 }
 
-.main{
-  height: 670px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 22;
-
+.main {
+	height: 670px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 22;
 }
-h1{
-  text-align:center;
-  text-transform: uppercase;
-  color: #F1FAEE; 
-  font-size: 4rem;
-  font-family: 'Arvo';
-
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #f1faee;
+	font-size: 4rem;
+	font-family: "Arvo";
 }
 
-h2{
-  text-align:center;
-  text-transform: uppercase;
-  color: #F1FAEE; 
-  font-size: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #f1faee;
+	font-size: 1.5rem;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
 }
 
-.roller{
-  height: 4.125rem;
-  line-height: 4rem;
-  position: relative;
-  overflow: hidden; 
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.roller {
+	height: 4.125rem;
+	line-height: 4rem;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  color: #1D3557;
+	color: #1d3557;
 }
 
-
-#spare-time{
-  font-size: 1rem;
-  font-style: italic;
-  letter-spacing: 1rem;
-  margin-top: 0;
-  color: #A8DADC;
-  
+#spare-time {
+	font-size: 1rem;
+	font-style: italic;
+	letter-spacing: 1rem;
+	margin-top: 0;
+	color: #a8dadc;
 }
 
 .rolltext {
-  position: absolute;
-  top: 0;
-  animation: slide 5s infinite;  
+	position: absolute;
+	top: 0;
+	animation: slide 5s infinite;
 }
 
 @keyframes slide {
-  0%{
-    top:0;
-  }
-  25%{
-    top: -4rem;    
-  }
-  50%{
-    top: -8rem;
-  }
-  /* 72.5%{
+	0% {
+		top: 0;
+	}
+	25% {
+		top: -4rem;
+	}
+	50% {
+		top: -8rem;
+	}
+	/* 72.5%{
     top: -12.25rem;
   }
   100%{
@@ -85,61 +82,150 @@ h2{
   } */
 }
 
-@media screen and (max-width: 600px){
-  h1{
-  text-align:center;
-  text-transform: uppercase;
-  color: #F1FAEE; 
-  font-size: 2.125rem;
-}
-  
-  .roller{
-  height: 2.6rem; 
-  line-height: 2.125rem;  
-  }
-  
-  #spare-time {
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-  }
-  
-  .roller #rolltext {  
-  animation: slide-mob 5s infinite;  
-}
-  
-  @keyframes slide-mob {
-  0%{
-    top:  2rem;
-  }
-  25%{
-    top: -2rem;    
-  }
-  50%{
-    top: -4rem;
-  }
-  /* 72.5%{
+@media screen and (max-width: 600px) {
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+		color: #f1faee;
+		font-size: 2.125rem;
+	}
+
+	.roller {
+		height: 2.6rem;
+		line-height: 2.125rem;
+	}
+
+	#spare-time {
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
+	}
+
+	.roller #rolltext {
+		animation: slide-mob 5s infinite;
+	}
+
+	@keyframes slide-mob {
+		0% {
+			top: 2rem;
+		}
+		25% {
+			top: -2rem;
+		}
+		50% {
+			top: -4rem;
+		}
+		/* 72.5%{
     top: -6.375rem;
   } */
-}
+	}
 }
 
 .orange {
-  background-color: #EB5C20;
-  font-size: 3rem;
-  background-size: 450px 60px;
-  position: relative;
-
+	background-color: #eb5c20;
 }
 
 .blue {
-  background-color:#1E5D91;
-  font-size:3rem;
-  background-size: 450px 60px;
+	background-color: #1e5d91;
 }
 
-.green{
-  background-color:#70BA33;
-  font-size: 3rem;
-  background-size: 450px 60px;
+.green {
+	background-color: #70ba33;
+}
 
+/* Rolling Text Media Queries */
+.rolling-title h1 {
+	margin: 5px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+	/* Styles */
+	.rolling-title h1 {
+		font-size: 2.5rem;
+	}
+	.rolling-title h2 {
+		font-size: 0.75rem;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+	/* Styles */
+	.rolling-title h1 {
+		font-size: 2.5rem;
+	}
+	.rolling-title h2 {
+		font-size: 0.625rem;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	/* Styles */
+	.rolling-title h1 {
+		font-size: 5rem;
+	}
+	.rolling-title h2 {
+		font-size: 1.25rem;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	/* Styles */
+	.rolling-title h1 {
+		font-size: 4rem;
+	}
+	.rolling-title h2 {
+		font-size: 1.125rem;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+	/* Styles */
+	.rolling-title h1 {
+		font-size: 5rem;
+	}
+	.rolling-title h2 {
+		font-size: 1.5rem;
+	}
+	.rolltext {
+		width: 450px;
+		font-size: 2.5rem;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+	/* Styles */
+	.rolling-title h1 {
+		font-size: 7rem;
+	}
+	.rolling-title h2 {
+		font-size: 2rem;
+	}
+	.rolltext {
+		width: 550px;
+		font-size: 3.5rem;
+	}
+	/* .orange {
+		padding: 0px 0px 5px 0px;
+	} */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+	/* Styles */
 }
