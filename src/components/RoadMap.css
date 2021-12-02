@@ -34,7 +34,7 @@ $vline-circle-color: $text-color;
 	justify-content: center;
 	min-height: 100vh;
 	min-width: 100%;
-	padding: 0 80px 80px 0;
+	padding: 0 0 0 0;
 	overflow: hidden;
 	color: #fff;
 	/* background: linear-gradient(45deg, #4d3ff5 0%, #b2f9d0 100%); */
@@ -45,10 +45,10 @@ $vline-circle-color: $text-color;
 
 @media (max-width: 1200px) {
 	.roadmap {
-		padding: 0 0 80px 0;
+		padding: 0 0 0 0;
 		align-items: center;
 		width: auto;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: flex-start;
 	}
 }
@@ -60,19 +60,20 @@ $vline-circle-color: $text-color;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	line-height: 1.1;
+	padding-bottom: 50px;
 }
 @media (min-width: 1201px) {
 	.roadmap-title {
-		padding-bottom: 80px;
 	}
 }
 @media (max-width: 1200px) {
 	.roadmap-title {
-		font-size: calc(7.9vw + 1.1em);
-		align-self: flex-start;
+		font-size: calc(7.9vw + 1em);
+		/* align-self: flex-start;
 		width: 10vw;
 		word-wrap: break-word;
 		position: absolute;
+		margin-bottom: 20px; */
 	}
 }
 .roadmap-bg {
@@ -90,14 +91,16 @@ $vline-circle-color: $text-color;
 .roadmap-timeline {
 	display: flex;
 	height: 0;
+	padding-left: 50px;
 }
 @media (max-width: 1200px) {
 	.roadmap-timeline {
 		flex-direction: column;
-		height: auto;
+		height: 1000px;
 		width: 0;
 		padding-left: 50%;
 		padding-right: 50%;
+		padding-bottom: 20px;
 	}
 }
 .roadmap-timeline::before {
@@ -152,7 +155,7 @@ $vline-circle-color: $text-color;
 .DetailCard {
 	visibility: hidden;
 	position: absolute;
-	background-color: #1b1b1c;
+	background-color: black;
 	z-index: 3;
 }
 
