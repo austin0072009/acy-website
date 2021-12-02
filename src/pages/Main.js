@@ -17,6 +17,7 @@ import {
 import { Gradient } from "../atoms";
 import axios from "axios";
 import { useState } from "react";
+import { ConsoleSqlOutlined } from "@ant-design/icons";
 
 axios.defaults.baseURL = "https://api.acy.finance/";
 
@@ -60,11 +61,15 @@ var Panels = (function() {
 
 
 console.log("go")
+
+
+
 window.onload = () => {
-console.log(document.getElementById("Neuro"));
-if (document.readyState === 'complete') NeuroSynth();
-else window.addEventListener('load', NeuroSynth());
-Panels.init();
+	console.log(document.getElementById("Neuro"));
+	if (document.readyState === 'complete') NeuroSynth();
+	else window.addEventListener('load', NeuroSynth());
+	Panels.init();
+
 
 // this two function is about RoadMap
 var start =  (function() {
@@ -134,6 +139,7 @@ var roadmap = (() => {
 
 
 
+
 const Main = () => {
 	let [iframeLoaded, setIframeLoaded] = useState(false);
 	return (
@@ -156,7 +162,7 @@ const Main = () => {
 					{/* <VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel> */}
 					{/* <Exchange iframeLoaded={iframeLoaded}></Exchange>
 					<Liquidity setIframeLoaded={setIframeLoaded}></Liquidity> */}
-					<DualSlidingPanel/>
+					<DualSlidingPanel />
 					{/* <Farm></Farm>
 					<Launch></Launch>
 					<Market></Market> */}
