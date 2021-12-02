@@ -78,7 +78,7 @@ const Header = ({ active, setActive, getvisible }) => {
 				}}
 				className="top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-10 flex justify-between relative items-center"
 			>
-				<div className="flex">
+				<div className="flex mt-2">
 					<Link to="/">
 						<img
 							src={logo}
