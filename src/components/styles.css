@@ -171,7 +171,7 @@
 
 .outline {
 	background: 0 0;
-	border: 2px solid #bf8686;
+	border: 2px solid #e91e63;
 	padding: 15px 0 15px 0;
 }
 
@@ -180,7 +180,7 @@ a.animated-button.thar-three {
 	cursor: pointer;
 	display: flex;
 	position: relative;
-	border: 3px solid #f7ca18;
+	border: 3px solid #eb5c20;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 	justify-content: center;
 	align-items: center;
@@ -205,7 +205,7 @@ a.animated-button.thar-three:before {
 	z-index: -1;
 	content: "";
 	color: #000 !important;
-	background: #f7ca18;
+	background: #eb5c20;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 

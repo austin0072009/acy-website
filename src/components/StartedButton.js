@@ -1,4 +1,4 @@
-// import "./btn.css"
+// import "./btn.css";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
 const StartedButton = () => {
@@ -14,7 +14,7 @@ const StartedButton = () => {
 				openInNewTab("https://test.acy.finance/");
 			}}
 		>
-			<a className="btn btn-sm animated-button thar-three">
+			<a className="btn btn-sm animated-button thar-three font-bold">
 				GET STARTED
 				<span className="pl-3">
 					<ArrowRightOutlined />
