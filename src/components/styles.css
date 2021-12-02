@@ -226,7 +226,7 @@ a.animated-button.thar-three:before {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+@media only screen and (max-device-width: 640px) {
 	/* Styles */
 	.video-container {
 		height: 30vw !important;
@@ -237,5 +237,79 @@ a.animated-button.thar-three:before {
 	/* Styles */
 	.video-container {
 		height: 20vw;
+	}
+}
+
+/* Exchange text */
+.exchange-title {
+	font-weight: bold;
+	text-align: center;
+}
+.exchange-content {
+	text-align: left;
+	line-height: 1.8;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 640px) {
+	/* Styles */
+	.exchange-title {
+		font-size: 1.75rem;
+	}
+	.exchange-content {
+		font-size: 0.625rem;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+	/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+	/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 640px) and (max-device-width: 1224px) {
+	/* Styles */
+	.exchange-title {
+		font-size: 1.25rem;
+	}
+	.exchange-content {
+		font-size: 0.625rem;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+	/* Styles */
+	.exchange-title {
+		font-size: 1.75rem;
+	}
+	.exchange-content {
+		font-size: 0.75rem;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+	/* Styles */
+	.exchange-title {
+		font-size: 2.5rem;
+	}
+	.exchange-content {
+		font-size: 1.25rem;
 	}
 }
