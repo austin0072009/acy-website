@@ -7,7 +7,7 @@ const DualSlidingPanel = () => {
 	let [iframeLoaded, setIframeLoaded] = useState(false);
 
 	return (
-		<div class="panel-container">
+		<div class="panel-container mb-20">
 			<section class="panels">
 				<article class="panels__side panels__side--left">
 					<div class="panels__side panels__side--inner-left">
