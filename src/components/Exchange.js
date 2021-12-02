@@ -119,10 +119,7 @@ const Exchange = ({ iframeLoaded }) => {
 					className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow"
 					style={{ backgroundColor: "rgba(235, 92, 32, 0.7)" }}
 				>
-					<div
-						className="px-10 py-10"
-						style={{ width: "100%", height: "100%" }}
-					>
+					<div className="px-5 py-5" style={{ width: "100%", height: "100%" }}>
 						<div
 							style={{
 								background: "#000000",
