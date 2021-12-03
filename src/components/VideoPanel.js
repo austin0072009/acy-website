@@ -5,7 +5,7 @@ import "./styles.css";
 
 export const VideoPanel = ({ setIframeLoaded }) => {
 	let [webGLStatus, setWebGLStatus] = useState(true);
-	
+
 	useEffect(() => {
 		let supportedXtensionList = document
 			.createElement("canvas")
@@ -23,7 +23,7 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 	return (
 		<div className="rounded-xl">
 			{webGLStatus ? (
-				<div className="container" style={{ height: "355px" }}>
+				<div className="container video-container" style={{ height: "20vw" }}>
 					               
 					<iframe
 						onLoad={() => {
@@ -32,10 +32,10 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 						style={{
 							// width: "100%",
 							// height: "100%", // maxHeight: isMobile ? "700px" : "1000px",
-							width: '100%',
-							position: 'relative',
-							height: '100%',
-							top: '-24px'
+							width: "100%",
+							position: "relative",
+							height: "100%",
+							top: "-24px",
 						}}
 						className="rounded-xl"
 						src="https://api.acy.finance/app.html"

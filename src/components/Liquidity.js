@@ -22,7 +22,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 	const [isClickedButtonTwo, setIsClickedButtonTwo] = useState(false);
 
 	return (
-		<div className = 'LiquidityBar'>
+		<div className="LiquidityBar">
 			<div className="flex">
 				<div
 					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
@@ -54,31 +54,29 @@ const Liquidity = ({ setIframeLoaded }) => {
 					</span> */}
 				</div>
 			</div>
-			<div className="flex border-container2 items-center justify-between mb-20">
+			<div className="flex items-center justify-between">
 				<div
-					className="flex-col border-container2 mb-5 md:mb-0 items-center justify-between mr-5 rounded-lg px-5 py-5 flex-grow mr-20"
+					className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow"
 					style={{ backgroundColor: "rgba(28, 153, 101, 0.2)" }}
 				>
-					<div className="flowchart-container">
+					<div className="px-5 py-5" style={{ width: "100%", height: "100%" }}>
 						<div>
 							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
 						</div>
 					</div>
-					
-						<div className="flex flex-grow text-tab">
-							 <TextTab
-								title="LIQUIDITY AS A SERVICE"
-								content="In DeFi 2.0, ACY Finance is trying to build long-term pools of ‘Protocol Owned Liquidity’. The key of this solution is the Flash Arbitrage Revenue. 20% of this revenue will turn into POL for long."
-								color="rgba(28,153,101,0.6)"
-								subtitle="Protocol Owned Liquidity"
-								link="https://test.acy.finance/#/liquidity"
-								linkName="Add Now"
-							></TextTab> 
-						</div>
+
+					<div className="flex flex-grow text-tab" style={{ width: "auto" }}>
+						<TextTab
+							title="LIQUIDITY AS A SERVICE"
+							content="In DeFi 2.0, ACY Finance is trying to build long-term pools of ‘Protocol Owned Liquidity’. The key of this solution is the Flash Arbitrage Revenue. 20% of this revenue will turn into POL for long."
+							color="rgba(28,153,101,0.6)"
+							subtitle="Protocol Owned Liquidity"
+							link="https://test.acy.finance/#/liquidity"
+							linkName="Add Now"
+						></TextTab>
 					</div>
 				</div>
-			
-			
+			</div>
 		</div>
 	);
 };
