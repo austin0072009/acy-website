@@ -9,12 +9,14 @@ const DualSlidingPanel2 = () => {
 
 
 
-    return(<div class="overflow">
+    return(
+    
+    <div class="overflow">
     <section class="panels2">
       <article class="panels2__side panels2__side--left">
         <div class="panels2__side panels2__side--inner-left">
           {/* <p>"Changes and progress very rarely are gifts from above. They come out of struggles from below."</p> */}
-          {/* <SpaceLoader></SpaceLoader> */}
+          <SpaceLoader></SpaceLoader>
         </div>
         <div class="panels2__side panels2__side--inner flex-col">
           <h1 class="panels2__headline">Crypto Traders</h1>  
@@ -36,6 +38,7 @@ const DualSlidingPanel2 = () => {
       </article>
     </section>
   </div>
+  
   )
 }
 
