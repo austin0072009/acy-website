@@ -37,7 +37,7 @@ const RoadMap = () => {
 		},
 	];
 	return (
-		<div className="flex justify-center mb-20">
+		<div className="flex justify-center">
 			<div class="roadmap">
 				<div>
 					<div class="roadmap-title">Roadmap</div>
