@@ -13,10 +13,14 @@ import {
 	DualSlidingPanel,
 	RoadMap,
 	ClipPathHover,
+	WordRotation,
+	Rotating,
+	DualSlidingPanel2,
+	
 } from "../components";
 import { Gradient } from "../atoms";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ConsoleSqlOutlined } from "@ant-design/icons";
 
 axios.defaults.baseURL = "https://api.acy.finance/";
@@ -51,9 +55,50 @@ var Panels = (function () {
 		bindActions();
 	};
 	return {
-		init: init,
+		init: init
+	  };
+	
+
+   
+  }());
+
+  var Panels2 = (function() {
+  
+	var panelLeft = document.querySelector('.panels2__side--left');
+	var panelRight = document.querySelector('.panels2__side--right');
+  
+	var openLeft = function() {
+		  panelLeft.classList.toggle('panels2__side--left-active');
+	  panelRight.classList.toggle('panels2__side--right-hidden');
 	};
-})();
+  
+	var openRight = function() {
+	  panelRight.classList.toggle('panels2__side--right-active');
+	  panelLeft.classList.toggle('panels2__side--left-hidden');
+	};
+	
+	var bindActions = function() {
+	  panelLeft.addEventListener('click', openLeft, false);
+	  panelRight.addEventListener('click', openRight, false);
+	};
+	
+	var init = function() {
+	  panelLeft = document.querySelector('.panels2__side--left');
+	  panelRight = document.querySelector('.panels2__side--right');
+	  console.log(panelLeft);
+
+	  bindActions();
+	};
+	return {
+		init: init
+	  };
+	
+
+   
+  }());
+
+console.log("go")
+
 
 console.log("go");
 
@@ -62,6 +107,24 @@ window.onload = () => {
 	if (document.readyState === "complete") NeuroSynth();
 	else window.addEventListener("load", NeuroSynth());
 	Panels.init();
+	Panels2.init();
+
+	// setInterval(function () {
+	// 	const show = document.querySelector('span[data-show]')
+	// 	const next = show.nextElementSibling || document.querySelector('span:first-child')
+	// 	const up = document.querySelector('span[data-up]')
+		
+	// 	if (up) {
+	// 	  up.removeAttribute('data-up')
+	// 	}
+		
+	// 	show.removeAttribute('data-show')
+	// 	show.setAttribute('data-up', '')
+		
+	// 	next.setAttribute('data-show', '')
+	//   }, 1000)
+
+
 
 	// this two function is about RoadMap
 	var start = (function () {
@@ -131,7 +194,28 @@ window.onload = () => {
 	})();
 };
 
+
+
 const Main = () => {
+
+	// useEffect(()=> {
+	// 	const interval = setInterval(function () {
+	// 		const show = document.querySelector('span[data-show]')
+	// 		const next = show.nextElementSibling || document.getElementById("first")
+	// 		const up = document.querySelector('span[data-up]')
+			
+	// 		if (up) {
+	// 		  up.removeAttribute('data-up')
+	// 		}
+			
+	// 		show.removeAttribute('data-show')
+	// 		show.setAttribute('data-up', '')
+			
+	// 		next.setAttribute('data-show', '')
+	// 	  }, 2000)
+
+	// 	  return () => clearInterval(interval);
+	// },[]);
 	let [iframeLoaded, setIframeLoaded] = useState(false);
 	return (
 		<div className="relative pb-10">
@@ -154,11 +238,17 @@ const Main = () => {
 					{/* <Farm></Farm>
 					<Launch></Launch>
 					<Market></Market> */}
+					{/* <div  className = "blackboard">
+					<WordRotation></WordRotation>
+					<Rotating></Rotating>
+					</div> */}
+					<DualSlidingPanel2 />
 
 					<RoadMap></RoadMap>
 					<ClipPathHover />
-					<Documentation></Documentation>
-					<Governance></Governance>
+					{/* <Documentation></Documentation>
+					<Governance></Governance> */}
+				
 				</div>
 			</div>
 		</div>

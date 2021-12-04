@@ -8,6 +8,7 @@ import button2 from "../assets/svgs/animatedIcons/two-key.json";
 import button2hover from "../assets/svgs/animatedIcons/two-key-hover.json";
 import liquidity from "../assets/svgs/animatedIcons/liquidity.json";
 
+
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
 	if (newWindow) newWindow.opener = null;

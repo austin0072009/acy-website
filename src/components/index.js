@@ -35,6 +35,10 @@ import StartedButton from "./StartedButton";
 import DualSlidingPanel from "./DualSlidingPanel";
 import RoadMap from "./RoadMap";
 import ClipPathHover from "./ClipPathHover";
+import WordRotation from "./WordRotation";
+import Rotating from "./Rotating";
+import DualSlidingPanel2 from "./DualSlidingPanel2";
+import SpaceLoader from "./SpaceLoader";
 
 export {
 	Header,
@@ -74,4 +78,9 @@ export {
 	DualSlidingPanel,
 	RoadMap,
 	ClipPathHover,
+	WordRotation,
+	Rotating,
+	DualSlidingPanel2,
+	SpaceLoader,
+
 };
