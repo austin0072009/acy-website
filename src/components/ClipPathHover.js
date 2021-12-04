@@ -81,7 +81,7 @@ const ClipPathHover = () => {
 
 	return (
 		<div className="clip-path-hover">
-			<div>Backers</div>
+			<div className="backers-title">Backers</div>
 			<main>
 				<div class="items">
 					<div
