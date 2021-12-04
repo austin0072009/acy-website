@@ -9,8 +9,7 @@ $vline-secondary-color: rgba(255, 255, 255, 0.5);
 $vline-circle-color: $text-color;
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Roboto:wght@300;500&display=swap");
 @keyframes strokeoffset {
 	0% {
 		stroke-dashoffset: 0px;
@@ -19,9 +18,9 @@ $vline-circle-color: $text-color;
 		stroke-dashoffset: 1000px;
 	}
 }
-*,
-*::before,
-*::after {
+.roadmap,
+.roadmap::before,
+.roadmap::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -53,14 +52,16 @@ $vline-circle-color: $text-color;
 	}
 }
 .roadmap-title {
+	font-family: "Karla", sans-serif;
+	text-align: center;
 	padding-left: 0.1em;
 	z-index: 1;
-	font-size: 7em;
-	font-family: "Karla", sans-serif;
+	font-size: 5em;
 	text-transform: uppercase;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.1em;
 	line-height: 1.1;
 	padding-bottom: 50px;
+	color: white;
 }
 @media (min-width: 1201px) {
 	.roadmap-title {

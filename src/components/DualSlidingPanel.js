@@ -7,7 +7,7 @@ const DualSlidingPanel = () => {
 	let [iframeLoaded, setIframeLoaded] = useState(false);
 
 	return (
-		<div class="panel-container">
+		<div class="panel-container-1">
 			<section class="panels">
 				<article class="panels__side panels__side--left">
 					<div class="panels__side panels__side--inner-left">
@@ -18,7 +18,7 @@ const DualSlidingPanel = () => {
 						<h1 class="panels__headline">Crypto Traders</h1>
 						<p>Enable traders to get the optimal output</p>
 						<svg
-							class="arrow arrow--left"
+							class="arrow arrow--left arrow-1"
 							width="5vh"
 							height="5vh"
 							viewBox="0 0 24 24"
@@ -30,11 +30,11 @@ const DualSlidingPanel = () => {
 				</article>
 				<article class="panels__side panels__side--right">
 					<div class="panels__side panels__side--inner flex-col">
-						<h1 class="panels__headline">Liquidity Provider</h1>
-						<p>Enable LPs to earn more transaction fees</p>
+						<h1 class="panels__headline">Liquidity Miner</h1>
+						<p>Enable miners to earn more transaction fees</p>
 
 						<svg
-							class="arrow arrow--right"
+							class="arrow arrow--right arrow-1"
 							width="5vh"
 							height="5vh"
 							viewBox="0 0 24 24"
