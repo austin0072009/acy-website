@@ -1,4 +1,3 @@
-
 import Header from "./Header";
 import HeaderNoBar from "./HeaderNoBar";
 import Video from "./Video";
@@ -30,11 +29,12 @@ import AnimatedIcons from "./AnimatedIcons";
 import AnimatedButtons from "./AnimatedButtons";
 import Market from "./Market";
 import AnimatedBorders from "./AnimatedBorders";
-import NeuroSynth from "./NeuroSynth/index"
+import NeuroSynth from "./NeuroSynth/index";
 import RollingText from "./RollingText";
 import StartedButton from "./StartedButton";
 import DualSlidingPanel from "./DualSlidingPanel";
 import RoadMap from "./RoadMap";
+import ClipPathHover from "./ClipPathHover";
 
 export {
 	Header,
@@ -73,4 +73,5 @@ export {
 	StartedButton,
 	DualSlidingPanel,
 	RoadMap,
+	ClipPathHover,
 };
