@@ -3,7 +3,7 @@ import "./ClipPathHover.css";
 import { useRef, useEffect } from "react";
 import OxBull from "../assets/svgs/clipPathHover/Oxbull.svg";
 import LightningProtocol from "../assets/svgs/clipPathHover/LightningProtocol.svg";
-import Hoppy from "../assets/svgs/clipPathHover/Hoppy.svg";
+import Hoppy from "../assets/svgs/clipPathHover/Hoppy.png";
 import Krystal from "../assets/svgs/clipPathHover/krystal.svg";
 import DAOStarter from "../assets/svgs/clipPathHover/DAOStarter.svg";
 import DFIStarter from "../assets/svgs/clipPathHover/DFIStarter.svg";
@@ -81,6 +81,7 @@ const ClipPathHover = () => {
 
 	return (
 		<div className="clip-path-hover">
+			<div>Backers</div>
 			<main>
 				<div class="items">
 					<div
@@ -101,7 +102,7 @@ const ClipPathHover = () => {
 										cx="-0.27272728085517883"
 										cy="57.8863639831543"
 										fill="#000"
-										r="100px"
+										r="125px"
 									></circle>
 								</clipPath>
 							</defs>
@@ -136,7 +137,7 @@ const ClipPathHover = () => {
 										cx="23.727272033691406"
 										cy="69.88636016845703"
 										fill="#000"
-										r="100px"
+										r="125px"
 									></circle>
 								</clipPath>
 							</defs>
@@ -171,7 +172,7 @@ const ClipPathHover = () => {
 										cx="27.727272033691406"
 										cy="90.88636016845703"
 										fill="#000"
-										r="100px"
+										r="125px"
 									></circle>
 								</clipPath>
 							</defs>
@@ -186,7 +187,7 @@ const ClipPathHover = () => {
 									href={Hoppy}
 								></image>
 								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									HOPPY
+									{/* HOPPY */}
 								</text>
 							</g>
 						</svg>
@@ -204,7 +205,7 @@ const ClipPathHover = () => {
 										cx="2.7272727489471436"
 										cy="76.70454406738281"
 										fill="#000"
-										r="100px"
+										r="125px"
 									></circle>
 								</clipPath>
 							</defs>
@@ -235,7 +236,7 @@ const ClipPathHover = () => {
 						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 							<defs>
 								<clipPath id="clip-4">
-									<circle cx="0" cy="0" fill="#000" r="100px"></circle>
+									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
 								</clipPath>
 							</defs>
 							<text class="svg-text" dy=".3em" x="50%" y="50%">
@@ -264,7 +265,7 @@ const ClipPathHover = () => {
 						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 							<defs>
 								<clipPath id="clip-5">
-									<circle cx="0" cy="0" fill="#000" r="100px"></circle>
+									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
 								</clipPath>
 							</defs>
 							<text class="svg-text" dy=".3em" x="50%" y="50%">
@@ -293,7 +294,7 @@ const ClipPathHover = () => {
 						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 							<defs>
 								<clipPath id="clip-6">
-									<circle cx="0" cy="0" fill="#000" r="100px"></circle>
+									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
 								</clipPath>
 							</defs>
 							<text class="svg-text" dy=".3em" x="50%" y="50%">
@@ -322,7 +323,7 @@ const ClipPathHover = () => {
 						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 							<defs>
 								<clipPath id="clip-7">
-									<circle cx="0" cy="0" fill="#000" r="100px"></circle>
+									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
 								</clipPath>
 							</defs>
 							<text class="svg-text" dy=".3em" x="50%" y="50%">
@@ -351,11 +352,11 @@ const ClipPathHover = () => {
 						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 							<defs>
 								<clipPath id="clip-8">
-									<circle cx="0" cy="0" fill="#000" r="100px"></circle>
+									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
 								</clipPath>
 							</defs>
 							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Chainlink/Hackathon Prize
+								Chainlink
 							</text>
 							<g clip-path="url(#clip-8)">
 								<rect width="300" height="200" fill="white" />
@@ -366,7 +367,7 @@ const ClipPathHover = () => {
 									href={Chainlink}
 								></image>
 								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* Chainlink/Hackathon Prize */}
+									{/* Chainlink*/}
 								</text>
 							</g>
 						</svg>
@@ -380,7 +381,7 @@ const ClipPathHover = () => {
 						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 							<defs>
 								<clipPath id="clip-9">
-									<circle cx="0" cy="0" fill="#000" r="100px"></circle>
+									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
 								</clipPath>
 							</defs>
 							<text class="svg-text" dy=".3em" x="50%" y="50%">
@@ -409,7 +410,7 @@ const ClipPathHover = () => {
 						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 							<defs>
 								<clipPath id="clip-10">
-									<circle cx="0" cy="0" fill="#000" r="100px"></circle>
+									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
 								</clipPath>
 							</defs>
 							<text class="svg-text" dy=".3em" x="50%" y="50%">
@@ -438,7 +439,7 @@ const ClipPathHover = () => {
 						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 							<defs>
 								<clipPath id="clip-11">
-									<circle cx="0" cy="0" fill="#000" r="100px"></circle>
+									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
 								</clipPath>
 							</defs>
 							<text class="svg-text" dy=".3em" x="50%" y="50%">
