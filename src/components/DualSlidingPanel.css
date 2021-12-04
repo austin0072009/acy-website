@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 /* Dual Sliding Panel Media Queries */
-.panel-container {
-	color: black;
+.panel-container-1 {
 	overflow: hidden;
+	color: black;
+}
+.panel-container-2 {
+	overflow: hidden;
+	color: white;
 }
 .panels__headline {
 	margin: 0;
 	text-align: center;
-	color: #1a1a1a;
 }
 .panels p {
 	margin: 0;
@@ -25,7 +29,10 @@
 		font-size: 16px;
 	}
 	.panel-container {
-		height: 100vh;
+		/* height: 60vh; */
+	}
+	.panels__side {
+		/* height: 200vh; */
 	}
 }
 
@@ -78,10 +85,10 @@
 		font-size: 22px;
 	}
 	.panel-container {
-		height: 60vh;
+		height: 70vh;
 	}
 	.panels__side {
-		height: 60vh;
+		height: 70vh;
 	}
 }
 

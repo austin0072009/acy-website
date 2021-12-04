@@ -30,13 +30,13 @@ const Governance = () => {
 						setIsClickedButtonSeven(!isClickedButtonSeven);
 					}}
 				>
-					<AnimatedButtons
+					{/* <AnimatedButtons
 						url={button7}
 						urlhover={button7hover}
 						id="button7"
 						hover={isHoverButtonSeven}
 						click={isClickedButtonSeven}
-					></AnimatedButtons>
+					></AnimatedButtons> */}
 					<span
 						className="font-medium text-orange moveLROnHover"
 						style={{ fontSize: smallerThan568 ? 20 : 26 }}

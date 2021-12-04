@@ -2,7 +2,7 @@ import "./RollingText.css";
 
 const RollingText = () => {
 	return (
-		<div className="main rolling-title flex flex-col font-bold">
+		<div className="main rolling-title flex flex-col font-bold rolling-text">
 			<h1 className="">ACY PROTOCOL</h1>
 			<h2>The Most Profitable Decentralized Crypto Trading Protocol</h2>
 			<div className="roller">

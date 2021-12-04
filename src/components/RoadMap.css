@@ -19,9 +19,9 @@ $vline-circle-color: $text-color;
 		stroke-dashoffset: 1000px;
 	}
 }
-*,
-*::before,
-*::after {
+.roadmap,
+.roadmap::before,
+.roadmap::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -61,6 +61,7 @@ $vline-circle-color: $text-color;
 	letter-spacing: 0.2em;
 	line-height: 1.1;
 	padding-bottom: 50px;
+	text-align: center;
 }
 @media (min-width: 1201px) {
 	.roadmap-title {

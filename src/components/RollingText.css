@@ -6,10 +6,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
-body {
-	background-color: #e63946;
-}
-
 .main {
 	height: 670px;
 	width: 100%;
@@ -19,7 +15,7 @@ body {
 	text-align: center;
 	z-index: 22;
 }
-h1 {
+.rolling-text h1 {
 	text-align: center;
 	text-transform: uppercase;
 	color: #f1faee;
@@ -27,7 +23,7 @@ h1 {
 	font-family: "Arvo";
 }
 
-h2 {
+.rolling-text h2 {
 	text-align: center;
 	text-transform: uppercase;
 	color: #f1faee;
@@ -83,7 +79,7 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
-	h1 {
+	.rolling-text h1 {
 		text-align: center;
 		text-transform: uppercase;
 		color: #f1faee;
