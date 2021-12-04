@@ -247,10 +247,19 @@
 	top: 75%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	fill: #1a1a1a;
-	border: 3px solid #1a1a1a;
+
 	border-radius: 50%;
 	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.arrow-1 {
+	fill: #1a1a1a;
+	border: 3px solid #1a1a1a;
+}
+
+.arrow-2 {
+	fill: white;
+	border: 3px solid white;
 }
 
 @media (max-width: 640px) {
