@@ -3,9 +3,9 @@ import { FooterNavigation, FooterEmail } from ".";
 const Footer = () => {
 	return (
 		<div
-			className="px-4 sm:px-10 xl:px-20 lg:px-18 overflow-hidden relative"
+			className="px-4 sm:px-10 xl:px-20 lg:px-18 overflow-hidden relative footer-text mb-20"
 			style={{
-				backgroundColor: "#1B1B1C",
+				backgroundColor: "#0E0304",
 				zIndex: 1,
 			}}
 		>

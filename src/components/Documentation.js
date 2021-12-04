@@ -13,6 +13,7 @@ import style from "../css/animation.css";
 import { useState } from "react";
 import button6 from "../assets/svgs/animatedIcons/six-key.json";
 import button6hover from "../assets/svgs/animatedIcons/six-key-hover.json";
+import "./RoadMap.css";
 
 const Documentation = () => {
 	let smallerThan568 = useMediaPredicate("(max-width: 567px)");
@@ -56,9 +57,8 @@ const Documentation = () => {
 		},
 	]);
 	return (
-		<div className="mb-20">
-			<div className="flex">
-				<div
+		<div className="mb-40 developer">
+			{/* <div
 					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
 					onMouseEnter={() => {
 						setIsHoverButtonSix(true);
@@ -72,22 +72,23 @@ const Documentation = () => {
 						setIsHoverButtonSix(!isHoverButtonSix);
 						setIsClickedButtonSix(!isClickedButtonSix);
 					}}
-				>
-					<AnimatedButtons
+				> */}
+			{/* <AnimatedButtons
 						url={button6}
 						urlhover={button6hover}
 						id="button6"
 						hover={isHoverButtonSix}
 						click={isClickedButtonSix}
-					></AnimatedButtons>
-					<span
+					></AnimatedButtons> */}
+			{/* <span
 						className="font-medium text-orange moveLROnHover"
 						style={{ fontSize: smallerThan568 ? 20 : 26 }}
 					>
 						<span>DOCUMENTATION</span>
 					</span>
-				</div>
-			</div>
+				</div> */}
+			<div class="roadmap-title">Developer</div>
+
 			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0">
 				{data.map(item => (
 					<TabLink

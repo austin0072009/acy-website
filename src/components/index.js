@@ -39,6 +39,7 @@ import WordRotation from "./WordRotation";
 import Rotating from "./Rotating";
 import DualSlidingPanel2 from "./DualSlidingPanel2";
 import SpaceLoader from "./SpaceLoader";
+import FarmImage from "./FarmImage";
 
 export {
 	Header,
@@ -82,5 +83,5 @@ export {
 	Rotating,
 	DualSlidingPanel2,
 	SpaceLoader,
-
+	FarmImage,
 };

@@ -13,9 +13,8 @@ const Governance = () => {
 	const [isClickedButtonSeven, setIsClickedButtonSeven] = useState(false);
 
 	return (
-		<div>
-			<div className="flex">
-				<div
+		<div className="governance">
+			{/* <div
 					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
 					onMouseEnter={() => {
 						setIsHoverButtonSeven(true);
@@ -29,22 +28,23 @@ const Governance = () => {
 						setIsHoverButtonSeven(!isHoverButtonSeven);
 						setIsClickedButtonSeven(!isClickedButtonSeven);
 					}}
-				>
-					<AnimatedButtons
+				> */}
+			{/* <AnimatedButtons
 						url={button7}
 						urlhover={button7hover}
 						id="button7"
 						hover={isHoverButtonSeven}
 						click={isClickedButtonSeven}
-					></AnimatedButtons>
-					<span
+					></AnimatedButtons> */}
+			{/* <span
 						className="font-medium text-orange moveLROnHover"
 						style={{ fontSize: smallerThan568 ? 20 : 26 }}
 					>
 						<span>GOVERNANCE</span>
 					</span>
-				</div>
-			</div>
+				</div> */}
+			<div class="roadmap-title">Governance</div>
+
 			<div className="flex flex-col md:flex-row gap-x-5">
 				<div className="w-auto md:w-5/12 flex items-stretch">
 					<ColoredTab></ColoredTab>
