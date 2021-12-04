@@ -30,8 +30,8 @@ const DualSlidingPanel = () => {
 				</article>
 				<article class="panels__side panels__side--right">
 					<div class="panels__side panels__side--inner flex-col">
-						<h1 class="panels__headline">Liquidity Provider</h1>
-						<p>Enable LPs to earn more transaction fees</p>
+						<h1 class="panels__headline">Liquidity Miner</h1>
+						<p>Enable miners to earn more transaction fees</p>
 
 						<svg
 							class="arrow arrow--right arrow-1"

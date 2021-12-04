@@ -8,7 +8,6 @@ import button2 from "../assets/svgs/animatedIcons/two-key.json";
 import button2hover from "../assets/svgs/animatedIcons/two-key-hover.json";
 import liquidity from "../assets/svgs/animatedIcons/liquidity.json";
 
-
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
 	if (newWindow) newWindow.opener = null;
@@ -59,7 +58,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 					className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow"
 					style={{ backgroundColor: "rgba(28, 153, 101, 0.2)" }}
 				>
-					<div className="px-5 py-5" style={{ width: "100%", height: "100%" }}>
+					<div className="px-5 py-5" style={{ width: "80%", height: "80%" }}>
 						<div>
 							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
 						</div>
