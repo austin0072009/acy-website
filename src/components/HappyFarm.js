@@ -1,4 +1,4 @@
-
+import "./HappyFarm.css"
 
 
 const HappyFarm = ()=> {
@@ -381,7 +381,7 @@ const HappyFarm = ()=> {
 </div> */}
 
 
-<div class="farm-sky"></div>
+{/* <div class="farm-sky"></div> */}
 
 {/* <div class="music-visualizer">
    <span></span>
@@ -420,7 +420,7 @@ const HappyFarm = ()=> {
        <div class="text-shower">Turn up the volume!</div>
 
 <svg version="1.1" id="farm" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-width="1920px" height="320px" viewBox="0 0 1920 320" enable-background="new 0 0 1920 320" xmlSpace="preserve">
+width="500px" height="320px" viewBox="0 0 1920 320" enable-background="new 0 0 1920 320" xmlSpace="preserve">
 <rect x="0.268" y="-2" fill="#B7E5E4" width="1920.366" height="322.093"/>
 <g opacity="0.4">
 <path fill="#FFFFFF" d="M111.474,99.822l-42.47,196.723h3.224l42.465-196.723H111.474z M97.303,99.822L54.836,296.545h3.221
@@ -1836,8 +1836,11 @@ c0.706,2.131,1.697,5.139,2.749,8.368L950.987,257.118z"/>
    </div>
 </div>
 
+<div>
+There are there kind of farming functions. First one is PREMIER, that is to stake your liquidity for BTC，ETH,USDX and the project tokens. The second one is STANDARD, that is to stake your liquidity for ACY. The third one is ACYDAO, that is to stake your ACY token for ACY token.
+</div>
 
-<div class="grass"></div>
+{/* <div class="grass"></div> */}
 
 {/* <div class="audio-controls">
 
