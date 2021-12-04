@@ -1,5 +1,5 @@
 import React from "react";
-// import "./ClipPathHover.css";
+import "./ClipPathHover.css";
 import { useRef, useEffect } from "react";
 import OxBull from "../assets/svgs/clipPathHover/Oxbull.svg";
 import LightningProtocol from "../assets/svgs/clipPathHover/LightningProtocol.svg";
