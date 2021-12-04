@@ -12,6 +12,7 @@ import {
 	RollingText,
 	DualSlidingPanel,
 	RoadMap,
+	ClipPathHover,
 } from "../components";
 import { Gradient } from "../atoms";
 import axios from "axios";
@@ -155,6 +156,7 @@ const Main = () => {
 					<Market></Market> */}
 
 					<RoadMap></RoadMap>
+					<ClipPathHover />
 					<Documentation></Documentation>
 					<Governance></Governance>
 				</div>
