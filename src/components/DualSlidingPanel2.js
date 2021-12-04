@@ -14,8 +14,8 @@ const DualSlidingPanel2 = () => {
 						{/* <SpaceLoader></SpaceLoader> */}
 					</div>
 					<div class="panels__side panels__side--inner flex-col">
-						<h1 class="panels__headline">Crypto Traders</h1>
-						<p>Enable traders to get the optimal output</p>
+						<h1 class="panels__headline">Crypto Farmer</h1>
+						<p>Enable farmers to earn the stable return</p>
 						<svg
 							class="arrow arrow--left arrow-2"
 							width="40"

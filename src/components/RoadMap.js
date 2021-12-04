@@ -40,7 +40,7 @@ const RoadMap = () => {
 		<div className="flex justify-center mb-20">
 			<div class="roadmap">
 				<div>
-					<h1 class="roadmap-title">Roadmap</h1>
+					<div class="roadmap-title">Roadmap</div>
 				</div>
 
 				<ol class="roadmap-timeline js-roadmap-timeline">

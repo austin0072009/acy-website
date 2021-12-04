@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Roboto:wght@300;500&display=swap");
 /* Dual Sliding Panel Media Queries */
 .panel-container-1 {
 	overflow: hidden;
@@ -7,14 +9,16 @@
 .panel-container-2 {
 	overflow: hidden;
 	color: white;
+	margin-bottom: 30px;
 }
 .panels__headline {
-	margin: 0;
+	margin-bottom: 20px;
 	text-align: center;
+	font-family: "Arvo", sans-serif !important;
 }
 .panels p {
 	margin: 0;
-	font-family: "Roboto", sans-serif !important;
+	font-family: "Karla", sans-serif !important;
 	text-align: center;
 }
 
@@ -85,10 +89,10 @@
 		font-size: 22px;
 	}
 	.panel-container {
-		height: 70vh;
+		height: 50vh;
 	}
 	.panels__side {
-		height: 70vh;
+		height: 50vh;
 	}
 }
 
@@ -104,10 +108,10 @@
 	}
 
 	.panel-container {
-		height: 80vh;
+		height: 70vh;
 	}
 	.panels__side {
-		height: 80vh;
+		height: 70vh;
 	}
 }
 
