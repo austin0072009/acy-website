@@ -1,6 +1,8 @@
 
 import "./style.css"
 import { useState } from "react";
+import { SpaceLoader } from ".";
+import HappyFarm from "./HappyFarm";
 
 
 const DualSlidingPanel2 = () => {
@@ -12,6 +14,7 @@ const DualSlidingPanel2 = () => {
       <article class="panels2__side panels2__side--left">
         <div class="panels2__side panels2__side--inner-left">
           {/* <p>"Changes and progress very rarely are gifts from above. They come out of struggles from below."</p> */}
+          {/* <SpaceLoader></SpaceLoader> */}
         </div>
         <div class="panels2__side panels2__side--inner flex-col">
           <h1 class="panels2__headline">Crypto Traders</h1>  
@@ -28,6 +31,7 @@ const DualSlidingPanel2 = () => {
         </div>
         <div class="panels2__side panels2__side--inner-right">
           {/* <p>"The biggest benefit of Apollo was the inspiration it gave to a growing generation to get into science and aerospace."</p> */}
+          <HappyFarm></HappyFarm>
               </div>
       </article>
     </section>
