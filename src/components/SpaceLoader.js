@@ -31,7 +31,7 @@ const SpaceLoader = ()=> {
     to: '130vh',
     ease: 'none'
   };
-  tl_sky.fromTo('.sky', 12, {
+  tl_sky.fromTo('.Starbg', 12, {
     transform: 'translateY(-100vh)'
   }, {
     transform: 'translateY(0)',
@@ -75,7 +75,7 @@ const SpaceLoader = ()=> {
       timeScale: 2
     }), '+=.5'); //RETURN SKY TO THE ORIGINAL SPEED
   
-  tl_sky.timeScale(1);
+  tl_sky.timeScale(0.5);
 
 
 
