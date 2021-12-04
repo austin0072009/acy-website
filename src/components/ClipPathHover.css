@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 } */
 
-body {
+.clip-path-hover {
 	/* background-color: #2f3238; */
 	color: #f5f5f5;
 }
@@ -47,16 +47,16 @@ clipPath circle {
 	font-weight: 600;
 }
 .clip-path-hover .svg-text {
-	fill: #545a64;
+	fill: #b5b5b6;
 	font-size: 16px;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Roboto", sans-serif;
 	line-height: 1.618;
 	font-weight: 600;
 }
 .clip-path-hover .svg-masked-text {
 	fill: rgba(255, 255, 255, 1);
 	font-size: 16px;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Roboto", sans-serif;
 	line-height: 1.618;
 	font-weight: 600;
 }
