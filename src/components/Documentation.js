@@ -73,13 +73,13 @@ const Documentation = () => {
 						setIsClickedButtonSix(!isClickedButtonSix);
 					}}
 				>
-					<AnimatedButtons
+					{/* <AnimatedButtons
 						url={button6}
 						urlhover={button6hover}
 						id="button6"
 						hover={isHoverButtonSix}
 						click={isClickedButtonSix}
-					></AnimatedButtons>
+					></AnimatedButtons> */}
 					<span
 						className="font-medium text-orange moveLROnHover"
 						style={{ fontSize: smallerThan568 ? 20 : 26 }}
