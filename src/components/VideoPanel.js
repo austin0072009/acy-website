@@ -23,7 +23,7 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 	return (
 		<div className="rounded-xl">
 			{webGLStatus ? (
-				<div className="container video-container" style={{ height: "20vw" }}>
+				<div className="container video-container">
 					               
 					<iframe
 						onLoad={() => {

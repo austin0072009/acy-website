@@ -136,10 +136,23 @@ h2 {
 .rolling-title h1 {
 	margin: 5px;
 }
+.rolling-title h2 {
+	margin-bottom: 20px;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
 	/* Styles */
+	.rolling-title h1 {
+		font-size: 2.5rem;
+	}
+	.rolling-title h2 {
+		font-size: 0.75rem;
+	}
+	.rolltext {
+		width: 450px;
+		font-size: 2.5rem;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -165,8 +178,18 @@ h2 {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1224px) {
 	/* Styles */
+	.rolling-title h1 {
+		font-size: 4rem;
+	}
+	.rolling-title h2 {
+		font-size: 1.125rem;
+	}
+	.rolltext {
+		width: 450px;
+		font-size: 2.5rem;
+	}
 }
 
 /* iPads (landscape) ----------- */

@@ -12,6 +12,7 @@ import {
 	RollingText,
 	DualSlidingPanel,
 	RoadMap,
+	ClipPathHover,
 	WordRotation,
 	Rotating,
 	DualSlidingPanel2,
@@ -244,6 +245,7 @@ const Main = () => {
 					<DualSlidingPanel2 />
 
 					<RoadMap></RoadMap>
+					<ClipPathHover />
 					{/* <Documentation></Documentation>
 					<Governance></Governance> */}
 				
