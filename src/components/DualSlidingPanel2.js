@@ -52,3 +52,4 @@ const DualSlidingPanel2 = () => {
 };
 
 export default DualSlidingPanel2;
+
