@@ -1,7 +1,7 @@
 import "./style.css";
 import "./DualSlidingPanel.css";
 import { useState } from "react";
-import { SpaceLoader, TextTab } from ".";
+import { SpaceLoader, TextTab, Investor } from ".";
 import HappyFarm from "./HappyFarm";
 
 const DualSlidingPanel2 = () => {
@@ -11,10 +11,10 @@ const DualSlidingPanel2 = () => {
 				<article class="panels__side panels2__side--left">
 					<div class="panels__side panels2__side--inner-left">
 						{/* <p>"Changes and progress very rarely are gifts from above. They come out of struggles from below."</p> */}
-						{/* <SpaceLoader></SpaceLoader> */}
+						<SpaceLoader></SpaceLoader>
 					</div>
 					<div class="panels__side panels__side--inner flex-col">
-						<h1 class="panels__headline">Crypto Farmer</h1>
+						<h1 class="panels__headline">CRYPTO FARMER</h1>
 						<p>Enable farmers to earn the stable return</p>
 						<svg
 							class="arrow arrow--left arrow-2"
@@ -29,7 +29,7 @@ const DualSlidingPanel2 = () => {
 				</article>
 				<article class="panels__side panels2__side--right">
 					<div class="panels__side panels__side--inner flex-col">
-						<h1 class="panels__headline">Crypto Investor</h1>
+						<h1 class="panels__headline">CRYPTO INVESTOR</h1>
 						<p>Enable investors to seek the amazing profit</p>
 						<svg
 							class="arrow arrow--right arrow-2"
@@ -43,7 +43,8 @@ const DualSlidingPanel2 = () => {
 					</div>
 					<div class="panels__side panels2__side--inner-right">
 						{/* <p>"The biggest benefit of Apollo was the inspiration it gave to a growing generation to get into science and aerospace."</p> */}
-						<HappyFarm></HappyFarm>
+						{/* <HappyFarm></HappyFarm> */}
+						<Investor></Investor>
 					</div>
 				</article>
 			</section>
@@ -52,4 +53,3 @@ const DualSlidingPanel2 = () => {
 };
 
 export default DualSlidingPanel2;
-

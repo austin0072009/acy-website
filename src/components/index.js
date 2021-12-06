@@ -40,6 +40,8 @@ import Rotating from "./Rotating";
 import DualSlidingPanel2 from "./DualSlidingPanel2";
 import SpaceLoader from "./SpaceLoader";
 import FarmImage from "./FarmImage";
+import Investor from "./Investor";
+import Grapes from "./Grapes";
 
 export {
 	Header,
@@ -84,4 +86,6 @@ export {
 	DualSlidingPanel2,
 	SpaceLoader,
 	FarmImage,
+	Investor,
+	Grapes,
 };
