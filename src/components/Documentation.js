@@ -87,7 +87,7 @@ const Documentation = () => {
 						<span>DOCUMENTATION</span>
 					</span>
 				</div> */}
-			<div class="roadmap-title">Developer</div>
+			<div class="roadmap-title z-10" >Developer</div>
 
 			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10" >
 				{data.map(item => (

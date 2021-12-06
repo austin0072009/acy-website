@@ -62,6 +62,7 @@ $vline-circle-color: $text-color;
 	line-height: 1.1;
 	padding-bottom: 50px;
 	color: white;
+	position: relative;
 }
 @media (min-width: 1201px) {
 	.roadmap-title {

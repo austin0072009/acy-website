@@ -43,13 +43,13 @@ const Governance = () => {
 						<span>GOVERNANCE</span>
 					</span>
 				</div> */}
-			<div class="roadmap-title">Governance</div>
+			<div class="roadmap-title z-10">Governance</div>
 
 			<div className="flex flex-col md:flex-row gap-x-5 ">
 				<div className="w-auto md:w-5/12 flex items-stretch">
 					<ColoredTab></ColoredTab>
 				</div>
-				<div className="flex flex-col flex-grow justify-between gap-y-5 z-1">
+				<div className="flex flex-col flex-grow justify-between gap-y-5 ">
 					<div className="flex flex-col h-full md:flex-row gap-x-5 gap-y-5">
 						<TextTabLink
 							title="Governance Forum"
