@@ -18,6 +18,7 @@ const DualSlidingPanel = () => {
 						<h1 class="panels__headline">CRYPTO TRADERS</h1>
 						<p>Enable traders to get the optimal output</p>
 						<svg
+							id = "clickleft"
 							class="arrow arrow--left arrow-1"
 							width="5vh"
 							height="5vh"
@@ -34,6 +35,7 @@ const DualSlidingPanel = () => {
 						<p>Enable miners to earn more transaction fees</p>
 
 						<svg
+							id = "clickright"
 							class="arrow arrow--right arrow-1"
 							width="5vh"
 							height="5vh"

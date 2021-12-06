@@ -18,6 +18,8 @@ const DualSlidingPanel2 = () => {
 						<h1 class="panels__headline">CRYPTO FARMER</h1>
 						<p>Enable farmers to earn the stable return</p>
 						<svg
+							id = "clickleft2"
+
 							class="arrow arrow--left arrow-2"
 							width="40"
 							height="40"
@@ -33,6 +35,7 @@ const DualSlidingPanel2 = () => {
 						<h1 class="panels__headline">CRYPTO INVESTOR</h1>
 						<p>Enable investors to seek the amazing profit</p>
 						<svg
+							id = "clickright2"
 							class="arrow arrow--right arrow-2"
 							width="40"
 							height="40"
@@ -45,6 +48,7 @@ const DualSlidingPanel2 = () => {
 					<div class="panels__side panels2__side--inner-right">
 						{/* <p>"The biggest benefit of Apollo was the inspiration it gave to a growing generation to get into science and aerospace."</p> */}
 						{/* <HappyFarm></HappyFarm> */}
+						<Investor></Investor>
 					</div>
 				</article>
 			</section>

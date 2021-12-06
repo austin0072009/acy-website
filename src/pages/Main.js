@@ -31,6 +31,8 @@ axios.defaults.baseURL = "https://api.acy.finance/";
 var Panels = (function () {
 	var panelLeft = document.querySelector(".panels__side--left");
 	var panelRight = document.querySelector(".panels__side--right");
+	var clickleft = document.getElementById("clickleft");
+	var clickright = document.getElementById("clickright");
 
 	var openLeft = function () {
 		panelLeft.classList.toggle("panels__side--left-active");
@@ -43,13 +45,15 @@ var Panels = (function () {
 	};
 
 	var bindActions = function () {
-		panelLeft.addEventListener("click", openLeft, false);
-		panelRight.addEventListener("click", openRight, false);
+		clickleft.addEventListener("click", openLeft, false);
+		clickright.addEventListener("click", openRight, false);
 	};
 
 	var init = function () {
 		panelLeft = document.querySelector(".panels__side--left");
 		panelRight = document.querySelector(".panels__side--right");
+		clickleft = document.getElementById("clickleft");
+		clickright = document.getElementById("clickright");
 		console.log(panelLeft);
 
 		bindActions();
@@ -62,6 +66,8 @@ var Panels = (function () {
 var Panels2 = (function () {
 	var panelLeft = document.querySelector(".panels2__side--left");
 	var panelRight = document.querySelector(".panels2__side--right");
+	var clickleft = document.getElementById("clickleft2");
+	var clickright = document.getElementById("clickright2");
 
 	var openLeft = function () {
 		panelLeft.classList.toggle("panels2__side--left-active");
@@ -74,13 +80,15 @@ var Panels2 = (function () {
 	};
 
 	var bindActions = function () {
-		panelLeft.addEventListener("click", openLeft, false);
-		panelRight.addEventListener("click", openRight, false);
+		clickleft.addEventListener("click", openLeft, false);
+		clickright.addEventListener("click", openRight, false);
 	};
 
 	var init = function () {
 		panelLeft = document.querySelector(".panels2__side--left");
 		panelRight = document.querySelector(".panels2__side--right");
+		clickleft = document.getElementById("clickleft2");
+		clickright = document.getElementById("clickright2");
 		console.log(panelLeft);
 
 		bindActions();
