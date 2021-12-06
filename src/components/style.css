@@ -421,7 +421,6 @@
 
 .panels2__side--right-active .panels2__side--inner-right {
 	transform: rotateY(0);
-	display: block;
 }
 
 .panels2__side--right-active .arrow {
