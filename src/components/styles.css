@@ -278,7 +278,7 @@ a.animated-button.thar-three:before {
 		font-size: 1.25rem;
 	}
 	.exchange-content {
-		font-size: 0.625rem;
+		font-size: 0.5rem;
 	}
 }
 
@@ -299,7 +299,7 @@ a.animated-button.thar-three:before {
 		font-size: 1.75rem;
 	}
 	.exchange-content {
-		font-size: 0.75rem;
+		font-size: 0.625rem;
 	}
 }
 
@@ -313,5 +313,3 @@ a.animated-button.thar-three:before {
 		font-size: 1.25rem;
 	}
 }
-
-

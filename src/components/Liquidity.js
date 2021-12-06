@@ -55,10 +55,10 @@ const Liquidity = ({ setIframeLoaded }) => {
 			</div>
 			<div className="flex items-center justify-between">
 				<div
-					className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow"
+					className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 flex-grow"
 					style={{ backgroundColor: "rgba(28, 153, 101, 0.2)" }}
 				>
-					<div className="px-5 py-5" style={{ width: "80%", height: "80%" }}>
+					<div className="px-5 py-5" style={{ height: "100%" }}>
 						<div>
 							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
 						</div>

@@ -1,10 +1,12 @@
 import React from "react";
+import "./DetailCard.css";
 
 const DetailCard = ({ title, timeline, description, deliverables }) => {
 	return (
 		<div className="DetailCard">
-			<div className="popover__content">
-				<div className="DetailCardDeliverables">{deliverables}</div>
+			<div className="content">
+				<div className="detailcard-title">{title}</div>
+				<div className="deliverables">{deliverables}</div>
 			</div>
 		</div>
 	);

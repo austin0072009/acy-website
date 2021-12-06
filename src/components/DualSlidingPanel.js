@@ -19,8 +19,8 @@ const DualSlidingPanel = () => {
 						<p>Enable traders to get the optimal output</p>
 						<svg
 							class="arrow arrow--left arrow-1"
-							width="5vh"
-							height="5vh"
+							width="4vw"
+							height="4vw"
 							viewBox="0 0 24 24"
 						>
 							<path d="M0 0h24v24h-24z" fill="none" />
@@ -35,8 +35,8 @@ const DualSlidingPanel = () => {
 
 						<svg
 							class="arrow arrow--right arrow-1"
-							width="5vh"
-							height="5vh"
+							width="4vw"
+							height="4vw"
 							viewBox="0 0 24 24"
 						>
 							<path d="M0 0h24v24h-24z" fill="none" />

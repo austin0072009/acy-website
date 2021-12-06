@@ -19,8 +19,8 @@ const DualSlidingPanel2 = () => {
 						<p>Enable farmers to earn the stable return</p>
 						<svg
 							class="arrow arrow--left arrow-2"
-							width="40"
-							height="40"
+							width="4vw"
+							height="4vw"
 							viewBox="0 0 24 24"
 						>
 							<path d="M0 0h24v24h-24z" fill="none" />
@@ -34,8 +34,8 @@ const DualSlidingPanel2 = () => {
 						<p>Enable investors to seek the amazing profit</p>
 						<svg
 							class="arrow arrow--right arrow-2"
-							width="40"
-							height="40"
+							width="4vw"
+							height="4vw"
 							viewBox="0 0 24 24"
 						>
 							<path d="M0 0h24v24h-24z" fill="none" />
