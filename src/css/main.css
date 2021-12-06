@@ -148,14 +148,14 @@
 	justify-content: space-between;
 }
 .NeuroBar {
-	/* display: flow-root; */
-	position: relative;
-	top: 0px;
-	left: 0px;
-	width: 1536px;
-	padding: 70px 150px 0px 120px;
-	height: 0;
-	z-index: 20;
+    /* display: flow-root; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1536px;
+    padding: 69px 120px 0px 180px;
+    height: 0;
+    z-index: 20;
 }
 .positionadjust {
 	position: relative;

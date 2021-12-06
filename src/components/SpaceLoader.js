@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import "./SpaceLoader.css";
 
+
 const SpaceLoader = () => {
 	gsap.fromTo(
 		".fire",
