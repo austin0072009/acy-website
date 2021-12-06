@@ -19,20 +19,20 @@
 }
 .grapes html body {
 	/* background-color: #cf8; */
-	width: 100vw;
-	height: 100vh;
+	width: 50vw;
+	height: 50vh;
 	overflow: inherit;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .grapes .Caption {
 	position: fixed;
-	width: 100%;
+	width: 80%;
 	text-align: center;
 	top: 3rem;
-	font-size: 2rem;
+	font-size: 1rem;
 	color: purple;
 	opacity: 0.75;
 }
@@ -52,8 +52,8 @@
 	transition: transform 0.5s;
 }
 .grapes .Grape .Leaves .Leaf {
-	width: 8rem;
-	height: 4rem;
+	width: 4rem;
+	height: 2rem;
 	position: absolute;
 	background-color: green;
 	border-radius: 50%;
@@ -65,8 +65,8 @@
 	--delay: 0;
 	--variant: 0;
 	--zindex: 0;
-	width: 5rem;
-	height: 5rem;
+	width: 2rem;
+	height: 2rem;
 	transform: scale(1.5);
 	position: relative;
 	background-color: hsl(calc(-90deg + var(--variant) * 60deg), 55%, 40%);
@@ -78,7 +78,8 @@
 	animation: pop 0.5s cubic-bezier(0.23, 1.25, 0.74, 1.33);
 	animation-fill-mode: backwards;
 	animation-delay: calc(var(--delay) * 0.1s);
-	font-size: calc(2.5rem / (0.7 + var(--digits) * 0.3));
+	/* font-size: calc(2.5rem / (0.7 + var(--digits) * 0.3)); */
+	font-size: 10px !important;
 	color: #fff;
 	z-index: var(--zindex);
 	transition: transform 0.5s, z-index 0.5s;
@@ -121,8 +122,8 @@
 	--delay: 0;
 	--variant: 0;
 	--zindex: 0;
-	width: 5rem;
-	height: 5rem;
+	width: 2rem;
+	height: 2rem;
 	transform: scale(1.5);
 	position: relative;
 	background-color: #9e2e2e;

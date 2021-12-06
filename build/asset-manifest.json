@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.babcb53c.chunk.css",
-    "main.js": "/static/js/main.52830239.chunk.js",
-    "main.js.map": "/static/js/main.52830239.chunk.js.map",
+    "main.css": "/static/css/main.03ba1786.chunk.css",
+    "main.js": "/static/js/main.494d33bd.chunk.js",
+    "main.js.map": "/static/js/main.494d33bd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c594e0c0.js",
     "runtime-main.js.map": "/static/js/runtime-main.c594e0c0.js.map",
     "static/js/2.66190f0f.chunk.js": "/static/js/2.66190f0f.chunk.js",
@@ -10,18 +10,22 @@
     "static/js/3.1ab74d48.chunk.js": "/static/js/3.1ab74d48.chunk.js",
     "static/js/3.1ab74d48.chunk.js.map": "/static/js/3.1ab74d48.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.babcb53c.chunk.css.map": "/static/css/main.babcb53c.chunk.css.map",
+    "static/css/main.03ba1786.chunk.css.map": "/static/css/main.03ba1786.chunk.css.map",
     "static/js/2.66190f0f.chunk.js.LICENSE.txt": "/static/js/2.66190f0f.chunk.js.LICENSE.txt",
     "static/media/BSCMemePad.1fe4f2f5.svg": "/static/media/BSCMemePad.1fe4f2f5.svg",
     "static/media/Chainlink.09a7ca40.svg": "/static/media/Chainlink.09a7ca40.svg",
+    "static/media/Coindesk.3733613f.svg": "/static/media/Coindesk.3733613f.svg",
+    "static/media/Conflux.ba60cf0c.svg": "/static/media/Conflux.ba60cf0c.svg",
     "static/media/DAOStarter.77d608a0.svg": "/static/media/DAOStarter.77d608a0.svg",
     "static/media/DFIStarter.a646e279.svg": "/static/media/DFIStarter.a646e279.svg",
     "static/media/Erax.1afd3840.svg": "/static/media/Erax.1afd3840.svg",
     "static/media/Hoppy.c93998bd.png": "/static/media/Hoppy.c93998bd.png",
     "static/media/LightningProtocol.35ba3217.svg": "/static/media/LightningProtocol.35ba3217.svg",
+    "static/media/Mobius.8e1b7b02.svg": "/static/media/Mobius.8e1b7b02.svg",
     "static/media/Oxbull.f09a231f.svg": "/static/media/Oxbull.f09a231f.svg",
     "static/media/PlutoCapital.52dcfd0d.svg": "/static/media/PlutoCapital.52dcfd0d.svg",
     "static/media/R8Capital.34f03a71.svg": "/static/media/R8Capital.34f03a71.svg",
+    "static/media/TokenInsight.61b332ef.svg": "/static/media/TokenInsight.61b332ef.svg",
     "static/media/ZBSCapital.74f973f9.svg": "/static/media/ZBSCapital.74f973f9.svg",
     "static/media/arrow.0cf339cb.svg": "/static/media/arrow.0cf339cb.svg",
     "static/media/arrow_bullet.42e0f2b0.svg": "/static/media/arrow_bullet.42e0f2b0.svg",
@@ -52,7 +56,7 @@
   "entrypoints": [
     "static/js/runtime-main.c594e0c0.js",
     "static/js/2.66190f0f.chunk.js",
-    "static/css/main.babcb53c.chunk.css",
-    "static/js/main.52830239.chunk.js"
+    "static/css/main.03ba1786.chunk.css",
+    "static/js/main.494d33bd.chunk.js"
   ]
 }

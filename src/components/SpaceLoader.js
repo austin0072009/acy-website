@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import "./SpaceLoader.css";
-
+import { TextTab } from ".";
 
 const SpaceLoader = () => {
 	gsap.fromTo(
@@ -127,7 +127,7 @@ const SpaceLoader = () => {
 
 	return (
 		<div className="flex items-center justify-between">
-			<div className="flex flex-col items-center justify-between px-5 py-5">
+			<div className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow">
 				<div className="Spacehtml">
 					<div className="Spacebody">
 						<div className="SpaceBar">
@@ -541,10 +541,17 @@ const SpaceLoader = () => {
 					</div>
 				</div>
 				<div className="mt-3 exchange-content">
-					ACY Launch is a profitable, unique, and engaging IDO platform to
+					<TextTab
+						title="THE BEST IDO LAUNCH"
+						content="ACY Launch is a profitable, unique, and engaging IDO platform to
 					empower the most innovative crypto projects by leveraging the power of
-					community.
+					community."
+					/>
 				</div>
+
+				{/* <div className="mt-3 exchange-content">
+					
+				</div> */}
 			</div>
 		</div>
 	);
