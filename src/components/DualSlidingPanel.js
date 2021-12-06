@@ -1,7 +1,8 @@
 import "./style.css";
 import "./DualSlidingPanel.css";
-import { Exchange, Liquidity } from ".";
+import { Exchange, Liquidity,JumpButton} from ".";
 import { useState } from "react";
+
 
 const DualSlidingPanel = () => {
 	let [iframeLoaded, setIframeLoaded] = useState(false);

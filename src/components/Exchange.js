@@ -13,6 +13,7 @@ import button1 from "../assets/svgs/animatedIcons/one-key.json";
 import button1hover from "../assets/svgs/animatedIcons/one-key-hover.json";
 import exchange from "../assets/svgs/animatedIcons/exchange.json";
 import animation from "../css/animation.css";
+import { JumpButton } from ".";
 
 const PercentHook = ({ value, id, filter }) => {
 	useCountUp({
@@ -442,6 +443,8 @@ const Exchange = ({ iframeLoaded }) => {
 							iframeLoaded={iframeLoaded}
 						></TextTab>
 					</div>
+					{/* <JumpButton></JumpButton> */}
+
 				</div>
 			</div>
 		</div>

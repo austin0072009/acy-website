@@ -217,14 +217,14 @@ const Main = () => {
 			<div className="flex flex-col min-w-full">
 				{/* <Title></Title> */}
 
-				<div id="Neuro" className="NeuroBar" />
+				{/* <div id="Neuro" className="NeuroBar" /> */}
 				{/* <RollingText></RollingText> */}
 				<RollingText3D></RollingText3D>
 			</div>
 
 			{/* <NeuroSynth></NeuroSynth> */}
 
-			<div className="relative" style={{ zIndex: 30 }}>
+			<div className="relative">
 				<div className="mt-20 mx-2 mb-20 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-32 lg:px-8">
 					{/* <VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel> */}
 					{/* <Exchange iframeLoaded={iframeLoaded}></Exchange>
@@ -241,8 +241,10 @@ const Main = () => {
 
 					<RoadMap></RoadMap>
 					<ClipPathHover />
-					<Documentation></Documentation>
-					<Governance></Governance>
+					<div id="Neuro" className="NeuroBar z-0" />
+
+					<Documentation style={{ zIndex: 30 }}></Documentation>
+					<Governance ></Governance>
 				</div>
 			</div>
 		</div>

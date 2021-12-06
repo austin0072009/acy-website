@@ -59,7 +59,7 @@ useEffect(() => {
 					<figure className="green text-white capitalize md:uppercase">Extra Income
            {/* <span className = "smalllabel" >IN LIQUIDITY</span> */}
            </figure>
-          <figure className="red text-white capitalize md:uppercase">
+          <figure className="red text-white capitalize md:uppercase">Amazing Profit
           {/* Amazing Profit <span className = "smalllabel" >IN LAUNCH</span> */}
           </figure>
 
