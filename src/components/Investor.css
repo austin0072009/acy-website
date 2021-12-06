@@ -45,8 +45,9 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	transform: translateY(calc(var(--layers) * 2rem - 10vh));
+	transform: translateY(calc(var(--layers) * 1rem - 20vh));
 	transition: transform 0.5s;
+	transform: scale(0.5);
 }
 .grapes .Grape .Leaves {
 	position: relative;

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const Grapes = () => {
 	useEffect(() => {
 		
-		// document.body.addEventListener("touchend", nextGeneration);
+		document.body.addEventListener("touchend", nextGeneration);
 
 		const grape = document.querySelector(".Grape");
 		const fruits = document.querySelector(".Fruits");
@@ -39,8 +39,8 @@ const Grapes = () => {
 				);
 				row.append(fruit);
 			}
-
 			numbers.push(newGen);
+			if(fruits.childElementCount < 10)
 			fruits.append(row);
 			grape.style.setProperty("--layers", numbers.length);
 		}
