@@ -3,12 +3,16 @@
 }
 
 .grapes {
-	font-family: inherit;
-	font-size: inherit;
-	box-sizing: inherit;
-	padding: 0;
-	margin: 0;
-	z-index: 100000000;
+
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 384px;
+    height: 289px;
 }
 .grapes html {
 	box-sizing: border-box;
@@ -42,7 +46,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	transform: translateY(calc(var(--layers) * 2rem - 10vh));
+	transform: translateY(calc(var(--layers) * -1rem)) scale(0.5);
 	transition: transform 0.5s;
 }
 .grapes .Grape .Leaves {

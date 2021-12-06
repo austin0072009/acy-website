@@ -28,7 +28,7 @@ const TabLink = ({ title, content, link = "/", src, src_hover, logoText }) => {
 				className="bg-orange opacity-10 absolute w-full h-full rounded-md"
 				style={{ zIndex: -1 }}
 			></div>
-			<div className="relative p-3" style={{ zIndex: 1 }}>
+			<div className="relative p-3" style={{ zIndex: 30 }}>
 				<img
 					alt="goto"
 					src={arrow}

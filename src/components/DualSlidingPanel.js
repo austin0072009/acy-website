@@ -1,7 +1,8 @@
 import "./style.css";
 import "./DualSlidingPanel.css";
-import { Exchange, Liquidity } from ".";
+import { Exchange, Liquidity,JumpButton} from ".";
 import { useState } from "react";
+
 
 const DualSlidingPanel = () => {
 	let [iframeLoaded, setIframeLoaded] = useState(false);
@@ -18,6 +19,7 @@ const DualSlidingPanel = () => {
 						<h1 class="panels__headline">CRYPTO TRADERS</h1>
 						<p>Enable traders to get the optimal output</p>
 						<svg
+							id = "clickleft"
 							class="arrow arrow--left arrow-1"
 							width="4vw"
 							height="4vw"
@@ -34,6 +36,7 @@ const DualSlidingPanel = () => {
 						<p>Enable miners to earn more transaction fees</p>
 
 						<svg
+							id = "clickright"
 							class="arrow arrow--right arrow-1"
 							width="4vw"
 							height="4vw"

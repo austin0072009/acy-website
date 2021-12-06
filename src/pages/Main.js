@@ -31,6 +31,8 @@ axios.defaults.baseURL = "https://api.acy.finance/";
 var Panels = (function () {
 	var panelLeft = document.querySelector(".panels__side--left");
 	var panelRight = document.querySelector(".panels__side--right");
+	var clickleft = document.getElementById("clickleft");
+	var clickright = document.getElementById("clickright");
 
 	var openLeft = function () {
 		panelLeft.classList.toggle("panels__side--left-active");
@@ -43,13 +45,15 @@ var Panels = (function () {
 	};
 
 	var bindActions = function () {
-		panelLeft.addEventListener("click", openLeft, false);
-		panelRight.addEventListener("click", openRight, false);
+		clickleft.addEventListener("click", openLeft, false);
+		clickright.addEventListener("click", openRight, false);
 	};
 
 	var init = function () {
 		panelLeft = document.querySelector(".panels__side--left");
 		panelRight = document.querySelector(".panels__side--right");
+		clickleft = document.getElementById("clickleft");
+		clickright = document.getElementById("clickright");
 		console.log(panelLeft);
 
 		bindActions();
@@ -62,6 +66,8 @@ var Panels = (function () {
 var Panels2 = (function () {
 	var panelLeft = document.querySelector(".panels2__side--left");
 	var panelRight = document.querySelector(".panels2__side--right");
+	var clickleft = document.getElementById("clickleft2");
+	var clickright = document.getElementById("clickright2");
 
 	var openLeft = function () {
 		panelLeft.classList.toggle("panels2__side--left-active");
@@ -74,13 +80,15 @@ var Panels2 = (function () {
 	};
 
 	var bindActions = function () {
-		panelLeft.addEventListener("click", openLeft, false);
-		panelRight.addEventListener("click", openRight, false);
+		clickleft.addEventListener("click", openLeft, false);
+		clickright.addEventListener("click", openRight, false);
 	};
 
 	var init = function () {
 		panelLeft = document.querySelector(".panels2__side--left");
 		panelRight = document.querySelector(".panels2__side--right");
+		clickleft = document.getElementById("clickleft2");
+		clickright = document.getElementById("clickright2");
 		console.log(panelLeft);
 
 		bindActions();
@@ -209,14 +217,14 @@ const Main = () => {
 			<div className="flex flex-col min-w-full">
 				{/* <Title></Title> */}
 
-				<div id="Neuro" className="NeuroBar" />
+				{/* <div id="Neuro" className="NeuroBar" /> */}
 				{/* <RollingText></RollingText> */}
 				<RollingText3D></RollingText3D>
 			</div>
 
 			{/* <NeuroSynth></NeuroSynth> */}
 
-			<div className="relative" style={{ zIndex: 30 }}>
+			<div className="relative">
 				<div className="mt-20 mx-2 mb-20 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-32 lg:px-8">
 					{/* <VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel> */}
 					{/* <Exchange iframeLoaded={iframeLoaded}></Exchange>
@@ -233,8 +241,10 @@ const Main = () => {
 
 					<RoadMap></RoadMap>
 					<ClipPathHover />
-					<Documentation></Documentation>
-					<Governance></Governance>
+					<div id="Neuro" className="NeuroBar z-0" />
+
+					<Documentation style={{ zIndex: 30 }}></Documentation>
+					<Governance ></Governance>
 				</div>
 			</div>
 		</div>

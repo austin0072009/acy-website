@@ -4,11 +4,14 @@ import { useEffect } from "react";
 
 const Grapes = () => {
 	useEffect(() => {
-		document.body.addEventListener("click", nextGeneration);
+		
 		document.body.addEventListener("touchend", nextGeneration);
 
 		const grape = document.querySelector(".Grape");
 		const fruits = document.querySelector(".Fruits");
+
+		grape.addEventListener("click", nextGeneration);
+
 
 		const numbers = [];
 
@@ -36,8 +39,8 @@ const Grapes = () => {
 				);
 				row.append(fruit);
 			}
-
 			numbers.push(newGen);
+			if(fruits.childElementCount < 10)
 			fruits.append(row);
 			grape.style.setProperty("--layers", numbers.length);
 		}
@@ -53,7 +56,6 @@ const Grapes = () => {
 	}, []);
 	return (
 		<div className="grapes">
-			<div>hello</div>
 			<figure class="Grape">
 				<figcaption class="Leaves">
 					<div class="Leaf"></div>
