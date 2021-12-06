@@ -11,6 +11,7 @@ const DualSlidingPanel2 = () => {
 			<section class="panels">
 				<article class="panels__side panels2__side--left">
 					<div class="panels__side panels2__side--inner-left">
+
 						{/* <p>"Changes and progress very rarely are gifts from above. They come out of struggles from below."</p> */}
 						<Investor></Investor>
 					</div>
@@ -21,8 +22,8 @@ const DualSlidingPanel2 = () => {
 							id = "clickleft2"
 
 							class="arrow arrow--left arrow-2"
-							width="40"
-							height="40"
+							width="4vw"
+							height="4vw"
 							viewBox="0 0 24 24"
 						>
 							<path d="M0 0h24v24h-24z" fill="none" />
@@ -37,8 +38,8 @@ const DualSlidingPanel2 = () => {
 						<svg
 							id = "clickright2"
 							class="arrow arrow--right arrow-2"
-							width="40"
-							height="40"
+							width="4vw"
+							height="4vw"
 							viewBox="0 0 24 24"
 						>
 							<path d="M0 0h24v24h-24z" fill="none" />
@@ -49,7 +50,6 @@ const DualSlidingPanel2 = () => {
 						{/* <p>"The biggest benefit of Apollo was the inspiration it gave to a growing generation to get into science and aerospace."</p> */}
 						{/* <HappyFarm></HappyFarm> */}
 						<SpaceLoader></SpaceLoader>
-
 					</div>
 				</article>
 			</section>

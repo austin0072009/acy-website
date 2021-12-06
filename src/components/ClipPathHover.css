@@ -20,8 +20,8 @@
 }
 .clip-path-hover .container {
 	max-width: 1200px;
-	margin: 0 auto;
-	padding: 4rem 2rem;
+	margin: 0;
+	padding: 4rem 1rem;
 }
 .clip-path-hover header {
 	text-align: center;
@@ -82,8 +82,8 @@ clipPath circle {
 	justify-content: center;
 	position: relative;
 	overflow: hidden;
-	width: 300px;
-	height: 200px;
+	width: 265px;
+	height: 185px;
 	margin: 5px;
 	cursor: pointer;
 	background-color: #242425;

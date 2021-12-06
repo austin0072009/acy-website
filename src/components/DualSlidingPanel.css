@@ -9,7 +9,7 @@
 .panel-container-2 {
 	overflow: hidden;
 	color: white;
-	/* margin-bottom: 10px; */
+	margin-bottom: 20px;
 }
 .panels__headline {
 	margin-bottom: 20px;
@@ -33,11 +33,11 @@
 		font-size: 16px;
 	}
 	.panel-container {
-		/* height: 60vh; */
+		height: 150vw;
 	}
-	.panels__side {
-		/* height: 200vh; */
-	}
+	/* .panels__side {
+		height: 150vw;
+	} */
 }
 
 /* Smartphones (landscape) ----------- */
@@ -61,10 +61,10 @@
 		font-size: 14px;
 	}
 	.panel-container {
-		height: 60vh;
+		height: 35vw;
 	}
 	.panels__side {
-		height: 60vh;
+		height: 35vw;
 	}
 }
 
@@ -89,10 +89,10 @@
 		font-size: 22px;
 	}
 	.panel-container {
-		height: 50vh;
+		height: 35vw;
 	}
 	.panels__side {
-		height: 50vh;
+		height: 35vw;
 	}
 }
 
@@ -108,10 +108,10 @@
 	}
 
 	.panel-container {
-		height: 70vh;
+		height: 35vw;
 	}
 	.panels__side {
-		height: 70vh;
+		height: 35vw;
 	}
 }
 

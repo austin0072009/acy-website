@@ -29,9 +29,7 @@ const TextTab = ({ title, content }) => {
 								<div className="text-center mb-3 exchange-title">
 									{title ? title : null}
 								</div>
-								<div className="text-justify mb-5 px-5 exchange-content">
-									{content}
-								</div>
+								<div className="mb-5 exchange-content">{content}</div>
 							</div>
 						</div>
 					</div>

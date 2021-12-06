@@ -4,15 +4,15 @@
 	/* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
 	background: black;
 	overflow: hidden;
-	margin-top: 20px;
+	margin-top: auto;
 	padding: 0;
-	width: 20vw;
-	height: 15vw;
+	width: 24vw;
+	height: 16vw;
 	border-radius: 10px;
 }
 
 .rocket {
-	height: 15rem;
+	height: 15vw;
 	-webkit-transform: translateY(100vh);
 	-ms-transform: translateY(100vh);
 	transform: translateY(100vh);

@@ -1,8 +1,10 @@
 import React from "react";
 import Grapes from "./Grapes";
+import { TextTab } from ".";
 
 const Investor = () => {
 	return (
+
 	<div className="flex items-center justify-between">
 			<div className="flex flex-col items-center justify-between px-5 py-5">	
 			<Grapes></Grapes> 

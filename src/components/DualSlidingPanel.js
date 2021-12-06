@@ -21,8 +21,8 @@ const DualSlidingPanel = () => {
 						<svg
 							id = "clickleft"
 							class="arrow arrow--left arrow-1"
-							width="5vh"
-							height="5vh"
+							width="4vw"
+							height="4vw"
 							viewBox="0 0 24 24"
 						>
 							<path d="M0 0h24v24h-24z" fill="none" />
@@ -38,8 +38,8 @@ const DualSlidingPanel = () => {
 						<svg
 							id = "clickright"
 							class="arrow arrow--right arrow-1"
-							width="5vh"
-							height="5vh"
+							width="4vw"
+							height="4vw"
 							viewBox="0 0 24 24"
 						>
 							<path d="M0 0h24v24h-24z" fill="none" />

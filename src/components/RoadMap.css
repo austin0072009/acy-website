@@ -92,7 +92,7 @@ $vline-circle-color: $text-color;
 .roadmap-timeline {
 	display: flex;
 	height: 0;
-	padding-left: 50px;
+	padding-left: 10px;
 }
 @media (max-width: 1200px) {
 	.roadmap-timeline {
@@ -151,13 +151,6 @@ $vline-circle-color: $text-color;
 	z-index: 1;
 	min-width: 100px;
 	width: 0;
-}
-
-.DetailCard {
-	visibility: hidden;
-	position: absolute;
-	background-color: black;
-	z-index: 3;
 }
 
 .roadmap-timeframe:hover > .DetailCard {
@@ -377,12 +370,13 @@ $vline-circle-color: $text-color;
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
+	z-index: 1 !important;
 }
 @media (min-width: 1201px) {
 	.roadmap-date {
 		bottom: 0;
 		transform: translateY(calc(100% + 25px / 2));
-		font-size: 18px;
+		font-size: 0.875em;
 	}
 }
 @media (max-width: 1200px) {
@@ -402,6 +396,10 @@ $vline-circle-color: $text-color;
 @media (min-width: 1201px) {
 	.roadmap-events {
 		padding-right: calc(15vw - 200px);
+	}
+
+	.roadmap-events .even {
+		right: 38px;
 	}
 }
 @media (max-width: 1200px) {
@@ -468,6 +466,7 @@ $vline-circle-color: $text-color;
 .roadmap-event:last-child {
 	padding-bottom: 0px;
 }
+
 .roadmap-event:last-child .roadmap-vline::before {
 	bottom: calc(50% + 14px / 2 + 10px - 10px);
 }
