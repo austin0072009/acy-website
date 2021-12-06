@@ -40,6 +40,8 @@ import Rotating from "./Rotating";
 import DualSlidingPanel2 from "./DualSlidingPanel2";
 import SpaceLoader from "./SpaceLoader";
 import FarmImage from "./FarmImage";
+import Investor from "./Investor";
+import Grapes from "./Grapes";
 import RollingText3D from "./RollingText3D";
 
 export {
@@ -85,5 +87,7 @@ export {
 	DualSlidingPanel2,
 	SpaceLoader,
 	FarmImage,
+	Investor,
+	Grapes,
 	RollingText3D,
 };
