@@ -105,14 +105,14 @@
 }
 
 .DetailCard:hover .content {
-	height: 4em;
+	height: 6.5em;
 	transition: all 0.2s ease;
 }
 
 .detailcard-title {
 	font-size: 1em;
 	font-weight: bold;
-	margin: 0 0 10px 0;
+	/* margin: 0 0 10px 0; */
 	text-align: center;
 }
 
@@ -120,10 +120,10 @@
 	height: 0;
 	opacity: 0;
 	visibility: hidden;
-	margin: 5px;
+	/* margin: 5px; */
 	line-height: 1.5em;
-	font-size: 0.55em;
-	text-align: justify;
+	font-size: 0.85em;
+	/* text-align: justify; */
 }
 
 .DetailCard:hover .deliverables {

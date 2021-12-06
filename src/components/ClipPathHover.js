@@ -1,6 +1,6 @@
 import React from "react";
 import "./ClipPathHover.css";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import OxBull from "../assets/svgs/clipPathHover/Oxbull.svg";
 import LightningProtocol from "../assets/svgs/clipPathHover/LightningProtocol.svg";
 import Hoppy from "../assets/svgs/clipPathHover/Hoppy.png";
@@ -83,19 +83,34 @@ const ClipPathHover = () => {
 			});
 
 		//See more button
-		let more = document.querySelectorAll(".more");
-		for (let i = 0; i < more.length; i++) {
-			more[i].addEventListener("click", function () {
-				more[i].parentNode.classList.toggle("active");
-			});
-		}
+		// function triggerSeeMore() {
+		// 	let more = document.querySelector(".more");
+
+		// 	more.addEventListener("click", function () {
+		// 		more.parentNode.classList.toggle("active");
+		// 	});
+		// }
+		// triggerSeeMore();
 	});
+	// const triggerActive = e => {
+	// 	const parentDiv = e.target.parentNode;
+	// 	parentDiv.classList.toggle("active");
+	// };
+	const [isActive, setIsActive] = useState("false");
+	// const triggerActive = () => {
+	// 	setIsActive(!isActive);
+	// };
+	// useEffect(() => {}, [isActive]);
 
 	return (
 		<div className="clip-path-hover mb-40">
 			<div className="backers-title">Backer</div>
 
-			<main className="clippath-container">
+			<main
+				className={
+					isActive ? "clippath-container" : "clippath-container active"
+				}
+			>
 				<div className="content">
 					<div class="items">
 						<div
@@ -631,7 +646,7 @@ const ClipPathHover = () => {
 						</div>
 					</div>
 				</div>
-				<a className="more"></a>
+				<a className="more" onClick={() => setIsActive(!isActive)}></a>
 			</main>
 		</div>
 	);
