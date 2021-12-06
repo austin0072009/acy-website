@@ -29,7 +29,7 @@ const FooterNavigation = () => {
 				</ACYLink>
 			</div>
 			<span className="text-right py-2" style={{ color: "#B5B6B6" }}>
-				&copy; 2021 ACY Finance
+				&copy; 2022 ACY Finance
 			</span>
 		</div>
 	);

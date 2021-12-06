@@ -8,10 +8,11 @@
 	box-sizing: inherit;
 	padding: 0;
 	margin: 0;
+	z-index: 100000000;
 }
 .grapes html {
 	box-sizing: border-box;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	font-size: 62.5%;
 	font-family: "Rubik", sans-serif;
 	user-select: none;
