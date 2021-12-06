@@ -16,6 +16,7 @@ import {
 	WordRotation,
 	Rotating,
 	DualSlidingPanel2,
+	RollingText3D,
 } from "../components";
 import { Gradient } from "../atoms";
 import axios from "axios";
@@ -91,7 +92,6 @@ var Panels2 = (function () {
 
 console.log("go");
 
-console.log("go");
 
 window.onload = () => {
 	console.log(document.getElementById("Neuro"));
@@ -210,7 +210,8 @@ const Main = () => {
 				{/* <Title></Title> */}
 
 				<div id="Neuro" className="NeuroBar" />
-				<RollingText></RollingText>
+				{/* <RollingText></RollingText> */}
+				<RollingText3D></RollingText3D>
 			</div>
 
 			{/* <NeuroSynth></NeuroSynth> */}

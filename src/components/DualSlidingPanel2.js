@@ -3,6 +3,7 @@ import "./DualSlidingPanel.css";
 import { useState } from "react";
 import { SpaceLoader, TextTab } from ".";
 import HappyFarm from "./HappyFarm";
+import { Space } from "antd";
 
 const DualSlidingPanel2 = () => {
 	return (
@@ -43,7 +44,7 @@ const DualSlidingPanel2 = () => {
 					</div>
 					<div class="panels__side panels2__side--inner-right">
 						{/* <p>"The biggest benefit of Apollo was the inspiration it gave to a growing generation to get into science and aerospace."</p> */}
-						<HappyFarm></HappyFarm>
+						{/* <HappyFarm></HappyFarm> */}
 					</div>
 				</article>
 			</section>

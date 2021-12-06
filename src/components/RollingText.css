@@ -34,16 +34,16 @@
 }
 
 .roller {
-	height: 4.125rem;
-	line-height: 4rem;
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	color: #1d3557;
+    height: 10.125rem;
+    line-height: 4rem;
+    position: relative;
+    /* overflow: hidden; */
+    overflow: visible;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1d3557;
 }
 
 #spare-time {
@@ -127,7 +127,9 @@
 .green {
 	background-color: #70ba33;
 }
-
+.red {
+	background-color: #C6224E;
+}
 /* Rolling Text Media Queries */
 .rolling-title h1 {
 	margin: 5px;
@@ -248,3 +250,5 @@
 	only screen and (min-device-pixel-ratio: 1.5) {
 	/* Styles */
 }
+
+

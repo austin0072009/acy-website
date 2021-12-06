@@ -40,6 +40,7 @@ import Rotating from "./Rotating";
 import DualSlidingPanel2 from "./DualSlidingPanel2";
 import SpaceLoader from "./SpaceLoader";
 import FarmImage from "./FarmImage";
+import RollingText3D from "./RollingText3D";
 
 export {
 	Header,
@@ -84,4 +85,5 @@ export {
 	DualSlidingPanel2,
 	SpaceLoader,
 	FarmImage,
+	RollingText3D,
 };
