@@ -6,7 +6,7 @@ const ColoredTab = () => {
 	let smallerThan1280 = useMediaPredicate("(max-width: 1280px)");
 
 	return (
-		<div className="flex flex-col bg-gov-bg bg-cover text-gray-100 rounded-2xl py-4 md:py-6 px-4 md:px-8 justify-between mb-3 z-0">
+		<div className="flex flex-col bg-gov-bg bg-cover text-gray-100  py-4 md:py-6 px-4 md:px-8 justify-between mb-3 z-0">
 			<div
 				className="font-medium mb-5"
 				style={{ fontSize: smallerThan568 ? 24 : 28 }}
