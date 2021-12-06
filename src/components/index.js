@@ -42,6 +42,7 @@ import SpaceLoader from "./SpaceLoader";
 import FarmImage from "./FarmImage";
 import Investor from "./Investor";
 import Grapes from "./Grapes";
+import RollingText3D from "./RollingText3D";
 
 export {
 	Header,
@@ -88,4 +89,5 @@ export {
 	FarmImage,
 	Investor,
 	Grapes,
+	RollingText3D,
 };
