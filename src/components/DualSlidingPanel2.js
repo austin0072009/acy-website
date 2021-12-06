@@ -11,8 +11,7 @@ const DualSlidingPanel2 = () => {
 			<section class="panels">
 				<article class="panels__side panels2__side--left">
 					<div class="panels__side panels2__side--inner-left">
-						{/* <p>"Changes and progress very rarely are gifts from above. They come out of struggles from below."</p> */}
-						<SpaceLoader></SpaceLoader>
+						<Investor />
 					</div>
 					<div class="panels__side panels__side--inner flex-col">
 						<h1 class="panels__headline">CRYPTO FARMER</h1>
@@ -45,6 +44,7 @@ const DualSlidingPanel2 = () => {
 					<div class="panels__side panels2__side--inner-right">
 						{/* <p>"The biggest benefit of Apollo was the inspiration it gave to a growing generation to get into science and aerospace."</p> */}
 						{/* <HappyFarm></HappyFarm> */}
+						<SpaceLoader></SpaceLoader>
 					</div>
 				</article>
 			</section>

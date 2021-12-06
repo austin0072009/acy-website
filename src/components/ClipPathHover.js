@@ -13,6 +13,10 @@ import Chainlink from "../assets/svgs/clipPathHover/Chainlink.svg";
 import Erax from "../assets/svgs/clipPathHover/Erax.svg";
 import R8Capital from "../assets/svgs/clipPathHover/R8Capital.svg";
 import PlutoCapital from "../assets/svgs/clipPathHover/PlutoCapital.svg";
+import Conflux from "../assets/svgs/clipPathHover/Conflux.svg";
+import Mobius from "../assets/svgs/clipPathHover/Mobius.svg";
+import TokenInsight from "../assets/svgs/clipPathHover/TokenInsight.svg";
+import Coindesk from "../assets/svgs/clipPathHover/Coindesk.svg";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -455,6 +459,162 @@ const ClipPathHover = () => {
 								></image>
 								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
 									{/* Pluto Capital */}
+								</text>
+							</g>
+						</svg>
+					</div>
+					<div
+						class="item"
+						onClick={() => {
+							openInNewTab("https://confluxnetwork.org/");
+						}}
+					>
+						<svg
+							ref={svg_logo}
+							preserveAspectRatio="xMidYMid slice"
+							viewBox="0 0 300 200"
+						>
+							<defs>
+								<clipPath id="clip-12">
+									<circle
+										cx="-0.27272728085517883"
+										cy="57.8863639831543"
+										fill="#000"
+										r="125px"
+									></circle>
+								</clipPath>
+							</defs>
+							<text class="svg-text" dy=".3em" x="50%" y="50%">
+								Conflux
+							</text>
+							<g clip-path="url(#clip-12)">
+								<rect width="300" height="200" fill="#100628" />
+								<image
+									height="100%"
+									preserveAspectRatio="xMinYMin slice"
+									width="100%"
+									href={Conflux}
+								></image>
+
+								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+									{/* OXbull */}
+								</text>
+							</g>
+						</svg>
+					</div>
+					<div
+						class="item"
+						onClick={() => {
+							openInNewTab("https://mobius.finance/");
+						}}
+					>
+						<svg
+							ref={svg_logo}
+							preserveAspectRatio="xMidYMid slice"
+							viewBox="0 0 300 200"
+						>
+							<defs>
+								<clipPath id="clip-13">
+									<circle
+										cx="-0.27272728085517883"
+										cy="57.8863639831543"
+										fill="#000"
+										r="125px"
+									></circle>
+								</clipPath>
+							</defs>
+							<text class="svg-text" dy=".3em" x="50%" y="50%">
+								Mobius
+							</text>
+							<g clip-path="url(#clip-13)">
+								<rect width="300" height="200" fill="white" />
+								<image
+									height="100%"
+									preserveAspectRatio="xMinYMin slice"
+									width="100%"
+									href={Mobius}
+								></image>
+
+								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+									{/* OXbull */}
+								</text>
+							</g>
+						</svg>
+					</div>
+					<div
+						class="item"
+						onClick={() => {
+							openInNewTab("https://tokeninsight.com/");
+						}}
+					>
+						<svg
+							ref={svg_logo}
+							preserveAspectRatio="xMidYMid slice"
+							viewBox="0 0 300 200"
+						>
+							<defs>
+								<clipPath id="clip-14">
+									<circle
+										cx="-0.27272728085517883"
+										cy="57.8863639831543"
+										fill="#000"
+										r="125px"
+									></circle>
+								</clipPath>
+							</defs>
+							<text class="svg-text" dy=".3em" x="50%" y="50%">
+								TokenInsight
+							</text>
+							<g clip-path="url(#clip-14)">
+								<rect width="300" height="200" fill="white" />
+								<image
+									height="100%"
+									preserveAspectRatio="xMinYMin slice"
+									width="100%"
+									href={TokenInsight}
+								></image>
+
+								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+									{/* OXbull */}
+								</text>
+							</g>
+						</svg>
+					</div>
+					<div
+						class="item"
+						onClick={() => {
+							openInNewTab("https://www.coindesk.com/");
+						}}
+					>
+						<svg
+							ref={svg_logo}
+							preserveAspectRatio="xMidYMid slice"
+							viewBox="0 0 300 200"
+						>
+							<defs>
+								<clipPath id="clip-15">
+									<circle
+										cx="-0.27272728085517883"
+										cy="57.8863639831543"
+										fill="#000"
+										r="125px"
+									></circle>
+								</clipPath>
+							</defs>
+							<text class="svg-text" dy=".3em" x="50%" y="50%">
+								Coindesk
+							</text>
+							<g clip-path="url(#clip-15)">
+								<rect width="300" height="200" fill="white" />
+								<image
+									height="100%"
+									preserveAspectRatio="xMinYMin slice"
+									width="100%"
+									href={Coindesk}
+								></image>
+
+								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+									{/* OXbull */}
 								</text>
 							</g>
 						</svg>
