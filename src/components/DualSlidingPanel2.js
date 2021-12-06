@@ -11,12 +11,16 @@ const DualSlidingPanel2 = () => {
 			<section class="panels">
 				<article class="panels__side panels2__side--left">
 					<div class="panels__side panels2__side--inner-left">
-						<Investor />
+
+						{/* <p>"Changes and progress very rarely are gifts from above. They come out of struggles from below."</p> */}
+						<Investor></Investor>
 					</div>
 					<div class="panels__side panels__side--inner flex-col">
 						<h1 class="panels__headline">CRYPTO FARMER</h1>
 						<p>Enable farmers to earn the stable return</p>
 						<svg
+							id = "clickleft2"
+
 							class="arrow arrow--left arrow-2"
 							width="4vw"
 							height="4vw"
@@ -32,6 +36,7 @@ const DualSlidingPanel2 = () => {
 						<h1 class="panels__headline">CRYPTO INVESTOR</h1>
 						<p>Enable investors to seek the amazing profit</p>
 						<svg
+							id = "clickright2"
 							class="arrow arrow--right arrow-2"
 							width="4vw"
 							height="4vw"

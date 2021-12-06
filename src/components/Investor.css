@@ -3,36 +3,39 @@
 }
 
 .grapes {
-	font-family: inherit;
-	font-size: inherit;
-	box-sizing: inherit;
-	padding: 0;
-	margin: 0;
-	z-index: 100000000;
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 384px;
+    height: 289px;
 }
 .grapes html {
 	box-sizing: border-box;
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 	font-size: 62.5%;
 	font-family: "Rubik", sans-serif;
 	user-select: none;
 }
 .grapes html body {
 	/* background-color: #cf8; */
-	width: 50vw;
-	height: 50vh;
+	width: 100vw;
+	height: 100vh;
 	overflow: inherit;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .grapes .Caption {
 	position: fixed;
-	width: 80%;
+	width: 100%;
 	text-align: center;
 	top: 3rem;
-	font-size: 1rem;
+	font-size: 2rem;
 	color: purple;
 	opacity: 0.75;
 }
@@ -42,7 +45,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	transform: translateY(calc(var(--layers) * 2rem - 10vh));
+	transform: translateY(calc(var(--layers) * -1rem)) scale(0.5);
 	transition: transform 0.5s;
 }
 .grapes .Grape .Leaves {
@@ -52,8 +55,8 @@
 	transition: transform 0.5s;
 }
 .grapes .Grape .Leaves .Leaf {
-	width: 4rem;
-	height: 2rem;
+	width: 8rem;
+	height: 4rem;
 	position: absolute;
 	background-color: green;
 	border-radius: 50%;
@@ -65,8 +68,8 @@
 	--delay: 0;
 	--variant: 0;
 	--zindex: 0;
-	width: 2rem;
-	height: 2rem;
+	width: 5rem;
+	height: 5rem;
 	transform: scale(1.5);
 	position: relative;
 	background-color: hsl(calc(-90deg + var(--variant) * 60deg), 55%, 40%);
@@ -78,8 +81,7 @@
 	animation: pop 0.5s cubic-bezier(0.23, 1.25, 0.74, 1.33);
 	animation-fill-mode: backwards;
 	animation-delay: calc(var(--delay) * 0.1s);
-	/* font-size: calc(2.5rem / (0.7 + var(--digits) * 0.3)); */
-	font-size: 10px !important;
+	font-size: calc(2.5rem / (0.7 + var(--digits) * 0.3));
 	color: #fff;
 	z-index: var(--zindex);
 	transition: transform 0.5s, z-index 0.5s;
@@ -122,8 +124,8 @@
 	--delay: 0;
 	--variant: 0;
 	--zindex: 0;
-	width: 2rem;
-	height: 2rem;
+	width: 5rem;
+	height: 5rem;
 	transform: scale(1.5);
 	position: relative;
 	background-color: #9e2e2e;

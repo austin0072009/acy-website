@@ -254,8 +254,8 @@
 }
 
 .arrow-1 {
-	fill: #1a1a1a;
-	border: 3px solid #1a1a1a;
+	fill: white;
+	border: 3px solid white;
 }
 
 .arrow-2 {
@@ -421,7 +421,6 @@
 
 .panels2__side--right-active .panels2__side--inner-right {
 	transform: rotateY(0);
-	display: block;
 }
 
 .panels2__side--right-active .arrow {

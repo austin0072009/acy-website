@@ -89,7 +89,7 @@ const Documentation = () => {
 				</div> */}
 			<div class="roadmap-title">Developer</div>
 
-			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0">
+			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10" >
 				{data.map(item => (
 					<TabLink
 						key={item.title}
