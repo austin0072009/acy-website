@@ -81,545 +81,557 @@ const ClipPathHover = () => {
 			.forEach(function (button) {
 				button.addEventListener("click", changeColor);
 			});
+
+		//See more button
+		let more = document.querySelectorAll(".more");
+		for (let i = 0; i < more.length; i++) {
+			more[i].addEventListener("click", function () {
+				more[i].parentNode.classList.toggle("active");
+			});
+		}
 	});
 
 	return (
 		<div className="clip-path-hover mb-40">
 			<div className="backers-title">Backer</div>
-			<main>
-				<div class="items">
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://www.oxbull.tech");
-						}}
-					>
-						<svg
-							id="oxbull"
-							ref={svg_logo}
-							preserveAspectRatio="xMidYMid slice"
-							viewBox="0 0 300 200"
-						>
-							<defs>
-								<clipPath id="clip-0">
-									<circle
-										cx="-0.27272728085517883"
-										cy="57.8863639831543"
-										fill="#000"
-										r="125px"
-									></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								OXbull
-							</text>
-							<g clip-path="url(#clip-0)">
-								<rect width="300" height="200" fill="black" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={OxBull}
-								></image>
 
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* OXbull */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://lightningprotocol.finance/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-1">
-									<circle
-										cx="23.727272033691406"
-										cy="69.88636016845703"
-										fill="#000"
-										r="125px"
-									></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Lightning Protocol
-							</text>
-							<g clip-path="url(#clip-1)">
-								<rect width="300" height="200" fill="#182035" />
-								<image
-									height="80%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={LightningProtocol}
-									y="20"
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* Lightning Protocol */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://www.hoppy-meme.co/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-2">
-									<circle
-										cx="27.727272033691406"
-										cy="90.88636016845703"
-										fill="#000"
-										r="125px"
-									></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								HOPPY
-							</text>
-							<g clip-path="url(#clip-2)">
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={Hoppy}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* HOPPY */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://krystal.app/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-3">
-									<circle
-										cx="2.7272727489471436"
-										cy="76.70454406738281"
-										fill="#000"
-										r="125px"
-									></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Krystal
-							</text>
-							<g clip-path="url(#clip-3)">
-								<rect width="300" height="200" fill="black" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="80%"
-									href={Krystal}
-									x="30"
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* Krystal */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://daostarter.pro/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-4">
-									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								DAOStarter
-							</text>
-							<g clip-path="url(#clip-4)">
-								<rect width="300" height="200" fill="white" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={DAOStarter}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* DAOStarter */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://dfistarter.io/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-5">
-									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								DFIStarter
-							</text>
-							<g clip-path="url(#clip-5)">
-								<rect width="300" height="200" fill="black" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={DFIStarter}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* DFIStarter */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://www.bscmemepad.com/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-6">
-									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								BSC Meme Pad
-							</text>
-							<g clip-path="url(#clip-6)">
-								<rect width="300" height="200" fill="white" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={BSCMemePad}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* BSC Meme Pad */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://zbs.capital/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-7">
-									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								ZBS Capital
-							</text>
-							<g clip-path="url(#clip-7)">
-								<rect width="300" height="200" fill="black" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={ZBSCapital}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* ZBS Capital */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://chain.link/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-8">
-									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Chainlink
-							</text>
-							<g clip-path="url(#clip-8)">
-								<rect width="300" height="200" fill="white" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={Chainlink}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* Chainlink*/}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://erax.io/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-9">
-									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Erax
-							</text>
-							<g clip-path="url(#clip-9)">
-								<rect width="300" height="200" fill="black" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={Erax}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* Erax */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("http://www.r8.capital/");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-10">
-									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								R8 Capital
-							</text>
-							<g clip-path="url(#clip-10)">
-								<rect width="300" height="200" fill="white" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={R8Capital}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* R8 Capital */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("");
-						}}
-					>
-						<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-							<defs>
-								<clipPath id="clip-11">
-									<circle cx="0" cy="0" fill="#000" r="125px"></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Pluto Capital
-							</text>
-							<g clip-path="url(#clip-11)">
-								<rect width="300" height="200" fill="white" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={PlutoCapital}
-								></image>
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* Pluto Capital */}
-								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://confluxnetwork.org/");
-						}}
-					>
-						<svg
-							ref={svg_logo}
-							preserveAspectRatio="xMidYMid slice"
-							viewBox="0 0 300 200"
+			<main className="clippath-container">
+				<div className="content">
+					<div class="items">
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://www.oxbull.tech");
+							}}
 						>
-							<defs>
-								<clipPath id="clip-12">
-									<circle
-										cx="-0.27272728085517883"
-										cy="57.8863639831543"
-										fill="#000"
-										r="125px"
-									></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Conflux
-							</text>
-							<g clip-path="url(#clip-12)">
-								<rect width="300" height="200" fill="#100628" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={Conflux}
-								></image>
-
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* OXbull */}
+							<svg
+								id="oxbull"
+								ref={svg_logo}
+								preserveAspectRatio="xMidYMid slice"
+								viewBox="0 0 300 200"
+							>
+								<defs>
+									<clipPath id="clip-0">
+										<circle
+											cx="-0.27272728085517883"
+											cy="57.8863639831543"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									OXbull
 								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://mobius.finance/");
-						}}
-					>
-						<svg
-							ref={svg_logo}
-							preserveAspectRatio="xMidYMid slice"
-							viewBox="0 0 300 200"
+								<g clip-path="url(#clip-0)">
+									<rect width="300" height="200" fill="black" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={OxBull}
+									></image>
+
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* OXbull */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://lightningprotocol.finance/");
+							}}
 						>
-							<defs>
-								<clipPath id="clip-13">
-									<circle
-										cx="-0.27272728085517883"
-										cy="57.8863639831543"
-										fill="#000"
-										r="125px"
-									></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Mobius
-							</text>
-							<g clip-path="url(#clip-13)">
-								<rect width="300" height="200" fill="white" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={Mobius}
-								></image>
-
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* OXbull */}
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-1">
+										<circle
+											cx="23.727272033691406"
+											cy="69.88636016845703"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Lightning Protocol
 								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://tokeninsight.com/");
-						}}
-					>
-						<svg
-							ref={svg_logo}
-							preserveAspectRatio="xMidYMid slice"
-							viewBox="0 0 300 200"
+								<g clip-path="url(#clip-1)">
+									<rect width="300" height="200" fill="#182035" />
+									<image
+										height="80%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={LightningProtocol}
+										y="20"
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* Lightning Protocol */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://www.hoppy-meme.co/");
+							}}
 						>
-							<defs>
-								<clipPath id="clip-14">
-									<circle
-										cx="-0.27272728085517883"
-										cy="57.8863639831543"
-										fill="#000"
-										r="125px"
-									></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								TokenInsight
-							</text>
-							<g clip-path="url(#clip-14)">
-								<rect width="300" height="200" fill="white" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={TokenInsight}
-								></image>
-
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* OXbull */}
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-2">
+										<circle
+											cx="27.727272033691406"
+											cy="90.88636016845703"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									HOPPY
 								</text>
-							</g>
-						</svg>
-					</div>
-					<div
-						class="item"
-						onClick={() => {
-							openInNewTab("https://www.coindesk.com/");
-						}}
-					>
-						<svg
-							ref={svg_logo}
-							preserveAspectRatio="xMidYMid slice"
-							viewBox="0 0 300 200"
+								<g clip-path="url(#clip-2)">
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={Hoppy}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* HOPPY */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://krystal.app/");
+							}}
 						>
-							<defs>
-								<clipPath id="clip-15">
-									<circle
-										cx="-0.27272728085517883"
-										cy="57.8863639831543"
-										fill="#000"
-										r="125px"
-									></circle>
-								</clipPath>
-							</defs>
-							<text class="svg-text" dy=".3em" x="50%" y="50%">
-								Coindesk
-							</text>
-							<g clip-path="url(#clip-15)">
-								<rect width="300" height="200" fill="white" />
-								<image
-									height="100%"
-									preserveAspectRatio="xMinYMin slice"
-									width="100%"
-									href={Coindesk}
-								></image>
-
-								<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-									{/* OXbull */}
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-3">
+										<circle
+											cx="2.7272727489471436"
+											cy="76.70454406738281"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Krystal
 								</text>
-							</g>
-						</svg>
+								<g clip-path="url(#clip-3)">
+									<rect width="300" height="200" fill="black" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="80%"
+										href={Krystal}
+										x="30"
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* Krystal */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://daostarter.pro/");
+							}}
+						>
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-4">
+										<circle cx="0" cy="0" fill="#000" r="125px"></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									DAOStarter
+								</text>
+								<g clip-path="url(#clip-4)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={DAOStarter}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* DAOStarter */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://dfistarter.io/");
+							}}
+						>
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-5">
+										<circle cx="0" cy="0" fill="#000" r="125px"></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									DFIStarter
+								</text>
+								<g clip-path="url(#clip-5)">
+									<rect width="300" height="200" fill="black" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={DFIStarter}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* DFIStarter */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://www.bscmemepad.com/");
+							}}
+						>
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-6">
+										<circle cx="0" cy="0" fill="#000" r="125px"></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									BSC Meme Pad
+								</text>
+								<g clip-path="url(#clip-6)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={BSCMemePad}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* BSC Meme Pad */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://zbs.capital/");
+							}}
+						>
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-7">
+										<circle cx="0" cy="0" fill="#000" r="125px"></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									ZBS Capital
+								</text>
+								<g clip-path="url(#clip-7)">
+									<rect width="300" height="200" fill="black" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={ZBSCapital}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* ZBS Capital */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://chain.link/");
+							}}
+						>
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-8">
+										<circle cx="0" cy="0" fill="#000" r="125px"></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Chainlink
+								</text>
+								<g clip-path="url(#clip-8)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={Chainlink}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* Chainlink*/}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://erax.io/");
+							}}
+						>
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-9">
+										<circle cx="0" cy="0" fill="#000" r="125px"></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Erax
+								</text>
+								<g clip-path="url(#clip-9)">
+									<rect width="300" height="200" fill="black" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={Erax}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* Erax */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("http://www.r8.capital/");
+							}}
+						>
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-10">
+										<circle cx="0" cy="0" fill="#000" r="125px"></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									R8 Capital
+								</text>
+								<g clip-path="url(#clip-10)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={R8Capital}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* R8 Capital */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("");
+							}}
+						>
+							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+								<defs>
+									<clipPath id="clip-11">
+										<circle cx="0" cy="0" fill="#000" r="125px"></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Pluto Capital
+								</text>
+								<g clip-path="url(#clip-11)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={PlutoCapital}
+									></image>
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* Pluto Capital */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://confluxnetwork.org/");
+							}}
+						>
+							<svg
+								ref={svg_logo}
+								preserveAspectRatio="xMidYMid slice"
+								viewBox="0 0 300 200"
+							>
+								<defs>
+									<clipPath id="clip-12">
+										<circle
+											cx="-0.27272728085517883"
+											cy="57.8863639831543"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Conflux
+								</text>
+								<g clip-path="url(#clip-12)">
+									<rect width="300" height="200" fill="#100628" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={Conflux}
+									></image>
+
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* OXbull */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://mobius.finance/");
+							}}
+						>
+							<svg
+								ref={svg_logo}
+								preserveAspectRatio="xMidYMid slice"
+								viewBox="0 0 300 200"
+							>
+								<defs>
+									<clipPath id="clip-13">
+										<circle
+											cx="-0.27272728085517883"
+											cy="57.8863639831543"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Mobius
+								</text>
+								<g clip-path="url(#clip-13)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={Mobius}
+									></image>
+
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* OXbull */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://tokeninsight.com/");
+							}}
+						>
+							<svg
+								ref={svg_logo}
+								preserveAspectRatio="xMidYMid slice"
+								viewBox="0 0 300 200"
+							>
+								<defs>
+									<clipPath id="clip-14">
+										<circle
+											cx="-0.27272728085517883"
+											cy="57.8863639831543"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									TokenInsight
+								</text>
+								<g clip-path="url(#clip-14)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={TokenInsight}
+									></image>
+
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* OXbull */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://www.coindesk.com/");
+							}}
+						>
+							<svg
+								ref={svg_logo}
+								preserveAspectRatio="xMidYMid slice"
+								viewBox="0 0 300 200"
+							>
+								<defs>
+									<clipPath id="clip-15">
+										<circle
+											cx="-0.27272728085517883"
+											cy="57.8863639831543"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Coindesk
+								</text>
+								<g clip-path="url(#clip-15)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={Coindesk}
+									></image>
+
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* OXbull */}
+									</text>
+								</g>
+							</svg>
+						</div>
 					</div>
 				</div>
+				<a className="more"></a>
 			</main>
 		</div>
 	);
