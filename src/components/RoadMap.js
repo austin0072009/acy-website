@@ -155,7 +155,7 @@ const RoadMap = () => {
 					</li>
 
 					<li class="roadmap-timeframe js-roadmap-timeframe">
-						<div class="roadmap-date">Future plans</div>
+						<div class="roadmap-date">October to December, 2022</div>
 						<DetailCard
 							title={data[4].title}
 							description={data[4].description}
