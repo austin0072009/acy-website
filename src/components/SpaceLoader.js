@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import "./SpaceLoader.css";
-import { TextTab } from ".";
+import { TextTab,JumpButton } from ".";
 
 const SpaceLoader = () => {
 	gsap.fromTo(
@@ -548,7 +548,7 @@ const SpaceLoader = () => {
 					community."
 					/>
 				</div>
-
+  				<JumpButton links={"http://test.acy.finance/#/launchpad"}></JumpButton>
 				{/* <div className="mt-3 exchange-content">
 					
 				</div> */}

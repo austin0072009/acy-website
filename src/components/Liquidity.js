@@ -7,6 +7,7 @@ import { AnimatedButtons, AnimatedIcons } from ".";
 import button2 from "../assets/svgs/animatedIcons/two-key.json";
 import button2hover from "../assets/svgs/animatedIcons/two-key-hover.json";
 import liquidity from "../assets/svgs/animatedIcons/liquidity.json";
+import { JumpButton } from ".";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -71,6 +72,8 @@ const Liquidity = ({ setIframeLoaded }) => {
 							linkName="Add Now"
 						></TextTab>
 					</div>
+					<div className = "liquidityLearn">
+					<JumpButton links = {"http://test.acy.finance/#/liquidity"}></JumpButton></div>
 				</div>
 			</div>
 		</div>

@@ -131,6 +131,14 @@
 .red {
 	background-color: #C6224E;
 }
+
+.yellow {
+	background-color: #e29227;
+}
+
+.darkgreen{
+	background-color: #1c9965;
+}
 /* Rolling Text Media Queries */
 .rolling-title h1 {
 	margin: 5px;

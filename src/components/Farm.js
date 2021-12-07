@@ -7,6 +7,7 @@ import { AnimatedButtons, AnimatedIcons } from ".";
 import { useState } from "react";
 import button3 from "../assets/svgs/animatedIcons/three-key.json";
 import button3hover from "../assets/svgs/animatedIcons/three-key-hover.json";
+import { JumpButton } from ".";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -75,6 +76,8 @@ const Farm = () => {
 							id="premier"
 						></FarmTab>
 					</div>
+					<JumpButton></JumpButton>
+
 
 
 				</div>

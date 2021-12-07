@@ -14,6 +14,7 @@ const DualSlidingPanel = () => {
 					<div class="panels__side panels__side--inner-left">
 						{/* <p>"Changes and progress very rarely are gifts from above. They come out of struggles from below."</p> */}
 						<Exchange></Exchange>
+						{/* <JumpButton></JumpButton> */}
 					</div>
 					<div class="panels__side panels__side--inner flex-col">
 						<h1 class="panels__headline">CRYPTO TRADERS</h1>
