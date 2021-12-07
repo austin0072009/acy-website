@@ -548,7 +548,7 @@ const SpaceLoader = () => {
 					community."
 					/>
 				</div>
-  				<JumpButton></JumpButton>
+  				<JumpButton links={"http://test.acy.finance/#/launchpad"}></JumpButton>
 				{/* <div className="mt-3 exchange-content">
 					
 				</div> */}

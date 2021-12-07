@@ -12,14 +12,14 @@ const JumpButton = (props)=> {
 
 
 return(
-    <div id="jumpbutton-container" onClick=   { ()=> {openInNewTab(props.links)} 
-
-    } >
-  <button class="learn-more jumpbutton">
-    <span class="jumpcircle" aria-hidden="true">
-      <span class="jumpicon jumparrow"></span>
+  <div id="container">
+  <button class="learn-more" id = "button" onClick = { () => {
+    openInNewTab(props.links);
+  }}>
+    <span class="circle" aria-hidden="true">
+      <span class="icon jumparrow"></span>
     </span>
-    <span class="jumpbutton-text">Learn More</span>
+    <span class="button-text">Learn More</span>
   </button>
 </div>
 )

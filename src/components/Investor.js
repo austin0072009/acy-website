@@ -12,7 +12,7 @@ const Investor = () => {
 			<div className="mt-3 exchange-content">
 			There are there kind of farming functions. First one is PREMIER, that is to stake your liquidity for BTC，ETH,USDX and the project tokens. The second one is STANDARD, that is to stake your liquidity for ACY. The third one is ACYDAO, that is to stake your ACY token for ACY token.
 				</div>
-				<JumpButton></JumpButton>
+				<JumpButton links = {"http://test.acy.finance/#/farms"}></JumpButton>
 	
 	</div>
 	</div>);

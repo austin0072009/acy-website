@@ -443,7 +443,7 @@ const Exchange = ({ iframeLoaded }) => {
 							iframeLoaded={iframeLoaded}
 						></TextTab>
 					</div>
-					<JumpButton></JumpButton>
+					<JumpButton links = {"http://test.acy.finance/#/exchange"}></JumpButton>
 
 				</div>
 			</div>

@@ -73,7 +73,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 						></TextTab>
 					</div>
 					<div className = "liquidityLearn">
-					<JumpButton ></JumpButton></div>
+					<JumpButton links = {"http://test.acy.finance/#/liquidity"}></JumpButton></div>
 				</div>
 			</div>
 		</div>
