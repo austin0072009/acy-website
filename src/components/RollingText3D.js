@@ -44,23 +44,17 @@ useEffect(() => {
 					<figure className="green text-white capitalize md:uppercase">Extra Income <span className = "smalllabel" >IN LIQUIDITY</span></figure>
           <figure className="red text-white capitalize md:uppercase">Amazing Profit <span className = "smalllabel" >IN LAUNCH</span></figure> */}
 
-          <figure className="orange text-white capitalize md:uppercase">Optimal Output
-           {/* <span className = "smalllabel" >IN EXCHANGE</span>  */}
+          <figure className="green text-white capitalize md:uppercase">Optimal Output
            </figure>
-					<figure className="green text-white capitalize md:uppercase">Extra Income
-           {/* <span className = "smalllabel" >IN LIQUIDITY</span> */}
+					<figure className="darkgreen text-white capitalize md:uppercase">Extra Income
             </figure>
 					<figure className="blue text-white capitalize md:uppercase">Stable Return
-           {/* <span className = "smalllabel" >IN FARM</span> */}
            </figure>
-          <figure className="orange text-white capitalize md:uppercase">Optimal Output
-           {/* <span className = "smalllabel" >IN EXCHANGE</span> */}
+           <figure className="red text-white capitalize md:uppercase">Amazing Profit
             </figure>
-					<figure className="green text-white capitalize md:uppercase">Extra Income
-           {/* <span className = "smalllabel" >IN LIQUIDITY</span> */}
+					<figure className="orange text-white capitalize md:uppercase">Flash Arbitrage
            </figure>
-          <figure className="red text-white capitalize md:uppercase">Amazing Profit
-          {/* Amazing Profit <span className = "smalllabel" >IN LAUNCH</span> */}
+          <figure className="yellow text-white capitalize md:uppercase">Mutual Benefit
           </figure>
 
         </div>

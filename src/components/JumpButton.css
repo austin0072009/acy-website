@@ -35,7 +35,7 @@
   width: 12rem;
   height: auto;
 }
-.learn-more .circle {
+.learn-more .jumpcircle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -45,7 +45,7 @@
   background: #282936;
   border-radius: 1.625rem;
 }
-.learn-more .circle .icon {
+.learn-more .jumpcircle .jumpicon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -53,14 +53,14 @@
   margin: auto;
   background: #fff;
 }
-.learn-more .circle .icon.arrow {
+.learn-more .jumpcircle .jumpicon.jumparrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
 }
-.learn-more .circle .icon.arrow::before {
+.learn-more .jumpcircle .jumpicon.jumparrow::before {
   position: absolute;
   content: "";
   top: -0.25rem;
@@ -86,10 +86,10 @@
   text-align: center;
   text-transform: uppercase;
 }
-.jumpbutton:hover .circle {
+.jumpbutton:hover .jumpcircle {
   width: 100%;
 }
-.jumpbutton:hover .circle .icon.arrow {
+.jumpbutton:hover .jumpcircle .jumpicon.jumparrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
@@ -110,4 +110,10 @@
     align-self: center;
     justify-self: center;
   }
+}
+
+.liquidityLearn{
+
+  position: relative;
+  top: -25px;
 }

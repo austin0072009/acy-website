@@ -11,6 +11,7 @@ import button4hover from "../assets/svgs/animatedIcons/four-key-hover.json";
 import launchBorder from "../assets/svgs/animatedIcons/launchBorder.json";
 import lottie from "lottie-web";
 import clock from "../assets/svgs/animatedIcons/clock.json";
+import { JumpButton } from ".";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
