@@ -23,7 +23,7 @@ const TextTabLink = ({ title, link = "/", type = "external", children }) => {
     >
       <Link to={link} ref={navigateButton} />
       <div
-        className="absolute rounded-xl bg-orange w-full h-full opacity-10"
+        className="absolute rounded-sm bg-orange w-full h-full opacity-10"
         style={{ zIndex: 1 }}
       ></div>
       <div

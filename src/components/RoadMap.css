@@ -445,11 +445,12 @@ $vline-circle-color: $text-color;
 	}
 }
 .roadmap-event {
-	display: flex;
-	align-items: center;
-	position: relative;
-	z-index: 1;
-	padding: 20px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    left: -39px;
+    padding: 20px 0;
 }
 .roadmap-event::before {
 	content: "";

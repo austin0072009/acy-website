@@ -19,7 +19,7 @@ return(
     <span class="circle" aria-hidden="true">
       <span class="icon jumparrow"></span>
     </span>
-    <span class="button-text">Learn More</span>
+    <span class="button-text">{props.text}</span>
   </button>
 </div>
 )

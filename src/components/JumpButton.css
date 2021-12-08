@@ -27,7 +27,7 @@
       margin: 0;
       width: 3rem;
       height: 3rem;
-      background: #282936;
+      background: white;
       border-radius: 1.625rem; }
       button.learn-more .circle .icon {
         -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -37,7 +37,7 @@
         top: 0;
         bottom: 0;
         margin: auto;
-        background: #fff; }
+        background: black; }
         button.learn-more .circle .icon.jumparrow {
           -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
           -o-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -53,8 +53,8 @@
             right: 0.0625rem;
             width: 0.625rem;
             height: 0.625rem;
-            border-top: 0.125rem solid #fff;
-            border-right: 0.125rem solid #fff;
+            border-top: 0.125rem solid black;
+            border-right: 0.125rem solid black;
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
@@ -77,12 +77,12 @@
   button:hover .circle {
     width: 100%; }
     button:hover .circle .icon.arrow {
-      background: #fff;
+      background: black;
       -webkit-transform: translate(1rem, 0);
       -ms-transform: translate(1rem, 0);
       transform: translate(1rem, 0); }
   button:hover .button-text {
-    color: #fff; }
+    color: black; }
 
 @supports (display: grid) {
 
@@ -94,5 +94,15 @@
 
 .liquidityLearn{
   position: relative;
-  top: -25px;
+  top: 25px;
+}
+
+.exchangeLearn{
+  position: relative;
+  top:-17px;
+}
+
+.farmLearn{
+  position: relative;
+  top:-8px;
 }

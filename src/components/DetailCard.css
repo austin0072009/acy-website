@@ -80,9 +80,9 @@
 	color: #fff;
 	background-color: #29292c;
 	display: block;
-	width: 14vw;
-	height: 9vw;
-	overflow: hidden;
+	width: 10vw;
+	height: 5vw;
+	overflow: visible;
 	position: absolute;
 	cursor: pointer;
 	font-family: "Karla", sans-serif;
@@ -90,24 +90,12 @@
 	z-index: 10000000000 !important;
 }
 
-.DetailCard .content {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	top: 0;
-	margin: auto;
-	/* padding: 0 4em; */
-	padding-left: 10px;
-	padding-right: 10px;
-	z-index: 2;
-	height: 3em;
-	transition: all 0.2s ease;
-}
 
-.DetailCard:hover .content {
-	height: 6.5em;
+
+/* .DetailCard:hover .content {
+	height: 3.5em;
 	transition: all 0.2s ease;
-}
+} */
 
 .detailcard-title {
 	font-size: 1em;
@@ -116,22 +104,14 @@
 	text-align: center;
 }
 
-.deliverables {
-	height: 0;
-	opacity: 0;
-	visibility: hidden;
-	/* margin: 5px; */
-	line-height: 1.5em;
-	font-size: 0.85em;
-	/* text-align: justify; */
-}
 
-.DetailCard:hover .deliverables {
+/* .DetailCard:hover .deliverables {
 	height: 3em;
 	opacity: 1;
 	visibility: visible;
 	transition: all 0.2s ease;
-}
+}  */
+
 /* 
 .DetailCard .link {
 	height: 1.5em;

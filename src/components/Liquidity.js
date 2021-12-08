@@ -56,7 +56,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 			</div>
 			<div className="flex items-center justify-between">
 				<div className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 flex-grow">
-					<div className="px-5 py-5" style={{ height: "100%" }}>
+					<div className="px-5 py-5" style={{ height: "386px" , width:"595px" }}>
 						<div>
 							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
 						</div>
@@ -73,7 +73,7 @@ const Liquidity = ({ setIframeLoaded }) => {
 						></TextTab>
 					</div>
 					<div className = "liquidityLearn">
-					<JumpButton links = {"http://test.acy.finance/#/liquidity"}></JumpButton></div>
+					<JumpButton text={"Liquidity"} links = {"http://test.acy.finance/#/liquidity"}></JumpButton></div>
 				</div>
 			</div>
 		</div>
