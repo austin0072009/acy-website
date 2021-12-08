@@ -42,12 +42,15 @@
 	.panels p {
 		font-size: 16px;
 	}
-	.panel-container {
+	/* .panel-container {
 		height: 150vw;
-	}
+	} */
 	/* .panels__side {
 		height: 150vw;
 	} */
+	.videoContainer {
+		height: 200px;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
