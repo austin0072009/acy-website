@@ -148,13 +148,13 @@
 	justify-content: space-between;
 }
 .NeuroBar {
-    /* display: flow-root; */
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 1536px;
-    padding: 69px 120px 0px 16px;
-    height: 0;
+	/* display: flow-root; */
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1536px;
+	padding: 69px 120px 0px 16px;
+	height: 0;
 }
 .positionadjust {
 	position: relative;
@@ -168,6 +168,16 @@
 }
 
 .LiquidityBar {
+	width: 100%;
+	height: auto;
+}
+
+.FarmBar {
+	width: 100%;
+	height: auto;
+}
+
+.LaunchBar {
 	width: 100%;
 	height: auto;
 }

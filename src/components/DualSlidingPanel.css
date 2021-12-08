@@ -22,8 +22,17 @@
 	text-align: center;
 }
 
+/* video */
+.video-container-main {
+	width: 90%;
+}
+
+.videoContainer {
+	width: 100%;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+@media only screen and (max-device-width: 640px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 28px;
@@ -32,12 +41,43 @@
 	.panels p {
 		font-size: 16px;
 	}
-	.panel-container {
+	/* .panel-container {
 		height: 150vw;
-	}
+	} */
 	/* .panels__side {
 		height: 150vw;
 	} */
+	.videoContainer {
+		height: 200px;
+	}
+	.exchange-title {
+		font-size: 1.75rem;
+	}
+	.exchange-content {
+		font-size: 0.625rem;
+	}
+	/* learn more button */
+	.learn-more-class button.learn-more {
+		width: 6rem;
+		/* height: auto; */
+	}
+	.jump-button-container .circle {
+		width: 1.5rem;
+		height: 1.5rem;
+		/* border-radius: 50%; */
+		border-radius: 1.5rem;
+	}
+	.jump-button-container .circle .jumparrow {
+		left: 0.3rem;
+		top: 0.3rem;
+		font-size: 16px;
+	}
+	.jump-button-container .button-text {
+		margin: 0 0 0 2rem;
+		font-weight: 800;
+		line-height: 0.2;
+		font-size: 14px;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -51,7 +91,7 @@
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 640px) and (max-device-width: 1224px) {
+@media only screen and (min-device-width: 640px) and (max-device-width: 992px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 24px;
@@ -66,20 +106,89 @@
 	.panels__side {
 		height: 35vw;
 	}
+	.videoContainer {
+		height: 175px;
+	}
+	.exchange-title {
+		font-size: 1.25rem;
+	}
+	.exchange-content {
+		font-size: 0.5rem;
+	}
+	/* learn more button */
+	.learn-more-class button.learn-more {
+		width: 6rem;
+		/* height: auto; */
+	}
+	.jump-button-container .circle {
+		width: 1.5rem;
+		height: 1.5rem;
+		/* border-radius: 50%; */
+		border-radius: 1.5rem;
+	}
+	.jump-button-container .circle .jumparrow {
+		left: 0.3rem;
+		top: 0.3rem;
+		font-size: 16px;
+	}
+	.jump-button-container .button-text {
+		margin: 0 0 0 2rem;
+		font-weight: 800;
+		line-height: 0.2;
+		font-size: 14px;
+	}
 }
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 992px) and (max-device-width: 1280px) {
 	/* Styles */
-}
+	.panels__headline {
+		font-size: 24px;
+	}
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-	/* Styles */
+	.panels p {
+		font-size: 14px;
+	}
+	.panel-container {
+		height: 35vw;
+	}
+	.panels__side {
+		height: 35vw;
+	}
+	.videoContainer {
+		height: 175px;
+	}
+	.exchange-title {
+		font-size: 1.25rem;
+	}
+	.exchange-content {
+		font-size: 0.5rem;
+	}
+	/* learn more button */
+	.learn-more-class button.learn-more {
+		width: 8rem;
+		/* height: auto; */
+	}
+	.jump-button-container .circle {
+		width: 2rem;
+		height: 2rem;
+		/* border-radius: 50%; */
+		border-radius: 1.5rem;
+	}
+	.jump-button-container .circle .jumparrow {
+		left: 0.5rem;
+		top: 0.4rem;
+		font-size: 20px;
+	}
+	.jump-button-container .button-text {
+		margin: 0 0 0 3rem;
+		font-weight: 800;
+		line-height: 0.7;
+		font-size: 14px;
+	}
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1280px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 30px;
@@ -94,13 +203,45 @@
 	.panels__side {
 		height: 35vw;
 	}
+
+	.videoContainer {
+		height: 220px;
+	}
+	.exchange-title {
+		font-size: 1.75rem;
+	}
+	.exchange-content {
+		font-size: 0.625rem;
+	}
+	/* learn more button */
+	.learn-more-class button.learn-more {
+		width: 12rem;
+		/* height: auto; */
+	}
+	.jump-button-container .circle {
+		width: 2.5em;
+		height: 2.5rem;
+		/* border-radius: 50%; */
+		border-radius: 1.9rem;
+	}
+	.jump-button-container .circle .jumparrow {
+		left: 0.5rem;
+		top: 0.5rem;
+		font-size: 25px;
+	}
+	.jump-button-container .button-text {
+		margin: 0 0 0 3rem;
+		font-weight: 600;
+		line-height: 0.8;
+		font-size: 22px;
+	}
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
 	/* Styles */
 	.panels__headline {
-		font-size: 50px;
+		font-size: 55px;
 	}
 
 	.panels p {
@@ -113,10 +254,36 @@
 	.panels__side {
 		height: 35vw;
 	}
-}
 
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (min-device-pixel-ratio: 1.5) {
-	/* Styles */
+	.videoContainer {
+		height: 350px;
+	}
+	.exchange-title {
+		font-size: 2.5rem;
+	}
+	.exchange-content {
+		font-size: 1.25rem;
+	}
+	/* learn more button */
+	.learn-more-class button.learn-more {
+		width: 18rem;
+		/* height: auto; */
+	}
+	.jump-button-container .circle {
+		width: 4em;
+		height: 4rem;
+		/* border-radius: 50%; */
+		border-radius: 1.9rem;
+	}
+	.jump-button-container .circle .jumparrow {
+		left: 1.2rem;
+		top: 1rem;
+		font-size: 30px;
+	}
+	.jump-button-container .button-text {
+		margin: 0 0 0 4rem;
+		font-weight: 700;
+		line-height: 1.4;
+		font-size: 28px;
+	}
 }
