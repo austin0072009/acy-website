@@ -50,6 +50,7 @@
 	.videoContainer {
 		height: 200px;
 	}
+
 	.exchange-title {
 		font-size: 1.75rem;
 	}
@@ -211,7 +212,7 @@
 		font-size: 1.75rem;
 	}
 	.exchange-content {
-		font-size: 0.625rem;
+		font-size: 1rem;
 	}
 	/* learn more button */
 	.learn-more-class button.learn-more {
@@ -258,12 +259,21 @@
 	.videoContainer {
 		height: 350px;
 	}
+	/* Exchange fonts */
 	.exchange-title {
 		font-size: 2.5rem;
 	}
 	.exchange-content {
 		font-size: 1.25rem;
 	}
+	/* Liquidity fonts */
+	.liquidity-title {
+		font-size: 2.5rem;
+	}
+	.liquidity-content {
+		font-size: 1.25rem;
+	}
+
 	/* learn more button */
 	.learn-more-class button.learn-more {
 		width: 18rem;
@@ -286,4 +296,7 @@
 		line-height: 1.4;
 		font-size: 28px;
 	}
+
+	/* Farm */
+	/* Grapes */
 }

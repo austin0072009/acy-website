@@ -83,38 +83,6 @@ const Exchange = ({ iframeLoaded }) => {
 
 	return (
 		<div className="ExchangeBar">
-			<div className="flex">
-				<div
-					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
-					onMouseEnter={() => {
-						setIsHoverButtonOne(true);
-						setIsClickedButtonOne(false);
-					}}
-					onMouseLeave={() => {
-						setIsHoverButtonOne(false);
-						setIsClickedButtonOne(false);
-					}}
-					onClick={() => {
-						setIsHoverButtonOne(!isHoverButtonOne);
-						setIsClickedButtonOne(!isClickedButtonOne);
-					}}
-				>
-					{/* <AnimatedButtons
-						url={button1}
-						urlhover={button1hover}
-						id="button1"
-						hover={isHoverButtonOne}
-						click={isClickedButtonOne}
-					></AnimatedButtons>
-					<span
-						className="font-medium text-orange moveLROnHover"
-						style={{ fontSize: smallerThan568 ? 20 : 26 }}
-					>
-						<span>EXCHANGE</span>
-					</span> */}
-				</div>
-			</div>
-
 			<div className="flex items-center justify-between">
 				<div
 					className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow"
