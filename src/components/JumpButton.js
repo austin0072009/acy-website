@@ -19,7 +19,7 @@ const JumpButton = props => {
 			>
 				<span class="circle" aria-hidden="true">
 					{/* <span class="icon jumparrow"></span> */}
-					<RightOutlined className="icon jumparrow" />
+					<RightOutlined className="icon jumparrow" style={{ zIndex: 100 }} />
 				</span>
 				<span class="button-text">{props.text}</span>
 			</button>
