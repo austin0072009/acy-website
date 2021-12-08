@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7035601b.chunk.css",
-    "main.js": "/static/js/main.42f024f1.chunk.js",
-    "main.js.map": "/static/js/main.42f024f1.chunk.js.map",
+    "main.css": "/static/css/main.7e14c2cd.chunk.css",
+    "main.js": "/static/js/main.236623f2.chunk.js",
+    "main.js.map": "/static/js/main.236623f2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.385cf9a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.385cf9a6.js.map",
     "static/js/2.2e11ab02.chunk.js": "/static/js/2.2e11ab02.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.c5220a97.chunk.js": "/static/js/3.c5220a97.chunk.js",
     "static/js/3.c5220a97.chunk.js.map": "/static/js/3.c5220a97.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7035601b.chunk.css.map": "/static/css/main.7035601b.chunk.css.map",
+    "static/css/main.7e14c2cd.chunk.css.map": "/static/css/main.7e14c2cd.chunk.css.map",
     "static/js/2.2e11ab02.chunk.js.LICENSE.txt": "/static/js/2.2e11ab02.chunk.js.LICENSE.txt",
     "static/media/BSCMemePad.1fe4f2f5.svg": "/static/media/BSCMemePad.1fe4f2f5.svg",
     "static/media/Chainlink.09a7ca40.svg": "/static/media/Chainlink.09a7ca40.svg",
@@ -37,10 +37,12 @@
     "static/media/cylinder_bullet.3feabdc0.svg": "/static/media/cylinder_bullet.3feabdc0.svg",
     "static/media/default.38fea865.png": "/static/media/default.38fea865.png",
     "static/media/discord_hover.b7986d74.svg": "/static/media/discord_hover.b7986d74.svg",
-    "static/media/gitbook.d6081ee9.svg": "/static/media/gitbook.d6081ee9.svg",
+    "static/media/file-ppt.24f0c183.svg": "/static/media/file-ppt.24f0c183.svg",
+    "static/media/gitbook.8e937924.svg": "/static/media/gitbook.8e937924.svg",
     "static/media/gitbook_hover.c3cc9b0f.png": "/static/media/gitbook_hover.c3cc9b0f.png",
-    "static/media/github.34d23027.svg": "/static/media/github.34d23027.svg",
+    "static/media/github.44405581.svg": "/static/media/github.44405581.svg",
     "static/media/github_hover.d1720cda.png": "/static/media/github_hover.d1720cda.png",
+    "static/media/history_edu_white_36dp.554b3a1e.svg": "/static/media/history_edu_white_36dp.554b3a1e.svg",
     "static/media/krystal.107b50af.svg": "/static/media/krystal.107b50af.svg",
     "static/media/linkedin_hover.04a3c4a4.svg": "/static/media/linkedin_hover.04a3c4a4.svg",
     "static/media/litepaper.9ae452b0.svg": "/static/media/litepaper.9ae452b0.svg",
@@ -48,6 +50,7 @@
     "static/media/logo.78c0179c.svg": "/static/media/logo.78c0179c.svg",
     "static/media/medium_hover.72c94380.svg": "/static/media/medium_hover.72c94380.svg",
     "static/media/menu_orange.0ec88f22.svg": "/static/media/menu_orange.0ec88f22.svg",
+    "static/media/rocket_white_36dp.04c8f6e2.svg": "/static/media/rocket_white_36dp.04c8f6e2.svg",
     "static/media/index.css": "/static/media/stars2.11e61e1b.png",
     "static/media/telegram_hover.52a2f133.svg": "/static/media/telegram_hover.52a2f133.svg",
     "static/media/twitter_hover.0a88d75e.svg": "/static/media/twitter_hover.0a88d75e.svg",
@@ -56,7 +59,7 @@
   "entrypoints": [
     "static/js/runtime-main.385cf9a6.js",
     "static/js/2.2e11ab02.chunk.js",
-    "static/css/main.7035601b.chunk.css",
-    "static/js/main.42f024f1.chunk.js"
+    "static/css/main.7e14c2cd.chunk.css",
+    "static/js/main.236623f2.chunk.js"
   ]
 }

@@ -8,6 +8,9 @@ import hgitbook from "../assets/gitbook_hover.png";
 import github from "../assets/svgs/main/documentation/github.svg";
 import hgithub from "../assets/github_hover.png";
 import arrowBullet from "../assets/svgs/bullets/arrow_bullet.svg";
+import rocketicon from "../assets/rocket_white_36dp.svg";
+import fileppt from "../assets/file-ppt.svg";
+import whitepaper2 from "../assets/history_edu_white_36dp.svg";
 import { useMediaPredicate } from "react-media-hook";
 import style from "../css/animation.css";
 import { useState } from "react";
@@ -23,26 +26,26 @@ const Documentation = () => {
 
 	let data = useMemo(() => [
 		{
-			title: "ACY Whitepaper",
+			title: "ACY Finance Whitepaper",
 			content: `Learn about the core concepts of the 
                 ACY protocol. Swaps, Pools, 
                 Concentrated Liquidity and more.`,
 
 			logoText: "Whitepaper",
-			src: litepaper,
-			src_hover: hlitepaper,
-			link: "https://docs.google.com/document/d/1P4lOrtWlTVFvjWhMEEKWafHvyypMwSnAjm-ZL-C_rrM/edit",
+			src: whitepaper2,
+			src_hover: whitepaper2,
+			link: " https://docs.google.com/document/d/1tfGj9AOgvZxBNRg1hzQeb6E3t1dj1aKFMhh6nL5ukDY/edit?usp=sharing",
 		},
 		{
-			title: "Guides, Rules and FAQs",
+			title: "Guide",
 			content: `Learn about the details of ACY Finance,
         including guides, product, governance rules, 
         tokenomics and FAQs.`,
 
-			logoText: "GitBook",
+			logoText: "Guide",
 			src: gitbook,
 			src_hover: hgitbook,
-			link: "https://acy-finance.gitbook.io/acy-finance/",
+			link: "https://docs.google.com/document/d/1NHsCaGWl_gz6fUA5wZtNOJKRaOIxBrLlfoSsa52VQNw/edit?usp=sharing",
 		},
 		{
 			title: "Smart contract overview",
@@ -54,6 +57,36 @@ const Documentation = () => {
 			src: github,
 			src_hover: hgithub,
 			link: "https://github.com/ACY-Labs",
+		},
+	]);
+
+	let data2 = useMemo(() => [
+		{
+			title: "Token Matrix",
+			content: ` Learn about the token economics, investing situation, TGE and vesting rules.`,
+
+			logoText: "Token Matrix",
+			src: litepaper,
+			src_hover: hlitepaper,
+			link: "https://docs.google.com/document/d/1y3p9WZ5Oa_kOJWEuU1Gh25xEmmMReIcw/edit#",
+		},
+		{
+			title: "Deck",
+			content: `Learn about the technical innovation, core functions, and the comparative advantage.`,
+
+			logoText: "Deck",
+			src: fileppt,
+			src_hover: fileppt,
+			link: "https://docs.google.com/presentation/d/1xEMXwk-ps7I2vmf8I-1FyGBnICMbPefY/edit?usp=sharing&ouid=116957882165852887712&rtpof=true&sd=true",
+		},
+		{
+			title: "IDO Launchpads",
+			content: `Learn about the ACY IDO details including the allocations and starting dates in each launchpad.`,
+
+			logoText: "IDO Launchpads",
+			src: rocketicon,
+			src_hover: rocketicon,
+			link: "https://docs.google.com/spreadsheets/d/1eNLt6EoUH-y2lNml9_K4LPoKEBcicPbbNw_RCO4b7YA/edit?usp=sharing",
 		},
 	]);
 	return (
@@ -88,8 +121,8 @@ const Documentation = () => {
 					</span>
 				</div> */}
 			<div class="roadmap-title z-10" >DOCUMENTATION</div>
-
-			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10" >
+			<div className = "DocumentationBar">
+			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10 mt-1" >
 				{data.map(item => (
 					<TabLink
 						key={item.title}
@@ -101,6 +134,20 @@ const Documentation = () => {
 						logoText={item.logoText}
 					></TabLink>
 				))}
+			</div>
+			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10 mt-5" >
+				{data2.map(item => (
+					<TabLink
+						key={item.title}
+						title={item.title}
+						content={item.content}
+						link={item.link}
+						src={item.src}
+						src_hover={item.src_hover}
+						logoText={item.logoText}
+					></TabLink>
+				))}
+			</div>
 			</div>
 		</div>
 	);
