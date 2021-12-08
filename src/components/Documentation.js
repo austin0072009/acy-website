@@ -23,15 +23,15 @@ const Documentation = () => {
 
 	let data = useMemo(() => [
 		{
-			title: "What is ACY Finance",
+			title: "ACY Whitepaper",
 			content: `Learn about the core concepts of the 
                 ACY protocol. Swaps, Pools, 
                 Concentrated Liquidity and more.`,
 
-			logoText: "Litepaper",
+			logoText: "Whitepaper",
 			src: litepaper,
 			src_hover: hlitepaper,
-			link: "https://api.acy.finance/ACY%20Finance%20Whitepaper.pdf",
+			link: "https://docs.google.com/document/d/1P4lOrtWlTVFvjWhMEEKWafHvyypMwSnAjm-ZL-C_rrM/edit",
 		},
 		{
 			title: "Guides, Rules and FAQs",
@@ -87,7 +87,7 @@ const Documentation = () => {
 						<span>DOCUMENTATION</span>
 					</span>
 				</div> */}
-			<div class="roadmap-title z-10" >Developer</div>
+			<div class="roadmap-title z-10" >DOCUMENTATION</div>
 
 			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10" >
 				{data.map(item => (
