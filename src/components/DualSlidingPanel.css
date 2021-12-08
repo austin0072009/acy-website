@@ -236,6 +236,10 @@
 		line-height: 0.8;
 		font-size: 22px;
 	}
+	.grapes {
+		width: 600px;
+		height: 300px;
+	}
 }
 
 /* Large screens ----------- */
