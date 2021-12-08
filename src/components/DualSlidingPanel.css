@@ -140,13 +140,35 @@
 	}
 
 	.videoContainer {
-		height: 250px;
+		height: 220px;
 	}
 	.exchange-title {
 		font-size: 1.75rem;
 	}
 	.exchange-content {
 		font-size: 0.625rem;
+	}
+	/* learn more button */
+	.learn-more-class button.learn-more {
+		width: 12rem;
+		/* height: auto; */
+	}
+	.jump-button-container .circle {
+		width: 2.5em;
+		height: 2.5rem;
+		/* border-radius: 50%; */
+		border-radius: 1.9rem;
+	}
+	.jump-button-container .circle .jumparrow {
+		left: 0.5rem;
+		top: 0.5rem;
+		font-size: 25px;
+	}
+	.jump-button-container .button-text {
+		margin: 0 0 0 3rem;
+		font-weight: 600;
+		line-height: 0.8;
+		font-size: 22px;
 	}
 }
 
