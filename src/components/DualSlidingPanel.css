@@ -93,6 +93,28 @@
 	.exchange-content {
 		font-size: 0.5rem;
 	}
+	/* learn more button */
+	.learn-more-class button.learn-more {
+		width: 6rem;
+		/* height: auto; */
+	}
+	.jump-button-container .circle {
+		width: 1.5rem;
+		height: 1.5rem;
+		/* border-radius: 50%; */
+		border-radius: 1.5rem;
+	}
+	.jump-button-container .circle .jumparrow {
+		left: 0.3rem;
+		top: 0.3rem;
+		font-size: 16px;
+	}
+	.jump-button-container .button-text {
+		margin: 0 0 0 2rem;
+		font-weight: 800;
+		line-height: 0.2;
+		font-size: 14px;
+	}
 }
 
 @media only screen and (min-device-width: 992px) and (max-device-width: 1280px) {
