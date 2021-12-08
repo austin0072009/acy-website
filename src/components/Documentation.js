@@ -26,7 +26,7 @@ const Documentation = () => {
 
 	let data = useMemo(() => [
 		{
-			title: "ACY Finance Whitepaper",
+			title: "Whitepaper",
 			content: `Learn about the core concepts of the 
                 ACY protocol. Swaps, Pools, 
                 Concentrated Liquidity and more.`,
@@ -48,7 +48,7 @@ const Documentation = () => {
 			link: "https://docs.google.com/document/d/1NHsCaGWl_gz6fUA5wZtNOJKRaOIxBrLlfoSsa52VQNw/edit?usp=sharing",
 		},
 		{
-			title: "Smart contract overview",
+			title: "Smart Contract",
 			content: `Learn about the architecture of the 
         ACY protocol smart contracts made 
         up of the Core and Periphary libraries.`,
@@ -80,10 +80,10 @@ const Documentation = () => {
 			link: "https://docs.google.com/presentation/d/1xEMXwk-ps7I2vmf8I-1FyGBnICMbPefY/edit?usp=sharing&ouid=116957882165852887712&rtpof=true&sd=true",
 		},
 		{
-			title: "IDO Launchpads",
+			title: "IDO Launchpad",
 			content: `Learn about the ACY IDO details including the allocations and starting dates in each launchpad.`,
 
-			logoText: "IDO Launchpads",
+			logoText: "IDO Launchpad",
 			src: rocketicon,
 			src_hover: rocketicon,
 			link: "https://docs.google.com/spreadsheets/d/1eNLt6EoUH-y2lNml9_K4LPoKEBcicPbbNw_RCO4b7YA/edit?usp=sharing",
