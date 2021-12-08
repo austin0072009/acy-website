@@ -183,16 +183,20 @@
 		/* height: auto; */
 	}
 	.jump-button-container .circle {
-		width: 5em;
-		height: 5rem;
-		border-radius: 50%;
+		width: 4em;
+		height: 4rem;
+		/* border-radius: 50%; */
+		border-radius: 1.9rem;
 	}
 	.jump-button-container .circle .jumparrow {
-		left: 0.625rem;
-		width: 1.125rem;
-		height: 0.125rem;
-		font-size: 20px;
+		left: 1.2rem;
+		top: 1rem;
+		font-size: 30px;
 	}
 	.jump-button-container .button-text {
+		margin: 0 0 0 4rem;
+		font-weight: 700;
+		line-height: 1.4;
+		font-size: 28px;
 	}
 }

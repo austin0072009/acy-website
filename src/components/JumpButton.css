@@ -24,18 +24,18 @@ button.learn-more .circle {
 	position: relative;
 	display: block;
 	margin: 0;
-	width: 3rem;
-	height: 3rem;
+	/* width: 3rem;
+	height: 3rem; */
 	background: white;
-	border-radius: 1.625rem;
+	/* border-radius: 1.625rem; */
 }
 button.learn-more .circle .icon {
 	-webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	-o-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	/* top: 0;
+	bottom: 0; */
 	margin: auto;
 	background: black;
 }
@@ -43,10 +43,10 @@ button.learn-more .circle .icon.jumparrow {
 	-webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	-o-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-	left: 0.8rem;
-	top: 0.6rem;
 	background: none;
-	font-size: 25px;
+	/* left: 0.8rem;
+	top: 0.6rem; */
+	/* font-size: 25px; */
 }
 button.learn-more .circle .icon.jumparrow::before {
 	position: absolute;
@@ -71,10 +71,10 @@ button.learn-more .button-text {
 	right: 0;
 	bottom: 0;
 	padding: 0.75rem 0;
-	margin: 0 0 0 1.85rem;
 	color: #282936;
+	/* margin: 0 0 0 1.85rem;
 	font-weight: 700;
-	line-height: 1.6;
+	line-height: 1.6; */
 	text-align: center;
 	text-transform: uppercase;
 }
