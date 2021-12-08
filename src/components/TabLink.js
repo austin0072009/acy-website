@@ -29,12 +29,7 @@ const TabLink = ({ title, content, link = "/", src, src_hover, logoText }) => {
 				style={{ zIndex: -1 }}
 			></div>
 			<div className="relative p-3" style={{ zIndex: 30 }}>
-				<img
-					alt="goto"
-					src={arrow}
-					style={{ width: 30, height: 30 }}
-					className="absolute filter hover:grayscale-0"
-				/>
+				
 				<div className="flex flex-col items-center relative">
 					<h2>{title}</h2>
 					<div className="hover:brightness-50">

@@ -13,9 +13,9 @@ const FooterNavigation = () => {
 				<ACYLink url="/governance" main={true}>
 					GOVERNANCE
 				</ACYLink>
-				<ACYLink url="/acy-token" main={true}>
+				{/* <ACYLink url="/acy-token" main={true}>
 					ACYTOKEN
-				</ACYLink>
+				</ACYLink> */}
 			</div>
 			<div className="flex flex-row justify-end space-x-14 mb-1">
 				<ACYLink url="/terms-of-use" main={true}>

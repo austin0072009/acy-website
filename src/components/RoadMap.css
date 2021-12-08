@@ -498,3 +498,9 @@ $vline-circle-color: $text-color;
 }
 
 /*# sourceMappingURL=RoadMap.css.map */
+
+
+.DocumentationBar{
+	display: flex;
+	flex-direction: column;
+	}
