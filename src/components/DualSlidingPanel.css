@@ -262,9 +262,11 @@
 	/* Exchange fonts */
 	.exchange-title {
 		font-size: 2.5rem;
+		margin-bottom: 1rem;
 	}
 	.exchange-content {
 		font-size: 1.25rem;
+		margin-bottom: 1rem;
 	}
 	/* Liquidity fonts */
 	.liquidity-title {
@@ -299,4 +301,8 @@
 
 	/* Farm */
 	/* Grapes */
+	.grapes {
+		width: 600px;
+		height: 450px;
+	}
 }
