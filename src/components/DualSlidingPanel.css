@@ -79,6 +79,12 @@
 		line-height: 0.2;
 		font-size: 14px;
 	}
+	/* Farm */
+	/* Grapes */
+	.grapes {
+		width: 500px;
+		height: 250px;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -138,6 +144,12 @@
 		line-height: 0.2;
 		font-size: 14px;
 	}
+	/* Farm */
+	/* Grapes */
+	.grapes {
+		width: 500px;
+		height: 250px;
+	}
 }
 
 @media only screen and (min-device-width: 992px) and (max-device-width: 1280px) {
@@ -185,6 +197,12 @@
 		font-weight: 800;
 		line-height: 0.7;
 		font-size: 14px;
+	}
+	/* Farm */
+	/* Grapes */
+	.grapes {
+		width: 500px;
+		height: 250px;
 	}
 }
 
@@ -236,9 +254,11 @@
 		line-height: 0.8;
 		font-size: 22px;
 	}
+	/* Farm */
+	/* Grapes */
 	.grapes {
-		width: 600px;
-		height: 300px;
+		width: 500px;
+		height: 250px;
 	}
 }
 
