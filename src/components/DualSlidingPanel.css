@@ -33,7 +33,7 @@
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+@media only screen and (max-device-width: 640px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 28px;
@@ -51,6 +51,12 @@
 	.videoContainer {
 		height: 200px;
 	}
+	.exchange-title {
+		font-size: 1.75rem;
+	}
+	.exchange-content {
+		font-size: 0.625rem;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -64,7 +70,7 @@
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 640px) and (max-device-width: 1280px) {
+@media only screen and (min-device-width: 640px) and (max-device-width: 992px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 24px;
@@ -82,16 +88,38 @@
 	.videoContainer {
 		height: 175px;
 	}
+	.exchange-title {
+		font-size: 1.25rem;
+	}
+	.exchange-content {
+		font-size: 0.5rem;
+	}
 }
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 992px) and (max-device-width: 1280px) {
 	/* Styles */
-}
+	.panels__headline {
+		font-size: 24px;
+	}
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-	/* Styles */
+	.panels p {
+		font-size: 14px;
+	}
+	.panel-container {
+		height: 35vw;
+	}
+	.panels__side {
+		height: 35vw;
+	}
+	.videoContainer {
+		height: 175px;
+	}
+	.exchange-title {
+		font-size: 1.25rem;
+	}
+	.exchange-content {
+		font-size: 0.5rem;
+	}
 }
 
 /* Desktops and laptops ----------- */
@@ -114,13 +142,19 @@
 	.videoContainer {
 		height: 250px;
 	}
+	.exchange-title {
+		font-size: 1.75rem;
+	}
+	.exchange-content {
+		font-size: 0.625rem;
+	}
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
 	/* Styles */
 	.panels__headline {
-		font-size: 50px;
+		font-size: 55px;
 	}
 
 	.panels p {
@@ -137,10 +171,28 @@
 	.videoContainer {
 		height: 350px;
 	}
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (min-device-pixel-ratio: 1.5) {
-	/* Styles */
+	.exchange-title {
+		font-size: 2.5rem;
+	}
+	.exchange-content {
+		font-size: 1.25rem;
+	}
+	/* learn more button */
+	.learn-more-class button.learn-more {
+		width: 18rem;
+		/* height: auto; */
+	}
+	.jump-button-container .circle {
+		width: 5em;
+		height: 5rem;
+		border-radius: 50%;
+	}
+	.jump-button-container .circle .jumparrow {
+		left: 0.625rem;
+		width: 1.125rem;
+		height: 0.125rem;
+		font-size: 20px;
+	}
+	.jump-button-container .button-text {
+	}
 }

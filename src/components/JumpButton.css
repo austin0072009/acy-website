@@ -43,10 +43,10 @@ button.learn-more .circle .icon.jumparrow {
 	-webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	-o-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-	left: 0.625rem;
-	width: 1.125rem;
-	height: 0.125rem;
+	left: 0.8rem;
+	top: 0.6rem;
 	background: none;
+	font-size: 25px;
 }
 button.learn-more .circle .icon.jumparrow::before {
 	position: absolute;

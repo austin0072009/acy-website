@@ -97,7 +97,7 @@
 .panels__side--inner {
 	will-change: transform;
 	padding: 0 5vw;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .panels__side--inner-left {
@@ -152,12 +152,12 @@
 
 .panels__headline {
 	margin: 0;
-	font-size: 40px;
+	/* font-size: 40px; */
 	text-align: center;
 }
 
 .panels p {
-	font-size: 30px;
+	/* font-size: 30px; */
 	margin: 0;
 	font-family: "Roboto", sans-serif !important;
 }
@@ -176,7 +176,10 @@
 		text-align: center;
 	}
 
-	.panels__side--left,
+	.panels__side--left {
+		top: -25%;
+		left: 0;
+	}
 	.panels__side--right {
 		top: -25%;
 		left: 0;
