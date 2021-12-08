@@ -24,7 +24,6 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 		<div className="rounded-xl">
 			{webGLStatus ? (
 				<div className="videoContainer">
-					               
 					<iframe
 						onLoad={() => {
 							setIframeLoaded(true);
@@ -44,7 +43,6 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 						title="ACY"
 						frameBorder="0"
 					></iframe>
-					             
 				</div>
 			) : null}
 		</div>
