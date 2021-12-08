@@ -8,6 +8,7 @@ import button2 from "../assets/svgs/animatedIcons/two-key.json";
 import button2hover from "../assets/svgs/animatedIcons/two-key-hover.json";
 import liquidity from "../assets/svgs/animatedIcons/liquidity.json";
 import { JumpButton } from ".";
+import "./DualSlidingPanel.css";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -23,41 +24,10 @@ const Liquidity = ({ setIframeLoaded }) => {
 
 	return (
 		<div className="LiquidityBar">
-			<div className="flex">
-				<div
-					className="flex items-center text-gray-100 filter grayscale hover:grayscale-0 brightness-200 mb-5 hover:brightness-100 "
-					onMouseEnter={() => {
-						setIsHoverButtonTwo(true);
-						setIsClickedButtonTwo(false);
-					}}
-					onMouseLeave={() => {
-						setIsHoverButtonTwo(false);
-						setIsClickedButtonTwo(false);
-					}}
-					onClick={() => {
-						setIsHoverButtonTwo(!isHoverButtonTwo);
-						setIsClickedButtonTwo(!isClickedButtonTwo);
-					}}
-				>
-					{/* <AnimatedButtons
-						url={button2}
-						urlhover={button2hover}
-						id="button2"
-						hover={isHoverButtonTwo}
-						click={isClickedButtonTwo}
-					></AnimatedButtons>
-					<span
-						className="font-medium text-orange moveLROnHover"
-						style={{ fontSize: smallerThan568 ? 20 : 26 }}
-					>
-						<span>LIQUIDITY</span>
-					</span> */}
-				</div>
-			</div>
 			<div className="flex items-center justify-between">
-				<div className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 flex-grow">
-					<div className="px-5 py-5" style={{ height: "386px" , width:"595px" }}>
-						<div>
+				<div className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg flex-grow">
+					<div className="video-container-main py-5 ">
+						<div className="">
 							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
 						</div>
 					</div>
@@ -72,8 +42,12 @@ const Liquidity = ({ setIframeLoaded }) => {
 							linkName="Add Now"
 						></TextTab>
 					</div>
-					<div className = "liquidityLearn">
-					<JumpButton text={"Liquidity"} links = {"http://test.acy.finance/#/liquidity"}></JumpButton></div>
+					<div className="liquidityLearn">
+						<JumpButton
+							text={"Liquidity"}
+							links={"http://test.acy.finance/#/liquidity"}
+						></JumpButton>
+					</div>
 				</div>
 			</div>
 		</div>
