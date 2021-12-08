@@ -1,17 +1,16 @@
 import React from "react";
 import "./Investor.css";
+import "./DualSlidingPanel.css";
 import { useEffect } from "react";
 
 const Grapes = () => {
 	useEffect(() => {
-		
 		document.body.addEventListener("touchend", nextGeneration);
 
 		const grape = document.querySelector(".Grape");
 		const fruits = document.querySelector(".Fruits");
 
 		grape.addEventListener("click", nextGeneration);
-
 
 		const numbers = [];
 
@@ -40,9 +39,8 @@ const Grapes = () => {
 				row.append(fruit);
 			}
 			numbers.push(newGen);
-			if(fruits.childElementCount < 10)
-			fruits.append(row);
-			
+			if (fruits.childElementCount < 10) fruits.append(row);
+
 			grape.style.setProperty("--layers", numbers.length);
 		}
 

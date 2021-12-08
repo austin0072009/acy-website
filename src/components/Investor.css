@@ -1,18 +1,16 @@
-.investor-container {
+.grapes-container {
 	/* margin-top: 150px; */
 }
 
 .grapes {
-    font-family: inherit;
-    font-size: inherit;
-    box-sizing: inherit;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-    width: 384px;
-    height: 289px;
-	background-color: #cf8;
+	font-family: inherit;
+	font-size: inherit;
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	/* background-color: #cf8; */
 }
 .grapes html {
 	box-sizing: border-box;

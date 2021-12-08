@@ -17,6 +17,8 @@ import Conflux from "../assets/svgs/clipPathHover/Conflux.svg";
 import Mobius from "../assets/svgs/clipPathHover/Mobius.svg";
 import TokenInsight from "../assets/svgs/clipPathHover/TokenInsight.svg";
 import Coindesk from "../assets/svgs/clipPathHover/Coindesk.svg";
+import SCI from "../assets/svgs/clipPathHover/SCI.svg";
+import Rainbow from "../assets/svgs/clipPathHover/Rainbow.svg";
 
 const openInNewTab = url => {
 	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -459,12 +461,7 @@ const ClipPathHover = () => {
 								</g>
 							</svg>
 						</div>
-						<div
-							class="item"
-							onClick={() => {
-								openInNewTab("");
-							}}
-						>
+						<div class="item">
 							<svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
 								<defs>
 									<clipPath id="clip-11">
@@ -636,6 +633,74 @@ const ClipPathHover = () => {
 										preserveAspectRatio="xMinYMin slice"
 										width="100%"
 										href={Coindesk}
+									></image>
+
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* OXbull */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div class="item">
+							<svg
+								ref={svg_logo}
+								preserveAspectRatio="xMidYMid slice"
+								viewBox="0 0 300 200"
+							>
+								<defs>
+									<clipPath id="clip-16">
+										<circle
+											cx="-0.27272728085517883"
+											cy="57.8863639831543"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									SCI
+								</text>
+								<g clip-path="url(#clip-16)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={SCI}
+									></image>
+
+									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+										{/* OXbull */}
+									</text>
+								</g>
+							</svg>
+						</div>
+						<div class="item">
+							<svg
+								ref={svg_logo}
+								preserveAspectRatio="xMidYMid slice"
+								viewBox="0 0 300 200"
+							>
+								<defs>
+									<clipPath id="clip-17">
+										<circle
+											cx="-0.27272728085517883"
+											cy="57.8863639831543"
+											fill="#000"
+											r="125px"
+										></circle>
+									</clipPath>
+								</defs>
+								<text class="svg-text" dy=".3em" x="50%" y="50%">
+									Rainbow
+								</text>
+								<g clip-path="url(#clip-17)">
+									<rect width="300" height="200" fill="white" />
+									<image
+										height="100%"
+										preserveAspectRatio="xMinYMin slice"
+										width="100%"
+										href={Rainbow}
 									></image>
 
 									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
