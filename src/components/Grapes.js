@@ -42,6 +42,7 @@ const Grapes = () => {
 			numbers.push(newGen);
 			if(fruits.childElementCount < 10)
 			fruits.append(row);
+			
 			grape.style.setProperty("--layers", numbers.length);
 		}
 

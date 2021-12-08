@@ -443,8 +443,9 @@ const Exchange = ({ iframeLoaded }) => {
 							iframeLoaded={iframeLoaded}
 						></TextTab>
 					</div>
-					<JumpButton links = {"http://test.acy.finance/#/exchange"}></JumpButton>
-
+					<div className = "exchangeLearn">
+					<JumpButton text={"Exchange"}links = {"http://test.acy.finance/#/exchange"}></JumpButton>
+</div>
 				</div>
 			</div>
 		</div>

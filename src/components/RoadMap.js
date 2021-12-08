@@ -149,7 +149,7 @@ const RoadMap = () => {
 						</svg>
 						<ul class="roadmap-events">
 							<li class="roadmap-event">
-								<div class="roadmap-vline"></div>API/SDK for ecosystems
+								<div class="roadmap-vline"></div>API/SDK Launch
 							</li>
 						</ul>
 					</li>
@@ -161,10 +161,9 @@ const RoadMap = () => {
 							description={data[4].description}
 							deliverables={data[4].deliverables}
 						></DetailCard>
-						{/* <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg> */}
+						<svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
 						<ul class="roadmap-events">
-							{/* <li class="roadmap-event"><div class="roadmap-vline"></div>Social media and marketing</li>
-            <li class="roadmap-event"><div class="roadmap-vline"></div>Escrow services</li> */}
+							<li class="roadmap-event"><div class="roadmap-vline"></div>Mobile App Launch</li>
 						</ul>
 					</li>
 				</ol>

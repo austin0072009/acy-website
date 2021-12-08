@@ -16,7 +16,7 @@ const DualSlidingPanel2 = () => {
 						<Investor></Investor>
 					</div>
 					<div class="panels__side panels__side--inner flex-col">
-						<h1 class="panels__headline">CRYPTO FARMER</h1>
+						<h1 class="panels__headline">CRYPTO FARMERS</h1>
 						<p>Enable farmers to earn the stable return</p>
 						<svg
 							id = "clickleft2"
@@ -33,7 +33,7 @@ const DualSlidingPanel2 = () => {
 				</article>
 				<article class="panels__side panels2__side--right">
 					<div class="panels__side panels__side--inner flex-col">
-						<h1 class="panels__headline">CRYPTO INVESTOR</h1>
+						<h1 class="panels__headline">CRYPTO INVESTORS</h1>
 						<p>Enable investors to seek the amazing profit</p>
 						<svg
 							id = "clickright2"

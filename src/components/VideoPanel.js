@@ -32,10 +32,12 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 						style={{
 							// width: "100%",
 							// height: "100%", // maxHeight: isMobile ? "700px" : "1000px",
-							width: "100%",
+							width: "595px",
 							position: "relative",
-							height: "100%",
-							top: "-24px",
+							height: "386px",
+
+
+    						top: "-55px",
 						}}
 						className="rounded-xl"
 						src="https://api.acy.finance/app.html"
