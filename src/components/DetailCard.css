@@ -80,17 +80,16 @@
 	color: #fff;
 	background-color: #29292c;
 	display: block;
-	width: 10vw;
-	height: 5vw;
+	width: auto;
+	height: auto;
 	overflow: visible;
 	position: absolute;
 	cursor: pointer;
 	font-family: "Karla", sans-serif;
 	visibility: hidden;
 	z-index: 10000000000 !important;
+	padding: 10px;
 }
-
-
 
 /* .DetailCard:hover .content {
 	height: 3.5em;
@@ -103,7 +102,6 @@
 	/* margin: 0 0 10px 0; */
 	text-align: center;
 }
-
 
 /* .DetailCard:hover .deliverables {
 	height: 3em;
