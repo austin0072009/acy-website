@@ -165,13 +165,13 @@
 @media (max-width: 640px) {
 	.panels {
 		width: 100%;
-		height: 200vh;
+		height: 1332px;
 	}
 
 	.panels__side {
 		float: none;
 		width: 100%;
-		height: 100vh;
+		height: 666px;
 		display: block;
 		/* text-align: center; */
 	}
@@ -575,8 +575,8 @@
 	.panels2__side--inner-left,
 	.panels2__side--inner-right,
 	.panels2__side--inner {
-		height: 50vh;
-		padding: 2vh 8vw;
+		height: 333px;
+		padding: 2vh 2vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
