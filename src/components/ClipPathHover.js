@@ -1,5 +1,6 @@
 import React from "react";
 import "./ClipPathHover.css";
+import "./RoadMap.css";
 import { useRef, useEffect, useState } from "react";
 import OxBull from "../assets/svgs/clipPathHover/Oxbull.svg";
 import LightningProtocol from "../assets/svgs/clipPathHover/LightningProtocol.svg";
@@ -106,7 +107,7 @@ const ClipPathHover = () => {
 
 	return (
 		<div className="clip-path-hover mb-40">
-			<div className="backers-title">Backer</div>
+			<div className="roadmap-title">Backer</div>
 
 			<main
 				className={
