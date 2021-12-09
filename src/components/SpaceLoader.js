@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import "./SpaceLoader.css";
-import { TextTab,JumpButton } from ".";
+import "./DualSlidingPanel.css";
+import { TextTab, JumpButton } from ".";
 
 const SpaceLoader = () => {
 	gsap.fromTo(
@@ -127,8 +128,8 @@ const SpaceLoader = () => {
 
 	return (
 		<div className="flex items-center justify-between">
-			<div className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow">
-				<div className="Spacehtml">
+			<div className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg py-5 h-auto flex-grow">
+				<div className="Spacehtml video-animation-container">
 					<div className="Spacebody">
 						<div className="SpaceBar">
 							{/* <div class="sky">
@@ -548,7 +549,10 @@ const SpaceLoader = () => {
 					community."
 					/>
 				</div>
-  				<JumpButton text = {"Launch"}links={"http://test.acy.finance/#/launchpad"}></JumpButton>
+				<JumpButton
+					text={"Launch"}
+					links={"http://test.acy.finance/#/launchpad"}
+				></JumpButton>
 				{/* <div className="mt-3 exchange-content">
 					
 				</div> */}

@@ -173,7 +173,7 @@
 		width: 100%;
 		height: 100vh;
 		display: block;
-		text-align: center;
+		/* text-align: center; */
 	}
 
 	.panels__side--left {
@@ -229,7 +229,7 @@
 	.panels__side--inner-right,
 	.panels__side--inner {
 		height: 333px;
-		padding: 2vh 8vw;
+		padding: 2vh 2vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -446,7 +446,6 @@
 .panels2__side--inner-right,
 .panels2__side--inner {
 	will-change: transform;
-	padding: 0 5vw;
 	height: 80vh;
 }
 
