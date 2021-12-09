@@ -120,6 +120,8 @@
 	font-style: italic;
 } */
 
-.detail-card-odd {
-	bottom: 0;
+@media screen and (max-width: 1200px) {
+	.detail-card-odd {
+		bottom: 0;
+	}
 }

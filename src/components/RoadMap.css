@@ -503,3 +503,9 @@ $vline-circle-color: $text-color;
 	display: flex;
 	flex-direction: column;
 }
+
+@media (max-width: 1200px) {
+	.roadmap-event {
+		left: 0;
+	}
+}
