@@ -100,7 +100,6 @@ var Panels2 = (function () {
 
 console.log("go");
 
-
 window.onload = () => {
 	console.log(document.getElementById("Neuro"));
 	if (document.readyState === "complete") NeuroSynth();
@@ -244,7 +243,7 @@ const Main = () => {
 					<div id="Neuro" className="NeuroBar z-0" />
 
 					<Documentation style={{ zIndex: 30 }}></Documentation>
-					<Governance ></Governance>
+					<Governance></Governance>
 				</div>
 			</div>
 		</div>

@@ -445,12 +445,12 @@ $vline-circle-color: $text-color;
 	}
 }
 .roadmap-event {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    left: -39px;
-    padding: 20px 0;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	left: -39px;
+	padding: 20px 0;
 }
 .roadmap-event::before {
 	content: "";
@@ -499,8 +499,13 @@ $vline-circle-color: $text-color;
 
 /*# sourceMappingURL=RoadMap.css.map */
 
-
-.DocumentationBar{
+.DocumentationBar {
 	display: flex;
 	flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+	.roadmap-event {
+		left: 0;
 	}
+}
