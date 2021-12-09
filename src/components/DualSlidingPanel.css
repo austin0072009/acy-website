@@ -98,7 +98,7 @@
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 640px) and (max-device-width: 992px) {
+@media only screen and (min-width: 640px) and (max-width: 992px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 24px;
@@ -152,7 +152,7 @@
 	}
 }
 
-@media only screen and (min-device-width: 992px) and (max-device-width: 1280px) {
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 24px;
@@ -207,7 +207,7 @@
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1281px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 30px;
