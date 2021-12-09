@@ -88,7 +88,7 @@ const Exchange = ({ iframeLoaded }) => {
 					className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg px-5 py-5 h-auto flex-grow"
 					style={{ backgroundColor: "rgba(235, 92, 32, 0.7)" }}
 				>
-					<div className="px-5 py-5" style={{ width: "100%", height: "100%" }}>
+					<div className="px-5 py-5" style={{  }}>
 						<div
 							style={{
 								background: "#000000",
@@ -99,6 +99,9 @@ const Exchange = ({ iframeLoaded }) => {
 							<div
 								style={
 									{
+							width: "24vw",
+							height: "16vw",
+							
 										// background: '-webkit-radial-gradient( rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 1%, rgba(0, 0, 0, 0.7) )'
 									}
 								}

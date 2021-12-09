@@ -26,9 +26,18 @@ const Liquidity = ({ setIframeLoaded }) => {
 		<div className="LiquidityBar">
 			<div className="flex items-center justify-between">
 				<div className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg flex-grow gap-y-5 py-5">
-					<div className="video-container-main">
+					<div className="">
 						<div className="">
-							<VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel>
+							<VideoPanel setIframeLoaded={setIframeLoaded} style={{
+							width: "24vw",
+							height: "16vw",
+							// maxHeight: isMobile ? "700px" : "1000px",
+							// width: "595px",
+							// position: "relative",
+							// height: "386px",
+
+							// top: "-55px",
+						}}></VideoPanel>
 						</div>
 					</div>
 

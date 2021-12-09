@@ -23,14 +23,14 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 	return (
 		<div className="rounded-xl">
 			{webGLStatus ? (
-				<div className="videoContainer">
+				<div className="">
 					<iframe
 						onLoad={() => {
 							setIframeLoaded(true);
 						}}
 						style={{
-							width: "100%",
-							height: "100%",
+							width: "24vw",
+							height: "16vw",
 							// maxHeight: isMobile ? "700px" : "1000px",
 							// width: "595px",
 							// position: "relative",
