@@ -170,10 +170,10 @@
 @media only screen and (min-device-width: 640px) and (max-device-width: 992px) {
 	/* Styles */
 	.rolling-title h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	.rolling-title h2 {
-		font-size: 1.125rem;
+		font-size: 1rem;
 	}
 	.rolltext {
 		width: 450px;
@@ -184,10 +184,10 @@
 @media only screen and (min-device-width: 993px) and (max-device-width: 1280px) {
 	/* Styles */
 	.rolling-title h1 {
-		font-size: 4rem;
+		font-size: 5rem;
 	}
 	.rolling-title h2 {
-		font-size: 1.125rem;
+		font-size: 1.4rem;
 	}
 	.rolltext {
 		width: 450px;

@@ -83,7 +83,7 @@
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-device-width: 640px) {
 	#carousel figure {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	#carousel-wrapper,
 	#carousel figure {
@@ -149,7 +149,7 @@
 	}
 
 	.roller {
-		margin-top: 20px;
+		margin-top: 25px;
 	}
 }
 
@@ -157,6 +157,35 @@
 	/* Styles */
 	#carousel figure {
 		font-size: 33px;
+	}
+	#carousel-wrapper,
+	#carousel figure {
+		height: 60px;
+		line-height: 60px;
+		color: white;
+	}
+
+	#carousel figure:nth-of-type(1) {
+		-webkit-transform: rotateX(0deg) translateZ(52px);
+	}
+	#carousel figure:nth-of-type(2) {
+		-webkit-transform: rotateX(60deg) translateZ(52px);
+	}
+	#carousel figure:nth-of-type(3) {
+		-webkit-transform: rotateX(120deg) translateZ(52px);
+	}
+	#carousel figure:nth-of-type(4) {
+		-webkit-transform: rotateX(180deg) translateZ(52px);
+	}
+	#carousel figure:nth-of-type(5) {
+		-webkit-transform: rotateX(240deg) translateZ(52px);
+	}
+	#carousel figure:nth-of-type(6) {
+		-webkit-transform: rotateX(300deg) translateZ(52px);
+	}
+
+	.roller {
+		margin-top: 25px;
 	}
 }
 
@@ -166,6 +195,35 @@
 	#carousel figure {
 		font-size: 45px;
 	}
+	#carousel-wrapper,
+	#carousel figure {
+		height: 65px;
+		line-height: 65px;
+		color: white;
+	}
+
+	#carousel figure:nth-of-type(1) {
+		-webkit-transform: rotateX(0deg) translateZ(56px);
+	}
+	#carousel figure:nth-of-type(2) {
+		-webkit-transform: rotateX(60deg) translateZ(56px);
+	}
+	#carousel figure:nth-of-type(3) {
+		-webkit-transform: rotateX(120deg) translateZ(56px);
+	}
+	#carousel figure:nth-of-type(4) {
+		-webkit-transform: rotateX(180deg) translateZ(56px);
+	}
+	#carousel figure:nth-of-type(5) {
+		-webkit-transform: rotateX(240deg) translateZ(56px);
+	}
+	#carousel figure:nth-of-type(6) {
+		-webkit-transform: rotateX(300deg) translateZ(56px);
+	}
+
+	.roller {
+		margin-top: 40px;
+	}
 }
 
 /* Large screens ----------- */
@@ -173,5 +231,35 @@
 	/* Styles */
 	#carousel figure {
 		font-size: 60px;
+	}
+
+	#carousel-wrapper,
+	#carousel figure {
+		height: 80px;
+		line-height: 80px;
+		color: white;
+	}
+
+	#carousel figure:nth-of-type(1) {
+		-webkit-transform: rotateX(0deg) translateZ(70px);
+	}
+	#carousel figure:nth-of-type(2) {
+		-webkit-transform: rotateX(60deg) translateZ(70px);
+	}
+	#carousel figure:nth-of-type(3) {
+		-webkit-transform: rotateX(120deg) translateZ(70px);
+	}
+	#carousel figure:nth-of-type(4) {
+		-webkit-transform: rotateX(180deg) translateZ(70px);
+	}
+	#carousel figure:nth-of-type(5) {
+		-webkit-transform: rotateX(240deg) translateZ(70px);
+	}
+	#carousel figure:nth-of-type(6) {
+		-webkit-transform: rotateX(300deg) translateZ(70px);
+	}
+
+	.roller {
+		margin-top: 50px;
 	}
 }
