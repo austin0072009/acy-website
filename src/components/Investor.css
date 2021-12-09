@@ -10,7 +10,10 @@
 	margin: 0;
 	overflow: hidden;
 	position: relative;
-	/* background-color: #cf8; */
+	background-color: #cf8;
+	width: 24vw;
+	height: 16vw;
+	border-radius: 0.5em;
 }
 .grapes html {
 	box-sizing: border-box;
@@ -127,7 +130,7 @@
 	height: 5rem;
 	transform: scale(1.5);
 	position: relative;
-	background-color: #9e2e2e;
+	background-color: purple;
 	border-radius: 100%;
 	border: solid 2px rgba(0, 0, 0, 0.3);
 	display: flex;
