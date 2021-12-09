@@ -228,7 +228,7 @@
 	.panels__side--inner-left,
 	.panels__side--inner-right,
 	.panels__side--inner {
-		height: 50vh;
+		height: 333px;
 		padding: 2vh 8vw;
 		display: flex;
 		align-items: center;
