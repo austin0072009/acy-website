@@ -33,6 +33,16 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 640px) {
+	/* Panel container */
+	.panel-container-1 {
+		width: auto;
+		height: 666px;
+	}
+	.panel-container-2 {
+		width: auto;
+		height: 666px;
+	}
+
 	/* Styles */
 	.panels__headline {
 		font-size: 28px;
@@ -41,12 +51,12 @@
 	.panels p {
 		font-size: 16px;
 	}
-	/* .panel-container {
-		height: 150vw;
-	} */
-	/* .panels__side {
-		height: 150vw;
-	} */
+	.panel-container {
+		height: 200px;
+	}
+	.panels__side {
+		height: 200px;
+	}
 	.videoContainer {
 		height: 200px;
 	}
