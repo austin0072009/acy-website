@@ -10,7 +10,8 @@
 	margin: 0;
 	overflow: hidden;
 	position: relative;
-	background-color: #cf8;
+	/* background-color: #cf8; */
+	background-color: black;
 	width: 24vw;
 	height: 16vw;
 	border-radius: 0.5em;
