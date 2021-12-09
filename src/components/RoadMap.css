@@ -449,7 +449,7 @@ $vline-circle-color: $text-color;
 	align-items: center;
 	position: relative;
 	z-index: 1;
-	left: -39px;
+	/* left: -39px; */
 	padding: 20px 0;
 }
 .roadmap-event::before {
