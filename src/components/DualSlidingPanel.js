@@ -1,10 +1,14 @@
 import "./style.css";
 import "./DualSlidingPanel.css";
-import { Exchange, Liquidity,JumpButton} from ".";
+import { Exchange, Liquidity, JumpButton } from ".";
 import { useState } from "react";
 
-
-const DualSlidingPanel = () => {
+const DualSlidingPanel = ({
+	panelOneLeftActive,
+	setPanelOneLeftActive,
+	panelOneRightActive,
+	setPanelOneRightActive,
+}) => {
 	let [iframeLoaded, setIframeLoaded] = useState(false);
 
 	return (
@@ -16,7 +20,11 @@ const DualSlidingPanel = () => {
 						<Exchange></Exchange>
 						{/* <JumpButton></JumpButton> */}
 					</div>
-					<div class="panels__side panels__side--inner flex-col" id = "clickleft">
+					<div
+						class="panels__side panels__side--inner flex-col"
+						id="clickleft"
+						onClick={() => setPanelOneLeftActive(!panelOneLeftActive)}
+					>
 						<h1 class="panels__headline">CRYPTO TRADERS</h1>
 						<p>Enable traders to get the optimal output</p>
 						{/* <svg
@@ -32,7 +40,11 @@ const DualSlidingPanel = () => {
 					</div>
 				</article>
 				<article class="panels__side panels__side--right">
-					<div class="panels__side panels__side--inner flex-col" id = "clickright">
+					<div
+						class="panels__side panels__side--inner flex-col"
+						id="clickright"
+						onClick={() => setPanelOneRightActive(!panelOneRightActive)}
+					>
 						<h1 class="panels__headline">LIQUIDITY MINERS</h1>
 						<p>Enable miners to earn more transaction fees</p>
 
