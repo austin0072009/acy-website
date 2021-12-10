@@ -23,9 +23,16 @@ var Element = Scroll.Element;
 function App() {
 	const ScrollEvent = event => {
 		console.log(event.nativeEvent.srcElement.scrollTop);
-
-		if (event.nativeEvent.srcElement.scrollTop >= 572) setVisible(true);
-		else setVisible(false);
+		console.log("width: ", window.innerWidth);
+		if (window.innerWidth <= 640) {
+			if (event.nativeEvent.srcElement.scrollTop >= 0) {
+				setVisible(true);
+			} else setVisible(false);
+		} else {
+			if (event.nativeEvent.srcElement.scrollTop >= 640) {
+				setVisible(true);
+			} else setVisible(false);
+		}
 	};
 	let [menuActive, setMenuActive] = useState(false);
 	let [visible, setVisible] = useState(false);
