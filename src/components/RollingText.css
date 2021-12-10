@@ -43,7 +43,7 @@
 	position: relative;
 	/* overflow: hidden; */
 	overflow: visible;
-	width: 75%;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
