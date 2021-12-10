@@ -5,17 +5,25 @@ import { SpaceLoader, TextTab, Investor } from ".";
 import HappyFarm from "./HappyFarm";
 import { Space } from "antd";
 
-const DualSlidingPanel2 = () => {
+const DualSlidingPanel2 = ({
+	panelTwoLeftActive,
+	setPanelTwoLeftActive,
+	panelTwoRightActive,
+	setPanelTwoRightActive,
+}) => {
 	return (
 		<div class="panel-container-2">
 			<section class="panels">
 				<article class="panels__side panels2__side--left">
 					<div class="panels__side panels2__side--inner-left">
-
 						{/* <p>"Changes and progress very rarely are gifts from above. They come out of struggles from below."</p> */}
 						<Investor></Investor>
 					</div>
-					<div class="panels__side panels__side--inner flex-col" id = "clickleft2">
+					<div
+						class="panels__side panels__side--inner flex-col"
+						id="clickleft2"
+						onClick={() => setPanelTwoLeftActive(!panelTwoLeftActive)}
+					>
 						<h1 class="panels__headline">CRYPTO FARMERS</h1>
 						<p>Enable farmers to earn the stable return</p>
 						{/* <svg
@@ -32,7 +40,11 @@ const DualSlidingPanel2 = () => {
 					</div>
 				</article>
 				<article class="panels__side panels2__side--right">
-					<div class="panels__side panels__side--inner flex-col" id = "clickright2">
+					<div
+						class="panels__side panels__side--inner flex-col"
+						id="clickright2"
+						onClick={() => setPanelTwoRightActive(!panelTwoRightActive)}
+					>
 						<h1 class="panels__headline">CRYPTO INVESTORS</h1>
 						<p>Enable investors to seek the amazing profit</p>
 						{/* <svg

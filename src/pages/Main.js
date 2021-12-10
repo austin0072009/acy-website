@@ -28,75 +28,36 @@ axios.defaults.baseURL = "https://api.acy.finance/";
 // if (document.readyState === 'complete') NeuroSynth();
 // else window.addEventListener('load', NeuroSynth());
 
-var Panels = (function () {
-	var panelLeft = document.querySelector(".panels__side--left");
-	var panelRight = document.querySelector(".panels__side--right");
-	var clickleft = document.getElementById("clickleft");
-	var clickright = document.getElementById("clickright");
+// var Panels = (function () {
 
-	var openLeft = function () {
-		panelLeft.classList.toggle("panels__side--left-active");
-		panelRight.classList.toggle("panels__side--right-hidden");
-	};
+// 	var init = function () {
+// 		panelLeft = document.querySelector(".panels__side--left");
+// 		panelRight = document.querySelector(".panels__side--right");
+// 		clickleft = document.getElementById("clickleft");
+// 		clickright = document.getElementById("clickright");
+// 		console.log(panelLeft);
 
-	var openRight = function () {
-		panelRight.classList.toggle("panels__side--right-active");
-		panelLeft.classList.toggle("panels__side--left-hidden");
-	};
+// 	};
+// 	return {
+// 		init: init,
+// 	};
+// })();
 
-	var bindActions = function () {
-		clickleft.addEventListener("click", openLeft, false);
-		clickright.addEventListener("click", openRight, false);
-	};
+// var Panels2 = (function () {
 
-	var init = function () {
-		panelLeft = document.querySelector(".panels__side--left");
-		panelRight = document.querySelector(".panels__side--right");
-		clickleft = document.getElementById("clickleft");
-		clickright = document.getElementById("clickright");
-		console.log(panelLeft);
+// 	var init = function () {
+// 		panelLeft = document.querySelector(".panels2__side--left");
+// 		panelRight = document.querySelector(".panels2__side--right");
+// 		clickleft = document.getElementById("clickleft2");
+// 		clickright = document.getElementById("clickright2");
+// 		console.log(panelLeft);
 
-		bindActions();
-	};
-	return {
-		init: init,
-	};
-})();
-
-var Panels2 = (function () {
-	var panelLeft = document.querySelector(".panels2__side--left");
-	var panelRight = document.querySelector(".panels2__side--right");
-	var clickleft = document.getElementById("clickleft2");
-	var clickright = document.getElementById("clickright2");
-
-	var openLeft = function () {
-		panelLeft.classList.toggle("panels2__side--left-active");
-		panelRight.classList.toggle("panels2__side--right-hidden");
-	};
-
-	var openRight = function () {
-		panelRight.classList.toggle("panels2__side--right-active");
-		panelLeft.classList.toggle("panels2__side--left-hidden");
-	};
-
-	var bindActions = function () {
-		clickleft.addEventListener("click", openLeft, false);
-		clickright.addEventListener("click", openRight, false);
-	};
-
-	var init = function () {
-		panelLeft = document.querySelector(".panels2__side--left");
-		panelRight = document.querySelector(".panels2__side--right");
-		clickleft = document.getElementById("clickleft2");
-		clickright = document.getElementById("clickright2");
-		console.log(panelLeft);
-
-		bindActions();
-	};
-	return {
-		init: init,
-	};
-})();
+// 		bindActions();
+// 	};
+// 	return {
+// 		init: init,
+// 	};
+// })();
 
 console.log("go");
 
@@ -104,8 +65,8 @@ window.onload = () => {
 	console.log(document.getElementById("Neuro"));
 	if (document.readyState === "complete") NeuroSynth();
 	else window.addEventListener("load", NeuroSynth());
-	Panels.init();
-	Panels2.init();
+	// Panels.init();
+	// Panels2.init();
 
 	// setInterval(function () {
 	// 	const show = document.querySelector('span[data-show]')
@@ -189,8 +150,182 @@ window.onload = () => {
 		}
 	})();
 };
+var intializer = 0;
+var panelOneLeftActiveVar = false;
+var panelOneRightActiveVar = false;
+var panelTwoLeftActiveVar = false;
+var panelTwoRightActiveVar = false;
+var ignore = false;
 
 const Main = () => {
+	const [panelOneLeftActive, setPanelOneLeftActive] = useState(false);
+	const [panelOneRightActive, setPanelOneRightActive] = useState(false);
+	const [panelTwoLeftActive, setPanelTwoLeftActive] = useState(false);
+	const [panelTwoRightActive, setPanelTwoRightActive] = useState(false);
+
+	var panelLeft,
+		panelRight,
+		clickleft,
+		clickright,
+		panelLeft2,
+		panelRight2,
+		clickleft2,
+		clickright2,
+		openLeft,
+		openRight,
+		openLeft2,
+		openRight2;
+
+	useEffect(() => {
+		panelLeft = document.querySelector(".panels__side--left");
+		panelRight = document.querySelector(".panels__side--right");
+		clickleft = document.getElementById("clickleft");
+		clickright = document.getElementById("clickright");
+		panelLeft2 = document.querySelector(".panels2__side--left");
+		panelRight2 = document.querySelector(".panels2__side--right");
+		clickleft2 = document.getElementById("clickleft2");
+		clickright2 = document.getElementById("clickright2");
+		openLeft = function () {
+			panelLeft.classList.toggle("panels__side--left-active");
+			panelRight.classList.toggle("panels__side--right-hidden");
+		};
+
+		openRight = function () {
+			panelRight.classList.toggle("panels__side--right-active");
+			panelLeft.classList.toggle("panels__side--left-hidden");
+		};
+
+		// clickleft.addEventListener("click", openLeft, false);
+		// clickright.addEventListener("click", openRight, false);
+
+		//panel 2
+
+		openLeft2 = function () {
+			panelLeft2.classList.toggle("panels2__side--left-active");
+			panelRight2.classList.toggle("panels2__side--right-hidden");
+		};
+
+		openRight2 = function () {
+			panelRight2.classList.toggle("panels2__side--right-active");
+			panelLeft2.classList.toggle("panels2__side--left-hidden");
+		};
+
+		// clickleft2.addEventListener("click", openLeft, false);
+		// clickright2.addEventListener("click", openRight, false);
+
+		//reset
+
+		console.log(
+			"Panel One Left Active: " + panelOneLeftActive + panelOneLeftActiveVar
+		);
+		console.log(
+			"Panel One Right Active: " + panelOneRightActive + panelOneRightActiveVar
+		);
+		console.log(
+			"Panel Two Left Active: " + panelTwoLeftActive + panelTwoLeftActiveVar
+		);
+		console.log(
+			"Panel Two Right Active: " + panelTwoRightActive + panelTwoRightActiveVar
+		);
+	}, [
+		panelOneLeftActive,
+		panelOneRightActive,
+		panelTwoLeftActive,
+		panelTwoRightActive,
+	]);
+
+	useEffect(() => {
+		if (ignore) {
+			ignore = false;
+			return;
+		}
+		console.log(intializer);
+		if (intializer < 4) {
+			intializer++;
+		} else {
+			// panelOneLeftActiveVar = panelOneLeftActive;
+			if (panelTwoLeftActive || panelTwoRightActive) {
+				if (panelTwoLeftActive) {
+					setPanelTwoLeftActive(false);
+					openLeft2();
+				} else {
+					setPanelTwoRightActive(false);
+					openRight2();
+				}
+				ignore = true;
+			}
+			openLeft();
+		}
+	}, [panelOneLeftActive]);
+
+	useEffect(() => {
+		if (ignore) {
+			ignore = false;
+			return;
+		}
+		// console.log(intializer);
+		if (intializer < 4) {
+			intializer++;
+		} else {
+			if (panelTwoLeftActive || panelTwoRightActive) {
+				if (panelTwoLeftActive) {
+					setPanelTwoLeftActive(false);
+					openLeft2();
+				} else {
+					setPanelTwoRightActive(false);
+					openRight2();
+				}
+				ignore = true;
+			}
+			openRight();
+		}
+	}, [panelOneRightActive]);
+
+	useEffect(() => {
+		// console.log(intializer);
+		if (ignore) {
+			ignore = false;
+			return;
+		}
+		if (intializer < 4) {
+			intializer++;
+		} else {
+			if (panelOneLeftActive || panelOneRightActive) {
+				if (panelOneLeftActive) {
+					setPanelOneLeftActive(false);
+					openLeft();
+				} else {
+					setPanelOneRightActive(false);
+					openRight();
+				}
+				ignore = true;
+			}
+			openLeft2();
+		}
+	}, [panelTwoLeftActive]);
+
+	useEffect(() => {
+		if (ignore) {
+			ignore = false;
+			return;
+		}
+		// console.log(intializer);
+		if (intializer < 4) {
+			intializer++;
+		} else {
+			if (panelOneLeftActive || panelOneRightActive) {
+				if (panelOneLeftActive) {
+					setPanelOneLeftActive(false);
+					openLeft();
+				} else {
+					setPanelOneRightActive(false);
+					openRight();
+				}
+				ignore = true;
+			}
+			openRight2();
+		}
+	}, [panelTwoRightActive]);
 	// useEffect(()=> {
 	// 	const interval = setInterval(function () {
 	// 		const show = document.querySelector('span[data-show]')
@@ -228,7 +363,12 @@ const Main = () => {
 					{/* <VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel> */}
 					{/* <Exchange iframeLoaded={iframeLoaded}></Exchange>
 					<Liquidity setIframeLoaded={setIframeLoaded}></Liquidity> */}
-					<DualSlidingPanel />
+					<DualSlidingPanel
+						panelOneLeftActive={panelOneLeftActive}
+						setPanelOneLeftActive={setPanelOneLeftActive}
+						panelOneRightActive={panelOneRightActive}
+						setPanelOneRightActive={setPanelOneRightActive}
+					/>
 					{/* <Farm></Farm>
 					<Launch></Launch>
 					<Market></Market> */}
@@ -236,7 +376,12 @@ const Main = () => {
 					<WordRotation></WordRotation>
 					<Rotating></Rotating>
 					</div> */}
-					<DualSlidingPanel2 />
+					<DualSlidingPanel2
+						panelTwoLeftActive={panelTwoLeftActive}
+						setPanelTwoLeftActive={setPanelTwoLeftActive}
+						panelTwoRightActive={panelTwoRightActive}
+						setPanelTwoRightActive={setPanelTwoRightActive}
+					/>
 
 					<RoadMap></RoadMap>
 					<ClipPathHover />
