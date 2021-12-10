@@ -452,6 +452,7 @@
 .panels2__side--inner {
 	will-change: transform;
 	height: 80vh;
+	padding: 0 5vw;
 }
 
 .panels2__side--inner-left {

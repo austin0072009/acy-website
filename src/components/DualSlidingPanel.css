@@ -30,6 +30,17 @@
 	width: 100%;
 }
 
+/* arrow */
+.arrow-container {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.arrow-container .arrow {
+	width: 4vw;
+	height: 4vw;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width: 640px) {
 	/* Panel container */
@@ -99,6 +110,11 @@
 		width: 500px;
 		height: 250px;
 	} */
+
+	.arrow-container .arrow {
+		width: 35px;
+		height: 35px;
+	}
 }
 
 /* iPads (portrait and landscape) ----------- */
