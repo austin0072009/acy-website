@@ -109,11 +109,11 @@
 	}
 	/* Styles */
 	.panels__headline {
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	.panels p {
-		font-size: 14px;
+		font-size: 11px;
 	}
 	.panel-container {
 		height: 35vw;
@@ -169,11 +169,11 @@
 
 	/* Styles */
 	.panels__headline {
-		font-size: 24px;
+		font-size: 26px;
 	}
 
 	.panels p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.panel-container {
 		height: 35vw;
@@ -238,7 +238,7 @@
 	}
 
 	.panels p {
-		font-size: 22px;
+		font-size: 17px;
 	}
 	.panel-container {
 		height: 35vw;
@@ -295,7 +295,7 @@
 	}
 	/* Styles */
 	.panels__headline {
-		font-size: 55px;
+		font-size: 54px;
 	}
 
 	.panels p {
