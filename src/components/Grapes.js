@@ -54,7 +54,7 @@ const Grapes = () => {
 		nextGeneration();
 	}, []);
 	return (
-		<div className="grapes">
+		<div className="grapes video-animation-container">
 			<figure class="Grape">
 				<figcaption class="Leaves">
 					<div class="Leaf"></div>

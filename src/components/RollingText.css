@@ -6,7 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
-.main {
+.rolling-main {
 	height: 670px;
 	width: 100%;
 	display: flex;
@@ -21,6 +21,8 @@
 	color: #f1faee;
 	font-size: 4rem;
 	font-family: "Arvo";
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
 }
 
 .rolling-text h2 {
@@ -31,20 +33,22 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
 		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
 		sans-serif;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
 }
 
 .roller {
-    height: 10.125rem;
-    line-height: 4rem;
-    position: relative;
-    /* overflow: hidden; */
-    overflow: visible;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #1d3557;
-	margin-top: 30px;
+	/* height: 10.125rem; */
+	line-height: 4rem;
+	position: relative;
+	/* overflow: hidden; */
+	overflow: visible;
+	width: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1d3557;
+	/* margin-top: 30px; */
 }
 
 #spare-time {
@@ -129,14 +133,14 @@
 	background-color: #70ba33;
 }
 .red {
-	background-color: #C6224E;
+	background-color: #c6224e;
 }
 
 .yellow {
 	background-color: #e29227;
 }
 
-.darkgreen{
+.darkgreen {
 	background-color: #1c9965;
 }
 /* Rolling Text Media Queries */
@@ -144,11 +148,11 @@
 	margin: 5px;
 }
 .rolling-title h2 {
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media only screen and (max-device-width: 640px) {
 	/* Styles */
 	.rolling-title h1 {
 		font-size: 2.5rem;
@@ -159,39 +163,17 @@
 	.rolltext {
 		width: 450px;
 		font-size: 2.5rem;
-	}
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-	/* Styles */
-	.rolling-title h1 {
-		font-size: 2.5rem;
-	}
-	.rolling-title h2 {
-		font-size: 0.75rem;
-	}
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-	/* Styles */
-	.rolling-title h1 {
-		font-size: 2.5rem;
-	}
-	.rolling-title h2 {
-		font-size: 0.625rem;
 	}
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1224px) {
+@media only screen and (min-device-width: 640px) and (max-device-width: 992px) {
 	/* Styles */
 	.rolling-title h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	.rolling-title h2 {
-		font-size: 1.125rem;
+		font-size: 1rem;
 	}
 	.rolltext {
 		width: 450px;
@@ -199,30 +181,22 @@
 	}
 }
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 993px) and (max-device-width: 1280px) {
 	/* Styles */
 	.rolling-title h1 {
 		font-size: 5rem;
 	}
 	.rolling-title h2 {
-		font-size: 1.25rem;
+		font-size: 1.4rem;
 	}
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-	/* Styles */
-	.rolling-title h1 {
-		font-size: 4rem;
-	}
-	.rolling-title h2 {
-		font-size: 1.125rem;
+	.rolltext {
+		width: 450px;
+		font-size: 2.5rem;
 	}
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1280px) {
 	/* Styles */
 	.rolling-title h1 {
 		font-size: 5rem;
@@ -259,5 +233,3 @@
 	only screen and (min-device-pixel-ratio: 1.5) {
 	/* Styles */
 }
-
-

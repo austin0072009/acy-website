@@ -54,6 +54,7 @@ const RoadMap = () => {
 							title={data[0].title}
 							description={data[0].description}
 							deliverables={data[0].deliverables}
+							odd={false}
 						></DetailCard>
 
 						<div class="roadmap-date">December,2021</div>
@@ -79,6 +80,7 @@ const RoadMap = () => {
 							title={data[1].title}
 							description={data[1].description}
 							deliverables={data[1].deliverables}
+							odd={true}
 						></DetailCard>
 						<div class="roadmap-date">January to March, 2022</div>
 						<svg
@@ -105,6 +107,7 @@ const RoadMap = () => {
 							title={data[2].title}
 							description={data[2].description}
 							deliverables={data[2].deliverables}
+							odd={false}
 						></DetailCard>
 						<div class="roadmap-date">April to June, 2022</div>
 						<svg
@@ -135,6 +138,7 @@ const RoadMap = () => {
 							title={data[3].title}
 							description={data[3].description}
 							deliverables={data[3].deliverables}
+							odd={true}
 						></DetailCard>
 						<svg
 							class="roadmap-swirly"
@@ -160,10 +164,23 @@ const RoadMap = () => {
 							title={data[4].title}
 							description={data[4].description}
 							deliverables={data[4].deliverables}
+							odd={false}
 						></DetailCard>
-						<svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
+						<svg
+							class="roadmap-swirly"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlnsXlink="http://www.w3.org/1999/xlink"
+							preserveAspectRatio="none"
+							viewBox="-2 0 54 80"
+						>
+							<path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path>
+							<path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path>
+						</svg>
 						<ul class="roadmap-events">
-							<li class="roadmap-event"><div class="roadmap-vline"></div>Mobile App Launch</li>
+							<li class="roadmap-event even">
+								<div class="roadmap-vline"></div>Mobile App Launch
+							</li>
 						</ul>
 					</li>
 				</ol>

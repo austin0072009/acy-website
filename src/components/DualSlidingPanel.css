@@ -33,6 +33,16 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 640px) {
+	/* Panel container */
+	.panel-container-1 {
+		width: auto;
+		height: 666px;
+	}
+	.panel-container-2 {
+		width: auto;
+		height: 666px;
+	}
+
 	/* Styles */
 	.panels__headline {
 		font-size: 28px;
@@ -41,16 +51,20 @@
 	.panels p {
 		font-size: 16px;
 	}
-	/* .panel-container {
-		height: 150vw;
-	} */
-	/* .panels__side {
-		height: 150vw;
-	} */
+	.panel-container {
+		height: 200px;
+	}
+	.panels__side {
+		height: 200px;
+	}
 	.videoContainer {
 		height: 200px;
 	}
-
+	/* container for video/animation/games */
+	.video-animation-container {
+		width: 250px;
+		height: 150px;
+	}
 	.exchange-title {
 		font-size: 1.75rem;
 	}
@@ -81,24 +95,14 @@
 	}
 	/* Farm */
 	/* Grapes */
-	.grapes {
+	/* .grapes {
 		width: 500px;
 		height: 250px;
-	}
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-	/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-	/* Styles */
+	} */
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 640px) and (max-device-width: 992px) {
+@media only screen and (min-width: 640px) and (max-width: 992px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 24px;
@@ -115,6 +119,11 @@
 	}
 	.videoContainer {
 		height: 115px;
+	}
+	/* container for video/animation/games */
+	.video-animation-container {
+		width: 160px;
+		height: 90px;
 	}
 	.exchange-title {
 		font-size: 1rem;
@@ -146,13 +155,9 @@
 	}
 	/* Farm */
 	/* Grapes */
-	.grapes {
-		width: 500px;
-		height: 250px;
-	}
 }
 
-@media only screen and (min-device-width: 992px) and (max-device-width: 1280px) {
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 24px;
@@ -169,6 +174,11 @@
 	}
 	.videoContainer {
 		height: 175px;
+	}
+	/* container for video/animation/games */
+	.video-animation-container {
+		width: 300px;
+		height: 180px;
 	}
 	.exchange-title {
 		font-size: 1.25rem;
@@ -200,14 +210,14 @@
 	}
 	/* Farm */
 	/* Grapes */
-	.grapes {
+	/* .grapes {
 		width: 500px;
 		height: 250px;
-	}
+	} */
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1281px) {
 	/* Styles */
 	.panels__headline {
 		font-size: 30px;
@@ -225,6 +235,11 @@
 
 	.videoContainer {
 		height: 220px;
+	}
+	/* container for video/animation/games */
+	.video-animation-container {
+		width: 400px;
+		height: 250px;
 	}
 	.exchange-title {
 		font-size: 1.75rem;
@@ -256,10 +271,6 @@
 	}
 	/* Farm */
 	/* Grapes */
-	.grapes {
-		width: 500px;
-		height: 250px;
-	}
 }
 
 /* Large screens ----------- */
@@ -282,6 +293,11 @@
 
 	.videoContainer {
 		height: 350px;
+	}
+	/* container for video/animation/games */
+	.video-animation-container {
+		width: 510px;
+		height: 320px;
 	}
 	/* Exchange fonts */
 	.exchange-title {
@@ -325,8 +341,4 @@
 
 	/* Farm */
 	/* Grapes */
-	.grapes {
-		width: 600px;
-		height: 450px;
-	}
 }

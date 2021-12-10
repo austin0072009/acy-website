@@ -1,9 +1,9 @@
 import React from "react";
 import "./DetailCard.css";
 
-const DetailCard = ({ title, timeline, description, deliverables }) => {
+const DetailCard = ({ title, timeline, description, deliverables, odd }) => {
 	return (
-		<div className="DetailCard">
+		<div className={odd ? "DetailCard detail-card-odd" : "DetailCard"}>
 			<div className="content">
 				{/* <div className="detailcard-title">{title}</div> */}
 				<div className="deliverables">{deliverables}</div>
