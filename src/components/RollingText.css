@@ -153,6 +153,9 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width: 640px) {
+	.rolling-main {
+		height: 400px;
+	}
 	/* Styles */
 	.rolling-title h1 {
 		font-size: 2.5rem;
