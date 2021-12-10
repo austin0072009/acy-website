@@ -78,6 +78,7 @@
 
 .panels__side--right-active .arrow {
 	transform: translate(-50%, -50%) rotate(180deg) !important;
+	display: block;
 }
 
 .panels__side--left-hidden {
@@ -154,7 +155,7 @@
 	margin: 0;
 	/* font-size: 40px; */
 	text-align: center;
-	flex-basis: 100px;
+	/* flex-basis: 100px; */
 }
 
 .panels p {
@@ -252,9 +253,9 @@
 	top: 75%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 	border-radius: 50%;
 	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+	display: none;
 }
 
 .arrow-1 {
