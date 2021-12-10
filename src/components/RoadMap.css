@@ -31,7 +31,7 @@ $vline-circle-color: $text-color;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 100vh;
+	min-height: 50vh;
 	min-width: 100%;
 	padding: 0 0 0 0;
 	overflow: hidden;
@@ -66,11 +66,12 @@ $vline-circle-color: $text-color;
 }
 @media (min-width: 1201px) {
 	.roadmap-title {
+		font-size: 5em;
 	}
 }
 @media (max-width: 1200px) {
 	.roadmap-title {
-		font-size: calc(7.9vw + 1em);
+		font-size: calc(7.9vw + 0.5em);
 		/* align-self: flex-start;
 		width: 10vw;
 		word-wrap: break-word;
@@ -449,7 +450,7 @@ $vline-circle-color: $text-color;
 	align-items: center;
 	position: relative;
 	z-index: 1;
-	left: -39px;
+	/* left: -39px; */
 	padding: 20px 0;
 }
 .roadmap-event::before {
@@ -507,5 +508,37 @@ $vline-circle-color: $text-color;
 @media (max-width: 1200px) {
 	.roadmap-event {
 		left: 0;
+	}
+}
+
+/* responsive gap */
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width: 640px) {
+	.roadmap {
+		margin-bottom: 80px;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 992px) {
+	.roadmap {
+		margin-bottom: 80px;
+	}
+}
+
+@media (min-width: 993px) and (max-width: 1280px) {
+	.roadmap {
+		margin-bottom: 100px;
+	}
+}
+
+@media (min-width: 1281px) {
+	.roadmap {
+		margin-bottom: 120px;
+	}
+}
+
+@media (min-width: 1824px) {
+	.roadmap {
+		margin-bottom: 120px;
 	}
 }

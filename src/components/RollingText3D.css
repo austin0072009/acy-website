@@ -6,14 +6,14 @@
 	z-index: 100;
 }
 
-#carousel-wrapper,
+/* #carousel-wrapper,
 #carousel figure {
 	height: 100px;
 	line-height: 100px;
 	color: white;
-}
+} */
 
-#carousel figure:nth-of-type(1) {
+/* #carousel figure:nth-of-type(1) {
 	-webkit-transform: rotateX(0deg) translateZ(86px);
 }
 #carousel figure:nth-of-type(2) {
@@ -30,7 +30,7 @@
 }
 #carousel figure:nth-of-type(6) {
 	-webkit-transform: rotateX(300deg) translateZ(86px);
-}
+} */
 
 #carousel[data-state="1"] figure:nth-of-type(1),
 #carousel[data-state="2"] figure:nth-of-type(2),
@@ -81,7 +81,7 @@
 
 /* responsive */
 /* Smartphones (landscape) ----------- */
-@media only screen and (max-device-width: 640px) {
+@media (max-width: 640px) {
 	#carousel figure {
 		font-size: 19px;
 	}
@@ -117,7 +117,7 @@
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 640px) and (max-device-width: 992px) {
+@media (min-width: 640px) and (max-width: 992px) {
 	/* Styles */
 	#carousel figure {
 		font-size: 30px;
@@ -153,7 +153,7 @@
 	}
 }
 
-@media only screen and (min-device-width: 993px) and (max-device-width: 1280px) {
+@media (min-width: 993px) and (max-width: 1280px) {
 	/* Styles */
 	#carousel figure {
 		font-size: 33px;
@@ -190,7 +190,7 @@
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1281px) {
+@media (min-width: 1281px) {
 	/* Styles */
 	#carousel figure {
 		font-size: 45px;
@@ -227,7 +227,7 @@
 }
 
 /* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
+@media (min-width: 1824px) {
 	/* Styles */
 	#carousel figure {
 		font-size: 60px;
