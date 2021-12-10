@@ -41,13 +41,14 @@
 	opacity: 0.75;
 }
 .grapes .Grape {
-	--layers: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	transform: translateY(calc(var(--layers) * -1rem)) scale(0.5);
-	transition: transform 0.5s;
+    --layers: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* transform: translateY(calc(var(--layers) * 1rem + 10vh)) scale(0.5); */
+    transform: translateY(calc(-1vh * var(--layers) + 2vh )) scale(0.5);
+    transition: transform 0.5s;
 }
 .grapes .Grape .Leaves {
 	position: relative;
