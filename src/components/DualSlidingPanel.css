@@ -29,6 +29,9 @@
 .videoContainer {
 	width: 100%;
 }
+.video-animation-container {
+	background-color: black;
+}
 
 /* arrow */
 .arrow-container {
@@ -111,12 +114,18 @@
 		line-height: 0.2;
 		font-size: 14px;
 	}
-	/* Farm */
+
 	/* Grapes */
-	/* .grapes {
-		width: 500px;
-		height: 250px;
-	} */
+	.grapes .Grape .Fruits .Row .Fruit {
+		width: 2rem;
+		height: 2rem;
+		font-size: calc(0.5rem / (0.7 + 1 * 0.3));
+	}
+
+	.grapes .Grape .Leaves .Leaf {
+		width: 4rem;
+		height: 2rem;
+	}
 
 	.arrow-container .arrow {
 		width: 35px;
@@ -194,6 +203,16 @@
 	}
 	/* Farm */
 	/* Grapes */
+	.grapes .Grape .Fruits .Row .Fruit {
+		width: 1.5rem;
+		height: 1.5rem;
+		font-size: calc(0.35rem / (0.7 + 1 * 0.3));
+	}
+
+	.grapes .Grape .Leaves .Leaf {
+		width: 2.5rem;
+		height: 1.25rem;
+	}
 }
 
 @media (min-width: 993px) and (max-width: 1280px) {
@@ -254,10 +273,16 @@
 	}
 	/* Farm */
 	/* Grapes */
-	/* .grapes {
-		width: 500px;
-		height: 250px;
-	} */
+	.grapes .Grape .Fruits .Row .Fruit {
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: calc(0.6rem / (0.7 + 1 * 0.3));
+	}
+
+	.grapes .Grape .Leaves .Leaf {
+		width: 4.5rem;
+		height: 2rem;
+	}
 }
 
 /* Desktops and laptops ----------- */
@@ -320,6 +345,16 @@
 	}
 	/* Farm */
 	/* Grapes */
+	.grapes .Grape .Fruits .Row .Fruit {
+		width: 3rem;
+		height: 3rem;
+		font-size: calc(0.6rem / (0.7 + 1 * 0.3));
+	}
+
+	.grapes .Grape .Leaves .Leaf {
+		width: 5.5rem;
+		height: 2.5rem;
+	}
 }
 
 /* Large screens ----------- */
@@ -394,4 +429,14 @@
 
 	/* Farm */
 	/* Grapes */
+	.grapes .Grape .Fruits .Row .Fruit {
+		width: 4rem;
+		height: 4rem;
+		font-size: calc(1rem / (0.7 + 1 * 0.3));
+	}
+
+	.grapes .Grape .Leaves .Leaf {
+		width: 8rem;
+		height: 4rem;
+	}
 }
