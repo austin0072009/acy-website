@@ -80,7 +80,7 @@
 	color: #fff;
 	background-color: #29292c;
 	display: block;
-	width: auto;
+	width: 18ch;
 	height: auto;
 	overflow: visible;
 	position: absolute;
@@ -90,6 +90,10 @@
 	z-index: 10000000000 !important;
 	padding: 10px;
 	border-radius: 4px;
+}
+
+.DetailCard .deliverables {
+	font-size: 12px;
 }
 
 /* .DetailCard:hover .content {
@@ -121,7 +125,7 @@
 	font-style: italic;
 } */
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.detail-card-odd {
 		bottom: 0;
 	}

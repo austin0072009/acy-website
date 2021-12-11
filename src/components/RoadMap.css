@@ -142,6 +142,7 @@ $vline-circle-color: $text-color;
 	height: 25px;
 	background: #fff;
 	border-radius: 50%;
+	cursor: pointer;
 }
 @media (max-width: 1200px) {
 	.roadmap-timeline::after {
