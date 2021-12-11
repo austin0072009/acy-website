@@ -176,6 +176,7 @@ const Main = () => {
 		openLeft2,
 		openRight2;
 
+
 	useEffect(() => {
 		panelLeft = document.querySelector(".panels__side--left");
 		panelRight = document.querySelector(".panels__side--right");
@@ -185,9 +186,12 @@ const Main = () => {
 		panelRight2 = document.querySelector(".panels2__side--right");
 		clickleft2 = document.getElementById("clickleft2");
 		clickright2 = document.getElementById("clickright2");
+
 		openLeft = function () {
+			
 			panelLeft.classList.toggle("panels__side--left-active");
 			panelRight.classList.toggle("panels__side--right-hidden");
+			
 		};
 
 		openRight = function () {
