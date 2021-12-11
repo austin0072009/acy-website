@@ -14,8 +14,7 @@ import whitepaper2 from "../assets/history_edu_white_36dp.svg";
 import { useMediaPredicate } from "react-media-hook";
 import style from "../css/animation.css";
 import { useState } from "react";
-import button6 from "../assets/svgs/animatedIcons/six-key.json";
-import button6hover from "../assets/svgs/animatedIcons/six-key-hover.json";
+import googleSheets from "../assets/google-sheets.png";
 import "./RoadMap.css";
 
 const Documentation = () => {
@@ -66,9 +65,9 @@ const Documentation = () => {
 			content: ` Learn about the token economics, investing situation, TGE and vesting rules.`,
 
 			logoText: "Token Matrix",
-			src: litepaper,
-			src_hover: hlitepaper,
-			link: "https://docs.google.com/document/d/1y3p9WZ5Oa_kOJWEuU1Gh25xEmmMReIcw/edit#",
+			src: googleSheets,
+			src_hover: googleSheets,
+			link: "https://docs.google.com/spreadsheets/d/1g1ols3Ecc8kAWE4hu4x7xX_lcrIOEiAsWPvriymKCcc/edit?usp=sharing",
 		},
 		{
 			title: "Deck",
@@ -120,34 +119,34 @@ const Documentation = () => {
 						<span>DOCUMENTATION</span>
 					</span>
 				</div> */}
-			<div class="roadmap-title z-10" >DOCUMENTATION</div>
-			<div className = "DocumentationBar">
-			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10 mt-1" >
-				{data.map(item => (
-					<TabLink
-						key={item.title}
-						title={item.title}
-						content={item.content}
-						link={item.link}
-						src={item.src}
-						src_hover={item.src_hover}
-						logoText={item.logoText}
-					></TabLink>
-				))}
-			</div>
-			<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10 mt-5" >
-				{data2.map(item => (
-					<TabLink
-						key={item.title}
-						title={item.title}
-						content={item.content}
-						link={item.link}
-						src={item.src}
-						src_hover={item.src_hover}
-						logoText={item.logoText}
-					></TabLink>
-				))}
-			</div>
+			<div class="roadmap-title z-10">DOCUMENTATION</div>
+			<div className="DocumentationBar">
+				<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10 mt-1">
+					{data.map(item => (
+						<TabLink
+							key={item.title}
+							title={item.title}
+							content={item.content}
+							link={item.link}
+							src={item.src}
+							src_hover={item.src_hover}
+							logoText={item.logoText}
+						></TabLink>
+					))}
+				</div>
+				<div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-5 md:gap-y-0 z-10 mt-5">
+					{data2.map(item => (
+						<TabLink
+							key={item.title}
+							title={item.title}
+							content={item.content}
+							link={item.link}
+							src={item.src}
+							src_hover={item.src_hover}
+							logoText={item.logoText}
+						></TabLink>
+					))}
+				</div>
 			</div>
 		</div>
 	);
