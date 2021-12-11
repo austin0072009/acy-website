@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.befd3d58.chunk.css",
-    "main.js": "/static/js/main.1cec49ef.chunk.js",
-    "main.js.map": "/static/js/main.1cec49ef.chunk.js.map",
+    "main.css": "/static/css/main.3950e80f.chunk.css",
+    "main.js": "/static/js/main.aafcbaf9.chunk.js",
+    "main.js.map": "/static/js/main.aafcbaf9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3dc79f19.js",
     "runtime-main.js.map": "/static/js/runtime-main.3dc79f19.js.map",
     "static/js/2.ebd34b7b.chunk.js": "/static/js/2.ebd34b7b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.d1956054.chunk.js": "/static/js/3.d1956054.chunk.js",
     "static/js/3.d1956054.chunk.js.map": "/static/js/3.d1956054.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.befd3d58.chunk.css.map": "/static/css/main.befd3d58.chunk.css.map",
+    "static/css/main.3950e80f.chunk.css.map": "/static/css/main.3950e80f.chunk.css.map",
     "static/js/2.ebd34b7b.chunk.js.LICENSE.txt": "/static/js/2.ebd34b7b.chunk.js.LICENSE.txt",
     "static/media/BSCMemePad.1fe4f2f5.svg": "/static/media/BSCMemePad.1fe4f2f5.svg",
     "static/media/Chainlink.09a7ca40.svg": "/static/media/Chainlink.09a7ca40.svg",
@@ -62,7 +62,7 @@
   "entrypoints": [
     "static/js/runtime-main.3dc79f19.js",
     "static/js/2.ebd34b7b.chunk.js",
-    "static/css/main.befd3d58.chunk.css",
-    "static/js/main.1cec49ef.chunk.js"
+    "static/css/main.3950e80f.chunk.css",
+    "static/js/main.aafcbaf9.chunk.js"
   ]
 }
