@@ -41,6 +41,7 @@ const RoadMap = () => {
 				"Deliver the mobile version of the whole product with complete functions.",
 		},
 	];
+
 	return (
 		<div className="flex justify-center">
 			<div class="roadmap">
@@ -50,13 +51,6 @@ const RoadMap = () => {
 
 				<ol class="roadmap-timeline js-roadmap-timeline">
 					<li class="roadmap-timeframe js-roadmap-timeframe">
-						<DetailCard
-							title={data[0].title}
-							description={data[0].description}
-							deliverables={data[0].deliverables}
-							odd={false}
-						></DetailCard>
-
 						<div class="roadmap-date">December,2021</div>
 						<svg
 							class="roadmap-swirly"
@@ -74,14 +68,15 @@ const RoadMap = () => {
 								<div class="roadmap-vline"></div>Testnet Launch
 							</li>
 						</ul>
+						<div className="circle-seperator"></div>
+						<DetailCard
+							title={data[0].title}
+							description={data[0].description}
+							deliverables={data[0].deliverables}
+							odd={false}
+						></DetailCard>
 					</li>
 					<li class="roadmap-timeframe js-roadmap-timeframe">
-						<DetailCard
-							title={data[1].title}
-							description={data[1].description}
-							deliverables={data[1].deliverables}
-							odd={true}
-						></DetailCard>
 						<div class="roadmap-date">January to March, 2022</div>
 						<svg
 							class="roadmap-swirly"
@@ -100,15 +95,16 @@ const RoadMap = () => {
 							</li>
 							{/* <li class="roadmap-event"><div class="roadmap-vline"></div>GUI wallet with integrated miner for Windows</li> */}
 						</ul>
+						<div className="circle-seperator even-circle"></div>
+						<DetailCard
+							title={data[1].title}
+							description={data[1].description}
+							deliverables={data[1].deliverables}
+							odd={true}
+						></DetailCard>
 					</li>
 
 					<li class="roadmap-timeframe js-roadmap-timeframe">
-						<DetailCard
-							title={data[2].title}
-							description={data[2].description}
-							deliverables={data[2].deliverables}
-							odd={false}
-						></DetailCard>
 						<div class="roadmap-date">April to June, 2022</div>
 						<svg
 							class="roadmap-swirly"
@@ -130,16 +126,18 @@ const RoadMap = () => {
             <li class="roadmap-event"><div class="roadmap-vline"></div>Xdag.org is fully operational</li>
             <li class="roadmap-event"><div class="roadmap-vline"></div>The original code is being cleaned</li> */}
 						</ul>
+						<div className="circle-seperator"></div>
+						<DetailCard
+							title={data[2].title}
+							description={data[2].description}
+							deliverables={data[2].deliverables}
+							odd={false}
+						></DetailCard>
 					</li>
 
 					<li class="roadmap-timeframe js-roadmap-timeframe">
 						<div class="roadmap-date">July to September, 2022</div>
-						<DetailCard
-							title={data[3].title}
-							description={data[3].description}
-							deliverables={data[3].deliverables}
-							odd={true}
-						></DetailCard>
+
 						<svg
 							class="roadmap-swirly"
 							version="1.1"
@@ -156,16 +154,18 @@ const RoadMap = () => {
 								<div class="roadmap-vline"></div>API/SDK Launch
 							</li>
 						</ul>
+						<div className="circle-seperator even-circle"></div>
+						<DetailCard
+							title={data[3].title}
+							description={data[3].description}
+							deliverables={data[3].deliverables}
+							odd={true}
+						></DetailCard>
 					</li>
 
 					<li class="roadmap-timeframe js-roadmap-timeframe">
 						<div class="roadmap-date">October to December, 2022</div>
-						<DetailCard
-							title={data[4].title}
-							description={data[4].description}
-							deliverables={data[4].deliverables}
-							odd={false}
-						></DetailCard>
+
 						<svg
 							class="roadmap-swirly"
 							version="1.1"
@@ -182,6 +182,13 @@ const RoadMap = () => {
 								<div class="roadmap-vline"></div>Mobile App Launch
 							</li>
 						</ul>
+						<div className="circle-seperator"></div>
+						<DetailCard
+							title={data[4].title}
+							description={data[4].description}
+							deliverables={data[4].deliverables}
+							odd={false}
+						></DetailCard>
 					</li>
 				</ol>
 			</div>

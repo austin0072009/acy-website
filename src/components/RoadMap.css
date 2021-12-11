@@ -135,6 +135,14 @@ $vline-circle-color: $text-color;
 	background: url("https://s14.postimg.org/cwe76i4r5/paint2.png") left center;
 	background-repeat: no-repeat;
 }
+.roadmap-timeframe .circle-seperator {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	border-radius: 50%;
+}
 @media (max-width: 1200px) {
 	.roadmap-timeline::after {
 		top: 0;
@@ -155,10 +163,11 @@ $vline-circle-color: $text-color;
 	width: 0;
 }
 
-.roadmap-timeframe:hover > .DetailCard {
+.circle-seperator:hover ~ .DetailCard {
 	visibility: visible;
 	position: absolute;
 }
+
 /* 
 .DetailCardTitle{
 
@@ -170,25 +179,41 @@ $vline-circle-color: $text-color;
 		max-width: 300px;
 	}
 }
-.roadmap-timeframe::after {
+/* .roadmap-timeframe::after {
 	content: "";
 	position: absolute;
 	width: 25px;
 	height: 25px;
 	background: #fff;
 	border-radius: 50%;
-}
+} */
 @media (min-width: 1201px) {
-	.roadmap-timeframe::after {
+	/* .roadmap-timeframe::after {
 		left: 50%;
 		bottom: 0;
 		transform: translate(-50%, 50%);
+	} */
+	.roadmap-timeframe .circle-seperator {
+		left: 50%;
+		/* bottom: 0; */
+		transform: translate(-50%, 50%);
+	}
+
+	.roadmap-timeframe .even-circle {
+		transform: translate(-50%, 50%);
+		top: -25px;
 	}
 }
 @media (max-width: 1200px) {
-	.roadmap-timeframe::after {
+	.roadmap-timeframe .circle-seperator {
 		right: -12.5px;
 		bottom: -12.5px;
+	}
+
+	.roadmap-timeframe .even-circle {
+		left: 0;
+		bottom: 0;
+		transform: translate(-50%, 50%);
 	}
 }
 .roadmap-timeframe:nth-child(3n-2) .roadmap-swirly path {
