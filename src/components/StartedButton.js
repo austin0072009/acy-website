@@ -1,5 +1,6 @@
 // import "./btn.css";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import "./Header.css";
 
 const StartedButton = () => {
 	const openInNewTab = url => {

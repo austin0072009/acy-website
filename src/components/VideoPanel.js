@@ -21,22 +21,21 @@ export const VideoPanel = ({ setIframeLoaded }) => {
 		}
 	}, []);
 	return (
-		<div className="rounded-xl">
+		<div className="rounded-xl" style={{ borderRadius: "5px" }}>
 			{webGLStatus ? (
 				<div className="video-animation-container">
 					<iframe
 						onLoad={() => {
 							setIframeLoaded(true);
 						}}
-						style={
-							{
-								// maxHeight: isMobile ? "700px" : "1000px",
-								// width: "595px",
-								// position: "relative",
-								// height: "386px",
-								// top: "-55px",
-							}
-						}
+						style={{
+							// maxHeight: isMobile ? "700px" : "1000px",
+							// width: "595px",
+							// position: "relative",
+							// height: "386px",
+							// top: "-55px",
+							borderRadius: "5px",
+						}}
 						className="rounded-xl video-animation-container"
 						src="https://api.acy.finance/app.html"
 						title="ACY"

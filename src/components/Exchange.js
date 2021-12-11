@@ -92,7 +92,7 @@ const Exchange = ({ iframeLoaded }) => {
 						<div
 							style={{
 								background: "#000000",
-								borderRadius: "10px",
+								borderRadius: "5px",
 								overflow: "hidden",
 							}}
 						>

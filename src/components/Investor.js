@@ -7,7 +7,10 @@ const Investor = () => {
 	return (
 		<div className="flex items-center justify-between">
 			<div className="flex flex-col mb-0 md:mb-0 items-center justify-between rounded-lg py-5 h-auto flex-grow">
-				<div className="grapes-container" style={{ backgroundColor: "black" }}>
+				<div
+					className="grapes-container"
+					style={{ backgroundColor: "black", borderRadius: "5px" }}
+				>
 					<Grapes></Grapes>
 				</div>
 				{/* <div className="mt-3 exchange-content">

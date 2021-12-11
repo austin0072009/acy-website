@@ -8,6 +8,7 @@ import * as Scroll from "react-scroll";
 import appIcon from "../assets/svgs/animatedIcons/appIcon.json";
 import { AnimatedIcons } from ".";
 import { StartedButton } from ".";
+import "./Header.css";
 
 const menuStyles = {
 	position: "fixed",
@@ -78,13 +79,12 @@ const Header = ({ active, setActive, getvisible }) => {
 				}}
 				className="top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-10 flex justify-between relative items-center"
 			>
-				<div className="flex mt-2">
+				<div className="flex">
 					<Link to="/">
 						<img
 							src={logo}
-							style={{ width: "45px" }}
 							alt="logo"
-							className="cursor-pointer rotateOnHover"
+							className="cursor-pointer rotateOnHover logo-size"
 						/>
 					</Link>
 				</div>

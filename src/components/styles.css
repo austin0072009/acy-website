@@ -17,12 +17,12 @@
 	width: 150px;
 }
 
-.animated-button {
+/* .animated-button {
 	width: 100px;
 	height: 100px;
-}
+} */
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
 	.animated-button {
 		width: 150px;
 	}
@@ -30,7 +30,7 @@
 		font-size: x-large;
 		text-align: center;
 	}
-}
+} */
 
 .farm-container {
 	flex-direction: row;
@@ -209,11 +209,11 @@ a.animated-button.thar-three:before {
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.animated-button {
+/* .animated-button {
 	width: 167px;
 	height: 43px;
 	text-align: start;
-}
+} */
 
 .arrow {
 	position: relative;
