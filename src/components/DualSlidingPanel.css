@@ -41,6 +41,13 @@
 	height: 4vw;
 }
 
+/* rocket */
+.rocket {
+	height: 20%;
+	width: 20%;
+	left: 40%;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width: 640px) {
 	/* Panel container */
@@ -114,6 +121,18 @@
 	.arrow-container .arrow {
 		width: 35px;
 		height: 35px;
+	}
+
+	/* Launch rocket */
+	.Spacebody {
+		width: 250px;
+		height: 150px;
+	}
+
+	.rocket {
+		height: 200px;
+		width: 200px;
+		left: 30px;
 	}
 }
 
