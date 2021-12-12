@@ -4,6 +4,7 @@ import styled from "styled-components";
 import style from "../css/animation.css";
 import { useState, useCallback } from "react";
 import axios from "axios";
+import "./Footer.css";
 
 const StyledInputName = styled.input`
 	font-size: 20px;
@@ -69,7 +70,7 @@ const FooterEmail = () => {
 	}, [name, email]);
 
 	return (
-		<div className="flex-col w-full">
+		<div className="flex-col w-full footer-input-text">
 			{success ? (
 				<span className="text-gray-50">🎉 Thank you for signing up!</span>
 			) : (
@@ -84,6 +85,7 @@ const FooterEmail = () => {
 									onChange={e => {
 										setName(e.target.value);
 									}}
+									className="footer-input-text"
 								></StyledInputName>
 							</div>
 							<div>
@@ -94,6 +96,7 @@ const FooterEmail = () => {
 									onChange={e => {
 										setEmail(e.target.value);
 									}}
+									className="footer-input-text"
 								></StyledInputEmail>
 							</div>
 						</div>
