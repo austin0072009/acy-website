@@ -25,7 +25,7 @@ const ACYLink = ({ url, children, main }) => {
 	// Somewhere else, even another file
 
 	return (
-		<span className="text-right sm:ml-10 md:ml-5 ml-2 my-3">
+		<span className="text-right ml-5 my-3">
 			<Link
 				to={url}
 				tabIndex="1"
