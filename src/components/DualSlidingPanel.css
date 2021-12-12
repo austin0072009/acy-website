@@ -122,14 +122,18 @@
 
 	/* Grapes */
 	.grapes .Grape .Fruits .Row .Fruit {
-		width: 2rem;
-		height: 2rem;
+		width: 2.5rem;
+		height: 2.5rem;
 		font-size: calc(0.5rem / (0.7 + 1 * 0.3));
 	}
 
 	.grapes .Grape .Leaves .Leaf {
-		width: 4rem;
+		width: 4.5rem;
 		height: 2rem;
+	}
+
+	.grapes .Grape .Leaves {
+		margin-top: 50px;
 	}
 
 	.arrow-container .arrow {
@@ -219,8 +223,11 @@
 	}
 
 	.grapes .Grape .Leaves .Leaf {
-		width: 2.5rem;
-		height: 1.25rem;
+		width: 3rem;
+		height: 1.375rem;
+	}
+	.grapes .Grape .Leaves {
+		margin-top: 65px;
 	}
 }
 
@@ -287,14 +294,17 @@
 	/* Farm */
 	/* Grapes */
 	.grapes .Grape .Fruits .Row .Fruit {
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 3rem;
+		height: 3rem;
 		font-size: calc(0.6rem / (0.7 + 1 * 0.3));
 	}
 
 	.grapes .Grape .Leaves .Leaf {
 		width: 4.5rem;
 		height: 2rem;
+	}
+	.grapes .Grape .Leaves {
+		margin-top: 30px;
 	}
 }
 
@@ -363,14 +373,18 @@
 	/* Farm */
 	/* Grapes */
 	.grapes .Grape .Fruits .Row .Fruit {
-		width: 3rem;
-		height: 3rem;
+		width: 3.5rem;
+		height: 3.5rem;
 		font-size: calc(0.6rem / (0.7 + 1 * 0.3));
 	}
 
 	.grapes .Grape .Leaves .Leaf {
 		width: 5.5rem;
 		height: 2.5rem;
+	}
+
+	.grapes .Grape .Leaves {
+		margin-top: 30px;
 	}
 }
 
@@ -451,8 +465,8 @@
 	/* Farm */
 	/* Grapes */
 	.grapes .Grape .Fruits .Row .Fruit {
-		width: 4rem;
-		height: 4rem;
+		width: 5rem;
+		height: 5rem;
 		font-size: calc(1rem / (0.7 + 1 * 0.3));
 	}
 

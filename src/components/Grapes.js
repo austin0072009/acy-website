@@ -61,13 +61,15 @@ const Grapes = () => {
 				row.append(fruit);
 			}
 			numbers.push(newGen);
-			if (fruits.childElementCount < 10) fruits.append(row);
-
-			grape.style.setProperty("--layers", numbers.length);
+			if (fruits.childElementCount < 7) {
+				fruits.append(row);
+				grape.style.setProperty("--layers", numbers.length);
+			} else {
+			}
 		}
 
 		let timer = setInterval(() => {
-			if (numbers.length >= 3) {
+			if (numbers.length >= 2) {
 				timer && clearInterval(timer);
 			}
 			nextGeneration();
