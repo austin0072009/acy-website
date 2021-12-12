@@ -79,13 +79,13 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 				className="HeadNoBar top-0 max-h-12 px-4 sm:px-10 xl:px-24 lg:px-20 overflow-hidden py-10 flex justify-between relative items-center"
 			>
 				<div className="flex">
-					<Link to="/">
+					<a href="/">
 						<img
 							src={logo}
 							alt="logo"
 							className="cursor-pointer rotateOnHover logo-size"
 						/>
-					</Link>
+					</a>
 				</div>
 
 				{/* <div className="flex flex-row items-center">
