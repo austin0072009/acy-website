@@ -51,6 +51,20 @@
 	left: 40%;
 }
 
+.exchange-title {
+	font-family: "Karla", "Roborto", sans-serif;
+	font-weight: 700;
+}
+
+.exchange-content {
+	font-family: "Karla", "Roborto", sans-serif;
+}
+
+.jump-button-container .button-text {
+	font-family: "Karla", "Roborto", sans-serif;
+	font-weight: 700;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width: 640px) {
 	/* Panel container */
