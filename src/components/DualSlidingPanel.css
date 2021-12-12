@@ -229,6 +229,14 @@
 	.grapes .Grape .Leaves {
 		margin-top: 65px;
 	}
+
+	/* Launch rocket */
+	.rocket {
+		height: 100px;
+		width: 100px;
+		bottom: -20px;
+		left: 32px;
+	}
 }
 
 @media (min-width: 993px) and (max-width: 1280px) {
@@ -281,7 +289,7 @@
 		border-radius: 1.5rem;
 	}
 	.jump-button-container .circle .jumparrow {
-		left: 0.5rem;
+		left: 0.4rem;
 		top: 0.4rem;
 		font-size: 20px;
 	}
@@ -305,6 +313,13 @@
 	}
 	.grapes .Grape .Leaves {
 		margin-top: 30px;
+	}
+	/* Launch rocket */
+	.rocket {
+		height: 200px;
+		width: 200px;
+		left: 54px;
+		bottom: -10px;
 	}
 }
 
@@ -385,6 +400,12 @@
 
 	.grapes .Grape .Leaves {
 		margin-top: 30px;
+	}
+	/* Launch rocket */
+	.rocket {
+		height: 300px;
+		width: 300px;
+		left: 60px;
 	}
 }
 
@@ -473,5 +494,11 @@
 	.grapes .Grape .Leaves .Leaf {
 		width: 8rem;
 		height: 4rem;
+	}
+	/* Launch rocket */
+	.rocket {
+		height: 400px;
+		width: 400px;
+		left: 60px;
 	}
 }
