@@ -31,7 +31,7 @@ Information about the cookies used by us may be updated from time to time, so pl
 
 ## Contact us
 
-If you have any questions about this cookie policy, please contact us by email at _________
+If you have any questions about this cookie policy, please contact us by email at [**admin@acy.finance**](mailto:admin@acy.finance)
 `;
 
 export default cookiePolicy;

@@ -141,10 +141,10 @@ const SpaceLoader = () => {
 								<div id="stars2"></div>
 								<div id="stars3"></div>
 							</div>
-							<img
+							{/* <img
 								class="meteor"
 								src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/830072/meteor.svg"
-							/>
+							/> */}
 							<svg
 								class="rocket"
 								version="1.1"

@@ -2,8 +2,8 @@ import { ACYLink } from "../atoms";
 
 const FooterNavigation = () => {
 	return (
-		<div className=" w-full lg:w-auto flex flex-col container">
-			<div className="flex flex-row justify-between mb-1">
+		<div className="w-auto flex flex-col container">
+			<div className="flex flex-row justify-end mb-1">
 				<ACYLink url="/about-us" main={true}>
 					ABOUT
 				</ACYLink>
@@ -17,7 +17,7 @@ const FooterNavigation = () => {
 					ACYTOKEN
 				</ACYLink> */}
 			</div>
-			<div className="flex flex-row justify-end space-x-14 mb-1">
+			<div className="flex flex-row justify-end mb-1 space-x-14">
 				<ACYLink url="/terms-of-use" main={true}>
 					TERMS
 				</ACYLink>

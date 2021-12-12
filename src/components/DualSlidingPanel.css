@@ -81,6 +81,11 @@
 	.videoContainer {
 		height: 200px;
 	}
+
+	.texttab-container {
+		width: 300px;
+		text-align: justify;
+	}
 	/* container for video/animation/games */
 	.video-animation-container {
 		width: 250px;
@@ -117,14 +122,18 @@
 
 	/* Grapes */
 	.grapes .Grape .Fruits .Row .Fruit {
-		width: 2rem;
-		height: 2rem;
+		width: 2.5rem;
+		height: 2.5rem;
 		font-size: calc(0.5rem / (0.7 + 1 * 0.3));
 	}
 
 	.grapes .Grape .Leaves .Leaf {
-		width: 4rem;
+		width: 4.5rem;
 		height: 2rem;
+	}
+
+	.grapes .Grape .Leaves {
+		margin-top: 50px;
 	}
 
 	.arrow-container .arrow {
@@ -168,6 +177,10 @@
 	.videoContainer {
 		height: 115px;
 	}
+	.texttab-container {
+		width: 200px;
+		text-align: justify;
+	}
 	/* container for video/animation/games */
 	.video-animation-container {
 		width: 160px;
@@ -196,7 +209,7 @@
 		font-size: 16px;
 	}
 	.jump-button-container .button-text {
-		margin: 0 0 0 2rem;
+		margin: 0 0 0 1.75rem;
 		font-weight: 800;
 		line-height: 0.2;
 		font-size: 14px;
@@ -210,8 +223,19 @@
 	}
 
 	.grapes .Grape .Leaves .Leaf {
-		width: 2.5rem;
-		height: 1.25rem;
+		width: 3rem;
+		height: 1.375rem;
+	}
+	.grapes .Grape .Leaves {
+		margin-top: 65px;
+	}
+
+	/* Launch rocket */
+	.rocket {
+		height: 100px;
+		width: 100px;
+		bottom: -20px;
+		left: 32px;
 	}
 }
 
@@ -238,6 +262,10 @@
 	.videoContainer {
 		height: 175px;
 	}
+	.texttab-container {
+		width: 350px;
+		text-align: justify;
+	}
 	/* container for video/animation/games */
 	.video-animation-container {
 		width: 300px;
@@ -251,7 +279,7 @@
 	}
 	/* learn more button */
 	.learn-more-class button.learn-more {
-		width: 8rem;
+		width: 7rem;
 		/* height: auto; */
 	}
 	.jump-button-container .circle {
@@ -261,12 +289,12 @@
 		border-radius: 1.5rem;
 	}
 	.jump-button-container .circle .jumparrow {
-		left: 0.5rem;
+		left: 0.4rem;
 		top: 0.4rem;
 		font-size: 20px;
 	}
 	.jump-button-container .button-text {
-		margin: 0 0 0 3rem;
+		margin: 0 0 0 2rem;
 		font-weight: 800;
 		line-height: 0.7;
 		font-size: 14px;
@@ -274,14 +302,24 @@
 	/* Farm */
 	/* Grapes */
 	.grapes .Grape .Fruits .Row .Fruit {
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 3rem;
+		height: 3rem;
 		font-size: calc(0.6rem / (0.7 + 1 * 0.3));
 	}
 
 	.grapes .Grape .Leaves .Leaf {
 		width: 4.5rem;
 		height: 2rem;
+	}
+	.grapes .Grape .Leaves {
+		margin-top: 30px;
+	}
+	/* Launch rocket */
+	.rocket {
+		height: 200px;
+		width: 200px;
+		left: 54px;
+		bottom: -10px;
 	}
 }
 
@@ -310,6 +348,10 @@
 	.videoContainer {
 		height: 220px;
 	}
+	.texttab-container {
+		width: 440px;
+		text-align: justify;
+	}
 	/* container for video/animation/games */
 	.video-animation-container {
 		width: 400px;
@@ -323,7 +365,7 @@
 	}
 	/* learn more button */
 	.learn-more-class button.learn-more {
-		width: 12rem;
+		width: 10rem;
 		/* height: auto; */
 	}
 	.jump-button-container .circle {
@@ -341,19 +383,29 @@
 		margin: 0 0 0 3rem;
 		font-weight: 600;
 		line-height: 0.8;
-		font-size: 22px;
+		font-size: 20px;
 	}
 	/* Farm */
 	/* Grapes */
 	.grapes .Grape .Fruits .Row .Fruit {
-		width: 3rem;
-		height: 3rem;
+		width: 3.5rem;
+		height: 3.5rem;
 		font-size: calc(0.6rem / (0.7 + 1 * 0.3));
 	}
 
 	.grapes .Grape .Leaves .Leaf {
 		width: 5.5rem;
 		height: 2.5rem;
+	}
+
+	.grapes .Grape .Leaves {
+		margin-top: 30px;
+	}
+	/* Launch rocket */
+	.rocket {
+		height: 300px;
+		width: 300px;
+		left: 60px;
 	}
 }
 
@@ -382,6 +434,10 @@
 	.videoContainer {
 		height: 350px;
 	}
+	.texttab-container {
+		width: 550px;
+		text-align: justify;
+	}
 	/* container for video/animation/games */
 	.video-animation-container {
 		width: 510px;
@@ -406,7 +462,7 @@
 
 	/* learn more button */
 	.learn-more-class button.learn-more {
-		width: 18rem;
+		width: 15rem;
 		/* height: auto; */
 	}
 	.jump-button-container .circle {
@@ -416,7 +472,7 @@
 		border-radius: 1.9rem;
 	}
 	.jump-button-container .circle .jumparrow {
-		left: 1.2rem;
+		left: 1rem;
 		top: 1rem;
 		font-size: 30px;
 	}
@@ -430,13 +486,19 @@
 	/* Farm */
 	/* Grapes */
 	.grapes .Grape .Fruits .Row .Fruit {
-		width: 4rem;
-		height: 4rem;
+		width: 5rem;
+		height: 5rem;
 		font-size: calc(1rem / (0.7 + 1 * 0.3));
 	}
 
 	.grapes .Grape .Leaves .Leaf {
 		width: 8rem;
 		height: 4rem;
+	}
+	/* Launch rocket */
+	.rocket {
+		height: 400px;
+		width: 400px;
+		left: 60px;
 	}
 }

@@ -10,6 +10,7 @@
 import React from "react";
 import { useMediaPredicate } from "react-media-hook";
 import "./styles.css";
+import "./DualSlidingPanel.css";
 
 const TextTab = ({ title, content }) => {
 	let smallerThan1280 = useMediaPredicate("(max-width: 1280px)");
@@ -18,7 +19,7 @@ const TextTab = ({ title, content }) => {
 	return (
 		<div className="">
 			<div className="flex justify-center">
-				<div className="flex flex-col" style={{ width: "100%" }}>
+				<div className="flex flex-col texttab-container">
 					<div className="items-center px-5">
 						<div className="">
 							<div

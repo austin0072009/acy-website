@@ -18,8 +18,8 @@ const Investor = () => {
 				</div> */}
 				<div className="mt-3 exchange-content">
 					<TextTab
-						title="THE BEST IDO FARM"
-						content="There are there kinds of farming functions. The first one is PREMIER, that is to stake your liquidity for BTC, ETH, USDX and the project tokens. The second one is STANDARD, that is to stake your liquidity for ACY. The third one is ACYDAO, that is to stake your ACY token for ACY token."
+						title="STABLE AND SOLID REWARDS"
+						content="The farmers in PREMIER can get the rewards of BTC, ETH, USDX, or the project tokens. Farmers in STANDARD can get the $ACY rewards and the ACYDAO in only for ACY token holders."
 					/>
 				</div>
 				<div className="farmLearn">

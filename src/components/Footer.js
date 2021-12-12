@@ -10,13 +10,12 @@ const Footer = () => {
 			}}
 		>
 			<div
-				className="flex flex-col lg:flex-row justify-between items-center py-10 relative"
+				className="flex flex-col lg:flex-row justify-between py-10 relative"
 				style={{ zindex: 2 }}
 			>
 				<FooterEmail></FooterEmail>
-				<div className="">
-					<FooterNavigation></FooterNavigation>
-				</div>
+
+				<FooterNavigation></FooterNavigation>
 			</div>
 		</div>
 	);

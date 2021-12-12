@@ -1,7 +1,7 @@
 const tou = `
 ## 1. General Introduction
 
-In the General Terms of Use **(“Terms”) of ACY**, “ACY”, "we", and "us" all refer to **Acy Finance.** 
+In the General Terms of Use **(“Terms”) of ACY**, “ACY”, "we", and "us" all refer to **ACY Finance.** 
 
  
 
@@ -15,11 +15,11 @@ Please read these Terms carefully to ensure that you understand each provision. 
 
 ## 2. Site
 
-As part of the Site, ACY provides access to a decentralized finance application (“**Application**”) on the Cycan blockchain, that allows lenders or borrowers of HIP assets (“**Cryptocurrency assets**”) to transact using smart contracts (“**Smart Contracts**”).
+As part of the Site, ACY provides access to a decentralized finance application (“**Application**”) on the blockchain, that allows lenders or borrowers of HIP assets (“**Cryptocurrency assets**”) to transact using smart contracts (“**Smart Contracts**”).
 
 Using the ACY Protocol may require that you pay a fee, such as gas charges on the network to perform a transaction. You acknowledge and agree that ACY has no control over any transactions, the method of payment of any transactions, or any actual payments of transactions. You must ensure that you have a sufficient balance to complete any transaction on the ACY Protocol before initiating such transaction.
 
-You acknowledge and agree that ACY has no control over any transactions over ACY Protocol, the method of payment of any transactions or any actual payments of transactions. Accordingly, you must ensure that you have a sufficient balance of the applicable cryptocurrency tokens stored at your ACY Protocol-compatible wallet address (“Cryptocurrency Wallet”) to complete any transaction on the ACY Protocol or the Cycan network before initiating such transaction.
+You acknowledge and agree that ACY has no control over any transactions over ACY Protocol, the method of payment of any transactions or any actual payments of transactions. Accordingly, you must ensure that you have a sufficient balance of the applicable cryptocurrency tokens stored at your ACY Protocol-compatible wallet address (“Cryptocurrency Wallet”) to complete any transaction on the ACY Protocol before initiating such transaction.
 
  
 
@@ -140,7 +140,7 @@ When you use the Site, we may collect information about your computer and your i
 
 We are the owner of all intellectual property rights in the Site and the material published on them. These works are protected by copyright laws and all such rights are reserved.
 
-_______is the uniform resource locator (‘URL’) of ACY. You will not make use of this URL (or any other URL owned by us) on another website or digital platform without our prior written consent.
+https://acy.finance/ is the uniform resource locator (‘URL’) of ACY. You will not make use of this URL (or any other URL owned by us) on another website or digital platform without our prior written consent.
 
 You agree not to monitor, use or copy our web pages without our prior consent. Any unauthorised use or reproduction may be prosecuted.
 
@@ -162,19 +162,11 @@ All disclaimers, indemnities and exclusions in these Terms shall survive termina
 
 These Terms and the documents referred to in them set out the entire agreement between you and us with respect to your use of the site, ACY and the services provided via the site and supersede any and all prior or contemporaneous representations, communications or agreements (written or oral) made between you or us.
 
- 
 
-## 10. Disputes (Note: add on later)
 
-Any dispute, controversy, or claim arising out of or in relation to these Terms, including the validity, invalidity, breach or termination thereof, shall be settled by arbitration in accordance with __________________. 
+## 10. Contacting Us
 
-With respect to all persons and entities, regardless of whether they have obtained or used the site for personal, commercial or other purposes, all disputes, controversies or claims must be brought in the parties’ individual capacity, and not as a plaintiff or class member in any purported class action, collective action or other representative proceeding. This waiver applies to class arbitration, and, unless we agree otherwise, the arbitrator may not consolidate more than one person’s claims. You agree that, by entering into this agreement, you and ACY are each waiving the right to a trial by jury or to participate in a class action, collective action, or other representative proceeding of any kind.
-
- 
-
-## 11. Contacting Us
-
-Should you have any question about these Terms, or wish to contact us for any reason whatsoever, please do so by sending us an email at [**__________________**](mailto:wecare@aave.com)
+Should you have any question about these Terms, or wish to contact us for any reason whatsoever, please do so by sending us an email at [**admin@acy.finance**](mailto:admin@acy.finance)
 `;
 
 export default tou;
