@@ -116,7 +116,7 @@ Our policies, content, information, promotions, disclosures, disclaimers and fea
 
 ## Contact Us
 
-If you have any questions, comments, or concerns regarding our Privacy Policy and/or practices, please contact us at [**admin@acy.finance**](mailto:admin@acy.finance).
+If you have any questions, comments, or concerns regarding our Privacy Policy and/or practices, please contact us at [**admin@acy.finance**](mailto:admin@acy.finance)
 `;
 
 export default privacyPolicy;
