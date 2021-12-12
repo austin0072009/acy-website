@@ -81,6 +81,11 @@
 	.videoContainer {
 		height: 200px;
 	}
+
+	.texttab-container {
+		width: 300px;
+		text-align: justify;
+	}
 	/* container for video/animation/games */
 	.video-animation-container {
 		width: 250px;
@@ -168,6 +173,10 @@
 	.videoContainer {
 		height: 115px;
 	}
+	.texttab-container {
+		width: 200px;
+		text-align: justify;
+	}
 	/* container for video/animation/games */
 	.video-animation-container {
 		width: 160px;
@@ -237,6 +246,10 @@
 	}
 	.videoContainer {
 		height: 175px;
+	}
+	.texttab-container {
+		width: 350px;
+		text-align: justify;
 	}
 	/* container for video/animation/games */
 	.video-animation-container {
@@ -310,6 +323,10 @@
 	.videoContainer {
 		height: 220px;
 	}
+	.texttab-container {
+		width: 440px;
+		text-align: justify;
+	}
 	/* container for video/animation/games */
 	.video-animation-container {
 		width: 400px;
@@ -381,6 +398,10 @@
 
 	.videoContainer {
 		height: 350px;
+	}
+	.texttab-container {
+		width: 550px;
+		text-align: justify;
 	}
 	/* container for video/animation/games */
 	.video-animation-container {
