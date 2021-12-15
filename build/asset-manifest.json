@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.1aba2d0c.chunk.css",
-    "main.js": "/static/js/main.3344bdd4.chunk.js",
-    "main.js.map": "/static/js/main.3344bdd4.chunk.js.map",
+    "main.js": "/static/js/main.f36517c3.chunk.js",
+    "main.js.map": "/static/js/main.f36517c3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9af73296.js",
     "runtime-main.js.map": "/static/js/runtime-main.9af73296.js.map",
     "static/js/2.5afc147e.chunk.js": "/static/js/2.5afc147e.chunk.js",
@@ -21,12 +21,12 @@
     "static/media/Erax.1afd3840.svg": "/static/media/Erax.1afd3840.svg",
     "static/media/Hoppy.c93998bd.png": "/static/media/Hoppy.c93998bd.png",
     "static/media/LightningProtocol.35ba3217.svg": "/static/media/LightningProtocol.35ba3217.svg",
+    "static/media/Milkyway.116a99c5.svg": "/static/media/Milkyway.116a99c5.svg",
     "static/media/Mobius.f7cd68f6.svg": "/static/media/Mobius.f7cd68f6.svg",
     "static/media/Oxbull.f09a231f.svg": "/static/media/Oxbull.f09a231f.svg",
     "static/media/PlutoCapital.52dcfd0d.svg": "/static/media/PlutoCapital.52dcfd0d.svg",
     "static/media/R8Capital.34f03a71.svg": "/static/media/R8Capital.34f03a71.svg",
     "static/media/Rainbow.8c8975e1.svg": "/static/media/Rainbow.8c8975e1.svg",
-    "static/media/SCI.1ab62803.svg": "/static/media/SCI.1ab62803.svg",
     "static/media/TokenInsight.89c8d73e.svg": "/static/media/TokenInsight.89c8d73e.svg",
     "static/media/ZBSCapital.74f973f9.svg": "/static/media/ZBSCapital.74f973f9.svg",
     "static/media/arrow.0cf339cb.svg": "/static/media/arrow.0cf339cb.svg",
@@ -63,6 +63,6 @@
     "static/js/runtime-main.9af73296.js",
     "static/js/2.5afc147e.chunk.js",
     "static/css/main.1aba2d0c.chunk.css",
-    "static/js/main.3344bdd4.chunk.js"
+    "static/js/main.f36517c3.chunk.js"
   ]
 }
