@@ -18,7 +18,7 @@ import Conflux from "../assets/svgs/clipPathHover/Conflux.svg";
 import Mobius from "../assets/svgs/clipPathHover/Mobius.svg";
 import TokenInsight from "../assets/svgs/clipPathHover/TokenInsight.svg";
 import Coindesk from "../assets/svgs/clipPathHover/Coindesk.svg";
-import SCI from "../assets/svgs/clipPathHover/SCI.svg";
+import Milkyway from "../assets/svgs/clipPathHover/Milkyway.svg";
 import Rainbow from "../assets/svgs/clipPathHover/Rainbow.svg";
 
 const openInNewTab = url => {
@@ -642,7 +642,12 @@ const ClipPathHover = () => {
 								</g>
 							</svg>
 						</div>
-						<div class="item">
+						<div
+							class="item"
+							onClick={() => {
+								openInNewTab("https://milkywayex.finance/");
+							}}
+						>
 							<svg
 								ref={svg_logo}
 								preserveAspectRatio="xMidYMid slice"
@@ -659,15 +664,16 @@ const ClipPathHover = () => {
 									</clipPath>
 								</defs>
 								<text class="svg-text" dy=".3em" x="50%" y="50%">
-									SCI
+									Milkyway
 								</text>
 								<g clip-path="url(#clip-16)">
-									<rect width="300" height="200" fill="white" />
+									<rect width="300" height="200" fill="#391775" />
 									<image
-										height="100%"
+										height="80%"
 										preserveAspectRatio="xMinYMin slice"
 										width="100%"
-										href={SCI}
+										y="15"
+										href={Milkyway}
 									></image>
 
 									<text class="svg-masked-text" dy=".3em" x="50%" y="50%">
