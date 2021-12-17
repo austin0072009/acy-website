@@ -12,7 +12,7 @@ const StartedButton = () => {
 		<div
 			className="flex flex-row items-center"
 			onClick={() => {
-				openInNewTab("https://test.acy.finance/");
+				openInNewTab("https://app.acy.finance/");
 			}}
 		>
 			<a className="btn btn-sm animated-button thar-three font-bold">
