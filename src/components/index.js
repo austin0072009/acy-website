@@ -32,6 +32,7 @@ import AnimatedBorders from "./AnimatedBorders";
 import NeuroSynth from "./NeuroSynth/index";
 import RollingText from "./RollingText";
 import StartedButton from "./StartedButton";
+import ClaimDialog from "./ClaimDialog";
 import DualSlidingPanel from "./DualSlidingPanel";
 import RoadMap from "./RoadMap";
 import ClipPathHover from "./ClipPathHover";
@@ -80,6 +81,7 @@ export {
 	NeuroSynth,
 	RollingText,
 	StartedButton,
+	ClaimDialog,
 	DualSlidingPanel,
 	RoadMap,
 	ClipPathHover,

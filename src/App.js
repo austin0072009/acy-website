@@ -22,8 +22,8 @@ var Element = Scroll.Element;
 
 function App() {
 	const ScrollEvent = event => {
-		console.log(event.nativeEvent.srcElement.scrollTop);
-		console.log("width: ", window.innerWidth);
+		// console.log(event.nativeEvent.srcElement.scrollTop);
+		// console.log("width: ", window.innerWidth);
 		if (window.innerWidth <= 640) {
 			if (event.nativeEvent.srcElement.scrollTop >= 0) {
 				setVisible(true);
@@ -37,7 +37,7 @@ function App() {
 	let [menuActive, setMenuActive] = useState(false);
 	let [visible, setVisible] = useState(false);
 
-	console.log(`TRACK ${window.location.pathname + window.location.search}`);
+	// console.log(`TRACK ${window.location.pathname + window.location.search}`);
 	ReactGA.pageview(window.location.pathname + window.location.search);
 
 	return (

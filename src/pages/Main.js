@@ -17,6 +17,7 @@ import {
 	Rotating,
 	DualSlidingPanel2,
 	RollingText3D,
+	ClaimDialog
 } from "../components";
 import { Gradient } from "../atoms";
 import axios from "axios";
@@ -162,6 +163,7 @@ const Main = () => {
 	const [panelOneRightActive, setPanelOneRightActive] = useState(false);
 	const [panelTwoLeftActive, setPanelTwoLeftActive] = useState(false);
 	const [panelTwoRightActive, setPanelTwoRightActive] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
 	var panelLeft,
 		panelRight,
@@ -359,6 +361,19 @@ const Main = () => {
 				{/* <RollingText></RollingText> */}
 				<RollingText3D></RollingText3D>
 			</div>
+
+			<div
+				className="flex flex-row justify-center"
+				onClick={() => {
+				setIsOpen(true);
+				}}
+			>
+				<a className="btn btn-sm animated-button thar-three font-bold">
+					Claim ACY!
+				</a>
+			</div>
+			<ClaimDialog isOpen={isOpen} setIsOpen={setIsOpen}/>
+					
 
 			{/* <NeuroSynth></NeuroSynth> */}
 
