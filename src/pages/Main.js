@@ -190,10 +190,10 @@ const Main = () => {
 		clickright2 = document.getElementById("clickright2");
 
 		openLeft = function () {
-			
+
 			panelLeft.classList.toggle("panels__side--left-active");
 			panelRight.classList.toggle("panels__side--right-hidden");
-			
+
 		};
 
 		openRight = function () {
@@ -364,16 +364,20 @@ const Main = () => {
 
 			<div
 				className="flex flex-row justify-center"
-				onClick={() => {
-				setIsOpen(true);
-				}}
 			>
-				<a className="btn btn-sm animated-button thar-three font-bold">
-					Claim ACY!
-				</a>
+				<div
+					onClick={() => {
+						setIsOpen(true);
+					}}
+				>
+					<a className="btn btn-sm animated-button thar-three font-bold">
+						Claim ACY!
+					</a>
+				</div>
+
 			</div>
-			<ClaimDialog isOpen={isOpen} setIsOpen={setIsOpen}/>
-					
+			<ClaimDialog isOpen={isOpen} setIsOpen={setIsOpen} />
+
 
 			{/* <NeuroSynth></NeuroSynth> */}
 

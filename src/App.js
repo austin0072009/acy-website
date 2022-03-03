@@ -17,8 +17,14 @@ import { Header, Footer, HeaderNoBar } from "./components";
 import { useState, createRef, useRef } from "react";
 import * as Scroll from "react-scroll";
 import ReactGA from "react-ga";
+import { Web3ReactProvider } from '@web3-react/core';
+import { Web3Provider } from "@ethersproject/providers";
 
 var Element = Scroll.Element;
+
+function getLibrary(provider, connector) {
+  return new Web3Provider(provider);
+}
 
 function App() {
 	const ScrollEvent = event => {
@@ -41,56 +47,58 @@ function App() {
 	ReactGA.pageview(window.location.pathname + window.location.search);
 
 	return (
-		<Router>
-			<div
-				className="relative"
-				style={{ backgroundColor: "#1B1B1C", zIndex: 100 }}
-			>
-				<Header
-					active={menuActive}
-					setActive={setMenuActive}
-					getvisible={visible}
-				></Header>
-				<HeaderNoBar
-					active={menuActive}
-					setActive={setMenuActive}
-					getvisible={!visible}
-				></HeaderNoBar>
-
+		<Web3ReactProvider getLibrary={getLibrary}>
+			<Router>
 				<div
-					id="containerElement"
-					style={{ overflowY: "auto", height: "100vh" }}
-					onClick={() => {
-						setMenuActive(false);
-					}}
-					onScroll={ScrollEvent}
+					className="relative"
+					style={{ backgroundColor: "#1B1B1C", zIndex: 100 }}
 				>
-					<Element name="topOfContainer"></Element>
-					<Switch>
-						<Route path="/" exact component={Main} />
-						<Route path="/about-us" component={About} />
-						<Route path="/privacy-policy" component={Privacy} />
-						<Route path="/terms-of-use" component={Terms} />
-						<Route path="/cookie-policy" component={Cookie} />
-						<Route path="/ecosystem" component={Ecosystem} />
-						<Route path="/governance" component={Governance} />
-						<Route path="/acy-token" component={AcyToken} />
+					<Header
+						active={menuActive}
+						setActive={setMenuActive}
+						getvisible={visible}
+					></Header>
+					<HeaderNoBar
+						active={menuActive}
+						setActive={setMenuActive}
+						getvisible={!visible}
+					></HeaderNoBar>
 
-						<Route path={`/about-us/`}>
-							<WhatIsACY />
-						</Route>
-						<Route path={`/about-us/mev-robots`}>
-							<MEVRobots />
-						</Route>
-						<Route path={`/about-us/arbitrage-supremacy`}>
-							<Advantage />
-						</Route>
-						{/* <Route path="/acy-token" component={AcyToken} /> */}
-					</Switch>
-					<Footer></Footer>
+					<div
+						id="containerElement"
+						style={{ overflowY: "auto", height: "100vh" }}
+						onClick={() => {
+							setMenuActive(false);
+						}}
+						onScroll={ScrollEvent}
+					>
+						<Element name="topOfContainer"></Element>
+						<Switch>
+							<Route path="/" exact component={Main} />
+							<Route path="/about-us" component={About} />
+							<Route path="/privacy-policy" component={Privacy} />
+							<Route path="/terms-of-use" component={Terms} />
+							<Route path="/cookie-policy" component={Cookie} />
+							<Route path="/ecosystem" component={Ecosystem} />
+							<Route path="/governance" component={Governance} />
+							<Route path="/acy-token" component={AcyToken} />
+
+							<Route path={`/about-us/`}>
+								<WhatIsACY />
+							</Route>
+							<Route path={`/about-us/mev-robots`}>
+								<MEVRobots />
+							</Route>
+							<Route path={`/about-us/arbitrage-supremacy`}>
+								<Advantage />
+							</Route>
+							{/* <Route path="/acy-token" component={AcyToken} /> */}
+						</Switch>
+						<Footer></Footer>
+					</div>
 				</div>
-			</div>
-		</Router>
+			</Router>
+		</Web3ReactProvider>
 	);
 }
 
