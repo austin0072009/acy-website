@@ -6,15 +6,13 @@ import { Contract } from '@ethersproject/contracts';
 import { AddressZero } from '@ethersproject/constants';
 import { InjectedConnector } from '@web3-react/injected-connector';
 import airdropABI from "../contracts/abis/airdrop_abi.json";
-import Web3 from 'web3';
+import "./ClaimDialog.css";
 
 const injected = new InjectedConnector({
 	supportedChainIds: [80001, 137, 56, 97],
 })
 
-const contractAddress = "0xBc41578E688C860170c58C8CC132bFf8694dD477";
-const providerURL = "https://matic-mumbai.chainstacklabs.com";
-
+const contractAddress = "0xf3BAa8F2698e8871D1f064A2A487248B248DE120";
 
 export function isAddress(value) {
   try {
@@ -72,9 +70,6 @@ function ClaimDialog({ isOpen, setIsOpen }) {
 
 	// 0x0f355a70d27eF1376e77C6Df9d9D8d661bCDf339
 	const onClickClaim = () => {
-
-		window.library = library;
-
 		const airdropContract = getContract(contractAddress, airdropABI, library, account);
 		window.contract = airdropContract;
     airdropContract.claim()
@@ -82,6 +77,7 @@ function ClaimDialog({ isOpen, setIsOpen }) {
 				console.log('claim result', res)
 			})
       .catch(e => {
+				alert("Claim is restricted to the winners! Please check this wallet is in the winner list.")
         console.log('claim Error', e);
       });		
 	}
@@ -90,30 +86,35 @@ function ClaimDialog({ isOpen, setIsOpen }) {
 		<Transition
 			show={isOpen}
 		>
-			<Dialog onClose={() => setIsOpen(false)} className="fixed inset-0 z-10 overflow-y-auto" style={{ zIndex: 101 }}>
+			<Dialog onClose={() => setIsOpen(false)} className="fixed inset-0 z-10 overflow-y-auto" style={{
+				zIndex: 101
+			}}>
 				<div className="flex items-center justify-center min-h-screen">
 
-					<Dialog.Overlay className="fixed inset-0 bg-black opacity-50" />
+					<Dialog.Overlay className="fixed inset-0 bg-black opacity-50"/>
 
 					{/* This element is to trick the browser into centering the modal contents. */}
-					<span
+					{/* <span
 						className="inline-block h-screen align-middle justify-middle"
 						aria-hidden="true"
 					>
 						&#8203;
-					</span>
-					<div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-						<Dialog.Title>Claim ACY</Dialog.Title>
+					</span> */}
+					<div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-black shadow-xl rounded-2xl" id="claim-dialog-content">
+						<h1 id="claim-title">Claim ACY</h1>
 						<div>
 							<p>Please connect to wallet first.</p>
-							<button onClick={connect}>Connect to wallet</button>
-							<p>Wallet Address: {account}</p>
+							<div id="connect-button" onClick={connect}>Connect to wallet</div>
+							{account &&
+								<div id="connect-button" onClick={disconnect}>Disconnect</div>
+							}
+							<p>Wallet Address: {account ? account : "Not Connected"}</p>
 						</div>
 
 						{account &&
 							<>
-								<button onClick={onClickClaim}>Claim</button>
-								<button onClick={() => setIsOpen(false)}>Cancel</button>
+								<button id="claim-button" onClick={onClickClaim}>Claim</button>
+								<button id="claim-button" onClick={() => setIsOpen(false)}>Cancel</button>
 							</>
 						}
 					</div>

@@ -23,6 +23,7 @@ import { Gradient } from "../atoms";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { ConsoleSqlOutlined } from "@ant-design/icons";
+import CutCornerButton from "../components/CutCornerButton";
 
 axios.defaults.baseURL = "https://api.acy.finance/";
 
@@ -370,17 +371,15 @@ const Main = () => {
 						setIsOpen(true);
 					}}
 				>
-					<a className="btn btn-sm animated-button thar-three font-bold">
-						Claim ACY!
-					</a>
+					<CutCornerButton text={"Claim ACY!"}/>
 				</div>
-
+				
 			</div>
+			
 			<ClaimDialog isOpen={isOpen} setIsOpen={setIsOpen} />
 
 
 			{/* <NeuroSynth></NeuroSynth> */}
-
 			<div className="relative">
 				<div className="mt-10 mx-2 mb-20 sm:mx-5 lg:mx-10 xl:mx-10 px-2 sm:px-5 xl:px-32 lg:px-8">
 					{/* <VideoPanel setIframeLoaded={setIframeLoaded}></VideoPanel> */}
