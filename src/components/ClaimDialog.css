@@ -1,6 +1,6 @@
 div#claim-dialog-content {
   padding: 21px;
-  background: rgb(46, 48, 50);
+  background: #0e0304;
   border-radius: 20px;
   box-shadow: rgb(45 45 45) 0px 0px 14px;
   font-size: 14px;
@@ -21,7 +21,7 @@ div#connect-button {
   color: #eb5c20;
   padding: 0 30px;
   line-height: 30px;
-  margin-right: 10px;
+  margin-right: 12px;
   cursor: pointer;
 }
 
@@ -30,8 +30,10 @@ button#claim-button {
   color: #fff;
   border: unset;
   border-radius: 999px;
-  width: 100px;
-  height: 35px;
+  width: 200px;
+  height: 40px;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
 }
