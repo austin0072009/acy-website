@@ -131,10 +131,10 @@ function ClaimDialog({ isOpen, setIsOpen }) {
 	const onClickClaim = () => {
 		const tokenContract = getContract(tokenAddress, erc20ABI, library, account);
 
-		if (claimAmount === 0 || claimAmount.toNumber() === 0) {
-			alert("Account not having allowance! Please check whether you get the prize or not.")
-			return;
-		}
+		// if (claimAmount === 0 || claimAmount.toNumber() === 0) {
+		// 	alert("Account not having allowance! Please check whether you get the prize or not.")
+		// 	return;
+		// }
 
 		tokenContract.transferFrom(contractAddress, account, claimAmount)
 			.then(res => {
