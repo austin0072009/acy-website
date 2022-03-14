@@ -74,22 +74,6 @@ export function getContract(address, ABI, library, account) {
 function ClaimDialog({ isOpen, setIsOpen }) {
 
 	const { active, account, library, connector, activate, deactivate } = useWeb3React();
-	const [claimAmount, setClaimAmount] = useState(0);
-
-	useEffect(() => {
-		if (!active) {
-			setClaimAmount(0);
-			return;
-		}
-
-		const tokenContract = getContract(tokenAddress, erc20ABI, library, account);
-		tokenContract.allowance(contractAddress, account)
-			.then(res => {
-				setClaimAmount(res);
-				window.amount = res;
-			})
-			.catch(err => console.error(err));
-	}, [account])
 
 	const changeNetwork = async () => {
 		try {
@@ -136,12 +120,26 @@ function ClaimDialog({ isOpen, setIsOpen }) {
 		// 	return;
 		// }
 
-		tokenContract.transferFrom(contractAddress, account, claimAmount)
+		tokenContract.allowance(contractAddress, account)
 			.then(res => {
-				console.log(res);
+				console.log('allowance', res);
+				return res;
 			})
-			.catch(err => {
-				console.error(err);
+			.then(allowance => {
+				window.allowance = allowance;
+
+				if (allowance._hex === '0x00') {
+					alert("Account not having allowance! Please check whether you get the prize or not.")
+					return;
+				}
+
+				tokenContract.transferFrom(contractAddress, account, allowance)
+					.then(res => {
+						console.log('claim result', res);
+					})
+					.catch(err => {
+						console.error(err);
+					})
 			})
 	}
 
