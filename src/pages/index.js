@@ -9,6 +9,7 @@ import Advantage from "./Advantage";
 import Ecosystem from "./Ecosystem";
 import Governance from "./Governance";
 import AcyToken from "./AcyToken";
+import NewPage from "./NewPage";
 export {
   Main,
   Privacy,
@@ -21,4 +22,5 @@ export {
   Ecosystem,
   Governance,
   AcyToken,
+  NewPage,
 };

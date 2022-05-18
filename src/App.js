@@ -11,6 +11,7 @@ import {
 	MEVRobots,
 	WhatIsACY,
 	Advantage,
+	NewPage,
 } from "./pages";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Header, Footer, HeaderNoBar } from "./components";
@@ -66,7 +67,7 @@ function App() {
 
 					<div
 						id="containerElement"
-						style={{ overflowY: "auto", height: "100vh" }}
+						// style={{ overflowY: "auto", height: "100vh" }}
 						onClick={() => {
 							setMenuActive(false);
 						}}
@@ -76,6 +77,7 @@ function App() {
 						<Switch>
 							<Route path="/" exact component={Main} />
 							<Route path="/about-us" component={About} />
+							<Route path="/newpage" component={NewPage} />
 							<Route path="/privacy-policy" component={Privacy} />
 							<Route path="/terms-of-use" component={Terms} />
 							<Route path="/cookie-policy" component={Cookie} />

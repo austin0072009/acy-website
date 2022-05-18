@@ -54,7 +54,6 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
 		if (newWindow) newWindow.opener = null;
 	};
-
 	// useEffect(() => {
 	// 	console.log("window.scrollTop")
 
@@ -87,7 +86,17 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 						/>
 					</a>
 				</div>
-
+				<div className="newmenu">
+					<a href="#">Market</a>
+					<a href="#">Exchange</a>
+					<a href="#">Future</a>
+					<a href="#">Option</a>
+					<a href="#">Launch</a>
+					<a href="#">Stablecoin</a>
+					<a href="#">Pool</a>
+					<a href="#">Farm</a>
+					<a href="#">Statistics</a>
+				</div>
 				{/* <div className="flex flex-row items-center">
 				<div
 					className="flex cursor-pointer mt-2"
