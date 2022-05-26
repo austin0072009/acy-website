@@ -15,7 +15,7 @@ const StartedButton = () => {
 				openInNewTab("https://app.acy.finance/");
 			}}
 		>
-			<a className="btn btn-sm animated-button thar-three font-bold">
+			<a target="_blank" href="https://app.acy.finance/#/exchange" className="btn btn-sm animated-button thar-three font-bold">
 				GET STARTED
 				<span className="pl-3">
 					<ArrowRightOutlined />

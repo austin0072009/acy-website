@@ -46,7 +46,8 @@ function App() {
 
 	// console.log(`TRACK ${window.location.pathname + window.location.search}`);
 	ReactGA.pageview(window.location.pathname + window.location.search);
-
+	const urlParams = new URL(window.location.href);
+const pathname = urlParams?.pathname;
 	return (
 		<Web3ReactProvider getLibrary={getLibrary}>
 			<Router>
@@ -67,7 +68,7 @@ function App() {
 
 					<div
 						id="containerElement"
-						// style={{ overflowY: "auto", height: "100vh" }}
+						style={{ overflowY:pathname=="/"&&'hidden'|| "auto", height: "100vh" }}
 						onClick={() => {
 							setMenuActive(false);
 						}}
@@ -75,7 +76,8 @@ function App() {
 					>
 						<Element name="topOfContainer"></Element>
 						<Switch>
-							<Route path="/" exact component={Main} />
+							<Route path="/" exact component={NewPage} />
+							<Route path="/about" component={Main} />
 							<Route path="/about-us" component={About} />
 							<Route path="/newpage" component={NewPage} />
 							<Route path="/privacy-policy" component={Privacy} />

@@ -45,6 +45,7 @@ import Investor from "./Investor";
 import Grapes from "./Grapes";
 import RollingText3D from "./RollingText3D";
 import JumpButton from "./JumpButton";
+import Button from "./Button";
 
 export {
 	Header,
@@ -94,4 +95,5 @@ export {
 	Grapes,
 	RollingText3D,
 	JumpButton,
+	Button
 };

@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 import * as Scroll from "react-scroll";
 import appIcon from "../assets/svgs/animatedIcons/appIcon.json";
 import { AnimatedIcons } from ".";
-import { StartedButton } from ".";
+import { Button } from ".";
 import "./Header.css";
 
 const menuStyles = {
@@ -106,7 +106,7 @@ const Header = ({ active, setActive, getvisible }) => {
 					></AnimatedIcons>
 				</div>
 			</div> */}
-				<StartedButton />
+				<Button />
 
 				{/* <div className="flex items-center justify-end relative">
         <div

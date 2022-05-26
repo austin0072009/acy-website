@@ -32,9 +32,8 @@ body input,
 body h1,
 body a,
 body button {
-    color: #5a5a5a;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    color: #b5b5b6;
+    font-weight: unset;
     margin: 0px;
     padding: 0px;
 }
@@ -45,15 +44,17 @@ body button {
     overflow: hidden;
 }
 
-#app.list-toggled #crypto-list {
-    transform: translateX(0px);
-    margin-top: 100px;
+#app #crypto-list {
+    transform: translateX(0);
+    position: fixed;
+    bottom: 30px;
+    height: 330px;
 }
 
 #app.list-toggled #crypto-details #crypto-details-content {
-    margin-left: 358px;
-    width: calc(100% -358px);
-    margin-top: 100px;
+    /* margin-left: 358px; */
+    /* width: calc(100% -358px); */
+    /* padding-top: 200px; */
 }
 
 #app .loading-spinner-wrapper {
@@ -62,9 +63,10 @@ body button {
     height: 100%;
     justify-content: center;
     left: 0px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 111;
 }
 
 #app .loading-spinner-wrapper .loading-spinner {
@@ -91,6 +93,10 @@ body button {
     transition: all 0.25s;
     width: 500px;
     z-index: 2;
+    transform: translateX(0);
+    position: fixed;
+    bottom: 30px;
+    height: 330px;
 }
 
 #app #crypto-list::-webkit-scrollbar {
@@ -116,10 +122,10 @@ body button {
 #app #crypto-list .crypto-list-item.selected .crypto-list-item-content {
     width: calc(100% - 120px);
 }
-
-#app #crypto-list .crypto-list-item.selected .crypto-list-item-content {
-    background-color: rgba(255, 255, 255, 0.15);
+.selected h1,.selected button{
+    color: #ffffff;
 }
+
 
 #app #crypto-list .crypto-list-item .crypto-list-item-background {
     align-items: center;
@@ -162,7 +168,7 @@ body button {
 #app #crypto-list .crypto-list-item .crypto-list-item-content {
     align-items: center;
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.05);
+    /* background-color: rgba(255, 255, 255, 0.05); */
     border-bottom-right-radius: 1000px;
     border-top-right-radius: 1000px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
@@ -174,19 +180,24 @@ body button {
     white-space: nowrap;
     width: calc(100% - 160px);
     z-index: 2;
+    border: 1px solid #373536;
+    /* border: 1px solid red; */
 }
 
 #app #crypto-list .crypto-list-item .crypto-list-item-content h1 {
-    color: white;
-    font-size: 1em;
+    /* color: white; */
+    font-size: 20px;
 }
 .crypto-list-item{
     padding: 2px !important;
 }
+.crypto-list-item-price{
+    font-size: 14px !important;
+}
 #app #crypto-list .crypto-list-item .crypto-list-item-content .crypto-list-item-image {
     border-radius: 1000px;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 }
 
 #app #crypto-list .crypto-list-item .crypto-list-item-content .crypto-list-item-rank {
@@ -205,7 +216,7 @@ body button {
 }
 
 #app #crypto-list .crypto-list-item .crypto-list-item-content .crypto-list-item-details .crypto-list-item-name {
-    font-size: 1.75em;
+    font-size: 20px;
 }
 
 #app #crypto-details {
@@ -243,7 +254,7 @@ body button {
     width: calc(100% - 1px);
 }
 
-#app #crypto-details #crypto-details-content #crypto-fields {
+#app #crypto-details #crypto-details-content #crypto-fields  {
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
@@ -254,9 +265,12 @@ body button {
     transition: all 0.25s;
     z-index: 3;
 }
-
+#app #crypto-details #crypto-details-content #crypto-fields > div{
+    display: inline-flex;
+}
 #app #crypto-details #crypto-details-content #crypto-fields .crypto-field {
     white-space: nowrap;
+    margin-right: 30px;
 }
 
 #app #crypto-details #crypto-details-content #crypto-fields .crypto-field.positive .crypto-field-value {
@@ -266,7 +280,12 @@ body button {
 #app #crypto-details #crypto-details-content #crypto-fields .crypto-field.negative .crypto-field-value {
     color: #c62828;
 }
-
+.positive{
+    color: #4caf50;
+}
+.negative{
+    color: #c62828;
+}
 /* .negative{
     background-image:linear-gradient(0deg,rgba(255,255,255,0.1) 1px, transparent 0),
                     linear-gradient(90deg,rgba(255,255,255,0.1) 1px, transparent 0);
@@ -296,7 +315,7 @@ body button {
 
 .boxs_y {
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .boxs_y div {
@@ -306,8 +325,8 @@ body button {
 }
 
 #app #crypto-details #crypto-details-content #crypto-fields .crypto-field .crypto-field-value {
-    color: white;
-    font-size: 1.5em;
+    /* color: white; */
+    font-size: 20px;
 }
 
 #app #crypto-details #crypto-details-content #crypto-fields .crypto-field .crypto-field-label {
@@ -374,6 +393,7 @@ body button {
     position: fixed;
     right: 0px;
     z-index: 3;
+    display: none;
 }
 
 #app #crypto-list-toggle-button:hover i,
@@ -426,8 +446,8 @@ body button {
     }
 
     #app.list-toggled #crypto-details #crypto-details-content {
-        margin-left: 100%;
-        width: calc(100% - 1px);
+        /* margin-left: 100%;
+        width: calc(100% - 1px); */
     }
 
     #app #crypto-details #crypto-details-content #crypto-fields {
@@ -437,11 +457,33 @@ body button {
     #app #crypto-details #crypto-details-content #crypto-details-symbol {
         font-size: 10em;
     }
+    /* #app #crypto-list-toggle-button{
+        display: block;
+    } */
 }
 
 @media (max-width: 500px) {
-
-    #app #crypto-list .crypto-list-item:hover .crypto-list-item-content,
+    #app #crypto-list .crypto-list-item .crypto-list-item-content .crypto-list-item-image {
+        height: 30px;
+        width: 30px;
+    }
+    #app #crypto-list .crypto-list-item .crypto-list-item-content .crypto-list-item-details .crypto-list-item-name {
+        font-size: 14px;
+    }
+    .crypto-list-item-price{
+        font-size: 12px !important;
+    }
+    #app #crypto-list .crypto-list-item .crypto-list-item-content .crypto-list-item-rank{
+        font-size: 12px;
+    }
+    #app #crypto-list .crypto-list-item .crypto-list-item-content{
+        width: calc(100% - 280px);
+        gap:10px;
+    }
+    #app #crypto-list .crypto-list-item.selected .crypto-list-item-content {
+        width: calc(100% - 260px);
+    }
+    /* #app #crypto-list .crypto-list-item:hover .crypto-list-item-content,
     #app #crypto-list .crypto-list-item:focus .crypto-list-item-content,
     #app #crypto-list .crypto-list-item.selected .crypto-list-item-content {
         width: calc(100% - 80px);
@@ -471,5 +513,5 @@ body button {
 
     #app #youtube-link h1 {
         font-size: 1em;
-    }
+    } */
 }

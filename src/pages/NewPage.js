@@ -2,9 +2,42 @@ import React from "react";
 import axios from "axios";
 import classNames from "classnames";
 import style from "../css/exchange.css";
+// 数字格式化
+const  abbrNumber=(number)=> {
+    const THOUSAND = 0;
+    const MILLION = 1;
+  
+    let currentDivision = -1;
+    let result = '';
+    let tempNumber = number+"";
+  
+    if (number >= 1000) {
+      tempNumber /= 1000;
+      currentDivision = 0;
+    }
+  
+    if (number >= 1000000) {
+      tempNumber /= 1000;
+      currentDivision = 1;
+    }
+  
+    switch (currentDivision) {
+      case 0:
+        result = `${tempNumber.toFixed(2)}k`;
+        break;
+      case 1:
+        result = `${tempNumber.toFixed(2)}m`;
+        break;
+      default:
+        result = `${number.toFixed(4)}`;
+        break;
+    }
+  
+    return result;
+  }
 const CoinGeckoApi = {
-    AllCoins: "coins/markets?vs_currency=usd&page=1&per_page=30&sparkline=false",
-    Base: "https://api.coingecko.com/api/v3"
+    AllCoins: "/selectCurrencyPageListV2?pageNum=1&pageSize=30&linkId=4",
+    Base: "https://tokeninsight.com/api/v2/currency"
 }
 
 const RequestStatus = {
@@ -18,6 +51,7 @@ const Color = {
     Green: "76, 175, 80",
     Red: "198, 40, 40"
 }
+const Chart = window.Chart || {};
 const CryptoUtility = {
     formatPercent: (value) => {
         return (value / 100).toLocaleString("en-US", { style: "percent", minimumFractionDigits: 2 });
@@ -31,26 +65,27 @@ const CryptoUtility = {
         return match || null;
     },
     map: (data) => {
+        
         return {
-            change: data.price_change_percentage_24h,
-            id: data.id,
-            image: data.image,
-            marketCap: CryptoUtility.formatUSD(data.market_cap),
+            change: data.changed1d,
+            id: data.cid,
+            image: data.imgUrl,
+            marketCap: CryptoUtility.formatUSD(data.marketCap),
             name: data.name,
-            price: CryptoUtility.formatUSD(data.current_price),
-            rank: data.market_cap_rank,
-            supply: data.circulating_supply.toLocaleString(),
-            symbol: data.symbol,
-            volume: CryptoUtility.formatUSD(data.total_volume)
+            price: CryptoUtility.formatUSD(data.price),
+            rank: data.rank,
+            supply: data.supply.toLocaleString(),
+            symbol: data.name,
+            volume: CryptoUtility.formatUSD(data.volume24h)
         }
     },
     mapAll: (data) => {
-        return data.map((item) => CryptoUtility.map(item));
+        return data.data.list.map((item) => CryptoUtility.map(item));
     }
 }
 const ChartUtility = {
     draw: (id, points, change) => {
-        
+
         const canvas = document.getElementById(id);
 
         if (canvas !== null) {
@@ -63,7 +98,7 @@ const ChartUtility = {
 
             context.stroke();
 
-            return new Chart(context, {
+            return Chart&& new Chart(context, {
                 type: "line",
                 data: {
                     datasets: [{
@@ -106,8 +141,8 @@ const ChartUtility = {
                     gridLines: {
                         display: false
                     },
-                    suggestedMin: min * 0.98,
-                    suggestedMax: max * 1.02
+                    suggestedMin: min * 0.993,
+                    suggestedMax: max * 1.007
                 }
             },
             plugins: {
@@ -121,12 +156,12 @@ const ChartUtility = {
         }
     },
     getUrl: (id) => {
-        return `${CoinGeckoApi.Base}/coins/${id}/market_chart?vs_currency=usd&days=1`;
+        return `${CoinGeckoApi.Base}/price/historyV2?cid=${id}&queryType=24`;
     },
     mapPoints: (data) => {
-        return data.prices.map((price) => ({
-            price: price[1],
-            timestamp: price[0]
+        return data.map((item) => ({
+            price:item.price,
+            timestamp: item.sourceTime
         }))
     },
     update: (chart, points, change) => {
@@ -188,7 +223,7 @@ const CryptoListItem = (props) => {
             selected
         });
     }
-
+    const sign = crypto.change >= 0 ? "positive" : "negative";
     return (
         <button type="button" className={getClasses()} onClick={() => selectCrypto(crypto.id)}>
             <div className="crypto-list-item-background">
@@ -197,11 +232,17 @@ const CryptoListItem = (props) => {
             </div>
             <div className="crypto-list-item-content">
                 <h1 className="crypto-list-item-rank">{crypto.rank}</h1>
-                <img className="crypto-list-item-image" src={crypto.image} />
+                <img className="crypto-list-item-image" src={crypto.name=="Tether"&&"/usdt.svg"||crypto.image} />
                 <div className="crypto-list-item-details">
                     <h1 className="crypto-list-item-name">{crypto.name}</h1>
-                    <h1 className="crypto-list-item-price">{crypto.price}</h1>
+                    <h1 className="crypto-list-item-price">
+                        {crypto.price}&nbsp;&nbsp;
+                        <span className={classNames(sign)}>
+                            {CryptoUtility.formatPercent(crypto.change)}
+                        </span>
+                    </h1>
                 </div>
+                
             </div>
         </button>
     );
@@ -229,8 +270,8 @@ const CryptoList = () => {
 const CryptoField = (props) => {
     return (
         <div className={classNames("crypto-field", props.className)}>
-            <h1 className="crypto-field-value">{props.value}</h1>
             <h1 className="crypto-field-label">{props.label}</h1>
+            <h1 className="crypto-field-value">{props.value}</h1>
         </div>
     );
 }
@@ -258,11 +299,10 @@ const CryptoPriceChart = () => {
             try {
                 setStatusTo(RequestStatus.Loading);
 
-                const res = await axios.get(ChartUtility.getUrl(crypto.id));
-
+                const res = await axios.post(ChartUtility.getUrl(crypto.id));
                 setStateTo({
                     ...state,
-                    points: ChartUtility.mapPoints(res.data),
+                    points: ChartUtility.mapPoints(res.data.data),
                     status: RequestStatus.Success
                 });
             } catch (err) {
@@ -276,7 +316,7 @@ const CryptoPriceChart = () => {
     }, [crypto]);
 
     React.useEffect(() => {
-        
+
         if (state.chart === null && state.status === RequestStatus.Success) {
             setChartTo(ChartUtility.draw(id, state.points, crypto.change));
         }
@@ -343,19 +383,21 @@ const CryptoDetails = () => {
         return (
             <div id="crypto-details" className={classNames(sign, { transitioning: state.transitioning })}>
                 <div id="crypto-details-content">
-                    <div id="crypto-fields">
-                        <CryptoField label="Rank" value={crypto.rank} />
-                        <CryptoField label="Name" value={crypto.name} />
-                        <CryptoField label="Price" value={crypto.price} />
-                        <CryptoField label="Market Cap" value={crypto.marketCap} />
-                        <CryptoField label="24H Volume" value={crypto.volume} />
-                        <CryptoField label="Circulating Supply" value={crypto.supply} />
-                        <CryptoField
-                            className={sign}
-                            label="24H Change"
-                            value={CryptoUtility.formatPercent(crypto.change)}
-                        />
-                    </div>
+                    {/* <div id="crypto-fields"> */}
+                        {/* <CryptoField label="Rank" value={crypto.rank} />
+                        <CryptoField label="Name" value={crypto.name} /> */}
+
+                        {/* <div>
+                            <CryptoField label="Price" value={crypto.price} />
+                            <CryptoField
+                                className={sign}
+                                label="24H Change"
+                                value={CryptoUtility.formatPercent(crypto.change)}
+                            />
+                            <CryptoField label="24H Volume" value={crypto.volume} />
+                            <CryptoField label="Market Cap" value={crypto.marketCap} />
+                        </div> */}
+                    {/* </div> */}
                     <CryptoPriceChart />
                     {/* <h1 id="crypto-details-symbol">{crypto.symbol}</h1> */}
                 </div>
@@ -395,7 +437,7 @@ const Page = () => {
             try {
                 setStatusTo(RequestStatus.Loading);
 
-                const res = await axios.get(`${CoinGeckoApi.Base}/${CoinGeckoApi.AllCoins}`);
+                const res = await axios.post(`${CoinGeckoApi.Base}/${CoinGeckoApi.AllCoins}`);
 
                 setStateTo({
                     ...state,
@@ -453,7 +495,23 @@ const Page = () => {
                         <div></div>
                     </div>
                     <div className="boxs_y">
-                    <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                         <div></div>
                         <div></div>
                         <div></div>
@@ -477,6 +535,16 @@ const Page = () => {
                         <div></div>
                         <div></div>
                     </div>
+                </div>
+                <div className="ft">
+                    <span><a href="/about">About</a></span>
+                    <span><a target="_blank" href="https://github.com/ACY-Labs">GitHub</a></span>
+                    <span><a target="_blank" href="https://docs.google.com/document/d/1tfGj9AOgvZxBNRg1hzQeb6E3t1dj1aKFMhh6nL5ukDY/edit?usp=sharing">Docs</a></span>
+                    <span><a target="_blank" href="https://www.twitter.com/ACYFinance">Twitter</a></span>
+                    <span><a target="_blank" href="https://t.me/acyfinance">Telegram</a></span>
+                    <span><a target="_blank" href="https://www.medium.com/acy-finance">Medium</a></span>
+                    <span><a target="_blank" href="https://www.linkedin.com/company/acy-finance">Youtube</a></span>
+                    
                 </div>
             </div>
         </AppContext.Provider>
