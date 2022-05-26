@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 import * as Scroll from "react-scroll";
 import appIcon from "../assets/svgs/animatedIcons/appIcon.json";
 import { AnimatedIcons } from ".";
-import { StartedButton } from ".";
+import { Button } from ".";
 
 const menuStyles = {
 	position: "fixed",
@@ -54,7 +54,7 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
 		if (newWindow) newWindow.opener = null;
 	};
-
+	const [open, setOpen] = useState(false);
 	// useEffect(() => {
 	// 	console.log("window.scrollTop")
 
@@ -87,7 +87,27 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 						/>
 					</a>
 				</div>
+				<div className="newmenu">
+					<a href="https://app.acy.finance/#/market" target='_blank'>Market</a>
+					<a href="https://app.acy.finance/#/exchange" target='_blank'>Exchange</a>
+					<a href="https://app.acy.finance/#/exchange" target='_blank' className="opacity50">Future</a>
+					<a href="https://app.acy.finance/#/exchange" target='_blank' className="opacity50">Option</a>
+					<a href="https://app.acy.finance/#/launchpad" target='_blank'>Launch</a>
+					<a href="https://app.acy.finance/#/exchange" target='_blank' className="opacity50">Stablecoin</a>
+					<div style={{display:'inline-block'}} onMouseEnter={()=>setOpen(true)} onMouseLeave={()=>setOpen(false)}>
+						{
+							open && <>
+								<a href="https://app.acy.finance/#/liquidity" target='_blank'>Liquidity</a>
+								<a href="https://app.acy.finance/#/farms" target='_blank'>Farm</a>
+								<a href="https://app.acy.finance/#/exchange" target='_blank' className="opacity50">Statistics</a>
 
+							</> || <a style={{ cursor: 'pointer' }} >
+								...
+							</a>
+						}
+					</div>
+
+				</div>
 				{/* <div className="flex flex-row items-center">
 				<div
 					className="flex cursor-pointer mt-2"
@@ -105,7 +125,7 @@ const HeaderNoBar = ({ active, setActive, getvisible }) => {
 					></AnimatedIcons>
 				</div>
 			</div> */}
-				<StartedButton />
+				<Button />
 			</div>
 		)
 	);

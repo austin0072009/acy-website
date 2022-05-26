@@ -9,7 +9,16 @@
 		r: 40;
 	}
 }
-
+@font-face {
+	font-family: 'Karla';
+	src: url('./Karla-Light.ttf') format('truetype');
+  }
+  *{
+	font-family:'Karla';
+  }
+  a{
+	  text-decoration: unset;
+  }
 .myCircle {
 	animation: expand 6s ease infinite;
 	animation-fill-mode: forwards;

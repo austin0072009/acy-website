@@ -153,3 +153,68 @@
 	max-height: 0px;
 	transition: max-height 1s;
 }
+.newmenu{
+	flex: auto;
+    text-align: center;
+	height: 38px;
+    margin: 0 20px;
+}
+.newmenu a{
+	margin: 0 20px;
+	text-decoration: unset;
+	line-height: 34px;
+}
+.newmenu a:hover{
+	color: #ffffff;
+}
+.newmenu .opacity50{
+	opacity: 0.5;
+}
+
+@media (max-width:1200px) {
+	.opacity50{
+		display: none;
+	}
+}
+.ft{
+	z-index: 222;
+    position: fixed;
+    color: #b5b5b6;
+    bottom: 20px;
+    right: 85px;
+    font-size: 14px;
+}
+.ft span{
+	margin: 0 5px;
+	padding-top: 2px;
+}
+.ft span:hover{
+	transition: all 0.5s;
+	color:#ffffff;
+	cursor: pointer;
+	text-decoration: underline;
+}
+@media (max-width:800px) {
+	.newmenu{
+		display: none;
+	}
+	.ft{
+		right: 0;
+		font-size: 12px;
+	}
+	#app #crypto-list{
+		bottom: 8% !important;
+		height: 220px !important;
+	}
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-corner {
+  background-color: #00000000;
+} */
