@@ -304,6 +304,7 @@ body button {
 .boxs_x {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .boxs_x div {
@@ -319,6 +320,7 @@ body button {
 }
 
 .boxs_y div {
+    margin-top: 64px;
     width: 100px;
     height: 100%;
     border-left: 1px rgba(255,255,255, 0.1) dashed;
