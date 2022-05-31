@@ -1,0 +1,31 @@
+.reactMarkDown * {
+  color: white;
+}
+
+.reactMarkDown h2 {
+  color: #de5b24;
+}
+
+.reactMarkDown p {
+  color: #b5b6b6;
+  font-size: 20px;
+}
+
+.reactMarkDown li {
+  color: #b5b6b6;
+  font-size: 20px;
+}
+
+@media (max-width: 568px) {
+  .reactMarkDown h1 {
+    font-size: 26px;
+  }
+
+  .reactMarkDown p {
+    font-size: 16px;
+  }
+
+  .reactMarkDown li {
+    font-size: 16px;
+  }
+}
