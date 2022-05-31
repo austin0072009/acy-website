@@ -477,7 +477,7 @@ const Page = () => {
                 {getLoadingSpinner()}
                 <div className="boxs">
                     <div className="boxs_x">
-                        <div></div>
+                        <div style={{height:'78px'}}></div>
                         <div></div>
                         <div></div>
                         <div></div>
@@ -494,7 +494,7 @@ const Page = () => {
                         <div></div>
                         <div></div>
                     </div>
-                    <div className="boxs_y">
+                    <div className="boxs_y" style={{paddingTop:'78px'}}>
                         <div></div>
                         <div></div>
                         <div></div>
